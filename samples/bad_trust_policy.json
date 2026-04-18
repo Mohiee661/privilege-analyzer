@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAnyone",
+      "Effect": "Allow",
+      "Principal": { "AWS": "*" },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Sid": "AllowAnyService",
+      "Effect": "Allow",
+      "Principal": { "Service": "*" },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}

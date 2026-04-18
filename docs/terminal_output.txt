@@ -1,0 +1,88 @@
+============================================================
+  IAM Least-Privilege Analyzer v1.0
+============================================================
+[*] Total findings: 26
+[*] Breakdown     : {'CRITICAL': 7, 'HIGH': 12, 'MEDIUM': 7, 'LOW': 0}
+
+[CRITICAL] Dangerous IAM privilege escalation action
+   samples\bad_trust_policy.json stmt[0]:AllowAnyone (risk=100.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[CRITICAL] Dangerous IAM privilege escalation action
+   samples\bad_trust_policy.json stmt[1]:AllowAnyService (risk=100.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[CRITICAL] Dangerous IAM privilege escalation action
+   samples\overly_permissive_admin.json stmt[3]:BadPassRoleUnrestricted (risk=100.0, AWS WA SEC 03)
+   > Action="iam:PassRole" Resource="*"
+
+[CRITICAL] Dangerous IAM privilege escalation action
+   samples\overly_permissive_admin.json stmt[3]:BadPassRoleUnrestricted (risk=100.0, AWS WA SEC 03)
+   > Action="iam:AttachRolePolicy" Resource="*"
+
+[HIGH] Wildcard Resource (Resource: '*')
+   samples\overly_permissive_admin.json stmt[2]:BadKmsDecryptOnAny (risk=95.0, AWS WA SEC 03)
+   > Action="kms:Decrypt" Resource="*"
+
+[HIGH] KMS decrypt without resource/grant condition
+   samples\overly_permissive_admin.json stmt[2]:BadKmsDecryptOnAny (risk=95.0, AWS WA SEC 08)
+   > Action="kms:Decrypt" Resource="*"
+
+[HIGH] Data exfiltration action without VPC/SourceIp condition
+   samples\overly_permissive_admin.json stmt[2]:BadKmsDecryptOnAny (risk=93.2, AWS WA SEC 04)
+   > Action="kms:Decrypt" Resource="*"
+
+[CRITICAL] Cross-account trust with wildcard Principal
+   samples\bad_trust_policy.json stmt[0]:AllowAnyone (risk=92.2, CIS AWS 1.16)
+   > Principal={'AWS': '*'}
+
+[CRITICAL] Cross-account trust with wildcard Principal
+   samples\bad_trust_policy.json stmt[1]:AllowAnyService (risk=92.2, CIS AWS 1.16)
+   > Principal={'Service': '*'}
+
+[CRITICAL] Wildcard Action with Wildcard Resource (Admin equivalent)
+   samples\overly_permissive_admin.json stmt[0]:BadAdminAllowAll (risk=91.4, CIS AWS 1.22)
+   > Action="*" Resource="*"
+
+[HIGH] Wildcard Resource (Resource: '*')
+   samples\bad_trust_policy.json stmt[0]:AllowAnyone (risk=87.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[HIGH] Wildcard Resource (Resource: '*')
+   samples\bad_trust_policy.json stmt[1]:AllowAnyService (risk=87.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[HIGH] Wildcard Resource (Resource: '*')
+   samples\overly_permissive_admin.json stmt[3]:BadPassRoleUnrestricted (risk=87.0, AWS WA SEC 03)
+   > Action="iam:PassRole" Resource="*"
+
+[HIGH] Wildcard Resource (Resource: '*')
+   samples\overly_permissive_admin.json stmt[3]:BadPassRoleUnrestricted (risk=87.0, AWS WA SEC 03)
+   > Action="iam:AttachRolePolicy" Resource="*"
+
+[HIGH] Data exfiltration action without VPC/SourceIp condition
+   samples\overly_permissive_admin.json stmt[4]:BadExfilNoCondition (risk=85.2, AWS WA SEC 04)
+   > Action="secretsmanager:GetSecretValue" Resource="arn:aws:s3:::customer-data/*"
+
+[MEDIUM] Missing Condition for sensitive action
+   samples\overly_permissive_admin.json stmt[2]:BadKmsDecryptOnAny (risk=85.0, AWS WA SEC 03)
+   > Action="kms:Decrypt" Resource="*"
+
+[HIGH] Trust policy allows any service (Service: '*')
+   samples\bad_trust_policy.json stmt[1]:AllowAnyService (risk=83.8, AWS WA SEC 02)
+   > Principal.Service="*"
+
+[HIGH] Service-wide wildcard (e.g., s3:*, ec2:*, iam:*)
+   samples\overly_permissive_admin.json stmt[1]:BadS3Wildcard (risk=81.2, AWS WA SEC 03)
+   > Action="s3:*" Resource="*"
+
+[MEDIUM] Missing Condition for sensitive action
+   samples\bad_trust_policy.json stmt[0]:AllowAnyone (risk=77.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[MEDIUM] Missing Condition for sensitive action
+   samples\bad_trust_policy.json stmt[1]:AllowAnyService (risk=77.0, AWS WA SEC 03)
+   > Action="sts:AssumeRole" Resource="*"
+
+[*] JSON report: reports/iam_report.json
+[*] HTML report: reports/iam_report.html
