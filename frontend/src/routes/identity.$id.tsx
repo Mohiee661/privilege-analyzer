@@ -82,12 +82,18 @@ function IdentityDetail() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <button className="h-9 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90">
+              <Link
+                to="/findings"
+                className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+              >
                 Initiate remediation
-              </button>
-              <button className="h-9 rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground">
+              </Link>
+              <Link
+                to="/risk-center"
+                className="inline-flex h-9 items-center justify-center rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground"
+              >
                 Escalate to SOC
-              </button>
+              </Link>
             </div>
           </div>
         </div>

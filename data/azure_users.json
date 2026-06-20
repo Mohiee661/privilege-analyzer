@@ -1,602 +1,602 @@
 [
   {
     "user_id": "USR061",
-    "name": "Michael Clark",
-    "email": "michael.clark@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-05-16T01:26:41"
-  },
-  {
-    "user_id": "USR062",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-04-22T05:59:32"
-  },
-  {
-    "user_id": "USR063",
-    "name": "John Robinson",
-    "email": "john.robinson@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-05-03T22:31:18"
-  },
-  {
-    "user_id": "USR064",
-    "name": "Michael Hall",
-    "email": "michael.hall@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Administrator",
-    "last_login": "2026-04-12T17:44:04"
-  },
-  {
-    "user_id": "USR065",
-    "name": "Michael Robinson",
-    "email": "michael.robinson@company.com",
-    "department": "HR",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-06-01T09:57:03"
-  },
-  {
-    "user_id": "USR066",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-05-22T08:25:07"
-  },
-  {
-    "user_id": "USR067",
-    "name": "Michael Jackson",
-    "email": "michael.jackson@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-06-13T15:51:46"
-  },
-  {
-    "user_id": "USR068",
-    "name": "John Harris",
-    "email": "john.harris@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-04-18T14:21:57"
-  },
-  {
-    "user_id": "USR069",
-    "name": "Michael Walker",
-    "email": "michael.walker@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-04-24T00:44:04"
-  },
-  {
-    "user_id": "USR070",
-    "name": "Sarah Lee",
-    "email": "sarah.lee@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Administrator",
-    "last_login": "2026-05-09T19:35:41"
-  },
-  {
-    "user_id": "USR071",
-    "name": "Sarah Anderson",
-    "email": "sarah.anderson@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-03-07T09:25:19"
-  },
-  {
-    "user_id": "USR072",
-    "name": "Jane Miller",
-    "email": "jane.miller@company.com",
-    "department": "Security",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-05-11T21:29:50"
-  },
-  {
-    "user_id": "USR073",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Administrator",
-    "last_login": "2026-05-22T12:32:45"
-  },
-  {
-    "user_id": "USR074",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-06-08T23:12:44"
-  },
-  {
-    "user_id": "USR075",
     "name": "John Smith",
     "email": "john.smith@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-05-06T04:17:59"
+    "role": "Global Administrator",
+    "last_login": "2026-05-21T05:24:01"
   },
   {
-    "user_id": "USR076",
-    "name": "John Hall",
-    "email": "john.hall@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-03-05T20:27:45"
-  },
-  {
-    "user_id": "USR077",
-    "name": "Jane Smith",
-    "email": "jane.smith@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-06-19T04:10:53"
-  },
-  {
-    "user_id": "USR078",
-    "name": "Sarah Williams",
-    "email": "sarah.williams@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-04-23T23:29:08"
-  },
-  {
-    "user_id": "USR079",
-    "name": "Sarah Jackson",
-    "email": "sarah.jackson@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-03-22T11:32:18"
-  },
-  {
-    "user_id": "USR080",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-06-08T06:49:19"
-  },
-  {
-    "user_id": "USR081",
-    "name": "John Clark",
-    "email": "john.clark@company.com",
-    "department": "HR",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-05-05T06:13:15"
-  },
-  {
-    "user_id": "USR082",
-    "name": "Michael Lewis",
-    "email": "michael.lewis@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-04-30T18:10:19"
-  },
-  {
-    "user_id": "USR083",
-    "name": "Sarah Perez",
-    "email": "sarah.perez@company.com",
-    "department": "Security",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-04-08T16:00:01"
-  },
-  {
-    "user_id": "USR084",
-    "name": "Sarah Davis",
-    "email": "sarah.davis@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-02-23T10:26:36"
-  },
-  {
-    "user_id": "USR085",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "department": "Sales",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-06-09T04:54:56"
-  },
-  {
-    "user_id": "USR086",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-05-27T16:22:30"
-  },
-  {
-    "user_id": "USR087",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-05-16T00:58:15"
-  },
-  {
-    "user_id": "USR088",
-    "name": "Michael Martin",
-    "email": "michael.martin@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-04-30T07:49:40"
-  },
-  {
-    "user_id": "USR089",
-    "name": "Sarah Taylor",
-    "email": "sarah.taylor@company.com",
-    "department": "IT",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-04-20T15:47:01"
-  },
-  {
-    "user_id": "USR090",
-    "name": "Sarah White",
-    "email": "sarah.white@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Administrator",
-    "last_login": "2026-06-01T17:46:37"
-  },
-  {
-    "user_id": "USR091",
-    "name": "Sarah Moore",
-    "email": "sarah.moore@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-04-04T18:45:18"
-  },
-  {
-    "user_id": "USR092",
-    "name": "John White",
-    "email": "john.white@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-02-19T23:56:29"
-  },
-  {
-    "user_id": "USR093",
-    "name": "Sarah Johnson",
-    "email": "sarah.johnson@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-04-14T00:24:28"
-  },
-  {
-    "user_id": "USR094",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-05-29T11:08:58"
-  },
-  {
-    "user_id": "USR095",
-    "name": "Sarah Smith",
-    "email": "sarah.smith@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-05-23T02:39:45"
-  },
-  {
-    "user_id": "USR096",
+    "user_id": "USR062",
     "name": "John Johnson",
     "email": "john.johnson@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-02-26T13:31:15"
+    "role": "Global Administrator",
+    "last_login": "2026-03-20T16:00:26"
   },
   {
-    "user_id": "USR097",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "department": "Finance",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-03-28T14:11:55"
-  },
-  {
-    "user_id": "USR098",
-    "name": "Michael Perez",
-    "email": "michael.perez@company.com",
+    "user_id": "USR063",
+    "name": "John Williams",
+    "email": "john.williams@company.com",
     "department": "IT",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-03-16T03:21:53"
-  },
-  {
-    "user_id": "USR099",
-    "name": "Sarah Wilson",
-    "email": "sarah.wilson@company.com",
-    "department": "Sales",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-03-10T11:53:16"
+    "role": "Global Administrator",
+    "last_login": "2026-04-26T08:10:13"
   },
   {
-    "user_id": "USR100",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-02-20T20:13:54"
-  },
-  {
-    "user_id": "USR101",
-    "name": "Michael Harris",
-    "email": "michael.harris@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-06-01T12:46:05"
-  },
-  {
-    "user_id": "USR102",
-    "name": "Sarah Miller",
-    "email": "sarah.miller@company.com",
-    "department": "Finance",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-03-17T09:52:40"
-  },
-  {
-    "user_id": "USR103",
-    "name": "Sarah Thompson",
-    "email": "sarah.thompson@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-03-10T14:52:28"
-  },
-  {
-    "user_id": "USR104",
-    "name": "Michael Lee",
-    "email": "michael.lee@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-06-15T01:53:29"
-  },
-  {
-    "user_id": "USR105",
-    "name": "Michael Thompson",
-    "email": "michael.thompson@company.com",
-    "department": "Sales",
-    "status": "suspended",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-05-12T00:37:55"
-  },
-  {
-    "user_id": "USR106",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Contractor",
-    "last_login": "2026-05-15T01:28:00"
-  },
-  {
-    "user_id": "USR107",
+    "user_id": "USR064",
     "name": "John Brown",
     "email": "john.brown@company.com",
     "department": "Security",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-05-17T21:20:15"
+    "role": "Global Administrator",
+    "last_login": "2026-04-11T17:31:22"
   },
   {
-    "user_id": "USR108",
-    "name": "Sarah Martin",
-    "email": "sarah.martin@company.com",
-    "department": "Finance",
+    "user_id": "USR065",
+    "name": "John Jones",
+    "email": "john.jones@company.com",
+    "department": "Operations",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-03-30T12:05:20"
+    "role": "Global Administrator",
+    "last_login": "2026-04-01T01:36:00"
   },
   {
-    "user_id": "USR109",
+    "user_id": "USR066",
+    "name": "John Miller",
+    "email": "john.miller@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-04-01T13:53:16"
+  },
+  {
+    "user_id": "USR067",
+    "name": "John Davis",
+    "email": "john.davis@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-06-10T23:16:21"
+  },
+  {
+    "user_id": "USR068",
+    "name": "John Wilson",
+    "email": "john.wilson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-03-07T11:16:28"
+  },
+  {
+    "user_id": "USR069",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-05-19T17:52:41"
+  },
+  {
+    "user_id": "USR070",
     "name": "John Taylor",
     "email": "john.taylor@company.com",
     "department": "Security",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Administrator",
-    "last_login": "2026-04-30T12:08:13"
+    "role": "Global Administrator",
+    "last_login": "2026-04-10T16:38:17"
   },
   {
-    "user_id": "USR110",
+    "user_id": "USR071",
+    "name": "John Thomas",
+    "email": "john.thomas@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-05-15T12:36:41"
+  },
+  {
+    "user_id": "USR072",
+    "name": "John Moore",
+    "email": "john.moore@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-04-10T10:18:25"
+  },
+  {
+    "user_id": "USR073",
+    "name": "John Jackson",
+    "email": "john.jackson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-03-19T01:11:22"
+  },
+  {
+    "user_id": "USR074",
+    "name": "John Martin",
+    "email": "john.martin@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-06-11T07:20:06"
+  },
+  {
+    "user_id": "USR075",
+    "name": "John Lee",
+    "email": "john.lee@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Global Administrator",
+    "last_login": "2026-06-01T22:45:46"
+  },
+  {
+    "user_id": "USR076",
     "name": "John Perez",
     "email": "john.perez@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Azure AD",
     "role": "Manager",
-    "last_login": "2026-02-27T23:20:56"
+    "last_login": "2026-06-14T02:54:41"
   },
   {
-    "user_id": "USR111",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
+    "user_id": "USR077",
+    "name": "John Thompson",
+    "email": "john.thompson@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-05-11T07:27:00"
+  },
+  {
+    "user_id": "USR078",
+    "name": "John White",
+    "email": "john.white@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-05-04T00:01:51"
+  },
+  {
+    "user_id": "USR079",
+    "name": "John Harris",
+    "email": "john.harris@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-03-21T02:52:28"
+  },
+  {
+    "user_id": "USR080",
+    "name": "John Clark",
+    "email": "john.clark@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-03-12T09:17:37"
+  },
+  {
+    "user_id": "USR081",
+    "name": "John Lewis",
+    "email": "john.lewis@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-02-24T22:18:46"
+  },
+  {
+    "user_id": "USR082",
+    "name": "John Robinson",
+    "email": "john.robinson@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "Azure AD",
     "role": "Manager",
-    "last_login": "2026-06-13T04:36:58"
+    "last_login": "2026-06-02T01:18:52"
   },
   {
-    "user_id": "USR112",
-    "name": "Michael White",
-    "email": "michael.white@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Azure AD",
-    "role": "Manager",
-    "last_login": "2026-05-29T03:38:46"
-  },
-  {
-    "user_id": "USR113",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
+    "user_id": "USR083",
+    "name": "John Walker",
+    "email": "john.walker@company.com",
     "department": "Security",
     "status": "active",
     "platform": "Azure AD",
-    "role": "Security Analyst",
-    "last_login": "2026-03-17T12:59:00"
+    "role": "Manager",
+    "last_login": "2026-02-21T00:55:40"
   },
   {
-    "user_id": "USR114",
+    "user_id": "USR084",
+    "name": "John Hall",
+    "email": "john.hall@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-04-26T11:23:41"
+  },
+  {
+    "user_id": "USR085",
+    "name": "Jane Smith",
+    "email": "jane.smith@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-04-25T04:35:36"
+  },
+  {
+    "user_id": "USR086",
+    "name": "Jane Johnson",
+    "email": "jane.johnson@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-06-04T11:29:44"
+  },
+  {
+    "user_id": "USR087",
+    "name": "Jane Williams",
+    "email": "jane.williams@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-02-22T19:07:47"
+  },
+  {
+    "user_id": "USR088",
     "name": "Jane Brown",
     "email": "jane.brown@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "Azure AD",
     "role": "Support Engineer",
-    "last_login": "2026-06-14T18:17:57"
+    "last_login": "2026-03-05T14:05:04"
   },
   {
-    "user_id": "USR115",
-    "name": "John Thompson",
-    "email": "john.thompson@company.com",
-    "department": "IT",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Employee",
-    "last_login": "2026-04-15T18:39:44"
-  },
-  {
-    "user_id": "USR116",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
-    "department": "IT",
+    "user_id": "USR089",
+    "name": "Jane Jones",
+    "email": "jane.jones@company.com",
+    "department": "Engineering",
     "status": "active",
     "platform": "Azure AD",
     "role": "Administrator",
-    "last_login": "2026-06-02T16:22:52"
+    "last_login": "2026-03-04T20:55:14"
   },
   {
-    "user_id": "USR117",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
+    "user_id": "USR090",
+    "name": "Jane Miller",
+    "email": "jane.miller@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-04-13T13:06:19"
+  },
+  {
+    "user_id": "USR091",
+    "name": "Michael Walker",
+    "email": "michael.walker@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Support Engineer",
+    "last_login": "2026-03-08T06:52:38"
+  },
+  {
+    "user_id": "USR092",
+    "name": "Michael Lee",
+    "email": "michael.lee@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-05-16T15:36:10"
+  },
+  {
+    "user_id": "USR093",
+    "name": "Michael Robinson",
+    "email": "michael.robinson@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Azure AD",
     "role": "Employee",
-    "last_login": "2026-06-10T12:09:39"
+    "last_login": "2026-02-24T01:21:25"
   },
   {
-    "user_id": "USR118",
-    "name": "Sarah Thomas",
-    "email": "sarah.thomas@company.com",
-    "department": "IT",
-    "status": "disabled",
-    "platform": "Azure AD",
-    "role": "Support Engineer",
-    "last_login": "2026-03-24T11:18:18"
-  },
-  {
-    "user_id": "USR119",
-    "name": "Sarah Brown",
-    "email": "sarah.brown@company.com",
-    "department": "Finance",
+    "user_id": "USR094",
+    "name": "Sarah Anderson",
+    "email": "sarah.anderson@company.com",
+    "department": "Operations",
     "status": "active",
     "platform": "Azure AD",
     "role": "Contractor",
-    "last_login": "2026-05-02T16:43:42"
+    "last_login": "2026-05-01T03:31:51"
   },
   {
-    "user_id": "USR120",
+    "user_id": "USR095",
+    "name": "Sarah Perez",
+    "email": "sarah.perez@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-02-18T23:18:18"
+  },
+  {
+    "user_id": "USR096",
+    "name": "Michael Clark",
+    "email": "michael.clark@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-04-01T12:16:35"
+  },
+  {
+    "user_id": "USR097",
+    "name": "Sarah Moore",
+    "email": "sarah.moore@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-06-11T12:11:14"
+  },
+  {
+    "user_id": "USR098",
+    "name": "Sarah Martin",
+    "email": "sarah.martin@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-03-21T04:27:22"
+  },
+  {
+    "user_id": "USR099",
     "name": "Sarah Jones",
     "email": "sarah.jones@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "Azure AD",
     "role": "Support Engineer",
-    "last_login": "2026-03-13T02:12:46"
+    "last_login": "2026-03-28T23:34:38"
+  },
+  {
+    "user_id": "USR100",
+    "name": "Michael White",
+    "email": "michael.white@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-05-11T18:14:08"
+  },
+  {
+    "user_id": "USR101",
+    "name": "Sarah Brown",
+    "email": "sarah.brown@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-05-25T12:43:33"
+  },
+  {
+    "user_id": "USR102",
+    "name": "Michael Martin",
+    "email": "michael.martin@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-06-06T00:06:55"
+  },
+  {
+    "user_id": "USR103",
+    "name": "Sarah Miller",
+    "email": "sarah.miller@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-05-20T13:48:57"
+  },
+  {
+    "user_id": "USR104",
+    "name": "Sarah Thompson",
+    "email": "sarah.thompson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-02-20T04:05:26"
+  },
+  {
+    "user_id": "USR105",
+    "name": "Michael Jackson",
+    "email": "michael.jackson@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-03-07T19:27:34"
+  },
+  {
+    "user_id": "USR106",
+    "name": "Sarah Taylor",
+    "email": "sarah.taylor@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Support Engineer",
+    "last_login": "2026-05-26T23:04:53"
+  },
+  {
+    "user_id": "USR107",
+    "name": "Sarah Davis",
+    "email": "sarah.davis@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Employee",
+    "last_login": "2026-03-11T10:14:27"
+  },
+  {
+    "user_id": "USR108",
+    "name": "Sarah Thomas",
+    "email": "sarah.thomas@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Support Engineer",
+    "last_login": "2026-05-23T17:05:34"
+  },
+  {
+    "user_id": "USR109",
+    "name": "Sarah White",
+    "email": "sarah.white@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Administrator",
+    "last_login": "2026-03-21T10:14:18"
+  },
+  {
+    "user_id": "USR110",
+    "name": "Michael Lewis",
+    "email": "michael.lewis@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-04-15T09:04:53"
+  },
+  {
+    "user_id": "USR111",
+    "name": "Sarah Jackson",
+    "email": "sarah.jackson@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Support Engineer",
+    "last_login": "2026-06-12T00:51:43"
+  },
+  {
+    "user_id": "USR112",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-05-08T08:46:29"
+  },
+  {
+    "user_id": "USR113",
+    "name": "Michael Perez",
+    "email": "michael.perez@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Support Engineer",
+    "last_login": "2026-04-03T11:01:28"
+  },
+  {
+    "user_id": "USR114",
+    "name": "Michael Hall",
+    "email": "michael.hall@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Administrator",
+    "last_login": "2026-06-01T21:06:11"
+  },
+  {
+    "user_id": "USR115",
+    "name": "Sarah Williams",
+    "email": "sarah.williams@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-03-30T07:27:15"
+  },
+  {
+    "user_id": "USR116",
+    "name": "Sarah Wilson",
+    "email": "sarah.wilson@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-05-14T17:50:53"
+  },
+  {
+    "user_id": "USR117",
+    "name": "Sarah Smith",
+    "email": "sarah.smith@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Contractor",
+    "last_login": "2026-05-25T06:14:03"
+  },
+  {
+    "user_id": "USR118",
+    "name": "Michael Harris",
+    "email": "michael.harris@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-06-06T12:38:24"
+  },
+  {
+    "user_id": "USR119",
+    "name": "Sarah Lee",
+    "email": "sarah.lee@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Administrator",
+    "last_login": "2026-04-02T01:30:04"
+  },
+  {
+    "user_id": "USR120",
+    "name": "Michael Thompson",
+    "email": "michael.thompson@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Azure AD",
+    "role": "Manager",
+    "last_login": "2026-04-21T06:42:28"
   }
 ]

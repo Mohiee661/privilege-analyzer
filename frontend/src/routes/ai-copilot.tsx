@@ -18,7 +18,11 @@ export const Route = createFileRoute("/ai-copilot")({
 function Copilot() {
   const data = Route.useLoaderData();
   const critical = [...data.topCritical].sort((a, b) => b.riskScore - a.riskScore).slice(0, 8);
+  const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(critical[0]?.id ?? data.identities[0]?.id ?? "");
+  const filteredCritical = critical.filter((item) =>
+    `${item.name} ${item.email} ${item.department}`.toLowerCase().includes(query.toLowerCase()),
+  );
   if (critical.length === 0 || data.identities.length === 0) {
     return (
       <div className="mx-auto max-w-[1600px] p-6">
@@ -70,6 +74,13 @@ function Copilot() {
               <div className="relative">
                 <Search className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground" />
                 <input
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" && filteredCritical[0]) {
+                      setSelectedId(filteredCritical[0].id);
+                    }
+                  }}
                   placeholder="Search identity..."
                   className="h-8 w-full rounded-md border border-border bg-background pl-8 pr-2 text-xs focus:outline-none focus:ring-1 focus:ring-ring"
                 />
@@ -80,7 +91,7 @@ function Copilot() {
                 Critical Users
               </div>
               <ul>
-                {critical.map((item) => (
+                {filteredCritical.map((item) => (
                   <li key={item.id}>
                     <button
                       onClick={() => setSelectedId(item.id)}
@@ -233,7 +244,10 @@ function Copilot() {
                 placeholder="Ask Copilot: 'Why is this identity high risk?'"
                 className="h-10 flex-1 rounded-md border border-border bg-background px-3 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
               />
-              <button className="inline-flex h-10 items-center gap-1.5 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90">
+              <button
+                onClick={() => filteredCritical[0] && setSelectedId(filteredCritical[0].id)}
+                className="inline-flex h-10 items-center gap-1.5 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+              >
                 <Send className="size-3.5" /> Investigate
               </button>
             </div>

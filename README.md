@@ -22,6 +22,28 @@ There is no database layer. The system uses local JSON files in `output/` as its
 
 ---
 
+## Project Structure
+
+```text
+project-root/
+├── api/                FastAPI app, routers, schemas, config
+├── data/               Source datasets for correlation and detection
+├── exports/            CSV and PDF exports
+├── frontend/           React/TanStack frontend
+├── models/             Backend dataclasses
+├── output/             Generated JSON artifacts and AI report cache
+├── prompts/            Groq prompt templates
+├── reports/            Executive report utilities
+├── services/           Correlation, risk, scoring, and AI services
+├── tests/              Unit and API tests
+├── requirements.txt
+├── .env.example
+├── render.yaml
+└── README.md
+```
+
+---
+
 ## Data Flow
 
 The backend pipeline writes and reads these files:
@@ -75,27 +97,20 @@ Behavior:
 
 ---
 
-## Frontend
+## Environment
 
-The frontend reads from the FastAPI backend using `NEXT_PUBLIC_API_URL` or `VITE_API_BASE_URL`.
+Root example:
 
-Example:
+```env
+GROQ_API_KEY=
+CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,https://*.vercel.app
+```
+
+Frontend example:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
-
-The UI includes:
-
-- Dashboard
-- Risk Center
-- Identity Explorer
-- Identity Detail
-- Findings
-- AI Copilot
-- Reports
-
-All pages load from backend data and use local loading, empty, and error states.
 
 ---
 
@@ -119,13 +134,13 @@ Verified endpoints include:
 
 ## Quickstart
 
-### 1. Backend
+### Backend
 
 ```bash
 python -m uvicorn api.main:app --reload
 ```
 
-### 2. Generate local data
+### Generate local data
 
 ```bash
 python services/correlation_engine.py
@@ -134,13 +149,13 @@ python services/scoring_engine.py
 python services/ai_explainer.py
 ```
 
-### 3. Run tests
+### Run tests
 
 ```bash
 python -m pytest
 ```
 
-### 4. Frontend
+### Frontend
 
 ```bash
 cd frontend
@@ -165,18 +180,32 @@ The project currently passes the Python test suite.
 
 ---
 
-## Project Layout
+## Deployment
 
-```text
-api/            FastAPI app, routers, schemas
-frontend/       React/TanStack frontend
-models/         Dataclasses used by the backend pipeline
-output/         Local JSON outputs and AI report cache
-prompts/        Groq prompt templates
-reports/        Executive report artifacts
-services/       Correlation, risk, scoring, and AI services
-tests/          Unit and API tests
+### Render backend
+
+Use `render.yaml` in the repo root.
+
+Required environment variables:
+
+- `GROQ_API_KEY`
+- `CORS_ORIGINS`
+
+Startup command:
+
+```bash
+python services/correlation_engine.py && python services/risk_engine.py && python services/scoring_engine.py && python services/ai_explainer.py && uvicorn api.main:app --host 0.0.0.0 --port $PORT
 ```
+
+### Vercel frontend
+
+Set:
+
+```env
+NEXT_PUBLIC_API_URL=https://<your-render-service>
+```
+
+The frontend already consumes backend data through the service layer.
 
 ---
 
@@ -192,4 +221,3 @@ tests/          Unit and API tests
 ## License
 
 MIT. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
-

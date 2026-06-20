@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import {
   Activity,
   AlertTriangle,
@@ -80,6 +81,7 @@ function ChartCard({
 function Dashboard() {
   const data = Route.useLoaderData();
   const topCritical = data.topCritical;
+  const [range, setRange] = useState<"7d" | "30d" | "90d">("7d");
 
   return (
     <div className="mx-auto max-w-[1600px] space-y-6 p-6">
@@ -95,12 +97,20 @@ function Dashboard() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <button className="h-9 rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground">
-            Last 7 days
+          <button
+            onClick={() =>
+              setRange((current) => (current === "7d" ? "30d" : current === "30d" ? "90d" : "7d"))
+            }
+            className="h-9 rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground"
+          >
+            Last {range}
           </button>
-          <button className="h-9 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90">
+          <Link
+            to="/reports"
+            className="inline-flex h-9 items-center rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          >
             Export report
-          </button>
+          </Link>
         </div>
       </div>
 

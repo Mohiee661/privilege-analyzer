@@ -14,12 +14,10 @@
     "person_id": "PID001",
     "risk_score": 0,
     "risk_level": "NONE",
-    "summary": "No notable risk patterns were found.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "The identity of David Anderson has been assessed and found to have no known risk factors.",
+    "security_impact": "Since there are no identified risks, ignoring this issue is not expected to have any negative security consequences.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "No specific remediation actions are recommended at this time, but ongoing monitoring is advised to ensure the risk level remains low."
     ]
   }
 }

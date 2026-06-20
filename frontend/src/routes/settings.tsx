@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { Bell, Cloud, Key, Palette, User } from "lucide-react";
 
 export const Route = createFileRoute("/settings")({
-  head: () => ({ meta: [{ title: "Settings · IRIP" }] }),
+  head: () => ({ meta: [{ title: "Settings Â· IRIP" }] }),
   component: Settings,
 });
 
@@ -16,11 +17,14 @@ const platforms = [
 ];
 
 function Settings() {
+  const [theme, setTheme] = useState<"dark" | "contrast">("dark");
+  const [tokenRotated, setTokenRotated] = useState(false);
+
   return (
-    <div className="p-6 space-y-6 max-w-[1100px] mx-auto">
+    <div className="mx-auto max-w-[1100px] space-y-6 p-6">
       <div>
         <h1 className="text-2xl font-semibold tracking-tight">Settings</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <p className="mt-1 text-sm text-muted-foreground">
           Configure your IRIP workspace, integrations, and preferences.
         </p>
       </div>
@@ -41,10 +45,16 @@ function Settings() {
         desc="Visual appearance of the workspace."
       >
         <div className="flex gap-2">
-          <button className="rounded-md border border-primary bg-primary/10 px-3 py-2 text-sm font-medium text-primary">
-            Dark · Default
+          <button
+            onClick={() => setTheme("dark")}
+            className="rounded-md border border-primary bg-primary/10 px-3 py-2 text-sm font-medium text-primary"
+          >
+            Dark {theme === "dark" ? "Default" : "Preview"}
           </button>
-          <button className="rounded-md border border-border bg-card px-3 py-2 text-sm text-muted-foreground">
+          <button
+            onClick={() => setTheme("contrast")}
+            className="rounded-md border border-border bg-card px-3 py-2 text-sm text-muted-foreground"
+          >
             High contrast
           </button>
         </div>
@@ -85,11 +95,14 @@ function Settings() {
           </div>
           <div className="mt-2 flex items-center justify-between">
             <span className="text-muted-foreground">Token (last rotated 14 days ago)</span>
-            <code>irip_sk_••••••••••••a3f9</code>
+            <code>irip_sk_••••••••••••••a3f9</code>
           </div>
         </div>
-        <button className="mt-3 rounded-md border border-border bg-card px-3 py-2 text-sm hover:border-primary/30">
-          Rotate token
+        <button
+          onClick={() => setTokenRotated((value) => !value)}
+          className="mt-3 rounded-md border border-border bg-card px-3 py-2 text-sm hover:border-primary/30"
+        >
+          {tokenRotated ? "Token rotated" : "Rotate token"}
         </button>
       </Section>
 
@@ -98,7 +111,7 @@ function Settings() {
         title="Platform Integrations"
         desc="Connected identity sources feeding into IRIP."
       >
-        <div className="rounded-md border border-border overflow-hidden">
+        <div className="overflow-hidden rounded-md border border-border">
           {platforms.map((p, idx) => (
             <div
               key={p.name}
@@ -106,7 +119,7 @@ function Settings() {
             >
               <div>
                 <div className="text-sm font-medium">{p.name}</div>
-                <div className="text-xs text-muted-foreground mt-0.5">Last sync · {p.lastSync}</div>
+                <div className="mt-0.5 text-xs text-muted-foreground">Last sync · {p.lastSync}</div>
               </div>
               <span
                 className={`inline-flex items-center gap-1.5 text-xs ${p.status === "Connected" ? "text-[var(--risk-low)]" : "text-[var(--risk-high)]"}`}
@@ -143,14 +156,14 @@ function Section({
           <p className="text-xs text-muted-foreground">{desc}</p>
         </div>
       </header>
-      <div className="p-5 space-y-3">{children}</div>
+      <div className="space-y-3 p-5">{children}</div>
     </section>
   );
 }
 
 function Row({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-center justify-between border-b border-border last:border-0 pb-2 last:pb-0">
+    <div className="flex items-center justify-between border-b border-border pb-2 last:border-0 last:pb-0">
       <span className="text-sm text-muted-foreground">{label}</span>
       <span className="text-sm font-medium">{value}</span>
     </div>
@@ -167,7 +180,7 @@ function Toggle({
   defaultChecked?: boolean;
 }) {
   return (
-    <label className="flex items-center justify-between gap-3 cursor-pointer">
+    <label className="flex cursor-pointer items-center justify-between gap-3">
       <div>
         <div className="text-sm font-medium">{label}</div>
         <div className="text-xs text-muted-foreground">{desc}</div>

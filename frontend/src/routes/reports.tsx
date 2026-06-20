@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useMemo } from "react";
 import {
   Bar,
   BarChart,
@@ -15,6 +16,7 @@ import {
 import { Download, FileText } from "lucide-react";
 import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { RiskBadge, RiskScore } from "@/components/risk-badge";
+import { toCsv, triggerDownload } from "@/lib/download";
 import { loadReportsPageData } from "@/services/reports";
 
 export const Route = createFileRoute("/reports")({
@@ -38,6 +40,36 @@ const RISK_COLORS: Record<string, string> = {
 function Reports() {
   const data = Route.useLoaderData();
   const top = [...data.topCritical].sort((a, b) => b.riskScore - a.riskScore).slice(0, 6);
+  const reportSummary = useMemo(
+    () => [
+      { metric: "Total Identities", value: data.dashboard.totalIdentities },
+      { metric: "Critical Risks", value: data.dashboard.criticalRisks },
+      { metric: "High Risks", value: data.dashboard.highRisks },
+      { metric: "Offboarding Gaps", value: data.dashboard.offboardingGaps },
+      { metric: "Admin Accounts", value: data.dashboard.adminAccounts },
+    ],
+    [data.dashboard],
+  );
+
+  const exportCsv = () => {
+    triggerDownload(
+      "irip-executive-summary.csv",
+      toCsv([
+        ...reportSummary,
+        ...top.map((identity) => ({
+          person_id: identity.id,
+          name: identity.name,
+          email: identity.email,
+          score: identity.riskScore,
+          risk_level: identity.riskLevel,
+          department: identity.department,
+        })),
+      ]),
+      "text/csv;charset=utf-8",
+    );
+  };
+
+  const printPdf = () => window.print();
 
   return (
     <div className="mx-auto max-w-[1600px] space-y-6 p-6">
@@ -49,13 +81,22 @@ function Reports() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/30">
+          <button
+            onClick={printPdf}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/30"
+          >
             <Download className="size-3.5" /> Export PDF
           </button>
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/30">
+          <button
+            onClick={exportCsv}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/30"
+          >
             <Download className="size-3.5" /> Export CSV
           </button>
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          >
             <FileText className="size-3.5" /> Generate Summary
           </button>
         </div>

@@ -2,11 +2,10 @@
 
 from __future__ import annotations
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.config import ALLOWED_ORIGINS, API_PREFIX
-from api.dependencies import get_runtime_data
+from api.config import CORS_ORIGINS, API_PREFIX
 from api.routers.ai_reports import router as ai_reports_router
 from api.routers.analytics import router as analytics_router
 from api.routers.dashboard import router as dashboard_router
@@ -25,7 +24,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

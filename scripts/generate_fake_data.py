@@ -32,7 +32,6 @@ DEPARTMENTS = [
     "Operations",
     "Sales",
 ]
-STATUS_SEQUENCE = ["active"] * 48 + ["disabled"] * 6 + ["suspended"] * 6
 LOGIN_EVENT_COUNT = 750
 OFFBOARDING_COUNT = 75
 
@@ -134,10 +133,21 @@ def build_base_people(count: int = 180) -> List[dict]:
     return people
 
 
-def random_login_time(rng: random.Random) -> str:
+def random_login_time(rng: random.Random, max_age_days: int = 120) -> str:
     base = datetime(2026, 6, 19, 18, 0, 0)
     delta = timedelta(
-        days=rng.randint(0, 120),
+        days=rng.randint(0, max_age_days),
+        hours=rng.randint(0, 23),
+        minutes=rng.randint(0, 59),
+        seconds=rng.randint(0, 59),
+    )
+    return (base - delta).replace(microsecond=0).isoformat()
+
+
+def stale_login_time(rng: random.Random) -> str:
+    base = datetime(2026, 6, 19, 18, 0, 0)
+    delta = timedelta(
+        days=200 + rng.randint(0, 40),
         hours=rng.randint(0, 23),
         minutes=rng.randint(0, 59),
         seconds=rng.randint(0, 59),
@@ -163,14 +173,22 @@ def create_user_records() -> Dict[str, List[dict]]:
     records_by_platform: Dict[str, List[dict]] = {}
     user_counter = 1
 
-    for platform in PLATFORMS:
-        statuses = STATUS_SEQUENCE[:]
-        rng.shuffle(statuses)
-        selected_people = core_people + platform_people[platform]
-        rng.shuffle(selected_people)
-
+    for platform_index, platform in enumerate(PLATFORMS):
         platform_records: List[dict] = []
-        for person, status in zip(selected_people, statuses):
+        for core_index, person in enumerate(core_people):
+            status = "active"
+            role = person["role"]
+            last_login_age = 120
+
+            if core_index < 20 and platform_index == 0:
+                status = "disabled"
+            if core_index < 5 and platform_index == 3:
+                status = "suspended"
+            if core_index < 15 and platform_index in {1, 2}:
+                role = "Global Administrator" if platform_index == 1 else "Administrator"
+            if 20 <= core_index < 27 and platform_index == 4:
+                last_login_age = 240
+
             platform_records.append(
                 {
                     "user_id": f"USR{user_counter:03d}",
@@ -178,6 +196,23 @@ def create_user_records() -> Dict[str, List[dict]]:
                     "email": person["email"],
                     "department": person["department"],
                     "status": status,
+                    "platform": platform,
+                    "role": role,
+                    "last_login": stale_login_time(rng) if 20 <= core_index < 27 and platform_index == 4 else random_login_time(rng, max_age_days=last_login_age),
+                }
+            )
+            user_counter += 1
+
+        selected_people = platform_people[platform][:]
+        rng.shuffle(selected_people)
+        for person in selected_people:
+            platform_records.append(
+                {
+                    "user_id": f"USR{user_counter:03d}",
+                    "name": person["name"],
+                    "email": person["email"],
+                    "department": person["department"],
+                    "status": "active",
                     "platform": platform,
                     "role": person["role"],
                     "last_login": random_login_time(rng),

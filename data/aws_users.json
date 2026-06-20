@@ -1,602 +1,602 @@
 [
   {
     "user_id": "USR121",
+    "name": "John Smith",
+    "email": "john.smith@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-04-14T08:30:36"
+  },
+  {
+    "user_id": "USR122",
+    "name": "John Johnson",
+    "email": "john.johnson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-06-18T03:36:21"
+  },
+  {
+    "user_id": "USR123",
+    "name": "John Williams",
+    "email": "john.williams@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-04-22T20:26:00"
+  },
+  {
+    "user_id": "USR124",
+    "name": "John Brown",
+    "email": "john.brown@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-05-20T13:04:10"
+  },
+  {
+    "user_id": "USR125",
     "name": "John Jones",
     "email": "john.jones@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-02-21T19:45:45"
-  },
-  {
-    "user_id": "USR122",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "AWS IAM",
     "role": "Administrator",
-    "last_login": "2026-03-03T15:06:35"
+    "last_login": "2026-05-17T16:02:46"
   },
   {
-    "user_id": "USR123",
-    "name": "David Anderson",
-    "email": "david.anderson@company.com",
+    "user_id": "USR126",
+    "name": "John Miller",
+    "email": "john.miller@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-04-08T06:53:21"
+    "role": "Administrator",
+    "last_login": "2026-05-11T00:06:57"
   },
   {
-    "user_id": "USR124",
+    "user_id": "USR127",
+    "name": "John Davis",
+    "email": "john.davis@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-03-14T15:51:46"
+  },
+  {
+    "user_id": "USR128",
+    "name": "John Wilson",
+    "email": "john.wilson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-04-18T14:21:57"
+  },
+  {
+    "user_id": "USR129",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-04-24T00:44:04"
+  },
+  {
+    "user_id": "USR130",
     "name": "John Taylor",
     "email": "john.taylor@company.com",
     "department": "Security",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Administrator",
-    "last_login": "2026-04-23T18:42:30"
-  },
-  {
-    "user_id": "USR125",
-    "name": "John Hall",
-    "email": "john.hall@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-05-15T23:32:32"
-  },
-  {
-    "user_id": "USR126",
-    "name": "John Thompson",
-    "email": "john.thompson@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-06-17T06:13:51"
-  },
-  {
-    "user_id": "USR127",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-06-12T11:46:14"
-  },
-  {
-    "user_id": "USR128",
-    "name": "David Harris",
-    "email": "david.harris@company.com",
-    "department": "HR",
-    "status": "disabled",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-03-18T19:45:01"
-  },
-  {
-    "user_id": "USR129",
-    "name": "Sarah Hall",
-    "email": "sarah.hall@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-03-07T05:00:38"
-  },
-  {
-    "user_id": "USR130",
-    "name": "David Miller",
-    "email": "david.miller@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-05-03T11:44:09"
+    "last_login": "2026-05-09T19:35:41"
   },
   {
     "user_id": "USR131",
-    "name": "Sarah Harris",
-    "email": "sarah.harris@company.com",
-    "department": "Finance",
-    "status": "disabled",
+    "name": "John Thomas",
+    "email": "john.thomas@company.com",
+    "department": "Sales",
+    "status": "active",
     "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-03-05T13:34:52"
+    "role": "Administrator",
+    "last_login": "2026-03-07T09:25:19"
   },
   {
     "user_id": "USR132",
-    "name": "David Moore",
-    "email": "david.moore@company.com",
-    "department": "Engineering",
+    "name": "John Moore",
+    "email": "john.moore@company.com",
+    "department": "IT",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-02-24T16:42:25"
+    "role": "Administrator",
+    "last_login": "2026-05-11T21:29:50"
   },
   {
     "user_id": "USR133",
-    "name": "David Davis",
-    "email": "david.davis@company.com",
-    "department": "Operations",
+    "name": "John Jackson",
+    "email": "john.jackson@company.com",
+    "department": "HR",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-05-04T06:30:18"
+    "role": "Administrator",
+    "last_login": "2026-05-22T12:32:45"
   },
   {
     "user_id": "USR134",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
-    "department": "HR",
+    "name": "John Martin",
+    "email": "john.martin@company.com",
+    "department": "Finance",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-05-26T09:19:07"
+    "role": "Administrator",
+    "last_login": "2026-06-08T23:12:44"
   },
   {
     "user_id": "USR135",
-    "name": "John White",
-    "email": "john.white@company.com",
-    "department": "Engineering",
+    "name": "John Lee",
+    "email": "john.lee@company.com",
+    "department": "IT",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-10T15:01:23"
+    "role": "Administrator",
+    "last_login": "2026-05-06T04:17:59"
   },
   {
     "user_id": "USR136",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
-    "department": "Security",
-    "status": "disabled",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-04-02T01:36:20"
-  },
-  {
-    "user_id": "USR137",
-    "name": "David White",
-    "email": "david.white@company.com",
-    "department": "Engineering",
-    "status": "disabled",
-    "platform": "AWS IAM",
-    "role": "Developer",
-    "last_login": "2026-02-27T20:58:19"
-  },
-  {
-    "user_id": "USR138",
-    "name": "Jane Smith",
-    "email": "jane.smith@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-04-26T17:35:30"
-  },
-  {
-    "user_id": "USR139",
-    "name": "Sarah Robinson",
-    "email": "sarah.robinson@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-02-28T05:31:56"
-  },
-  {
-    "user_id": "USR140",
-    "name": "David Walker",
-    "email": "david.walker@company.com",
-    "department": "IT",
-    "status": "suspended",
-    "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-02-28T02:35:33"
-  },
-  {
-    "user_id": "USR141",
-    "name": "David Thomas",
-    "email": "david.thomas@company.com",
-    "department": "HR",
-    "status": "disabled",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-05-18T12:39:15"
-  },
-  {
-    "user_id": "USR142",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-04-17T04:51:29"
-  },
-  {
-    "user_id": "USR143",
-    "name": "David Taylor",
-    "email": "david.taylor@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-04-28T06:10:44"
-  },
-  {
-    "user_id": "USR144",
     "name": "John Perez",
     "email": "john.perez@company.com",
     "department": "HR",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Manager",
-    "last_login": "2026-04-13T08:36:05"
+    "last_login": "2026-03-05T20:27:45"
   },
   {
-    "user_id": "USR145",
-    "name": "David Smith",
-    "email": "david.smith@company.com",
+    "user_id": "USR137",
+    "name": "John Thompson",
+    "email": "john.thompson@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-06-19T04:10:53"
+  },
+  {
+    "user_id": "USR138",
+    "name": "John White",
+    "email": "john.white@company.com",
     "department": "Engineering",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-06-15T23:57:36"
+    "role": "Employee",
+    "last_login": "2026-04-23T23:29:08"
   },
   {
-    "user_id": "USR146",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "department": "Engineering",
-    "status": "suspended",
-    "platform": "AWS IAM",
-    "role": "Administrator",
-    "last_login": "2026-05-22T14:30:52"
-  },
-  {
-    "user_id": "USR147",
+    "user_id": "USR139",
     "name": "John Harris",
     "email": "john.harris@company.com",
     "department": "Sales",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Contractor",
-    "last_login": "2026-06-15T21:14:38"
+    "last_login": "2026-03-22T11:32:18"
   },
   {
-    "user_id": "USR148",
-    "name": "David Perez",
-    "email": "david.perez@company.com",
-    "department": "Finance",
-    "status": "suspended",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-04-12T10:56:46"
-  },
-  {
-    "user_id": "USR149",
-    "name": "David Lewis",
-    "email": "david.lewis@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-06-17T01:03:38"
-  },
-  {
-    "user_id": "USR150",
-    "name": "Sarah Walker",
-    "email": "sarah.walker@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-04T15:33:48"
-  },
-  {
-    "user_id": "USR151",
-    "name": "David Williams",
-    "email": "david.williams@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-13T07:50:43"
-  },
-  {
-    "user_id": "USR152",
-    "name": "Jane Brown",
-    "email": "jane.brown@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-04-25T18:06:08"
-  },
-  {
-    "user_id": "USR153",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-03-14T14:53:53"
-  },
-  {
-    "user_id": "USR154",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Security Analyst",
-    "last_login": "2026-05-23T13:24:12"
-  },
-  {
-    "user_id": "USR155",
-    "name": "Jane Miller",
-    "email": "jane.miller@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-05-20T06:59:34"
-  },
-  {
-    "user_id": "USR156",
-    "name": "Sarah Lewis",
-    "email": "sarah.lewis@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-05-18T21:27:26"
-  },
-  {
-    "user_id": "USR157",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-15T14:54:21"
-  },
-  {
-    "user_id": "USR158",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-03-27T23:15:14"
-  },
-  {
-    "user_id": "USR159",
+    "user_id": "USR140",
     "name": "John Clark",
     "email": "john.clark@company.com",
     "department": "HR",
-    "status": "suspended",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-02-26T04:35:54"
-  },
-  {
-    "user_id": "USR160",
-    "name": "David Johnson",
-    "email": "david.johnson@company.com",
-    "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-04-19T04:32:23"
-  },
-  {
-    "user_id": "USR161",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "department": "IT",
-    "status": "suspended",
-    "platform": "AWS IAM",
     "role": "Employee",
-    "last_login": "2026-06-11T11:02:57"
+    "last_login": "2026-06-08T06:49:19"
   },
   {
-    "user_id": "USR162",
-    "name": "David Jackson",
-    "email": "david.jackson@company.com",
-    "department": "IT",
+    "user_id": "USR141",
+    "name": "John Lewis",
+    "email": "john.lewis@company.com",
+    "department": "Engineering",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-03-18T18:07:07"
+    "role": "Manager",
+    "last_login": "2026-05-05T06:13:15"
   },
   {
-    "user_id": "USR163",
+    "user_id": "USR142",
     "name": "John Robinson",
     "email": "john.robinson@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Manager",
-    "last_login": "2026-02-27T16:36:52"
+    "last_login": "2026-04-30T18:10:19"
   },
   {
-    "user_id": "USR164",
-    "name": "David Hall",
-    "email": "david.hall@company.com",
+    "user_id": "USR143",
+    "name": "John Walker",
+    "email": "john.walker@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-04-08T16:00:01"
+  },
+  {
+    "user_id": "USR144",
+    "name": "John Hall",
+    "email": "john.hall@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-02-23T10:26:36"
+  },
+  {
+    "user_id": "USR145",
+    "name": "Jane Smith",
+    "email": "jane.smith@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-06-09T04:54:56"
+  },
+  {
+    "user_id": "USR146",
+    "name": "Jane Johnson",
+    "email": "jane.johnson@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-05-27T16:22:30"
+  },
+  {
+    "user_id": "USR147",
+    "name": "Jane Williams",
+    "email": "jane.williams@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-05-16T00:58:15"
+  },
+  {
+    "user_id": "USR148",
+    "name": "Jane Brown",
+    "email": "jane.brown@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Support Engineer",
+    "last_login": "2026-04-30T07:49:40"
+  },
+  {
+    "user_id": "USR149",
+    "name": "Jane Jones",
+    "email": "jane.jones@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Administrator",
+    "last_login": "2026-04-20T15:47:01"
+  },
+  {
+    "user_id": "USR150",
+    "name": "Jane Miller",
+    "email": "jane.miller@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-06-01T17:46:37"
+  },
+  {
+    "user_id": "USR151",
+    "name": "David Walker",
+    "email": "david.walker@company.com",
     "department": "IT",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-07T07:45:20"
+    "role": "Support Engineer",
+    "last_login": "2026-06-01T12:46:05"
   },
   {
-    "user_id": "USR165",
-    "name": "David Martin",
-    "email": "david.martin@company.com",
+    "user_id": "USR152",
+    "name": "David Davis",
+    "email": "david.davis@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-03-17T09:52:40"
+  },
+  {
+    "user_id": "USR153",
+    "name": "David Miller",
+    "email": "david.miller@company.com",
     "department": "Finance",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Contractor",
-    "last_login": "2026-04-03T16:44:24"
+    "last_login": "2026-03-10T14:52:28"
   },
   {
-    "user_id": "USR166",
-    "name": "John Brown",
-    "email": "john.brown@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-03-18T13:58:58"
-  },
-  {
-    "user_id": "USR167",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Contractor",
-    "last_login": "2026-05-31T00:12:07"
-  },
-  {
-    "user_id": "USR168",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "department": "Engineering",
-    "status": "suspended",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-04-08T09:19:45"
-  },
-  {
-    "user_id": "USR169",
-    "name": "David Jones",
-    "email": "david.jones@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-03-26T16:48:21"
-  },
-  {
-    "user_id": "USR170",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-05-31T05:49:08"
-  },
-  {
-    "user_id": "USR171",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-04-20T09:23:30"
-  },
-  {
-    "user_id": "USR172",
+    "user_id": "USR154",
     "name": "David Wilson",
     "email": "david.wilson@company.com",
     "department": "Security",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Manager",
-    "last_login": "2026-04-13T01:33:18"
+    "last_login": "2026-06-15T01:53:29"
   },
   {
-    "user_id": "USR173",
-    "name": "David Robinson",
-    "email": "david.robinson@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Developer",
-    "last_login": "2026-04-11T07:22:50"
-  },
-  {
-    "user_id": "USR174",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
+    "user_id": "USR155",
+    "name": "David Williams",
+    "email": "david.williams@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
-    "role": "Support Engineer",
-    "last_login": "2026-05-24T06:18:11"
+    "role": "Employee",
+    "last_login": "2026-05-12T00:37:55"
   },
   {
-    "user_id": "USR175",
-    "name": "David Lee",
-    "email": "david.lee@company.com",
-    "department": "HR",
+    "user_id": "USR156",
+    "name": "Sarah Harris",
+    "email": "sarah.harris@company.com",
+    "department": "Finance",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Contractor",
-    "last_login": "2026-03-19T02:38:39"
+    "last_login": "2026-05-15T01:28:00"
   },
   {
-    "user_id": "USR176",
-    "name": "David Thompson",
-    "email": "david.thompson@company.com",
-    "department": "HR",
+    "user_id": "USR157",
+    "name": "Sarah Walker",
+    "email": "sarah.walker@company.com",
+    "department": "IT",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Employee",
-    "last_login": "2026-02-26T16:28:19"
+    "last_login": "2026-05-17T21:20:15"
   },
   {
-    "user_id": "USR177",
-    "name": "Sarah Clark",
-    "email": "sarah.clark@company.com",
-    "department": "Sales",
-    "status": "disabled",
-    "platform": "AWS IAM",
-    "role": "Manager",
-    "last_login": "2026-03-23T02:33:09"
-  },
-  {
-    "user_id": "USR178",
-    "name": "David Clark",
-    "email": "david.clark@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "AWS IAM",
-    "role": "Employee",
-    "last_login": "2026-02-23T18:23:59"
-  },
-  {
-    "user_id": "USR179",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
-    "department": "Operations",
+    "user_id": "USR158",
+    "name": "David Jones",
+    "email": "david.jones@company.com",
+    "department": "Security",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Manager",
-    "last_login": "2026-02-27T01:25:45"
+    "last_login": "2026-03-30T12:05:20"
   },
   {
-    "user_id": "USR180",
+    "user_id": "USR159",
     "name": "David Brown",
     "email": "david.brown@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "AWS IAM",
     "role": "Manager",
-    "last_login": "2026-03-14T09:12:00"
+    "last_login": "2026-04-30T12:08:13"
+  },
+  {
+    "user_id": "USR160",
+    "name": "David Martin",
+    "email": "david.martin@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-02-27T23:20:56"
+  },
+  {
+    "user_id": "USR161",
+    "name": "David Anderson",
+    "email": "david.anderson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Support Engineer",
+    "last_login": "2026-06-13T04:36:58"
+  },
+  {
+    "user_id": "USR162",
+    "name": "Sarah Lewis",
+    "email": "sarah.lewis@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-05-29T03:38:46"
+  },
+  {
+    "user_id": "USR163",
+    "name": "Sarah Robinson",
+    "email": "sarah.robinson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-03-17T12:59:00"
+  },
+  {
+    "user_id": "USR164",
+    "name": "David Clark",
+    "email": "david.clark@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-06-14T18:17:57"
+  },
+  {
+    "user_id": "USR165",
+    "name": "David Robinson",
+    "email": "david.robinson@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Developer",
+    "last_login": "2026-04-15T18:39:44"
+  },
+  {
+    "user_id": "USR166",
+    "name": "David Lee",
+    "email": "david.lee@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-06-02T16:22:52"
+  },
+  {
+    "user_id": "USR167",
+    "name": "David Harris",
+    "email": "david.harris@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-06-10T12:09:39"
+  },
+  {
+    "user_id": "USR168",
+    "name": "David Smith",
+    "email": "david.smith@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-03-24T11:18:18"
+  },
+  {
+    "user_id": "USR169",
+    "name": "Sarah Hall",
+    "email": "sarah.hall@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-05-02T16:43:42"
+  },
+  {
+    "user_id": "USR170",
+    "name": "David Thompson",
+    "email": "david.thompson@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-03-13T02:12:46"
+  },
+  {
+    "user_id": "USR171",
+    "name": "David Lewis",
+    "email": "david.lewis@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Support Engineer",
+    "last_login": "2026-06-06T06:17:11"
+  },
+  {
+    "user_id": "USR172",
+    "name": "David Moore",
+    "email": "david.moore@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-04-08T17:32:13"
+  },
+  {
+    "user_id": "USR173",
+    "name": "David Thomas",
+    "email": "david.thomas@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-03-06T16:38:48"
+  },
+  {
+    "user_id": "USR174",
+    "name": "David Taylor",
+    "email": "david.taylor@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-02-27T16:58:50"
+  },
+  {
+    "user_id": "USR175",
+    "name": "Sarah Clark",
+    "email": "sarah.clark@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Manager",
+    "last_login": "2026-02-22T05:48:35"
+  },
+  {
+    "user_id": "USR176",
+    "name": "David Hall",
+    "email": "david.hall@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-03-24T05:18:48"
+  },
+  {
+    "user_id": "USR177",
+    "name": "David Perez",
+    "email": "david.perez@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Employee",
+    "last_login": "2026-05-19T21:23:41"
+  },
+  {
+    "user_id": "USR178",
+    "name": "David Johnson",
+    "email": "david.johnson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Contractor",
+    "last_login": "2026-04-16T21:23:50"
+  },
+  {
+    "user_id": "USR179",
+    "name": "David White",
+    "email": "david.white@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Developer",
+    "last_login": "2026-05-12T18:52:50"
+  },
+  {
+    "user_id": "USR180",
+    "name": "David Jackson",
+    "email": "david.jackson@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "AWS IAM",
+    "role": "Support Engineer",
+    "last_login": "2026-03-18T15:59:49"
   }
 ]

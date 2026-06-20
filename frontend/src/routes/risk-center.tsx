@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
+import { toCsv, triggerDownload } from "@/lib/download";
 import { loadRiskCenterPageData } from "@/services/risks";
 import type { Identity, RiskLevel } from "@/lib/models";
 
@@ -33,6 +34,10 @@ function RiskCenter() {
   const [dept, setDept] = useState<string>("All");
   const [sortDesc, setSortDesc] = useState(true);
   const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [showMoreFilters, setShowMoreFilters] = useState(false);
+  const [showColumnsHelp, setShowColumnsHelp] = useState(false);
+  const [page, setPage] = useState(1);
+  const pageSize = 50;
 
   const departments = useMemo(
     () => ["All", ...new Set(data.identities.map((identity) => identity.department))],
@@ -58,6 +63,8 @@ function RiskCenter() {
       sortDesc ? b.riskScore - a.riskScore : a.riskScore - b.riskScore,
     );
   }, [q, level, platform, dept, sortDesc, data.identities]);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+  const visible = filtered.slice((page - 1) * pageSize, page * pageSize);
 
   const toggle = (id: string) => {
     const next = new Set(selected);
@@ -67,6 +74,31 @@ function RiskCenter() {
       next.add(id);
     }
     setSelected(next);
+  };
+
+  const exportCsv = () => {
+    triggerDownload(
+      "irip-risk-center.csv",
+      toCsv(
+        filtered.map((identity) => ({
+          id: identity.id,
+          name: identity.name,
+          email: identity.email,
+          department: identity.department,
+          status: identity.status,
+          risk_score: identity.riskScore,
+          risk_level: identity.riskLevel,
+          platforms: identity.platforms.join("; "),
+          findings: identity.findingCount,
+        })),
+      ),
+      "text/csv;charset=utf-8",
+    );
+  };
+
+  const bulkAction = (label: string) => {
+    window.alert(`${label} for ${selected.size} selected identities`);
+    setSelected(new Set());
   };
 
   return (
@@ -79,7 +111,10 @@ function RiskCenter() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground">
+          <button
+            onClick={exportCsv}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm text-muted-foreground hover:text-foreground"
+          >
             <Download className="size-4" /> Export
           </button>
         </div>
@@ -109,22 +144,90 @@ function RiskCenter() {
             options={platforms}
           />
           <FilterSelect label="Department" value={dept} onChange={setDept} options={departments} />
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm text-muted-foreground hover:text-foreground">
+          <button
+            onClick={() => setShowColumnsHelp((current) => !current)}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm text-muted-foreground hover:text-foreground"
+          >
             <SlidersHorizontal className="size-3.5" /> Columns
           </button>
-          <button className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm text-muted-foreground hover:text-foreground">
+          <button
+            onClick={() => setShowMoreFilters((current) => !current)}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm text-muted-foreground hover:text-foreground"
+          >
             <Filter className="size-3.5" /> More filters
           </button>
+          <button
+            onClick={exportCsv}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm text-muted-foreground hover:text-foreground"
+          >
+            <Download className="size-3.5" /> Export CSV
+          </button>
         </div>
+
+        {(showColumnsHelp || showMoreFilters) && (
+          <div className="border-b border-border bg-muted/20 px-4 py-3 text-xs text-muted-foreground">
+            {showColumnsHelp && (
+              <div className="mb-2">
+                Columns are fixed in this release. Use the row actions and filters to narrow the
+                investigation set.
+              </div>
+            )}
+            {showMoreFilters && (
+              <div className="flex flex-wrap gap-2">
+                <button
+                  className="rounded border border-border bg-background px-2 py-1 text-foreground"
+                  onClick={() => setLevel("High")}
+                >
+                  High risk only
+                </button>
+                <button
+                  className="rounded border border-border bg-background px-2 py-1 text-foreground"
+                  onClick={() => setPlatform("AWS")}
+                >
+                  AWS only
+                </button>
+                <button
+                  className="rounded border border-border bg-background px-2 py-1 text-foreground"
+                  onClick={() => setDept("Security")}
+                >
+                  Security only
+                </button>
+                <button
+                  className="rounded border border-border bg-background px-2 py-1 text-foreground"
+                  onClick={() => {
+                    setLevel("All");
+                    setPlatform("All");
+                    setDept("All");
+                  }}
+                >
+                  Clear quick filters
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
         {selected.size > 0 && (
           <div className="flex items-center gap-3 border-b border-border bg-secondary/30 px-4 py-2 text-xs">
             <span className="font-medium text-primary">{selected.size} selected</span>
-            <button className="text-muted-foreground hover:text-foreground">
+            <button
+              onClick={() => bulkAction("Assigned to analyst")}
+              className="text-muted-foreground hover:text-foreground"
+            >
               Assign to analyst
             </button>
-            <button className="text-muted-foreground hover:text-foreground">Mark reviewed</button>
-            <button className="text-[var(--risk-critical)] hover:underline">Escalate</button>
+            <button
+              onClick={() => bulkAction("Marked reviewed")}
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Mark reviewed
+            </button>
+            <button
+              onClick={() => bulkAction("Escalated")}
+              className="text-[var(--risk-critical)] hover:underline"
+            >
+              Escalate
+            </button>
           </div>
         )}
 
@@ -179,7 +282,7 @@ function RiskCenter() {
                   </td>
                 </tr>
               )}
-              {filtered.slice(0, 50).map((identity) => (
+              {visible.map((identity) => (
                 <tr
                   key={identity.id}
                   className="group border-b border-border last:border-0 hover:bg-muted/30"
@@ -256,19 +359,33 @@ function RiskCenter() {
 
         <div className="flex items-center justify-between border-t border-border px-4 py-3 text-xs text-muted-foreground">
           <div>
-            Showing {Math.min(50, filtered.length)} of {filtered.length}
+            Showing {visible.length} of {filtered.length}
           </div>
           <div className="flex items-center gap-1">
-            <button className="rounded border border-border px-2 py-1 hover:text-foreground">
+            <button
+              onClick={() => setPage((current) => Math.max(1, current - 1))}
+              disabled={page === 1}
+              className="rounded border border-border px-2 py-1 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-50"
+            >
               Previous
             </button>
-            <button className="rounded border border-border bg-muted px-2 py-1 text-foreground">
+            <button
+              onClick={() => setPage(1)}
+              className="rounded border border-border bg-muted px-2 py-1 text-foreground"
+            >
               1
             </button>
-            <button className="rounded border border-border px-2 py-1 hover:text-foreground">
+            <button
+              onClick={() => setPage(Math.min(2, totalPages))}
+              className="rounded border border-border px-2 py-1 hover:text-foreground"
+            >
               2
             </button>
-            <button className="rounded border border-border px-2 py-1 hover:text-foreground">
+            <button
+              onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
+              disabled={page >= totalPages}
+              className="rounded border border-border px-2 py-1 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-50"
+            >
               Next
             </button>
           </div>

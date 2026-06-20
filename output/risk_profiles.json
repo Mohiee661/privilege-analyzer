@@ -3,58 +3,37 @@
     "person_id": "PID074",
     "name": "John Brown",
     "email": "john.brown@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
+    "score": 100,
+    "risk_level": "CRITICAL",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
       "OFFBOARDING_GAP",
       "SUSPENDED_ACCOUNT_MISMATCH"
     ]
   },
   {
-    "person_id": "PID075",
-    "name": "John Clark",
-    "email": "john.clark@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
+    "person_id": "PID080",
+    "name": "John Johnson",
+    "email": "john.johnson@company.com",
+    "score": 100,
+    "risk_level": "CRITICAL",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
       "OFFBOARDING_GAP",
       "SUSPENDED_ACCOUNT_MISMATCH"
     ]
   },
   {
-    "person_id": "PID082",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
+    "person_id": "PID081",
+    "name": "John Jones",
+    "email": "john.jones@company.com",
+    "score": 100,
+    "risk_level": "CRITICAL",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
-      "OFFBOARDING_GAP",
-      "SUSPENDED_ACCOUNT_MISMATCH"
-    ]
-  },
-  {
-    "person_id": "PID083",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "OFFBOARDING_GAP",
-      "SUSPENDED_ACCOUNT_MISMATCH"
-    ]
-  },
-  {
-    "person_id": "PID084",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
       "OFFBOARDING_GAP",
       "SUSPENDED_ACCOUNT_MISMATCH"
     ]
@@ -63,58 +42,37 @@
     "person_id": "PID089",
     "name": "John Smith",
     "email": "john.smith@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
+    "score": 100,
+    "risk_level": "CRITICAL",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
       "OFFBOARDING_GAP",
       "SUSPENDED_ACCOUNT_MISMATCH"
     ]
   },
   {
-    "person_id": "PID091",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
+    "person_id": "PID095",
+    "name": "John Williams",
+    "email": "john.williams@company.com",
+    "score": 100,
+    "risk_level": "CRITICAL",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
       "OFFBOARDING_GAP",
       "SUSPENDED_ACCOUNT_MISMATCH"
     ]
   },
   {
-    "person_id": "PID057",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "score": 70,
+    "person_id": "PID073",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
+    "score": 85,
     "risk_level": "HIGH",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
       "MULTI_PLATFORM_ADMIN",
-      "SUSPENDED_ACCOUNT_MISMATCH"
-    ]
-  },
-  {
-    "person_id": "PID090",
-    "name": "John Taylor",
-    "email": "john.taylor@company.com",
-    "score": 70,
-    "risk_level": "HIGH",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN",
-      "SUSPENDED_ACCOUNT_MISMATCH"
-    ]
-  },
-  {
-    "person_id": "PID061",
-    "name": "Jane Miller",
-    "email": "jane.miller@company.com",
-    "score": 55,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
       "OFFBOARDING_GAP"
     ]
   },
@@ -122,6 +80,114 @@
     "person_id": "PID076",
     "name": "John Davis",
     "email": "john.davis@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID079",
+    "name": "John Jackson",
+    "email": "john.jackson@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID082",
+    "name": "John Lee",
+    "email": "john.lee@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID084",
+    "name": "John Martin",
+    "email": "john.martin@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID085",
+    "name": "John Miller",
+    "email": "john.miller@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID086",
+    "name": "John Moore",
+    "email": "john.moore@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID090",
+    "name": "John Taylor",
+    "email": "john.taylor@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID091",
+    "name": "John Thomas",
+    "email": "john.thomas@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID096",
+    "name": "John Wilson",
+    "email": "john.wilson@company.com",
+    "score": 85,
+    "risk_level": "HIGH",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN",
+      "OFFBOARDING_GAP"
+    ]
+  },
+  {
+    "person_id": "PID075",
+    "name": "John Clark",
+    "email": "john.clark@company.com",
     "score": 55,
     "risk_level": "MEDIUM",
     "findings": [
@@ -130,9 +196,9 @@
     ]
   },
   {
-    "person_id": "PID080",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
+    "person_id": "PID078",
+    "name": "John Harris",
+    "email": "john.harris@company.com",
     "score": 55,
     "risk_level": "MEDIUM",
     "findings": [
@@ -141,9 +207,9 @@
     ]
   },
   {
-    "person_id": "PID081",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
+    "person_id": "PID087",
+    "name": "John Perez",
+    "email": "john.perez@company.com",
     "score": 55,
     "risk_level": "MEDIUM",
     "findings": [
@@ -163,9 +229,9 @@
     ]
   },
   {
-    "person_id": "PID093",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
+    "person_id": "PID094",
+    "name": "John White",
+    "email": "john.white@company.com",
     "score": 55,
     "risk_level": "MEDIUM",
     "findings": [
@@ -174,20 +240,9 @@
     ]
   },
   {
-    "person_id": "PID095",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "score": 55,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "OFFBOARDING_GAP"
-    ]
-  },
-  {
-    "person_id": "PID086",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
+    "person_id": "PID057",
+    "name": "Jane Jones",
+    "email": "jane.jones@company.com",
     "score": 45,
     "risk_level": "MEDIUM",
     "findings": [
@@ -196,47 +251,80 @@
     ]
   },
   {
-    "person_id": "PID065",
-    "name": "Jane Smith",
-    "email": "jane.smith@company.com",
-    "score": 40,
-    "risk_level": "MEDIUM",
+    "person_id": "PID056",
+    "name": "Jane Johnson",
+    "email": "jane.johnson@company.com",
+    "score": 35,
+    "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
-      "SUSPENDED_ACCOUNT_MISMATCH"
+      "STALE_ACTIVE_ACCOUNT"
     ]
   },
   {
-    "person_id": "PID073",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
-    "score": 40,
-    "risk_level": "MEDIUM",
+    "person_id": "PID065",
+    "name": "Jane Smith",
+    "email": "jane.smith@company.com",
+    "score": 35,
+    "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
-      "SUSPENDED_ACCOUNT_MISMATCH"
+      "STALE_ACTIVE_ACCOUNT"
+    ]
+  },
+  {
+    "person_id": "PID071",
+    "name": "Jane Williams",
+    "email": "jane.williams@company.com",
+    "score": 35,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "STALE_ACTIVE_ACCOUNT"
     ]
   },
   {
     "person_id": "PID077",
     "name": "John Hall",
     "email": "john.hall@company.com",
-    "score": 40,
-    "risk_level": "MEDIUM",
+    "score": 35,
+    "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
-      "SUSPENDED_ACCOUNT_MISMATCH"
+      "STALE_ACTIVE_ACCOUNT"
     ]
   },
   {
-    "person_id": "PID087",
-    "name": "John Perez",
-    "email": "john.perez@company.com",
-    "score": 40,
-    "risk_level": "MEDIUM",
+    "person_id": "PID083",
+    "name": "John Lewis",
+    "email": "john.lewis@company.com",
+    "score": 35,
+    "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
-      "SUSPENDED_ACCOUNT_MISMATCH"
+      "STALE_ACTIVE_ACCOUNT"
+    ]
+  },
+  {
+    "person_id": "PID088",
+    "name": "John Robinson",
+    "email": "john.robinson@company.com",
+    "score": 35,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "STALE_ACTIVE_ACCOUNT"
+    ]
+  },
+  {
+    "person_id": "PID093",
+    "name": "John Walker",
+    "email": "john.walker@company.com",
+    "score": 35,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "STALE_ACTIVE_ACCOUNT"
     ]
   },
   {
@@ -250,79 +338,9 @@
     ]
   },
   {
-    "person_id": "PID056",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID071",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID078",
-    "name": "John Harris",
-    "email": "john.harris@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID079",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID085",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID088",
-    "name": "John Robinson",
-    "email": "john.robinson@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID094",
-    "name": "John White",
-    "email": "john.white@company.com",
-    "score": 15,
-    "risk_level": "LOW",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE"
-    ]
-  },
-  {
-    "person_id": "PID096",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
+    "person_id": "PID061",
+    "name": "Jane Miller",
+    "email": "jane.miller@company.com",
     "score": 15,
     "risk_level": "LOW",
     "findings": [

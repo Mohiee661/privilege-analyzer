@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: privilege-analyzer-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python services/correlation_engine.py && python services/risk_engine.py && python services/scoring_engine.py && python services/ai_explainer.py && uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://*.vercel.app,http://localhost:3000,http://127.0.0.1:3000

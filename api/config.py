@@ -18,4 +18,5 @@ def _split_origins(raw: str | None) -> List[str]:
 
 
 API_PREFIX = "/api/v1"
-ALLOWED_ORIGINS = _split_origins(os.getenv("ALLOWED_ORIGINS"))
+CORS_ORIGINS = _split_origins(os.getenv("CORS_ORIGINS") or os.getenv("ALLOWED_ORIGINS"))
+ALLOWED_ORIGINS = CORS_ORIGINS

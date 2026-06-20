@@ -1,87 +1,92 @@
 {
   "summary": {
     "total_identities": 180,
-    "critical_risks": 0,
-    "high_risks": 9,
-    "average_risk_score": 7.9,
+    "critical_risks": 5,
+    "high_risks": 10,
+    "average_risk_score": 10.8,
     "most_common_finding": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "offboarding_gaps": 14
+    "offboarding_gaps": 20
   },
   "top_risks": [
     {
       "person_id": "PID074",
       "name": "John Brown",
       "email": "john.brown@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
+        "MULTI_PLATFORM_ADMIN",
         "OFFBOARDING_GAP",
         "SUSPENDED_ACCOUNT_MISMATCH"
       ]
     },
     {
-      "person_id": "PID075",
-      "name": "John Clark",
-      "email": "john.clark@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "person_id": "PID080",
+      "name": "John Johnson",
+      "email": "john.johnson@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
+        "MULTI_PLATFORM_ADMIN",
         "OFFBOARDING_GAP",
         "SUSPENDED_ACCOUNT_MISMATCH"
       ]
     },
     {
-      "person_id": "PID082",
-      "name": "John Lee",
-      "email": "john.lee@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "person_id": "PID081",
+      "name": "John Jones",
+      "email": "john.jones@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
+        "MULTI_PLATFORM_ADMIN",
         "OFFBOARDING_GAP",
         "SUSPENDED_ACCOUNT_MISMATCH"
       ]
     },
     {
-      "person_id": "PID083",
-      "name": "John Lewis",
-      "email": "john.lewis@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "person_id": "PID089",
+      "name": "John Smith",
+      "email": "john.smith@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
+        "MULTI_PLATFORM_ADMIN",
         "OFFBOARDING_GAP",
         "SUSPENDED_ACCOUNT_MISMATCH"
       ]
     },
     {
-      "person_id": "PID084",
-      "name": "John Martin",
-      "email": "john.martin@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "person_id": "PID095",
+      "name": "John Williams",
+      "email": "john.williams@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
+        "MULTI_PLATFORM_ADMIN",
         "OFFBOARDING_GAP",
         "SUSPENDED_ACCOUNT_MISMATCH"
       ]
     }
   ],
   "risk_distribution": {
-    "critical": 0,
-    "high": 9,
-    "medium": 12,
+    "critical": 5,
+    "high": 10,
+    "medium": 6,
     "low": 9,
     "none": 150
   },
   "recommended_priorities": [
     "Reduce excessive platform exposure",
     "Review offboarding processes",
-    "Verify suspended account synchronization",
     "Audit administrative accounts",
-    "Remove stale privileged identities"
+    "Remove stale privileged identities",
+    "Verify suspended account synchronization"
   ],
   "showcase_incidents": [
     {

@@ -1,595 +1,595 @@
 [
   {
     "event_id": "EVT001",
-    "email": "emily.walker@company.com",
+    "email": "emily.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-30T06:35:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT002",
-    "email": "john.williams@company.com",
+    "email": "robert.robinson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-13T17:17:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT003",
-    "email": "john.davis@company.com",
+    "email": "david.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-31T07:42:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT004",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-23T01:46:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT005",
-    "email": "jane.miller@company.com",
+    "email": "john.moore@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-26T16:02:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT006",
-    "email": "michael.perez@company.com",
+    "email": "sarah.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-26T17:05:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT007",
-    "email": "michael.moore@company.com",
+    "email": "john.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-08T16:46:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT008",
-    "email": "jane.brown@company.com",
+    "email": "emily.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-25T00:47:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT009",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-17T10:19:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT010",
-    "email": "john.smith@company.com",
+    "email": "john.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-09T16:22:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT011",
-    "email": "robert.anderson@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-28T17:40:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT012",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-21T02:44:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT013",
-    "email": "david.wilson@company.com",
+    "email": "david.moore@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-15T09:59:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT014",
-    "email": "john.miller@company.com",
+    "email": "robert.wilson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-15T08:26:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT015",
-    "email": "david.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-08T18:54:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT016",
-    "email": "john.miller@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-03T08:02:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT017",
-    "email": "michael.walker@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-28T12:37:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT018",
-    "email": "john.martin@company.com",
+    "email": "emily.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-11T13:01:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT019",
-    "email": "emily.robinson@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-24T09:10:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT020",
-    "email": "michael.smith@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-15T11:05:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT021",
-    "email": "john.white@company.com",
+    "email": "emily.lee@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-11T05:46:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT022",
-    "email": "robert.davis@company.com",
+    "email": "priya.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-07T08:32:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT023",
-    "email": "emily.white@company.com",
+    "email": "emily.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-09T08:59:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT024",
-    "email": "jane.harris@company.com",
+    "email": "jane.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-11T04:22:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT025",
-    "email": "john.moore@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-28T20:01:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT026",
-    "email": "john.jackson@company.com",
+    "email": "sarah.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-08T14:31:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT027",
-    "email": "jane.lewis@company.com",
+    "email": "jane.wilson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-04T12:15:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT028",
-    "email": "emily.lee@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-17T12:35:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT029",
-    "email": "robert.miller@company.com",
+    "email": "john.clark@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-21T00:26:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT030",
-    "email": "john.johnson@company.com",
+    "email": "john.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-01T11:45:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT031",
-    "email": "john.williams@company.com",
+    "email": "david.miller@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-05T16:43:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT032",
-    "email": "jane.jones@company.com",
+    "email": "john.walker@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-05T22:49:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT033",
-    "email": "sarah.clark@company.com",
+    "email": "david.perez@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-09T10:21:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT034",
-    "email": "robert.jackson@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-21T06:11:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT035",
-    "email": "emily.robinson@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-11T12:36:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT036",
-    "email": "emily.jackson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-02T10:41:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT037",
-    "email": "john.davis@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-20T16:47:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT038",
-    "email": "david.thomas@company.com",
+    "email": "john.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-23T21:25:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT039",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-25T07:11:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT040",
-    "email": "priya.johnson@company.com",
+    "email": "john.lee@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-15T14:34:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT041",
-    "email": "david.miller@company.com",
+    "email": "john.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-18T23:58:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT042",
-    "email": "john.harris@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-03T05:55:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT043",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-21T03:10:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT044",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-25T02:16:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT045",
-    "email": "john.hall@company.com",
+    "email": "john.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-11T07:08:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT046",
-    "email": "john.anderson@company.com",
+    "email": "robert.walker@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-10T06:59:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT047",
-    "email": "john.harris@company.com",
+    "email": "emily.martin@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-03T12:22:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT048",
-    "email": "john.johnson@company.com",
+    "email": "jane.thompson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-16T07:30:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT049",
-    "email": "david.davis@company.com",
+    "email": "john.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-26T01:05:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT050",
-    "email": "jane.miller@company.com",
+    "email": "david.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-25T15:21:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT051",
-    "email": "robert.robinson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-21T14:35:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT052",
-    "email": "robert.davis@company.com",
+    "email": "priya.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-23T21:57:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT053",
-    "email": "john.thompson@company.com",
+    "email": "robert.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-01T10:53:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT054",
-    "email": "john.robinson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-09T15:32:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT055",
-    "email": "jane.johnson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-08T17:23:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT056",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-30T09:37:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT057",
-    "email": "emily.clark@company.com",
+    "email": "john.lee@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-14T03:52:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT058",
-    "email": "jane.johnson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-09T15:09:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT059",
-    "email": "john.taylor@company.com",
+    "email": "robert.lee@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-18T04:27:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT060",
-    "email": "emily.thomas@company.com",
+    "email": "emily.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-13T08:20:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT061",
-    "email": "jane.miller@company.com",
+    "email": "emily.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-19T18:50:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT062",
-    "email": "michael.brown@company.com",
+    "email": "michael.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-08T01:52:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT063",
-    "email": "john.lewis@company.com",
+    "email": "michael.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-12T14:01:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT064",
-    "email": "jane.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-06T23:22:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT065",
-    "email": "michael.davis@company.com",
+    "email": "jane.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-10T02:07:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT066",
-    "email": "david.jones@company.com",
+    "email": "sarah.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-11T19:54:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT067",
-    "email": "jane.johnson@company.com",
+    "email": "robert.lewis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-20T00:29:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT068",
-    "email": "jane.johnson@company.com",
+    "email": "robert.lewis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-23T23:19:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT069",
-    "email": "john.brown@company.com",
+    "email": "david.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-09T12:45:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT070",
-    "email": "john.walker@company.com",
+    "email": "emily.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-04T06:01:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT071",
-    "email": "michael.hall@company.com",
+    "email": "john.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-16T12:08:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT072",
-    "email": "john.wilson@company.com",
+    "email": "michael.white@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-24T16:51:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT073",
-    "email": "john.harris@company.com",
+    "email": "emily.martin@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-25T00:24:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT074",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-19T03:48:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT075",
-    "email": "david.williams@company.com",
+    "email": "david.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-03T22:44:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT076",
-    "email": "john.clark@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-23T00:28:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT077",
-    "email": "john.williams@company.com",
+    "email": "david.miller@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-12T20:57:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT078",
-    "email": "john.martin@company.com",
+    "email": "emily.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-03T06:13:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT079",
-    "email": "john.davis@company.com",
+    "email": "michael.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-17T20:36:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT080",
-    "email": "jane.johnson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-20T11:19:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT081",
-    "email": "john.brown@company.com",
+    "email": "robert.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-25T02:42:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT082",
-    "email": "michael.thomas@company.com",
+    "email": "jane.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-27T06:22:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT083",
-    "email": "john.hall@company.com",
+    "email": "robert.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-28T04:04:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT084",
-    "email": "john.moore@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-21T15:43:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT085",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-14T16:07:03",
     "event_type": "login"
@@ -603,56 +603,56 @@
   },
   {
     "event_id": "EVT087",
-    "email": "priya.brown@company.com",
+    "email": "priya.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-31T06:45:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT088",
-    "email": "robert.thomas@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-04T15:33:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT089",
-    "email": "john.johnson@company.com",
+    "email": "john.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-04T04:50:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT090",
-    "email": "jane.anderson@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-05T02:36:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT091",
-    "email": "jane.robinson@company.com",
+    "email": "jane.brown@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-15T14:50:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT092",
-    "email": "jane.thomas@company.com",
+    "email": "michael.brown@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-22T14:19:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT093",
-    "email": "robert.taylor@company.com",
+    "email": "robert.martin@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-04T00:19:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT094",
-    "email": "robert.jackson@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-08T05:44:21",
     "event_type": "login"
@@ -666,154 +666,154 @@
   },
   {
     "event_id": "EVT096",
-    "email": "john.moore@company.com",
+    "email": "john.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-12T08:50:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT097",
-    "email": "david.white@company.com",
+    "email": "john.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-07T23:52:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT098",
-    "email": "john.davis@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-12T22:16:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT099",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-24T01:13:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT100",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-14T11:17:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT101",
-    "email": "jane.jackson@company.com",
+    "email": "john.lee@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-06T10:43:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT102",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-10T03:00:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT103",
-    "email": "emily.white@company.com",
+    "email": "emily.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-17T08:37:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT104",
-    "email": "john.miller@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-18T06:38:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT105",
-    "email": "jane.brown@company.com",
+    "email": "priya.thomas@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-25T18:04:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT106",
-    "email": "michael.martin@company.com",
+    "email": "jane.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-11T03:55:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT107",
-    "email": "michael.thompson@company.com",
+    "email": "michael.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-26T03:18:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT108",
-    "email": "michael.martin@company.com",
+    "email": "jane.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-07T11:00:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT109",
-    "email": "john.anderson@company.com",
+    "email": "emily.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-02T22:32:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT110",
-    "email": "emily.miller@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-13T11:51:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT111",
-    "email": "jane.hall@company.com",
+    "email": "michael.wilson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-30T21:33:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT112",
-    "email": "john.jackson@company.com",
+    "email": "emily.taylor@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-06T06:57:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT113",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-07T07:03:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT114",
-    "email": "robert.moore@company.com",
+    "email": "robert.white@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-03T19:56:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT115",
-    "email": "sarah.anderson@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-18T10:45:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT116",
-    "email": "emily.jackson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-10T16:42:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT117",
-    "email": "robert.anderson@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-20T04:32:08",
     "event_type": "login"
@@ -827,98 +827,98 @@
   },
   {
     "event_id": "EVT119",
-    "email": "jane.wilson@company.com",
+    "email": "jane.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-13T00:13:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT120",
-    "email": "priya.smith@company.com",
+    "email": "robert.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-04T14:22:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT121",
-    "email": "robert.robinson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-27T18:28:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT122",
-    "email": "jane.thompson@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-22T01:26:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT123",
-    "email": "john.lewis@company.com",
+    "email": "michael.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-17T08:45:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT124",
-    "email": "john.harris@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-18T21:00:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT125",
-    "email": "john.lee@company.com",
+    "email": "michael.jones@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-08T08:27:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT126",
-    "email": "jane.williams@company.com",
+    "email": "john.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-30T22:53:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT127",
-    "email": "david.davis@company.com",
+    "email": "john.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-27T12:48:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT128",
-    "email": "michael.lee@company.com",
+    "email": "sarah.thompson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-25T14:45:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT129",
-    "email": "robert.wilson@company.com",
+    "email": "john.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-27T05:50:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT130",
-    "email": "john.thomas@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-23T18:26:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT131",
-    "email": "emily.davis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-04T19:51:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT132",
-    "email": "john.anderson@company.com",
+    "email": "emily.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-22T18:20:30",
     "event_type": "login"
@@ -932,196 +932,196 @@
   },
   {
     "event_id": "EVT134",
-    "email": "emily.wilson@company.com",
+    "email": "john.walker@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-18T08:29:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT135",
-    "email": "john.miller@company.com",
+    "email": "michael.taylor@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-06T16:22:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT136",
-    "email": "jane.brown@company.com",
+    "email": "david.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-20T05:23:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT137",
-    "email": "michael.walker@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-30T11:21:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT138",
-    "email": "jane.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-29T19:43:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT139",
-    "email": "robert.harris@company.com",
+    "email": "robert.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-14T09:42:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT140",
-    "email": "emily.walker@company.com",
+    "email": "emily.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-05T10:58:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT141",
-    "email": "michael.johnson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-13T13:45:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT142",
-    "email": "sarah.johnson@company.com",
+    "email": "michael.robinson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-11T18:40:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT143",
-    "email": "jane.johnson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-05T06:11:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT144",
-    "email": "jane.williams@company.com",
+    "email": "sarah.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-30T10:39:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT145",
-    "email": "sarah.jackson@company.com",
+    "email": "john.harris@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-11T10:02:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT146",
-    "email": "john.hall@company.com",
+    "email": "robert.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-23T00:56:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT147",
-    "email": "sarah.anderson@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-27T02:45:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT148",
-    "email": "sarah.jones@company.com",
+    "email": "michael.thompson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-19T01:58:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT149",
-    "email": "jane.brown@company.com",
+    "email": "emily.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-28T04:10:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT150",
-    "email": "michael.white@company.com",
+    "email": "sarah.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-09T20:17:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT151",
-    "email": "david.thompson@company.com",
+    "email": "david.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-10T01:18:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT152",
-    "email": "michael.moore@company.com",
+    "email": "john.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-06T07:35:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT153",
-    "email": "robert.anderson@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-27T03:45:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT154",
-    "email": "emily.smith@company.com",
+    "email": "emily.robinson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-21T13:19:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT155",
-    "email": "jane.lewis@company.com",
+    "email": "jane.wilson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-01T16:45:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT156",
-    "email": "john.martin@company.com",
+    "email": "priya.brown@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-12T20:35:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT157",
-    "email": "david.clark@company.com",
+    "email": "david.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-21T04:42:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT158",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-11T02:13:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT159",
-    "email": "john.thomas@company.com",
+    "email": "michael.anderson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-09T19:06:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT160",
-    "email": "emily.miller@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-18T14:08:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT161",
-    "email": "john.davis@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-15T15:56:14",
     "event_type": "login"
@@ -1135,392 +1135,392 @@
   },
   {
     "event_id": "EVT163",
-    "email": "john.williams@company.com",
+    "email": "jane.white@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-22T01:32:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT164",
-    "email": "priya.johnson@company.com",
+    "email": "john.lee@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-13T00:41:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT165",
-    "email": "john.lewis@company.com",
+    "email": "emily.walker@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-08T19:25:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT166",
-    "email": "jane.white@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-26T01:46:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT167",
-    "email": "john.harris@company.com",
+    "email": "jane.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-07T17:34:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT168",
-    "email": "john.hall@company.com",
+    "email": "jane.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-05T18:32:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT169",
-    "email": "john.walker@company.com",
+    "email": "john.perez@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-04T09:43:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT170",
-    "email": "john.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-13T05:03:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT171",
-    "email": "emily.martin@company.com",
+    "email": "emily.jackson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-22T22:06:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT172",
-    "email": "robert.anderson@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-05T10:13:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT173",
-    "email": "robert.lewis@company.com",
+    "email": "priya.davis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-26T03:15:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT174",
-    "email": "john.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-12T14:38:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT175",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-23T00:46:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT176",
-    "email": "john.davis@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-26T08:34:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT177",
-    "email": "priya.davis@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-18T01:16:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT178",
-    "email": "michael.jones@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-18T05:26:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT179",
-    "email": "john.lewis@company.com",
+    "email": "john.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-11T06:44:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT180",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-01T20:51:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT181",
-    "email": "john.anderson@company.com",
+    "email": "robert.walker@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-17T03:24:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT182",
-    "email": "jane.anderson@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-14T00:33:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT183",
-    "email": "john.taylor@company.com",
+    "email": "robert.lee@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-08T12:10:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT184",
-    "email": "jane.taylor@company.com",
+    "email": "jane.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-11T09:07:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT185",
-    "email": "david.robinson@company.com",
+    "email": "david.thomas@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-06T19:12:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT186",
-    "email": "jane.miller@company.com",
+    "email": "emily.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-06T14:27:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT187",
-    "email": "david.thomas@company.com",
+    "email": "john.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-06T15:20:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT188",
-    "email": "sarah.lewis@company.com",
+    "email": "sarah.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-24T16:26:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT189",
-    "email": "john.wilson@company.com",
+    "email": "john.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-06T17:31:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT190",
-    "email": "john.smith@company.com",
+    "email": "robert.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-14T16:22:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT191",
-    "email": "jane.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-01T17:51:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT192",
-    "email": "sarah.lee@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-29T09:19:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT193",
-    "email": "john.hall@company.com",
+    "email": "john.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-27T19:27:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT194",
-    "email": "john.harris@company.com",
+    "email": "jane.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-09T08:53:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT195",
-    "email": "jane.lee@company.com",
+    "email": "john.white@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-24T20:24:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT196",
-    "email": "david.white@company.com",
+    "email": "john.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-17T10:17:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT197",
-    "email": "robert.moore@company.com",
+    "email": "robert.white@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-15T18:10:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT198",
-    "email": "jane.brown@company.com",
+    "email": "john.davis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-15T18:06:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT199",
-    "email": "sarah.martin@company.com",
+    "email": "sarah.thomas@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-17T21:08:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT200",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-07T17:51:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT201",
-    "email": "john.martin@company.com",
+    "email": "sarah.moore@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-02T21:41:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT202",
-    "email": "emily.martin@company.com",
+    "email": "emily.jackson@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-05T00:09:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT203",
-    "email": "john.johnson@company.com",
+    "email": "emily.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-18T05:57:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT204",
-    "email": "priya.taylor@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-15T16:53:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT205",
-    "email": "robert.harris@company.com",
+    "email": "robert.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-24T17:08:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT206",
-    "email": "john.davis@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-05T13:15:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT207",
-    "email": "robert.lewis@company.com",
+    "email": "priya.davis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-24T13:21:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT208",
-    "email": "john.lewis@company.com",
+    "email": "david.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-20T23:36:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT209",
-    "email": "david.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-10T19:00:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT210",
-    "email": "john.lewis@company.com",
+    "email": "priya.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-17T10:38:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT211",
-    "email": "emily.martin@company.com",
+    "email": "emily.jackson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-01T22:57:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT212",
-    "email": "john.williams@company.com",
+    "email": "john.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-16T02:51:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT213",
-    "email": "jane.miller@company.com",
+    "email": "jane.lee@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-24T23:23:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT214",
-    "email": "john.jones@company.com",
+    "email": "john.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-11T14:48:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT215",
-    "email": "john.walker@company.com",
+    "email": "john.perez@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-23T17:38:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT216",
-    "email": "john.lee@company.com",
+    "email": "jane.brown@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-31T02:41:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT217",
-    "email": "david.miller@company.com",
+    "email": "john.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-08T08:24:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT218",
-    "email": "john.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-25T13:57:24",
     "event_type": "login"
@@ -1534,686 +1534,686 @@
   },
   {
     "event_id": "EVT220",
-    "email": "sarah.anderson@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-01T07:56:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT221",
-    "email": "sarah.walker@company.com",
+    "email": "jane.miller@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-12T13:04:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT222",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-29T02:18:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT223",
-    "email": "emily.lewis@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-22T12:07:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT224",
-    "email": "john.miller@company.com",
+    "email": "sarah.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-10T21:50:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT225",
-    "email": "sarah.lewis@company.com",
+    "email": "sarah.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-25T14:19:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT226",
-    "email": "jane.smith@company.com",
+    "email": "john.clark@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-14T22:05:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT227",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-08T20:40:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT228",
-    "email": "john.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-23T18:17:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT229",
-    "email": "emily.white@company.com",
+    "email": "emily.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-08T22:41:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT230",
-    "email": "john.hall@company.com",
+    "email": "priya.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-21T22:01:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT231",
-    "email": "michael.thomas@company.com",
+    "email": "jane.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-10T02:44:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT232",
-    "email": "jane.taylor@company.com",
+    "email": "jane.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-24T15:50:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT233",
-    "email": "john.hall@company.com",
+    "email": "jane.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-30T05:03:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT234",
-    "email": "john.wilson@company.com",
+    "email": "emily.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-21T06:13:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT235",
-    "email": "emily.jones@company.com",
+    "email": "john.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-04T05:00:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT236",
-    "email": "david.jones@company.com",
+    "email": "sarah.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-13T09:40:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT237",
-    "email": "john.lewis@company.com",
+    "email": "michael.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-03T02:03:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT238",
-    "email": "john.clark@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-26T03:53:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT239",
-    "email": "john.anderson@company.com",
+    "email": "emily.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-01T10:20:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT240",
-    "email": "john.white@company.com",
+    "email": "emily.lee@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-24T05:37:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT241",
-    "email": "david.lee@company.com",
+    "email": "sarah.clark@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-19T04:27:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT242",
-    "email": "john.jones@company.com",
+    "email": "john.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-20T00:38:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT243",
-    "email": "john.robinson@company.com",
+    "email": "michael.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-15T12:48:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT244",
-    "email": "john.lewis@company.com",
+    "email": "david.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-23T21:39:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT245",
-    "email": "michael.walker@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-11T17:06:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT246",
-    "email": "john.harris@company.com",
+    "email": "john.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-29T03:49:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT247",
-    "email": "john.perez@company.com",
+    "email": "robert.anderson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-28T21:55:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT248",
-    "email": "john.robinson@company.com",
+    "email": "michael.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-01T20:18:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT249",
-    "email": "john.perez@company.com",
+    "email": "john.harris@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-23T10:55:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT250",
-    "email": "emily.miller@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-11T16:53:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT251",
-    "email": "john.robinson@company.com",
+    "email": "emily.thomas@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-23T17:32:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT252",
-    "email": "jane.johnson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-15T21:19:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT253",
-    "email": "robert.smith@company.com",
+    "email": "john.moore@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-15T02:49:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT254",
-    "email": "jane.smith@company.com",
+    "email": "john.clark@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-05T18:04:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT255",
-    "email": "john.brown@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-23T14:36:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT256",
-    "email": "michael.miller@company.com",
+    "email": "jane.walker@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-31T01:46:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT257",
-    "email": "john.wilson@company.com",
+    "email": "john.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-21T10:50:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT258",
-    "email": "sarah.brown@company.com",
+    "email": "sarah.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-16T20:35:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT259",
-    "email": "sarah.lee@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-11T11:21:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT260",
-    "email": "emily.brown@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-05T18:10:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT261",
-    "email": "john.wilson@company.com",
+    "email": "michael.white@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-20T02:55:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT262",
-    "email": "robert.thompson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-01T16:08:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT263",
-    "email": "emily.brown@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-19T12:18:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT264",
-    "email": "robert.brown@company.com",
+    "email": "emily.hall@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-28T17:17:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT265",
-    "email": "john.thompson@company.com",
+    "email": "emily.moore@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-18T06:57:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT266",
-    "email": "david.perez@company.com",
+    "email": "jane.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-16T13:19:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT267",
-    "email": "john.white@company.com",
+    "email": "john.perez@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-07T21:31:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT268",
-    "email": "emily.williams@company.com",
+    "email": "john.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-07T17:44:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT269",
-    "email": "john.hall@company.com",
+    "email": "john.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-27T07:53:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT270",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-04T22:50:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT271",
-    "email": "emily.jones@company.com",
+    "email": "john.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-19T05:01:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT272",
-    "email": "john.miller@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-06T11:01:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT273",
-    "email": "john.hall@company.com",
+    "email": "priya.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-11T21:00:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT274",
-    "email": "jane.brown@company.com",
+    "email": "david.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-27T23:38:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT275",
-    "email": "michael.smith@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-25T08:39:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT276",
-    "email": "john.lewis@company.com",
+    "email": "john.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-21T13:51:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT277",
-    "email": "priya.brown@company.com",
+    "email": "priya.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-24T11:32:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT278",
-    "email": "john.thomas@company.com",
+    "email": "john.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-29T21:05:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT279",
-    "email": "robert.robinson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-01T06:43:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT280",
-    "email": "david.lewis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-03T11:50:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT281",
-    "email": "john.jones@company.com",
+    "email": "john.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-23T17:12:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT282",
-    "email": "jane.brown@company.com",
+    "email": "david.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-02T07:10:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT283",
-    "email": "robert.jackson@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-05T20:47:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT284",
-    "email": "david.hall@company.com",
+    "email": "david.clark@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-21T05:33:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT285",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-27T12:35:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT286",
-    "email": "john.brown@company.com",
+    "email": "robert.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-01T14:04:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT287",
-    "email": "david.williams@company.com",
+    "email": "david.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-12T09:18:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT288",
-    "email": "sarah.white@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-15T17:01:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT289",
-    "email": "sarah.jones@company.com",
+    "email": "michael.thompson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-06T01:35:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT290",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-16T07:57:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT291",
-    "email": "emily.lee@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-26T05:56:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT292",
-    "email": "jane.davis@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-14T04:59:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT293",
-    "email": "david.lewis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-01T00:45:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT294",
-    "email": "emily.williams@company.com",
+    "email": "john.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-19T04:42:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT295",
-    "email": "john.perez@company.com",
+    "email": "michael.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-09T13:38:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT296",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-23T07:57:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT297",
-    "email": "jane.davis@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-21T05:24:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT298",
-    "email": "jane.thompson@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-17T03:52:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT299",
-    "email": "robert.wilson@company.com",
+    "email": "john.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-30T16:29:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT300",
-    "email": "priya.anderson@company.com",
+    "email": "priya.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-20T00:27:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT301",
-    "email": "david.brown@company.com",
+    "email": "david.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-06T18:20:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT302",
-    "email": "john.davis@company.com",
+    "email": "jane.perez@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-28T22:32:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT303",
-    "email": "david.lewis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-21T07:49:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT304",
-    "email": "robert.jones@company.com",
+    "email": "john.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-30T15:43:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT305",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-02T04:36:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT306",
-    "email": "emily.johnson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-23T12:19:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT307",
-    "email": "john.smith@company.com",
+    "email": "michael.davis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-30T16:50:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT308",
-    "email": "david.thompson@company.com",
+    "email": "david.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-25T06:25:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT309",
-    "email": "emily.taylor@company.com",
+    "email": "john.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-27T04:44:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT310",
-    "email": "michael.moore@company.com",
+    "email": "john.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-05T23:13:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT311",
-    "email": "priya.moore@company.com",
+    "email": "robert.thompson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-01T02:51:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT312",
-    "email": "robert.hall@company.com",
+    "email": "john.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-25T07:05:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT313",
-    "email": "john.davis@company.com",
+    "email": "jane.perez@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-08T10:39:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT314",
-    "email": "john.wilson@company.com",
+    "email": "emily.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-11T07:06:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT315",
-    "email": "emily.wilson@company.com",
+    "email": "john.walker@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-21T23:39:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT316",
-    "email": "jane.williams@company.com",
+    "email": "john.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-09T11:43:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT317",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-08T07:23:28",
     "event_type": "login"
@@ -2227,252 +2227,252 @@
   },
   {
     "event_id": "EVT319",
-    "email": "sarah.lee@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-28T05:22:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT320",
-    "email": "john.jackson@company.com",
+    "email": "sarah.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-08T17:32:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT321",
-    "email": "john.thomas@company.com",
+    "email": "sarah.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-04T14:02:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT322",
-    "email": "john.lewis@company.com",
+    "email": "john.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-01T20:30:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT323",
-    "email": "robert.lee@company.com",
+    "email": "priya.anderson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-20T20:59:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT324",
-    "email": "jane.jones@company.com",
+    "email": "robert.clark@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-30T11:04:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT325",
-    "email": "robert.harris@company.com",
+    "email": "robert.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-15T04:26:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT326",
-    "email": "john.moore@company.com",
+    "email": "john.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-30T05:44:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT327",
-    "email": "david.anderson@company.com",
+    "email": "john.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-02T03:07:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT328",
-    "email": "robert.brown@company.com",
+    "email": "emily.hall@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-12T05:02:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT329",
-    "email": "jane.miller@company.com",
+    "email": "john.moore@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-07T01:43:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT330",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-16T17:16:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT331",
-    "email": "david.miller@company.com",
+    "email": "john.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-07T12:48:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT332",
-    "email": "john.harris@company.com",
+    "email": "john.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-03T08:17:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT333",
-    "email": "robert.davis@company.com",
+    "email": "priya.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-30T16:00:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT334",
-    "email": "michael.thomas@company.com",
+    "email": "jane.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-15T05:34:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT335",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-26T19:09:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT336",
-    "email": "jane.martin@company.com",
+    "email": "jane.davis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-04T01:28:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT337",
-    "email": "john.martin@company.com",
+    "email": "sarah.moore@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-05T17:06:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT338",
-    "email": "john.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-07T15:33:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT339",
-    "email": "jane.miller@company.com",
+    "email": "emily.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-13T07:30:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT340",
-    "email": "jane.miller@company.com",
+    "email": "emily.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-21T15:18:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT341",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-14T10:17:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT342",
-    "email": "emily.jackson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-25T05:50:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT343",
-    "email": "john.jones@company.com",
+    "email": "john.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-29T04:05:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT344",
-    "email": "emily.robinson@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-31T00:28:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT345",
-    "email": "john.thompson@company.com",
+    "email": "emily.moore@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-18T10:58:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT346",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-15T04:55:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT347",
-    "email": "michael.moore@company.com",
+    "email": "john.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-17T04:07:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT348",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-30T17:56:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT349",
-    "email": "john.taylor@company.com",
+    "email": "john.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-27T09:27:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT350",
-    "email": "emily.moore@company.com",
+    "email": "emily.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-18T13:23:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT351",
-    "email": "michael.harris@company.com",
+    "email": "sarah.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-16T16:01:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT352",
-    "email": "robert.taylor@company.com",
+    "email": "robert.martin@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-07T00:40:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT353",
-    "email": "jane.brown@company.com",
+    "email": "priya.thomas@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-16T09:08:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT354",
-    "email": "jane.miller@company.com",
+    "email": "john.davis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-21T01:28:29",
     "event_type": "login"
@@ -2486,119 +2486,119 @@
   },
   {
     "event_id": "EVT356",
-    "email": "john.clark@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-04T12:00:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT357",
-    "email": "john.walker@company.com",
+    "email": "emily.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-01T09:47:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT358",
-    "email": "john.lewis@company.com",
+    "email": "michael.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-18T14:49:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT359",
-    "email": "sarah.harris@company.com",
+    "email": "john.thomas@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-06T08:19:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT360",
-    "email": "jane.harris@company.com",
+    "email": "jane.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-18T03:59:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT361",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-13T11:35:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT362",
-    "email": "priya.davis@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-21T07:45:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT363",
-    "email": "jane.smith@company.com",
+    "email": "robert.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-19T00:49:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT364",
-    "email": "jane.williams@company.com",
+    "email": "john.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-14T11:49:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT365",
-    "email": "jane.williams@company.com",
+    "email": "john.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-06T20:03:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT366",
-    "email": "john.robinson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-01T14:55:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT367",
-    "email": "michael.johnson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-04T19:03:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT368",
-    "email": "john.wilson@company.com",
+    "email": "david.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-25T09:44:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT369",
-    "email": "michael.lewis@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-10T20:18:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT370",
-    "email": "john.hall@company.com",
+    "email": "john.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-01T14:36:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT371",
-    "email": "john.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-04T07:24:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT372",
-    "email": "john.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-24T01:45:51",
     "event_type": "login"
@@ -2612,343 +2612,343 @@
   },
   {
     "event_id": "EVT374",
-    "email": "jane.williams@company.com",
+    "email": "john.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-21T23:52:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT375",
-    "email": "david.white@company.com",
+    "email": "john.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-10T14:10:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT376",
-    "email": "john.white@company.com",
+    "email": "emily.lee@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-28T08:31:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT377",
-    "email": "john.johnson@company.com",
+    "email": "john.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-22T02:42:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT378",
-    "email": "michael.perez@company.com",
+    "email": "sarah.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-03T10:52:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT379",
-    "email": "jane.jones@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-03T15:09:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT380",
-    "email": "john.miller@company.com",
+    "email": "david.white@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-07T12:19:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT381",
-    "email": "david.thompson@company.com",
+    "email": "david.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-07T04:04:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT382",
-    "email": "john.taylor@company.com",
+    "email": "robert.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-22T00:23:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT383",
-    "email": "emily.clark@company.com",
+    "email": "john.lee@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-18T04:18:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT384",
-    "email": "john.jackson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-26T17:35:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT385",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-19T03:41:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT386",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-12T12:59:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT387",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-27T18:14:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT388",
-    "email": "sarah.taylor@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-10T21:45:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT389",
-    "email": "john.clark@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-17T23:12:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT390",
-    "email": "john.davis@company.com",
+    "email": "david.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-04T20:06:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT391",
-    "email": "jane.wilson@company.com",
+    "email": "jane.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-02T14:18:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT392",
-    "email": "john.perez@company.com",
+    "email": "michael.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-06T21:44:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT393",
-    "email": "john.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-25T19:36:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT394",
-    "email": "michael.jackson@company.com",
+    "email": "john.davis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-27T10:49:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT395",
-    "email": "john.lee@company.com",
+    "email": "david.anderson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-06T14:03:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT396",
-    "email": "john.white@company.com",
+    "email": "michael.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-14T11:24:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT397",
-    "email": "emily.wilson@company.com",
+    "email": "john.walker@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-26T07:18:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT398",
-    "email": "emily.lewis@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-05T18:54:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT399",
-    "email": "jane.miller@company.com",
+    "email": "david.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-04T11:40:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT400",
-    "email": "robert.perez@company.com",
+    "email": "john.martin@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-27T05:43:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT401",
-    "email": "john.brown@company.com",
+    "email": "robert.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-15T09:41:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT402",
-    "email": "john.clark@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-28T20:11:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT403",
-    "email": "robert.jones@company.com",
+    "email": "john.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-11T10:40:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT404",
-    "email": "john.jackson@company.com",
+    "email": "sarah.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-30T01:04:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT405",
-    "email": "david.smith@company.com",
+    "email": "jane.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-16T02:17:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT406",
-    "email": "john.miller@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-29T16:29:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT407",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-27T14:25:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT408",
-    "email": "david.perez@company.com",
+    "email": "jane.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-24T16:12:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT409",
-    "email": "robert.lee@company.com",
+    "email": "priya.anderson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-06T12:37:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT410",
-    "email": "jane.miller@company.com",
+    "email": "david.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-02T05:52:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT411",
-    "email": "david.brown@company.com",
+    "email": "david.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-03T10:32:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT412",
-    "email": "david.martin@company.com",
+    "email": "david.robinson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-29T17:02:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT413",
-    "email": "john.wilson@company.com",
+    "email": "john.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-27T12:55:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT414",
-    "email": "jane.jones@company.com",
+    "email": "robert.clark@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-20T08:45:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT415",
-    "email": "david.williams@company.com",
+    "email": "david.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-26T03:30:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT416",
-    "email": "john.jones@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-03T12:50:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT417",
-    "email": "emily.jackson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-02T23:17:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT418",
-    "email": "robert.miller@company.com",
+    "email": "john.clark@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-26T13:20:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT419",
-    "email": "sarah.lee@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-03T00:09:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT420",
-    "email": "emily.smith@company.com",
+    "email": "emily.robinson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-21T23:58:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT421",
-    "email": "emily.williams@company.com",
+    "email": "john.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-18T12:40:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT422",
-    "email": "michael.thompson@company.com",
+    "email": "michael.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-25T11:16:52",
     "event_type": "login"
@@ -2962,56 +2962,56 @@
   },
   {
     "event_id": "EVT424",
-    "email": "john.brown@company.com",
+    "email": "david.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-21T14:54:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT425",
-    "email": "john.moore@company.com",
+    "email": "john.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-08T06:42:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT426",
-    "email": "john.lee@company.com",
+    "email": "sarah.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-27T22:26:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT427",
-    "email": "john.jackson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-25T09:14:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT428",
-    "email": "john.davis@company.com",
+    "email": "michael.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-26T20:33:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT429",
-    "email": "michael.perez@company.com",
+    "email": "sarah.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-25T12:56:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT430",
-    "email": "david.davis@company.com",
+    "email": "john.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-20T04:02:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT431",
-    "email": "john.miller@company.com",
+    "email": "sarah.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-30T07:46:11",
     "event_type": "login"
@@ -3025,378 +3025,378 @@
   },
   {
     "event_id": "EVT433",
-    "email": "john.wilson@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-01T16:03:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT434",
-    "email": "robert.hall@company.com",
+    "email": "john.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-27T23:07:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT435",
-    "email": "john.davis@company.com",
+    "email": "david.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-08T22:26:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT436",
-    "email": "john.thompson@company.com",
+    "email": "robert.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-11T10:34:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT437",
-    "email": "john.johnson@company.com",
+    "email": "jane.thompson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-08T05:57:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT438",
-    "email": "jane.jones@company.com",
+    "email": "john.walker@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-02T12:41:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT439",
-    "email": "jane.jones@company.com",
+    "email": "john.walker@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-03T12:40:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT440",
-    "email": "john.brown@company.com",
+    "email": "robert.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-05T19:17:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT441",
-    "email": "john.walker@company.com",
+    "email": "john.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-24T15:16:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT442",
-    "email": "john.moore@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-05T22:40:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT443",
-    "email": "jane.jackson@company.com",
+    "email": "john.lee@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-06T10:00:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT444",
-    "email": "priya.thomas@company.com",
+    "email": "robert.harris@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-01T11:12:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT445",
-    "email": "john.perez@company.com",
+    "email": "john.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-19T01:39:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT446",
-    "email": "sarah.white@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-15T16:24:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT447",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-13T22:42:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT448",
-    "email": "john.walker@company.com",
+    "email": "emily.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-02T05:06:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT449",
-    "email": "jane.smith@company.com",
+    "email": "emily.harris@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-11T09:56:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT450",
-    "email": "jane.williams@company.com",
+    "email": "john.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-03T01:05:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT451",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-05T16:23:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT452",
-    "email": "michael.harris@company.com",
+    "email": "sarah.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-29T03:42:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT453",
-    "email": "jane.anderson@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-17T08:06:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT454",
-    "email": "david.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-25T04:20:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT455",
-    "email": "john.white@company.com",
+    "email": "michael.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-16T16:53:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT456",
-    "email": "john.perez@company.com",
+    "email": "john.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-13T07:24:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT457",
-    "email": "john.anderson@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-19T09:19:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT458",
-    "email": "john.lewis@company.com",
+    "email": "priya.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-27T04:10:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT459",
-    "email": "jane.taylor@company.com",
+    "email": "jane.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-21T04:11:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT460",
-    "email": "michael.anderson@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-01T14:48:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT461",
-    "email": "robert.jackson@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-02T18:52:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT462",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-25T10:11:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT463",
-    "email": "john.lewis@company.com",
+    "email": "emily.walker@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-21T19:07:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT464",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-02T01:32:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT465",
-    "email": "john.taylor@company.com",
+    "email": "robert.lee@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-03T21:07:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT466",
-    "email": "john.jackson@company.com",
+    "email": "sarah.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-12T05:19:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT467",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-25T23:29:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT468",
-    "email": "john.jones@company.com",
+    "email": "john.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-18T09:32:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT469",
-    "email": "jane.smith@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-23T15:08:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT470",
-    "email": "david.robinson@company.com",
+    "email": "david.thomas@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-19T07:47:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT471",
-    "email": "michael.walker@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-07T22:30:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT472",
-    "email": "john.perez@company.com",
+    "email": "michael.lewis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-06T07:24:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT473",
-    "email": "john.clark@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-09T16:52:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT474",
-    "email": "priya.smith@company.com",
+    "email": "robert.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-13T15:13:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT475",
-    "email": "jane.thompson@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-24T05:28:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT476",
-    "email": "john.johnson@company.com",
+    "email": "jane.thompson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-27T16:24:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT477",
-    "email": "emily.davis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-22T05:34:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT478",
-    "email": "john.miller@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-16T10:19:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT479",
-    "email": "john.wilson@company.com",
+    "email": "emily.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-25T21:11:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT480",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-26T20:23:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT481",
-    "email": "jane.taylor@company.com",
+    "email": "jane.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-05T02:52:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT482",
-    "email": "jane.brown@company.com",
+    "email": "david.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-18T04:23:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT483",
-    "email": "john.anderson@company.com",
+    "email": "david.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-17T05:02:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT484",
-    "email": "sarah.jackson@company.com",
+    "email": "john.harris@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-27T05:25:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT485",
-    "email": "priya.brown@company.com",
+    "email": "priya.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-01T09:49:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT486",
-    "email": "john.taylor@company.com",
+    "email": "sarah.white@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-05T20:22:13",
     "event_type": "login"
@@ -3410,56 +3410,56 @@
   },
   {
     "event_id": "EVT488",
-    "email": "robert.martin@company.com",
+    "email": "john.clark@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-10T23:06:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT489",
-    "email": "john.davis@company.com",
+    "email": "michael.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-21T05:18:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT490",
-    "email": "priya.brown@company.com",
+    "email": "priya.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-17T02:56:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT491",
-    "email": "sarah.walker@company.com",
+    "email": "jane.miller@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-11T06:14:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT492",
-    "email": "john.martin@company.com",
+    "email": "priya.brown@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-25T03:09:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT493",
-    "email": "john.johnson@company.com",
+    "email": "john.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-27T10:50:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT494",
-    "email": "jane.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-12T00:26:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT495",
-    "email": "jane.brown@company.com",
+    "email": "emily.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-03T21:25:35",
     "event_type": "login"
@@ -3473,672 +3473,672 @@
   },
   {
     "event_id": "EVT497",
-    "email": "priya.jones@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-24T11:31:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT498",
-    "email": "john.miller@company.com",
+    "email": "sarah.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-09T00:20:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT499",
-    "email": "john.davis@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-21T13:43:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT500",
-    "email": "john.harris@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-10T12:02:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT501",
-    "email": "jane.williams@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-20T23:51:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT502",
-    "email": "john.hall@company.com",
+    "email": "john.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-15T14:35:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT503",
-    "email": "john.williams@company.com",
+    "email": "jane.white@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-05T08:30:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT504",
-    "email": "emily.robinson@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-29T03:51:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT505",
-    "email": "david.martin@company.com",
+    "email": "david.robinson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-10T00:58:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT506",
-    "email": "sarah.taylor@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-10T16:41:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT507",
-    "email": "john.brown@company.com",
+    "email": "david.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-28T02:25:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT508",
-    "email": "emily.taylor@company.com",
+    "email": "john.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-20T20:23:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT509",
-    "email": "jane.brown@company.com",
+    "email": "michael.hall@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-02T21:34:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT510",
-    "email": "jane.miller@company.com",
+    "email": "david.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-08T06:10:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT511",
-    "email": "michael.hall@company.com",
+    "email": "john.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-15T02:30:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT512",
-    "email": "sarah.hall@company.com",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-09T03:10:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT513",
-    "email": "jane.smith@company.com",
+    "email": "robert.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-02-26T22:07:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT514",
-    "email": "john.harris@company.com",
+    "email": "emily.martin@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-27T15:09:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT515",
-    "email": "jane.smith@company.com",
+    "email": "robert.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-19T03:01:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT516",
-    "email": "john.walker@company.com",
+    "email": "john.clark@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-20T07:03:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT517",
-    "email": "jane.williams@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-29T16:01:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT518",
-    "email": "jane.white@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-22T15:12:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT519",
-    "email": "john.taylor@company.com",
+    "email": "john.miller@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-13T03:08:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT520",
-    "email": "john.robinson@company.com",
+    "email": "emily.thomas@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-16T14:29:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT521",
-    "email": "priya.miller@company.com",
+    "email": "priya.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-25T23:34:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT522",
-    "email": "robert.white@company.com",
+    "email": "john.walker@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-29T11:16:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT523",
-    "email": "john.martin@company.com",
+    "email": "john.moore@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-14T10:33:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT524",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-15T01:08:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT525",
-    "email": "john.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-24T15:41:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT526",
-    "email": "emily.lewis@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-09T07:17:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT527",
-    "email": "sarah.lewis@company.com",
+    "email": "sarah.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-05T03:44:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT528",
-    "email": "michael.walker@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-06T18:29:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT529",
-    "email": "john.wilson@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-02T15:05:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT530",
-    "email": "robert.davis@company.com",
+    "email": "priya.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-18T15:48:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT531",
-    "email": "michael.white@company.com",
+    "email": "sarah.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-10T15:29:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT532",
-    "email": "john.white@company.com",
+    "email": "robert.thomas@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-27T16:17:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT533",
-    "email": "jane.brown@company.com",
+    "email": "priya.thomas@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-06T09:24:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT534",
-    "email": "jane.jones@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-15T02:28:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT535",
-    "email": "priya.smith@company.com",
+    "email": "robert.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-15T15:55:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT536",
-    "email": "sarah.miller@company.com",
+    "email": "michael.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-06T01:28:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT537",
-    "email": "david.jackson@company.com",
+    "email": "sarah.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-18T22:28:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT538",
-    "email": "jane.thomas@company.com",
+    "email": "michael.brown@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-27T09:25:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT539",
-    "email": "john.perez@company.com",
+    "email": "john.harris@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-14T22:25:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT540",
-    "email": "robert.johnson@company.com",
+    "email": "emily.clark@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-16T03:33:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT541",
-    "email": "emily.miller@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-04T17:49:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT542",
-    "email": "jane.jones@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-09T20:22:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT543",
-    "email": "david.walker@company.com",
+    "email": "john.clark@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-17T16:56:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT544",
-    "email": "sarah.wilson@company.com",
+    "email": "sarah.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-16T17:27:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT545",
-    "email": "david.moore@company.com",
+    "email": "john.moore@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-27T19:21:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT546",
-    "email": "john.johnson@company.com",
+    "email": "jane.thompson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-02T16:18:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT547",
-    "email": "john.martin@company.com",
+    "email": "david.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-29T05:47:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT548",
-    "email": "john.martin@company.com",
+    "email": "david.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-04T02:41:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT549",
-    "email": "john.clark@company.com",
+    "email": "david.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-06T13:44:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT550",
-    "email": "john.brown@company.com",
+    "email": "robert.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-30T04:35:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT551",
-    "email": "michael.anderson@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-03T13:08:23",
     "event_type": "login"
   },
   {
     "event_id": "EVT552",
-    "email": "michael.taylor@company.com",
+    "email": "michael.miller@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-17T05:35:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT553",
-    "email": "jane.wilson@company.com",
+    "email": "jane.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-11T18:56:10",
     "event_type": "login"
   },
   {
     "event_id": "EVT554",
-    "email": "sarah.walker@company.com",
+    "email": "jane.miller@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-09T14:05:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT555",
-    "email": "john.miller@company.com",
+    "email": "michael.taylor@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-04T17:47:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT556",
-    "email": "david.davis@company.com",
+    "email": "john.jackson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-15T01:03:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT557",
-    "email": "john.thompson@company.com",
+    "email": "emily.moore@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-24T14:14:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT558",
-    "email": "john.thompson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-08T05:26:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT559",
-    "email": "david.lewis@company.com",
+    "email": "jane.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-03T21:08:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT560",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-01T21:11:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT561",
-    "email": "emily.miller@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-24T11:36:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT562",
-    "email": "michael.thomas@company.com",
+    "email": "jane.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-28T03:21:45",
     "event_type": "login"
   },
   {
     "event_id": "EVT563",
-    "email": "robert.jones@company.com",
+    "email": "john.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-30T08:47:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT564",
-    "email": "sarah.lee@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-19T11:19:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT565",
-    "email": "jane.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-23T10:53:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT566",
-    "email": "david.white@company.com",
+    "email": "john.thompson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-14T02:24:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT567",
-    "email": "jane.miller@company.com",
+    "email": "jane.lee@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-18T21:28:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT568",
-    "email": "john.martin@company.com",
+    "email": "sarah.moore@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-14T00:21:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT569",
-    "email": "john.thomas@company.com",
+    "email": "sarah.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-30T05:47:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT570",
-    "email": "robert.miller@company.com",
+    "email": "john.clark@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-06T03:44:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT571",
-    "email": "jane.smith@company.com",
+    "email": "john.white@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-11T07:17:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT572",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-20T05:34:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT573",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-04T02:56:16",
     "event_type": "login"
   },
   {
     "event_id": "EVT574",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-04T17:20:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT575",
-    "email": "jane.williams@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-06T11:22:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT576",
-    "email": "john.walker@company.com",
+    "email": "emily.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-24T05:22:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT577",
-    "email": "emily.smith@company.com",
+    "email": "emily.robinson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-13T06:30:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT578",
-    "email": "michael.robinson@company.com",
+    "email": "john.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-10T03:42:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT579",
-    "email": "john.thomas@company.com",
+    "email": "john.moore@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-12T00:56:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT580",
-    "email": "john.williams@company.com",
+    "email": "john.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-25T21:12:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT581",
-    "email": "michael.williams@company.com",
+    "email": "michael.moore@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-30T09:37:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT582",
-    "email": "david.clark@company.com",
+    "email": "david.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-09T21:22:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT583",
-    "email": "john.martin@company.com",
+    "email": "emily.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-26T13:35:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT584",
-    "email": "david.smith@company.com",
+    "email": "jane.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-05T06:58:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT585",
-    "email": "john.anderson@company.com",
+    "email": "robert.walker@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-14T11:05:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT586",
-    "email": "john.moore@company.com",
+    "email": "sarah.wilson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-04T02:23:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT587",
-    "email": "jane.williams@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-19T05:11:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT588",
-    "email": "jane.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-22T10:54:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT589",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-21T07:03:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT590",
-    "email": "sarah.robinson@company.com",
+    "email": "john.harris@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-23T07:05:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT591",
-    "email": "john.brown@company.com",
+    "email": "sarah.davis@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-14T15:29:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT592",
-    "email": "david.wilson@company.com",
+    "email": "david.moore@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-28T22:53:39",
     "event_type": "login"
@@ -4152,63 +4152,63 @@
   },
   {
     "event_id": "EVT594",
-    "email": "jane.brown@company.com",
+    "email": "john.davis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-12T05:38:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT595",
-    "email": "john.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-26T15:58:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT596",
-    "email": "michael.hall@company.com",
+    "email": "john.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-30T11:41:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT597",
-    "email": "david.lee@company.com",
+    "email": "sarah.clark@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-01T21:01:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT598",
-    "email": "robert.harris@company.com",
+    "email": "robert.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-11T01:59:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT599",
-    "email": "john.davis@company.com",
+    "email": "david.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-28T23:05:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT600",
-    "email": "john.hall@company.com",
+    "email": "priya.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-15T13:17:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT601",
-    "email": "sarah.taylor@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-20T20:17:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT602",
-    "email": "david.johnson@company.com",
+    "email": "david.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-19T02:27:01",
     "event_type": "login"
@@ -4222,140 +4222,140 @@
   },
   {
     "event_id": "EVT604",
-    "email": "michael.harris@company.com",
+    "email": "sarah.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-15T09:13:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT605",
-    "email": "emily.williams@company.com",
+    "email": "john.white@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-30T20:54:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT606",
-    "email": "john.perez@company.com",
+    "email": "robert.anderson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-13T09:34:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT607",
-    "email": "sarah.williams@company.com",
+    "email": "john.white@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-22T00:17:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT608",
-    "email": "sarah.smith@company.com",
+    "email": "sarah.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-24T03:22:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT609",
-    "email": "jane.smith@company.com",
+    "email": "robert.perez@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-09T17:42:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT610",
-    "email": "john.jackson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-23T05:02:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT611",
-    "email": "michael.clark@company.com",
+    "email": "john.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-27T09:07:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT612",
-    "email": "michael.perez@company.com",
+    "email": "sarah.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-28T07:33:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT613",
-    "email": "david.johnson@company.com",
+    "email": "david.martin@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-01T00:50:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT614",
-    "email": "john.moore@company.com",
+    "email": "john.martin@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-17T12:41:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT615",
-    "email": "john.robinson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-21T05:45:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT616",
-    "email": "john.robinson@company.com",
+    "email": "michael.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-22T20:43:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT617",
-    "email": "john.harris@company.com",
+    "email": "john.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-16T20:26:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT618",
-    "email": "jane.smith@company.com",
+    "email": "john.clark@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-03T23:16:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT619",
-    "email": "sarah.white@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-04T21:39:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT620",
-    "email": "john.jones@company.com",
+    "email": "john.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-12T05:18:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT621",
-    "email": "david.smith@company.com",
+    "email": "jane.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-20T21:13:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT622",
-    "email": "david.perez@company.com",
+    "email": "jane.brown@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-11T11:55:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT623",
-    "email": "john.williams@company.com",
+    "email": "john.martin@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-15T13:41:34",
     "event_type": "login"
@@ -4369,882 +4369,882 @@
   },
   {
     "event_id": "EVT625",
-    "email": "john.robinson@company.com",
+    "email": "emily.thomas@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-10T17:27:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT626",
-    "email": "john.miller@company.com",
+    "email": "michael.taylor@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-10T01:03:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT627",
-    "email": "jane.brown@company.com",
+    "email": "david.davis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-20T07:39:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT628",
-    "email": "michael.smith@company.com",
+    "email": "john.thomas@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-05T00:18:13",
     "event_type": "login"
   },
   {
     "event_id": "EVT629",
-    "email": "jane.lee@company.com",
+    "email": "john.white@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-19T06:07:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT630",
-    "email": "robert.lee@company.com",
+    "email": "priya.anderson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-05T08:11:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT631",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-28T03:05:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT632",
-    "email": "jane.williams@company.com",
+    "email": "sarah.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-06-05T22:02:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT633",
-    "email": "john.thompson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-17T14:26:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT634",
-    "email": "john.brown@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-09T11:49:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT635",
-    "email": "david.moore@company.com",
+    "email": "john.moore@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-07T16:31:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT636",
-    "email": "john.hall@company.com",
+    "email": "john.perez@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-10T02:33:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT637",
-    "email": "john.anderson@company.com",
+    "email": "david.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-01T09:03:39",
     "event_type": "login"
   },
   {
     "event_id": "EVT638",
-    "email": "david.taylor@company.com",
+    "email": "john.walker@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-03T21:24:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT639",
-    "email": "john.martin@company.com",
+    "email": "john.moore@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-23T12:19:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT640",
-    "email": "sarah.harris@company.com",
+    "email": "john.thomas@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-16T15:28:52",
     "event_type": "login"
   },
   {
     "event_id": "EVT641",
-    "email": "john.smith@company.com",
+    "email": "john.wilson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-26T19:32:09",
     "event_type": "login"
   },
   {
     "event_id": "EVT642",
-    "email": "sarah.hall@company.com",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-26T00:33:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT643",
-    "email": "david.anderson@company.com",
+    "email": "john.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-01T08:01:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT644",
-    "email": "john.smith@company.com",
+    "email": "john.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-22T19:22:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT645",
-    "email": "priya.smith@company.com",
+    "email": "robert.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-26T23:18:15",
     "event_type": "login"
   },
   {
     "event_id": "EVT646",
-    "email": "john.robinson@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-02T09:17:30",
     "event_type": "login"
   },
   {
     "event_id": "EVT647",
-    "email": "robert.brown@company.com",
+    "email": "emily.hall@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-20T01:54:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT648",
-    "email": "jane.perez@company.com",
+    "email": "michael.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-25T02:10:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT649",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-21T13:25:51",
     "event_type": "login"
   },
   {
     "event_id": "EVT650",
-    "email": "michael.johnson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-15T16:23:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT651",
-    "email": "john.brown@company.com",
+    "email": "david.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-17T12:01:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT652",
-    "email": "jane.hall@company.com",
+    "email": "michael.wilson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-11T17:17:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT653",
-    "email": "john.johnson@company.com",
+    "email": "emily.williams@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-19T07:25:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT654",
-    "email": "jane.anderson@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-01T00:05:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT655",
-    "email": "john.lee@company.com",
+    "email": "robert.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-06T00:37:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT656",
-    "email": "sarah.johnson@company.com",
+    "email": "michael.robinson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-13T02:56:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT657",
-    "email": "john.white@company.com",
+    "email": "john.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-09T02:25:57",
     "event_type": "login"
   },
   {
     "event_id": "EVT658",
-    "email": "john.thomas@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-25T08:51:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT659",
-    "email": "priya.jones@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-01T07:38:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT660",
-    "email": "robert.walker@company.com",
+    "email": "john.brown@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-23T05:39:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT661",
-    "email": "jane.thompson@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-10T09:41:53",
     "event_type": "login"
   },
   {
     "event_id": "EVT662",
-    "email": "john.white@company.com",
+    "email": "john.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-15T21:34:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT663",
-    "email": "emily.lee@company.com",
+    "email": "john.anderson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-11T14:10:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT664",
-    "email": "john.walker@company.com",
+    "email": "john.hall@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-24T23:18:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT665",
-    "email": "jane.wilson@company.com",
+    "email": "jane.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-05T16:15:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT666",
-    "email": "robert.smith@company.com",
+    "email": "john.moore@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-15T21:38:20",
     "event_type": "login"
   },
   {
     "event_id": "EVT667",
-    "email": "michael.harris@company.com",
+    "email": "sarah.brown@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-19T08:58:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT668",
-    "email": "jane.thompson@company.com",
+    "email": "jane.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-02-27T23:33:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT669",
-    "email": "john.wilson@company.com",
+    "email": "michael.white@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-02-27T17:45:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT670",
-    "email": "david.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-19T01:54:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT671",
-    "email": "john.jackson@company.com",
+    "email": "sarah.smith@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-24T12:54:49",
     "event_type": "login"
   },
   {
     "event_id": "EVT672",
-    "email": "john.lewis@company.com",
+    "email": "david.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-18T04:30:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT673",
-    "email": "john.harris@company.com",
+    "email": "emily.martin@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-25T03:00:44",
     "event_type": "login"
   },
   {
     "event_id": "EVT674",
-    "email": "michael.johnson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-02T17:17:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT675",
-    "email": "robert.thomas@company.com",
+    "email": "john.jackson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-04T14:02:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT676",
-    "email": "emily.perez@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-25T18:23:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT677",
-    "email": "john.clark@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-08T22:12:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT678",
-    "email": "david.walker@company.com",
+    "email": "john.clark@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-02T07:22:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT679",
-    "email": "john.thomas@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-02-24T20:03:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT680",
-    "email": "david.thompson@company.com",
+    "email": "david.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-25T06:54:05",
     "event_type": "login"
   },
   {
     "event_id": "EVT681",
-    "email": "emily.jackson@company.com",
+    "email": "john.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-29T04:17:33",
     "event_type": "login"
   },
   {
     "event_id": "EVT682",
-    "email": "david.clark@company.com",
+    "email": "david.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-17T20:16:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT683",
-    "email": "john.harris@company.com",
+    "email": "john.jones@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-30T22:59:25",
     "event_type": "login"
   },
   {
     "event_id": "EVT684",
-    "email": "jane.clark@company.com",
+    "email": "john.lewis@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-04-25T21:59:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT685",
-    "email": "robert.jones@company.com",
+    "email": "john.brown@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-16T06:09:28",
     "event_type": "login"
   },
   {
     "event_id": "EVT686",
-    "email": "priya.davis@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-17T01:43:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT687",
-    "email": "john.smith@company.com",
+    "email": "john.lee@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-11T18:04:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT688",
-    "email": "sarah.taylor@company.com",
+    "email": "jane.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-19T05:12:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT689",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-10T15:30:00",
     "event_type": "login"
   },
   {
     "event_id": "EVT690",
-    "email": "robert.taylor@company.com",
+    "email": "robert.martin@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-24T04:48:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT691",
-    "email": "john.taylor@company.com",
+    "email": "john.miller@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-21T17:03:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT692",
-    "email": "john.taylor@company.com",
+    "email": "john.miller@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-03T02:14:54",
     "event_type": "login"
   },
   {
     "event_id": "EVT693",
-    "email": "emily.jones@company.com",
+    "email": "john.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-22T13:37:32",
     "event_type": "login"
   },
   {
     "event_id": "EVT694",
-    "email": "robert.hall@company.com",
+    "email": "john.williams@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-26T10:25:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT695",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-02T16:22:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT696",
-    "email": "david.jackson@company.com",
+    "email": "sarah.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-19T02:05:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT697",
-    "email": "emily.thomas@company.com",
+    "email": "emily.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-25T12:30:47",
     "event_type": "login"
   },
   {
     "event_id": "EVT698",
-    "email": "john.wilson@company.com",
+    "email": "david.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-15T16:19:50",
     "event_type": "login"
   },
   {
     "event_id": "EVT699",
-    "email": "jane.williams@company.com",
+    "email": "sarah.taylor@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-19T07:33:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT700",
-    "email": "sarah.wilson@company.com",
+    "email": "sarah.jones@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-04T06:16:26",
     "event_type": "login"
   },
   {
     "event_id": "EVT701",
-    "email": "emily.robinson@company.com",
+    "email": "jane.miller@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-22T19:08:19",
     "event_type": "login"
   },
   {
     "event_id": "EVT702",
-    "email": "jane.davis@company.com",
+    "email": "john.johnson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-01T05:23:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT703",
-    "email": "david.thompson@company.com",
+    "email": "david.hall@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-25T14:45:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT704",
-    "email": "john.johnson@company.com",
+    "email": "michael.clark@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-06T12:14:38",
     "event_type": "login"
   },
   {
     "event_id": "EVT705",
-    "email": "john.white@company.com",
+    "email": "john.lee@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-12T17:47:29",
     "event_type": "login"
   },
   {
     "event_id": "EVT706",
-    "email": "sarah.moore@company.com",
+    "email": "michael.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-16T17:21:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT707",
-    "email": "john.johnson@company.com",
+    "email": "robert.davis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-03T11:16:06",
     "event_type": "login"
   },
   {
     "event_id": "EVT708",
-    "email": "john.thomas@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-25T18:16:40",
     "event_type": "login"
   },
   {
     "event_id": "EVT709",
-    "email": "sarah.moore@company.com",
+    "email": "michael.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-15T16:16:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT710",
-    "email": "emily.jones@company.com",
+    "email": "john.davis@company.com",
     "platform": "Okta",
     "timestamp": "2026-06-19T13:51:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT711",
-    "email": "sarah.hall@company.com",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-27T23:49:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT712",
-    "email": "john.lewis@company.com",
+    "email": "david.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-04T15:34:21",
     "event_type": "login"
   },
   {
     "event_id": "EVT713",
-    "email": "john.jackson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-06-15T14:51:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT714",
-    "email": "john.miller@company.com",
+    "email": "sarah.jackson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-26T02:14:12",
     "event_type": "login"
   },
   {
     "event_id": "EVT715",
-    "email": "john.anderson@company.com",
+    "email": "jane.johnson@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-08T10:41:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT716",
-    "email": "john.moore@company.com",
+    "email": "john.johnson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-03T17:17:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT717",
-    "email": "jane.smith@company.com",
+    "email": "emily.harris@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-10T03:27:58",
     "event_type": "login"
   },
   {
     "event_id": "EVT718",
-    "email": "emily.johnson@company.com",
+    "email": "john.robinson@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-01T13:05:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT719",
-    "email": "michael.davis@company.com",
+    "email": "jane.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-06T14:42:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT720",
-    "email": "david.moore@company.com",
+    "email": "john.moore@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-01T16:44:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT721",
-    "email": "john.robinson@company.com",
+    "email": "john.williams@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-03-25T14:33:08",
     "event_type": "login"
   },
   {
     "event_id": "EVT722",
-    "email": "john.jackson@company.com",
+    "email": "david.lewis@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-17T03:46:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT723",
-    "email": "robert.moore@company.com",
+    "email": "robert.white@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-24T04:41:48",
     "event_type": "login"
   },
   {
     "event_id": "EVT724",
-    "email": "john.wilson@company.com",
+    "email": "david.jones@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-26T10:06:56",
     "event_type": "login"
   },
   {
     "event_id": "EVT725",
-    "email": "jane.jones@company.com",
+    "email": "john.perez@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-26T22:46:27",
     "event_type": "login"
   },
   {
     "event_id": "EVT726",
-    "email": "john.moore@company.com",
+    "email": "john.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-25T02:10:59",
     "event_type": "login"
   },
   {
     "event_id": "EVT727",
-    "email": "david.martin@company.com",
+    "email": "david.robinson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-04-06T09:20:24",
     "event_type": "login"
   },
   {
     "event_id": "EVT728",
-    "email": "robert.walker@company.com",
+    "email": "john.brown@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-11T21:25:18",
     "event_type": "login"
   },
   {
     "event_id": "EVT729",
-    "email": "david.harris@company.com",
+    "email": "john.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-19T16:50:07",
     "event_type": "login"
   },
   {
     "event_id": "EVT730",
-    "email": "jane.wilson@company.com",
+    "email": "jane.robinson@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-20T10:25:37",
     "event_type": "login"
   },
   {
     "event_id": "EVT731",
-    "email": "sarah.clark@company.com",
+    "email": "david.perez@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-27T18:28:01",
     "event_type": "login"
   },
   {
     "event_id": "EVT732",
-    "email": "john.davis@company.com",
+    "email": "david.wilson@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-05-27T06:37:55",
     "event_type": "login"
   },
   {
     "event_id": "EVT733",
-    "email": "michael.davis@company.com",
+    "email": "jane.harris@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-24T07:00:46",
     "event_type": "login"
   },
   {
     "event_id": "EVT734",
-    "email": "emily.perez@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Okta",
     "timestamp": "2026-05-07T02:38:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT735",
-    "email": "john.miller@company.com",
+    "email": "robert.wilson@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-05-25T14:42:02",
     "event_type": "login"
   },
   {
     "event_id": "EVT736",
-    "email": "sarah.thompson@company.com",
+    "email": "sarah.miller@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-04-01T06:37:35",
     "event_type": "login"
   },
   {
     "event_id": "EVT737",
-    "email": "jane.miller@company.com",
+    "email": "david.williams@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-31T18:42:42",
     "event_type": "login"
   },
   {
     "event_id": "EVT738",
-    "email": "jane.smith@company.com",
+    "email": "john.clark@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-03-26T21:12:03",
     "event_type": "login"
   },
   {
     "event_id": "EVT739",
-    "email": "jane.smith@company.com",
+    "email": "john.white@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-02-28T02:59:31",
     "event_type": "login"
   },
   {
     "event_id": "EVT740",
-    "email": "sarah.perez@company.com",
+    "email": "john.walker@company.com",
     "platform": "Azure AD",
     "timestamp": "2026-05-17T04:33:04",
     "event_type": "login"
   },
   {
     "event_id": "EVT741",
-    "email": "michael.williams@company.com",
+    "email": "michael.moore@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-23T21:47:34",
     "event_type": "login"
   },
   {
     "event_id": "EVT742",
-    "email": "robert.white@company.com",
+    "email": "john.walker@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-04-12T03:30:11",
     "event_type": "login"
   },
   {
     "event_id": "EVT743",
-    "email": "john.anderson@company.com",
+    "email": "david.taylor@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-03-09T12:29:41",
     "event_type": "login"
   },
   {
     "event_id": "EVT744",
-    "email": "john.brown@company.com",
+    "email": "john.taylor@company.com",
     "platform": "Okta",
     "timestamp": "2026-03-30T06:14:14",
     "event_type": "login"
   },
   {
     "event_id": "EVT745",
-    "email": "david.smith@company.com",
+    "email": "jane.smith@company.com",
     "platform": "AWS IAM",
     "timestamp": "2026-06-13T01:32:22",
     "event_type": "login"
   },
   {
     "event_id": "EVT746",
-    "email": "john.johnson@company.com",
+    "email": "robert.davis@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-03-29T11:43:17",
     "event_type": "login"
   },
   {
     "event_id": "EVT747",
-    "email": "jane.taylor@company.com",
+    "email": "jane.hall@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-07T15:33:36",
     "event_type": "login"
   },
   {
     "event_id": "EVT748",
-    "email": "jane.miller@company.com",
+    "email": "emily.thompson@company.com",
     "platform": "Okta",
     "timestamp": "2026-04-11T08:31:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT749",
-    "email": "robert.robinson@company.com",
+    "email": "jane.smith@company.com",
     "platform": "Salesforce",
     "timestamp": "2026-06-18T02:31:43",
     "event_type": "login"
   },
   {
     "event_id": "EVT750",
-    "email": "michael.williams@company.com",
+    "email": "michael.moore@company.com",
     "platform": "Active Directory",
     "timestamp": "2026-05-25T11:20:03",
     "event_type": "login"

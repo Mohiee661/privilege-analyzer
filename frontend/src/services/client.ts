@@ -1,9 +1,20 @@
 const env = import.meta.env as Record<string, string | undefined>;
 
-export const API_BASE_URL = (env.NEXT_PUBLIC_API_URL ?? env.VITE_API_BASE_URL ?? "/api/v1").replace(
-  /\/$/,
-  "",
-);
+function resolveApiBaseUrl(): string {
+  const raw = env.NEXT_PUBLIC_API_URL ?? env.VITE_API_BASE_URL;
+  if (raw) {
+    const normalized = raw.replace(/\/$/, "");
+    return normalized.endsWith("/api/v1") ? normalized : `${normalized}/api/v1`;
+  }
+
+  if (typeof window === "undefined") {
+    return "http://127.0.0.1:8000/api/v1";
+  }
+
+  return "/api/v1";
+}
+
+export const API_BASE_URL = resolveApiBaseUrl();
 
 export async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${path}`, {

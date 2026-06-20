@@ -1,208 +1,498 @@
 [
   {
     "user_id": "USR001",
-    "name": "John Clark",
-    "email": "john.clark@company.com",
+    "name": "John Smith",
+    "email": "john.smith@company.com",
     "department": "HR",
-    "status": "active",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-02-25T03:55:37"
+    "role": "Contractor",
+    "last_login": "2026-04-11T19:25:38"
   },
   {
     "user_id": "USR002",
-    "name": "Jane Davis",
-    "email": "jane.davis@company.com",
-    "department": "Operations",
-    "status": "active",
+    "name": "John Johnson",
+    "email": "john.johnson@company.com",
+    "department": "HR",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-05-24T02:42:25"
+    "role": "Manager",
+    "last_login": "2026-05-07T14:46:19"
   },
   {
     "user_id": "USR003",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
-    "department": "HR",
-    "status": "active",
+    "name": "John Williams",
+    "email": "john.williams@company.com",
+    "department": "IT",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-03-25T23:02:02"
+    "role": "Support Engineer",
+    "last_login": "2026-02-26T23:22:36"
   },
   {
     "user_id": "USR004",
     "name": "John Brown",
     "email": "john.brown@company.com",
     "department": "Security",
-    "status": "suspended",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Employee",
-    "last_login": "2026-03-25T12:15:25"
+    "last_login": "2026-03-22T14:15:38"
   },
   {
     "user_id": "USR005",
     "name": "John Jones",
     "email": "john.jones@company.com",
     "department": "Operations",
-    "status": "active",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Employee",
-    "last_login": "2026-03-14T09:24:22"
+    "last_login": "2026-05-29T23:55:22"
   },
   {
     "user_id": "USR006",
-    "name": "John Taylor",
-    "email": "john.taylor@company.com",
-    "department": "Security",
-    "status": "active",
+    "name": "John Miller",
+    "email": "john.miller@company.com",
+    "department": "Operations",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Administrator",
-    "last_login": "2026-05-14T23:55:06"
+    "role": "Manager",
+    "last_login": "2026-04-07T19:51:49"
   },
   {
     "user_id": "USR007",
-    "name": "Jane Brown",
-    "email": "jane.brown@company.com",
-    "department": "Operations",
-    "status": "active",
+    "name": "John Davis",
+    "email": "john.davis@company.com",
+    "department": "Security",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Support Engineer",
-    "last_login": "2026-05-14T00:02:40"
+    "role": "Security Analyst",
+    "last_login": "2026-03-09T10:09:45"
   },
   {
     "user_id": "USR008",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
-    "department": "Operations",
-    "status": "active",
+    "name": "John Wilson",
+    "email": "john.wilson@company.com",
+    "department": "HR",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Support Engineer",
-    "last_login": "2026-04-19T05:06:28"
+    "role": "Contractor",
+    "last_login": "2026-05-16T11:23:45"
   },
   {
     "user_id": "USR009",
-    "name": "Jane Anderson",
-    "email": "jane.anderson@company.com",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
     "department": "Operations",
-    "status": "active",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-04-05T23:02:26"
+    "role": "Support Engineer",
+    "last_login": "2026-04-27T10:41:18"
   },
   {
     "user_id": "USR010",
-    "name": "Michael Anderson",
-    "email": "michael.anderson@company.com",
-    "department": "IT",
-    "status": "active",
+    "name": "John Taylor",
+    "email": "john.taylor@company.com",
+    "department": "Security",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Administrator",
-    "last_login": "2026-06-14T06:53:01"
+    "last_login": "2026-05-08T00:36:37"
   },
   {
     "user_id": "USR011",
-    "name": "Michael Smith",
-    "email": "michael.smith@company.com",
-    "department": "Security",
-    "status": "active",
+    "name": "John Thomas",
+    "email": "john.thomas@company.com",
+    "department": "Sales",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Administrator",
-    "last_login": "2026-06-04T13:32:18"
+    "role": "Employee",
+    "last_login": "2026-05-12T14:12:41"
   },
   {
     "user_id": "USR012",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-05-29T07:15:36"
-  },
-  {
-    "user_id": "USR013",
-    "name": "John Harris",
-    "email": "john.harris@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-04-22T00:12:22"
-  },
-  {
-    "user_id": "USR014",
     "name": "John Moore",
     "email": "john.moore@company.com",
     "department": "IT",
-    "status": "active",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Administrator",
-    "last_login": "2026-05-30T04:54:43"
+    "last_login": "2026-02-22T01:24:01"
+  },
+  {
+    "user_id": "USR013",
+    "name": "John Jackson",
+    "email": "john.jackson@company.com",
+    "department": "HR",
+    "status": "disabled",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-05-26T16:09:17"
+  },
+  {
+    "user_id": "USR014",
+    "name": "John Martin",
+    "email": "john.martin@company.com",
+    "department": "Finance",
+    "status": "disabled",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-04-28T21:37:47"
   },
   {
     "user_id": "USR015",
-    "name": "Jane Jackson",
-    "email": "jane.jackson@company.com",
-    "department": "Security",
-    "status": "active",
+    "name": "John Lee",
+    "email": "john.lee@company.com",
+    "department": "IT",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Employee",
-    "last_login": "2026-04-02T09:07:22"
+    "last_login": "2026-05-07T12:28:15"
   },
   {
     "user_id": "USR016",
-    "name": "John White",
-    "email": "john.white@company.com",
-    "department": "Engineering",
-    "status": "active",
+    "name": "John Perez",
+    "email": "john.perez@company.com",
+    "department": "HR",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-03-27T20:07:29"
+    "role": "Manager",
+    "last_login": "2026-02-23T02:14:23"
   },
   {
     "user_id": "USR017",
-    "name": "Michael Wilson",
-    "email": "michael.wilson@company.com",
-    "department": "Finance",
-    "status": "active",
+    "name": "John Thompson",
+    "email": "john.thompson@company.com",
+    "department": "IT",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Employee",
-    "last_login": "2026-05-03T16:42:59"
+    "last_login": "2026-04-15T18:50:55"
   },
   {
     "user_id": "USR018",
-    "name": "Jane Lee",
-    "email": "jane.lee@company.com",
+    "name": "John White",
+    "email": "john.white@company.com",
     "department": "Engineering",
-    "status": "active",
+    "status": "disabled",
     "platform": "Active Directory",
-    "role": "Developer",
-    "last_login": "2026-02-19T03:37:01"
+    "role": "Employee",
+    "last_login": "2026-02-22T12:03:52"
   },
   {
     "user_id": "USR019",
-    "name": "Michael Moore",
-    "email": "michael.moore@company.com",
-    "department": "HR",
-    "status": "active",
+    "name": "John Harris",
+    "email": "john.harris@company.com",
+    "department": "Sales",
+    "status": "disabled",
     "platform": "Active Directory",
     "role": "Contractor",
-    "last_login": "2026-03-14T15:30:48"
+    "last_login": "2026-03-14T06:16:31"
   },
   {
     "user_id": "USR020",
+    "name": "John Clark",
+    "email": "john.clark@company.com",
+    "department": "HR",
+    "status": "disabled",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-04-17T00:12:07"
+  },
+  {
+    "user_id": "USR021",
+    "name": "John Lewis",
+    "email": "john.lewis@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-06-17T10:09:06"
+  },
+  {
+    "user_id": "USR022",
+    "name": "John Robinson",
+    "email": "john.robinson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-03-08T18:17:40"
+  },
+  {
+    "user_id": "USR023",
+    "name": "John Walker",
+    "email": "john.walker@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-05-04T22:59:16"
+  },
+  {
+    "user_id": "USR024",
+    "name": "John Hall",
+    "email": "john.hall@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-05-30T10:24:11"
+  },
+  {
+    "user_id": "USR025",
     "name": "Jane Smith",
     "email": "jane.smith@company.com",
     "department": "Finance",
     "status": "active",
     "platform": "Active Directory",
     "role": "Contractor",
+    "last_login": "2026-03-08T03:25:14"
+  },
+  {
+    "user_id": "USR026",
+    "name": "Jane Johnson",
+    "email": "jane.johnson@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Contractor",
+    "last_login": "2026-06-06T21:54:13"
+  },
+  {
+    "user_id": "USR027",
+    "name": "Jane Williams",
+    "email": "jane.williams@company.com",
+    "department": "HR",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Contractor",
+    "last_login": "2026-04-13T15:14:17"
+  },
+  {
+    "user_id": "USR028",
+    "name": "Jane Brown",
+    "email": "jane.brown@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Support Engineer",
+    "last_login": "2026-04-29T17:07:26"
+  },
+  {
+    "user_id": "USR029",
+    "name": "Jane Jones",
+    "email": "jane.jones@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Administrator",
+    "last_login": "2026-05-08T06:55:09"
+  },
+  {
+    "user_id": "USR030",
+    "name": "Jane Miller",
+    "email": "jane.miller@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-03-05T17:09:50"
+  },
+  {
+    "user_id": "USR031",
+    "name": "Jane White",
+    "email": "jane.white@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-04-08T20:23:03"
+  },
+  {
+    "user_id": "USR032",
+    "name": "Jane Thomas",
+    "email": "jane.thomas@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Support Engineer",
+    "last_login": "2026-02-22T20:07:49"
+  },
+  {
+    "user_id": "USR033",
+    "name": "Michael Smith",
+    "email": "michael.smith@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Administrator",
+    "last_login": "2026-03-23T00:11:44"
+  },
+  {
+    "user_id": "USR034",
+    "name": "Jane Harris",
+    "email": "jane.harris@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Support Engineer",
+    "last_login": "2026-04-09T22:42:23"
+  },
+  {
+    "user_id": "USR035",
+    "name": "Jane Anderson",
+    "email": "jane.anderson@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-06-11T08:25:03"
+  },
+  {
+    "user_id": "USR036",
+    "name": "Jane Davis",
+    "email": "jane.davis@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Contractor",
+    "last_login": "2026-05-10T02:34:07"
+  },
+  {
+    "user_id": "USR037",
+    "name": "Jane Hall",
+    "email": "jane.hall@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Contractor",
+    "last_login": "2026-04-14T23:22:03"
+  },
+  {
+    "user_id": "USR038",
+    "name": "Michael Taylor",
+    "email": "michael.taylor@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-04-11T16:37:54"
+  },
+  {
+    "user_id": "USR039",
+    "name": "Jane Perez",
+    "email": "jane.perez@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-02-21T14:50:33"
+  },
+  {
+    "user_id": "USR040",
+    "name": "Michael Brown",
+    "email": "michael.brown@company.com",
+    "department": "Operations",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-03-27T12:03:12"
+  },
+  {
+    "user_id": "USR041",
+    "name": "Jane Lee",
+    "email": "jane.lee@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Developer",
+    "last_login": "2026-05-09T19:35:31"
+  },
+  {
+    "user_id": "USR042",
+    "name": "Michael Miller",
+    "email": "michael.miller@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-04-08T18:21:50"
+  },
+  {
+    "user_id": "USR043",
+    "name": "Jane Clark",
+    "email": "jane.clark@company.com",
+    "department": "Sales",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-04-26T15:42:21"
+  },
+  {
+    "user_id": "USR044",
+    "name": "Michael Anderson",
+    "email": "michael.anderson@company.com",
+    "department": "IT",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Administrator",
+    "last_login": "2026-05-15T22:18:18"
+  },
+  {
+    "user_id": "USR045",
+    "name": "Jane Wilson",
+    "email": "jane.wilson@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Contractor",
+    "last_login": "2026-03-06T02:36:57"
+  },
+  {
+    "user_id": "USR046",
+    "name": "Michael Davis",
+    "email": "michael.davis@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-05-16T17:11:12"
+  },
+  {
+    "user_id": "USR047",
+    "name": "Michael Johnson",
+    "email": "michael.johnson@company.com",
+    "department": "Finance",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Employee",
+    "last_login": "2026-02-20T03:37:01"
+  },
+  {
+    "user_id": "USR048",
+    "name": "Jane Taylor",
+    "email": "jane.taylor@company.com",
+    "department": "Security",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
+    "last_login": "2026-03-14T15:30:48"
+  },
+  {
+    "user_id": "USR049",
+    "name": "Michael Williams",
+    "email": "michael.williams@company.com",
+    "department": "Engineering",
+    "status": "active",
+    "platform": "Active Directory",
+    "role": "Manager",
     "last_login": "2026-05-16T19:46:48"
   },
   {
-    "user_id": "USR021",
-    "name": "Jane Clark",
-    "email": "jane.clark@company.com",
+    "user_id": "USR050",
+    "name": "Jane Lewis",
+    "email": "jane.lewis@company.com",
     "department": "Sales",
     "status": "active",
     "platform": "Active Directory",
@@ -210,29 +500,29 @@
     "last_login": "2026-05-09T22:21:50"
   },
   {
-    "user_id": "USR022",
-    "name": "John Thompson",
-    "email": "john.thompson@company.com",
-    "department": "IT",
+    "user_id": "USR051",
+    "name": "Jane Jackson",
+    "email": "jane.jackson@company.com",
+    "department": "Security",
     "status": "active",
     "platform": "Active Directory",
     "role": "Employee",
     "last_login": "2026-03-10T10:30:13"
   },
   {
-    "user_id": "USR023",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "department": "Engineering",
+    "user_id": "USR052",
+    "name": "Michael Thomas",
+    "email": "michael.thomas@company.com",
+    "department": "HR",
     "status": "active",
     "platform": "Active Directory",
-    "role": "Administrator",
+    "role": "Contractor",
     "last_login": "2026-03-07T07:00:23"
   },
   {
-    "user_id": "USR024",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
+    "user_id": "USR053",
+    "name": "Michael Moore",
+    "email": "michael.moore@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Active Directory",
@@ -240,363 +530,73 @@
     "last_login": "2026-06-06T19:04:04"
   },
   {
-    "user_id": "USR025",
-    "name": "Michael Johnson",
-    "email": "michael.johnson@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-04-30T09:23:38"
-  },
-  {
-    "user_id": "USR026",
-    "name": "Jane White",
-    "email": "jane.white@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-03-13T07:52:30"
-  },
-  {
-    "user_id": "USR027",
-    "name": "Jane Thompson",
-    "email": "jane.thompson@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-03-25T03:15:57"
-  },
-  {
-    "user_id": "USR028",
-    "name": "Jane Robinson",
-    "email": "jane.robinson@company.com",
-    "department": "Finance",
-    "status": "suspended",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-03-21T19:42:04"
-  },
-  {
-    "user_id": "USR029",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-05-24T08:32:22"
-  },
-  {
-    "user_id": "USR030",
+    "user_id": "USR054",
     "name": "Michael Jones",
     "email": "michael.jones@company.com",
     "department": "Engineering",
     "status": "active",
     "platform": "Active Directory",
     "role": "Developer",
-    "last_login": "2026-03-29T23:33:48"
+    "last_login": "2026-04-30T09:23:38"
   },
   {
-    "user_id": "USR031",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "department": "IT",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Support Engineer",
-    "last_login": "2026-05-14T20:13:51"
-  },
-  {
-    "user_id": "USR032",
-    "name": "John Hall",
-    "email": "john.hall@company.com",
-    "department": "Sales",
-    "status": "suspended",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-05-21T05:24:01"
-  },
-  {
-    "user_id": "USR033",
-    "name": "John Robinson",
-    "email": "john.robinson@company.com",
+    "user_id": "USR055",
+    "name": "Jane Thompson",
+    "email": "jane.thompson@company.com",
     "department": "Operations",
     "status": "active",
     "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-03-20T16:00:26"
-  },
-  {
-    "user_id": "USR034",
-    "name": "Michael Davis",
-    "email": "michael.davis@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-26T08:10:13"
-  },
-  {
-    "user_id": "USR035",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "department": "Finance",
-    "status": "active",
-    "platform": "Active Directory",
     "role": "Contractor",
-    "last_login": "2026-04-11T17:31:22"
+    "last_login": "2026-03-13T07:52:30"
   },
   {
-    "user_id": "USR036",
-    "name": "Jane Martin",
-    "email": "jane.martin@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-04-01T01:36:00"
-  },
-  {
-    "user_id": "USR037",
-    "name": "Jane Taylor",
-    "email": "jane.taylor@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-01T13:53:16"
-  },
-  {
-    "user_id": "USR038",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-06-10T23:16:21"
-  },
-  {
-    "user_id": "USR039",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
-    "department": "Security",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Security Analyst",
-    "last_login": "2026-03-07T11:16:28"
-  },
-  {
-    "user_id": "USR040",
-    "name": "Jane Thomas",
-    "email": "jane.thomas@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Support Engineer",
-    "last_login": "2026-05-19T17:52:41"
-  },
-  {
-    "user_id": "USR041",
-    "name": "Jane Miller",
-    "email": "jane.miller@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-10T16:38:17"
-  },
-  {
-    "user_id": "USR042",
-    "name": "Michael Taylor",
-    "email": "michael.taylor@company.com",
-    "department": "Finance",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-05-15T12:36:41"
-  },
-  {
-    "user_id": "USR043",
-    "name": "John Perez",
-    "email": "john.perez@company.com",
-    "department": "HR",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-10T10:18:25"
-  },
-  {
-    "user_id": "USR044",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "department": "Sales",
-    "status": "suspended",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-03-19T01:11:22"
-  },
-  {
-    "user_id": "USR045",
-    "name": "Jane Lewis",
-    "email": "jane.lewis@company.com",
-    "department": "Sales",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-06-11T07:20:06"
-  },
-  {
-    "user_id": "USR046",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "department": "HR",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-06-01T22:45:46"
-  },
-  {
-    "user_id": "USR047",
-    "name": "Jane Perez",
-    "email": "jane.perez@company.com",
-    "department": "Operations",
-    "status": "suspended",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-06-14T02:54:41"
-  },
-  {
-    "user_id": "USR048",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
-    "department": "Security",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-05-11T07:27:00"
-  },
-  {
-    "user_id": "USR049",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-05-04T00:01:51"
-  },
-  {
-    "user_id": "USR050",
-    "name": "Jane Harris",
-    "email": "jane.harris@company.com",
-    "department": "IT",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Support Engineer",
-    "last_login": "2026-03-21T02:52:28"
-  },
-  {
-    "user_id": "USR051",
+    "user_id": "USR056",
     "name": "Jane Walker",
     "email": "jane.walker@company.com",
     "department": "Security",
     "status": "active",
     "platform": "Active Directory",
     "role": "Manager",
-    "last_login": "2026-03-12T09:17:37"
-  },
-  {
-    "user_id": "USR052",
-    "name": "Michael Brown",
-    "email": "michael.brown@company.com",
-    "department": "Operations",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-02-24T22:18:46"
-  },
-  {
-    "user_id": "USR053",
-    "name": "Michael Williams",
-    "email": "michael.williams@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-06-02T01:18:52"
-  },
-  {
-    "user_id": "USR054",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "department": "IT",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Employee",
-    "last_login": "2026-02-21T00:55:40"
-  },
-  {
-    "user_id": "USR055",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
-    "department": "HR",
-    "status": "disabled",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-26T11:23:41"
-  },
-  {
-    "user_id": "USR056",
-    "name": "Michael Miller",
-    "email": "michael.miller@company.com",
-    "department": "Engineering",
-    "status": "active",
-    "platform": "Active Directory",
-    "role": "Manager",
-    "last_login": "2026-04-25T04:35:36"
+    "last_login": "2026-03-25T03:15:57"
   },
   {
     "user_id": "USR057",
-    "name": "Jane Hall",
-    "email": "jane.hall@company.com",
-    "department": "Operations",
+    "name": "Michael Wilson",
+    "email": "michael.wilson@company.com",
+    "department": "Finance",
     "status": "active",
     "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-06-04T11:29:44"
+    "role": "Employee",
+    "last_login": "2026-03-21T19:42:04"
   },
   {
     "user_id": "USR058",
     "name": "Jane Moore",
     "email": "jane.moore@company.com",
     "department": "Operations",
-    "status": "suspended",
+    "status": "active",
     "platform": "Active Directory",
     "role": "Support Engineer",
-    "last_login": "2026-02-22T19:07:47"
+    "last_login": "2026-05-24T08:32:22"
   },
   {
     "user_id": "USR059",
-    "name": "Michael Thomas",
-    "email": "michael.thomas@company.com",
+    "name": "Jane Martin",
+    "email": "jane.martin@company.com",
     "department": "HR",
     "status": "active",
     "platform": "Active Directory",
     "role": "Contractor",
-    "last_login": "2026-03-05T14:05:04"
+    "last_login": "2026-03-29T23:33:48"
   },
   {
     "user_id": "USR060",
-    "name": "Jane Wilson",
-    "email": "jane.wilson@company.com",
+    "name": "Jane Robinson",
+    "email": "jane.robinson@company.com",
     "department": "Finance",
     "status": "active",
     "platform": "Active Directory",
-    "role": "Contractor",
-    "last_login": "2026-03-04T20:55:14"
+    "role": "Employee",
+    "last_login": "2026-05-14T20:13:51"
   }
 ]

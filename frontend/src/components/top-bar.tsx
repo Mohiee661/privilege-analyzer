@@ -1,6 +1,19 @@
+import { useNavigate } from "@tanstack/react-router";
+import { useState } from "react";
 import { Bell, Command, Plus, Search, Sun } from "lucide-react";
 
 export function TopBar() {
+  const navigate = useNavigate();
+  const [darkMode, setDarkMode] = useState(
+    () => typeof document !== "undefined" && document.documentElement.classList.contains("dark"),
+  );
+
+  const toggleTheme = () => {
+    const next = !document.documentElement.classList.contains("dark");
+    document.documentElement.classList.toggle("dark", next);
+    setDarkMode(next);
+  };
+
   return (
     <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b border-border bg-background/80 px-4 backdrop-blur">
       <div className="relative flex-1 max-w-2xl">
@@ -16,14 +29,24 @@ export function TopBar() {
       </div>
 
       <div className="ml-auto flex items-center gap-1.5">
-        <button className="inline-flex h-9 items-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90">
+        <button
+          onClick={() => navigate({ to: "/risk-center" })}
+          className="inline-flex h-9 items-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+        >
           <Plus className="size-4" /> Quick Action
         </button>
-        <button className="relative inline-flex size-9 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:text-foreground">
+        <button
+          onClick={() => navigate({ to: "/findings" })}
+          className="relative inline-flex size-9 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:text-foreground"
+        >
           <Bell className="size-4" />
           <span className="absolute right-2 top-2 size-1.5 rounded-full bg-[var(--risk-critical)]" />
         </button>
-        <button className="inline-flex size-9 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:text-foreground">
+        <button
+          onClick={toggleTheme}
+          className="inline-flex size-9 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:text-foreground"
+          aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+        >
           <Sun className="size-4" />
         </button>
         <div className="ml-1 flex items-center gap-2 rounded-md border border-border bg-card pl-1 pr-2.5 py-1">

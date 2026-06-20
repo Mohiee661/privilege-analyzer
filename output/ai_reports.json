@@ -1,314 +1,304 @@
 [
   {
     "person_id": "PID074",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "summary": "John Brown's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
     "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID075",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID082",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID083",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID084",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID089",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID091",
-    "risk_score": 80,
-    "risk_level": "HIGH",
-    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID057",
-    "risk_score": 70,
-    "risk_level": "HIGH",
-    "summary": "The identity retains administrative access across multiple platforms. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID090",
-    "risk_score": 70,
-    "risk_level": "HIGH",
-    "summary": "The identity retains administrative access across multiple platforms. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID061",
-    "risk_score": 55,
-    "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID076",
-    "risk_score": 55,
-    "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Revoke admin privileges on AWS and Azure",
+      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
+      "Conduct a thorough review of John Brown's access and privileges",
+      "Implement a consistent offboarding process to ensure timely removal of access"
     ]
   },
   {
     "person_id": "PID080",
-    "risk_score": 55,
-    "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "summary": "John Johnson's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistencies in account status across platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
     "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Revoke admin privileges on unnecessary platforms",
+      "Synchronize account status across all platforms",
+      "Remove or limit access to unused platforms",
+      "Conduct a thorough review of John Johnson's access and permissions"
     ]
   },
   {
     "person_id": "PID081",
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "summary": "John Jones' identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistencies in account status across platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
+      "Conduct a thorough review of John Jones' access and permissions",
+      "Implement a consistent offboarding process to ensure timely removal of access"
+    ]
+  },
+  {
+    "person_id": "PID089",
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "summary": "John Smith's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
+      "Conduct a thorough review of John Smith's access and privileges",
+      "Implement a consistent offboarding process to ensure timely removal of access"
+    ]
+  },
+  {
+    "person_id": "PID095",
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "summary": "John Williams' identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
+      "Conduct a thorough review of John Williams' access and permissions",
+      "Implement a consistent offboarding process to ensure timely removal of access"
+    ]
+  },
+  {
+    "person_id": "PID073",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Anderson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Disable John Anderson's accounts on AWS, Azure, Okta, and Salesforce to match the disabled status in AD",
+      "Review and limit platform exposure by removing unnecessary access and accounts"
+    ]
+  },
+  {
+    "person_id": "PID076",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Davis's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges from unnecessary platforms",
+      "Disable John Davis's account in all platforms where it's not required",
+      "Conduct a thorough review of access controls and permissions",
+      "Implement a robust offboarding process to ensure timely deprovisioning of accounts"
+    ]
+  },
+  {
+    "person_id": "PID079",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Jackson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Disable John Jackson's accounts on all platforms where he is no longer active",
+      "Review and update access controls and offboarding processes to prevent similar gaps"
+    ]
+  },
+  {
+    "person_id": "PID082",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Lee's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges from unnecessary platforms",
+      "Disable John Lee's accounts on all platforms where he is no longer active",
+      "Review and update access controls and offboarding processes to prevent similar gaps"
+    ]
+  },
+  {
+    "person_id": "PID084",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Martin's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive data and systems, potentially resulting in data breaches or malicious activities across multiple platforms.",
+    "recommended_actions": [
+      "Revoke admin privileges from unnecessary platforms",
+      "Disable John Martin's accounts on all platforms where he is no longer active",
+      "Review and update access controls to ensure least privilege access"
+    ]
+  },
+  {
+    "person_id": "PID085",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Miller's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and reputation.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Disable John Miller's accounts on AWS, Azure, Okta, and Salesforce to match the disabled status in AD",
+      "Review and update access controls for all 5 platforms to ensure least privilege access"
+    ]
+  },
+  {
+    "person_id": "PID086",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Moore's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on unnecessary platforms",
+      "Offboard John Moore from all platforms where he is no longer active",
+      "Review and limit platform exposure to only necessary systems"
+    ]
+  },
+  {
+    "person_id": "PID090",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Taylor's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on unnecessary platforms",
+      "Offboard John Taylor's identity from all platforms where he is no longer active",
+      "Review and limit platform exposure to only necessary systems"
+    ]
+  },
+  {
+    "person_id": "PID091",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Thomas' identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Disable John Thomas' accounts on all platforms where he is no longer active",
+      "Review and update access controls and offboarding processes to prevent similar gaps"
+    ]
+  },
+  {
+    "person_id": "PID096",
+    "risk_score": 85,
+    "risk_level": "HIGH",
+    "summary": "John Wilson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "recommended_actions": [
+      "Revoke admin privileges on AWS and Azure",
+      "Disable John Wilson's accounts on all platforms where he is no longer active",
+      "Review and update access controls and offboarding processes to prevent similar gaps"
+    ]
+  },
+  {
+    "person_id": "PID075",
     "risk_score": 55,
     "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "John Clark's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
     "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Disable John Clark's accounts in AWS, Azure, Okta, and Salesforce to align with their AD status, and review access permissions to ensure they are appropriate for their current role."
+    ]
+  },
+  {
+    "person_id": "PID078",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "John Harris' identity poses a medium risk due to excessive platform exposure and an offboarding gap, with accounts still active in AWS, Azure, Okta, and Salesforce despite being disabled in AD.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive data and systems, potentially resulting in data breaches or malicious activity.",
+    "recommended_actions": [
+      "Immediately review and reconcile John Harris' account status across all platforms, ensuring that all access is revoked and accounts are properly offboarded to prevent potential security incidents."
+    ]
+  },
+  {
+    "person_id": "PID087",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "John Perez's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with his account disabled in AD but still active in AWS, Azure, Okta, and Salesforce.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, compromising the security and integrity of the organization's systems and data.",
+    "recommended_actions": [
+      "Immediately review and reconcile John Perez's account status across all platforms, ensuring his account is consistently disabled or removed from all systems, and implement a thorough offboarding process to prevent similar gaps in the future."
     ]
   },
   {
     "person_id": "PID092",
     "risk_score": 55,
     "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "John Thompson's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
+    "security_impact": "If ignored, this issue could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
     "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Disable John Thompson's accounts in AWS, Azure, Okta, and Salesforce to align with their AD status, and review access permissions to ensure they are appropriate for their current role."
     ]
   },
   {
-    "person_id": "PID093",
+    "person_id": "PID094",
     "risk_score": 55,
     "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "John White's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
+    "security_impact": "If ignored, this issue could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
     "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Immediately review and reconcile John White's access across all platforms, ensuring that their access is consistent and aligned with their current employment status, and remove any unnecessary access to prevent potential security risks."
     ]
   },
   {
-    "person_id": "PID095",
-    "risk_score": 55,
-    "risk_level": "MEDIUM",
-    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Disable remaining active accounts and complete offboarding.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID086",
+    "person_id": "PID057",
     "risk_score": 45,
     "risk_level": "MEDIUM",
-    "summary": "The identity retains administrative access across multiple platforms. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "Jane Jones' identity poses a medium risk due to excessive platform exposure and multi-platform admin privileges.",
+    "security_impact": "If ignored, this could lead to a potential breach or unauthorized access to sensitive data across multiple platforms, compromising the company's security and data integrity.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID065",
-    "risk_score": 40,
-    "risk_level": "MEDIUM",
-    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID073",
-    "risk_score": 40,
-    "risk_level": "MEDIUM",
-    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID077",
-    "risk_score": 40,
-    "risk_level": "MEDIUM",
-    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID087",
-    "risk_score": 40,
-    "risk_level": "MEDIUM",
-    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
-    ]
-  },
-  {
-    "person_id": "PID050",
-    "risk_score": 15,
-    "risk_level": "LOW",
-    "summary": "The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
-    "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Review and limit Jane Jones' admin privileges to necessary platforms",
+      "Implement least privilege access and monitor usage",
+      "Consider consolidating or removing unused platform accounts"
     ]
   },
   {
     "person_id": "PID056",
-    "risk_score": 15,
+    "risk_score": 35,
     "risk_level": "LOW",
-    "summary": "The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "Jane Johnson's identity is at risk due to excessive platform exposure and a stale active account on Salesforce, which has not been used in 226 days.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, especially since the identity is present on multiple platforms.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Review and remove Jane Johnson's access to unused platforms, and consider deactivating the stale Salesforce account to minimize exposure."
+    ]
+  },
+  {
+    "person_id": "PID065",
+    "risk_score": 35,
+    "risk_level": "LOW",
+    "summary": "Jane Smith's identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, which has been unused for 201 days.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, particularly on Salesforce, and potentially across multiple platforms where Jane's identity is present.",
+    "recommended_actions": [
+      "Review and remove Jane Smith's access to unused platforms",
+      "Require Jane Smith to log in to Salesforce to verify account activity",
+      "Consider implementing automated account deactivation for inactive users"
     ]
   },
   {
     "person_id": "PID071",
-    "risk_score": 15,
+    "risk_score": 35,
     "risk_level": "LOW",
-    "summary": "The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "Jane Williams' identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, unused for 207 days.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, particularly on Salesforce, and potentially across 5 platforms where her identity is present.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Review and remove Jane Williams' access to unused platforms",
+      "Terminate or deactivate the stale Salesforce account",
+      "Conduct regular identity and access reviews to prevent similar issues"
     ]
   },
   {
-    "person_id": "PID078",
-    "risk_score": 15,
+    "person_id": "PID077",
+    "risk_score": 35,
     "risk_level": "LOW",
-    "summary": "The identity spans many systems, increasing exposure.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "John Hall's identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, which has been unused for 219 days.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, especially since the identity is present on multiple platforms.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "Review and remove unnecessary platform access, and consider deactivating or removing the stale Salesforce account to minimize exposure."
     ]
   },
   {
     "person_id": "PID001",
     "risk_score": 0,
     "risk_level": "NONE",
-    "summary": "No notable risk patterns were found.",
-    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "summary": "The identity of David Anderson has been assessed and found to have no known risk factors.",
+    "security_impact": "Since there are no identified risks, ignoring this issue is not expected to have any negative security consequences.",
     "recommended_actions": [
-      "Review the linked findings and confirm current business need.",
-      "Revoke or reduce access where it is no longer required.",
-      "Validate recent activity and ownership for the identity."
+      "No specific remediation actions are recommended at this time, but ongoing monitoring is advised to ensure the risk level remains low."
     ]
   }
 ]
