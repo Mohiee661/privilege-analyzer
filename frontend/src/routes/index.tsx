@@ -25,6 +25,7 @@ import {
 import { MetricCard } from "@/components/metric-card";
 import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
+import { findingTypeLabel } from "@/lib/api";
 import { loadDashboardPageData } from "@/services/dashboard";
 
 export const Route = createFileRoute("/")({
@@ -345,7 +346,7 @@ function Dashboard() {
                 </td>
                 <td className="px-4 py-3">
                   <span className="text-xs text-muted-foreground">
-                    {data.findingsByIdentityId[identity.id]?.[0]?.type ?? "OFFBOARDING_GAP"}
+                    {findingTypeLabel(data.findingsByIdentityId[identity.id]?.[0]?.type ?? "UNKNOWN")}
                   </span>
                 </td>
                 <td className="px-4 py-3">

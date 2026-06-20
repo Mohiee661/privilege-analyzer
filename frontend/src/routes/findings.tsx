@@ -3,6 +3,7 @@ import { useState } from "react";
 import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge } from "@/components/risk-badge";
 import { loadFindingsPageData } from "@/services/findings";
+import { findingTypeLabel } from "@/lib/api";
 import type { FindingType } from "@/lib/models";
 
 export const Route = createFileRoute("/findings")({
@@ -22,6 +23,9 @@ const categories: (FindingType | "All")[] = [
   "STALE_ACTIVE_ACCOUNT",
   "SUSPENDED_ACCOUNT_MISMATCH",
   "EXCESSIVE_PLATFORM_EXPOSURE",
+  "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+  "UNAPPROVED_PRIVILEGE_SPIKE",
+  "STALE_OR_MISUSED_TOKEN",
 ];
 
 function Findings() {
@@ -45,13 +49,13 @@ function Findings() {
           <button
             key={item}
             onClick={() => setCategory(item)}
-            className={`rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors ${
+                  className={`rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors ${
               category === item
                 ? "border-primary/30 bg-primary/10 text-primary"
                 : "border-border bg-card text-muted-foreground hover:text-foreground"
             }`}
           >
-            {item === "All" ? "All" : item.replace(/_/g, " ")}
+            {item === "All" ? "All" : findingTypeLabel(item)}
           </button>
         ))}
       </div>
@@ -75,7 +79,7 @@ function Findings() {
               <div className="flex items-start justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <code className="rounded bg-muted px-1.5 py-0.5 text-[11px] font-medium text-primary">
-                    {finding.type}
+                    {findingTypeLabel(finding.type)}
                   </code>
                   <RiskBadge level={finding.severity} />
                 </div>

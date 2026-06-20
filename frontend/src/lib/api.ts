@@ -98,6 +98,21 @@ const FINDING_TYPE_LABELS: Record<string, FindingType> = {
   stale_active_account: "STALE_ACTIVE_ACCOUNT",
   suspended_account_mismatch: "SUSPENDED_ACCOUNT_MISMATCH",
   excessive_platform_exposure: "EXCESSIVE_PLATFORM_EXPOSURE",
+  hidden_privilege_via_group_nesting: "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+  unapproved_privilege_spike: "UNAPPROVED_PRIVILEGE_SPIKE",
+  stale_or_misused_token: "STALE_OR_MISUSED_TOKEN",
+};
+
+const FINDING_TYPE_DISPLAY_LABELS: Record<FindingType, string> = {
+  OFFBOARDING_GAP: "Offboarding Gap",
+  MULTI_PLATFORM_ADMIN: "Multi Platform Admin",
+  STALE_ACTIVE_ACCOUNT: "Stale Active Account",
+  SUSPENDED_ACCOUNT_MISMATCH: "Suspended Account Mismatch",
+  EXCESSIVE_PLATFORM_EXPOSURE: "Excessive Platform Exposure",
+  HIDDEN_PRIVILEGE_VIA_GROUP_NESTING: "Hidden Privilege via Group Nesting",
+  UNAPPROVED_PRIVILEGE_SPIKE: "Unapproved Privilege Spike",
+  STALE_OR_MISUSED_TOKEN: "Stale or Misused Token",
+  UNKNOWN: "Unknown",
 };
 
 const RISK_LEVEL_LABELS: Record<string, RiskLevel> = {
@@ -118,6 +133,13 @@ const FallbackRecommendation: Record<FindingType, string> = {
   SUSPENDED_ACCOUNT_MISMATCH:
     "Reconcile suspension state across identity providers and downstream platforms.",
   EXCESSIVE_PLATFORM_EXPOSURE: "Reduce access to only the platforms required for the current role.",
+  HIDDEN_PRIVILEGE_VIA_GROUP_NESTING:
+    "Audit nested group membership and remove indirect admin inheritance; assign explicit least-privilege roles instead of relying on group nesting.",
+  UNAPPROVED_PRIVILEGE_SPIKE:
+    "Require manager approval for this role change retroactively, or revert to the prior role pending review.",
+  STALE_OR_MISUSED_TOKEN:
+    "Rotate or revoke this credential immediately and audit recent API activity for unauthorized actions.",
+  UNKNOWN: "Review the backend payload and investigate this finding type manually.",
 };
 
 const workspaceCache = {
@@ -151,7 +173,11 @@ function toRiskLevel(value: string): RiskLevel {
 function toFindingType(value: string): FindingType {
   const normalized = FINDING_TYPE_LABELS[value.toLowerCase()];
   if (normalized) return normalized;
-  return "EXCESSIVE_PLATFORM_EXPOSURE";
+  return "UNKNOWN";
+}
+
+export function findingTypeLabel(type: FindingType | string): string {
+  return FINDING_TYPE_DISPLAY_LABELS[type as FindingType] ?? type.replace(/_/g, " ");
 }
 
 function platformLabel(key: string): Platform | null {
@@ -422,7 +448,7 @@ function buildShowcaseIncidents(workspace: WorkspaceData): ShowcaseIncident[] {
       email: identity.email,
       riskScore: identity.riskScore,
       riskLevel: identity.riskLevel,
-      findingType: findings[0]?.type ?? "EXCESSIVE_PLATFORM_EXPOSURE",
+      findingType: findings[0]?.type ?? "UNKNOWN",
       summary: findings[0]?.description ?? "High-priority identity incident.",
       accounts: Object.fromEntries(
         identity.platformAccess.map((access) => [
@@ -463,7 +489,7 @@ function buildTimeline(identity: Identity, findings: Finding[]): TimelineEvent[]
       id: `${identity.id}-finding-${index}`,
       timestamp: finding.createdAt,
       platform: "System",
-      type: finding.type.replace(/_/g, " "),
+      type: findingTypeLabel(finding.type),
       description: finding.description,
       severity: finding.severity,
     });
@@ -569,7 +595,10 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
               point.name) as Platform,
             value: point.value,
           })),
-          topRiskCategories: toMetricPoints(analytics.top_risk_types),
+          topRiskCategories: toMetricPoints(analytics.top_risk_types).map((point) => ({
+            name: findingTypeLabel(point.name),
+            value: point.value,
+          })),
           departmentRisk: buildDepartmentRisk(identities),
           topCritical: topCriticalWithCounts,
           identities,

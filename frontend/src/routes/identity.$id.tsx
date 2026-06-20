@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Brain, ChevronRight, Clock, Shield, Sparkles } from "lucide-react";
 import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
+import { findingTypeLabel } from "@/lib/api";
 import { loadIdentityDetailPageData } from "@/services/identities";
 
 export const Route = createFileRoute("/identity/$id")({
@@ -225,7 +226,7 @@ function IdentityDetail() {
                 <div className="min-w-0">
                   <div className="flex items-center gap-2">
                     <code className="rounded bg-muted px-1.5 py-0.5 text-[11px] font-medium text-primary">
-                      {finding.type}
+                      {findingTypeLabel(finding.type)}
                     </code>
                     <RiskBadge level={finding.severity} />
                   </div>
