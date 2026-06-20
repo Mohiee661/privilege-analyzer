@@ -1206,11 +1206,11 @@
     "email": "noah.lee@company.com",
     "risk_type": "STALE_ACTIVE_ACCOUNT",
     "severity": "MEDIUM",
-    "description": "Active account unused for 267 days on ad",
+    "description": "Active account unused for 268 days on ad",
     "evidence": {
       "platform": "ad",
       "last_login": "2025-09-25T13:00:00Z",
-      "days_since_last_login": 267
+      "days_since_last_login": 268
     }
   },
   {
@@ -1248,11 +1248,11 @@
     "email": "priya.robinson@company.com",
     "risk_type": "STALE_ACTIVE_ACCOUNT",
     "severity": "MEDIUM",
-    "description": "Active account unused for 277 days on ad",
+    "description": "Active account unused for 278 days on ad",
     "evidence": {
       "platform": "ad",
       "last_login": "2025-09-15T10:00:00Z",
-      "days_since_last_login": 277
+      "days_since_last_login": 278
     }
   },
   {
@@ -1276,11 +1276,11 @@
     "email": "sarah.anderson@company.com",
     "risk_type": "STALE_ACTIVE_ACCOUNT",
     "severity": "MEDIUM",
-    "description": "Active account unused for 269 days on aws",
+    "description": "Active account unused for 270 days on aws",
     "evidence": {
       "platform": "aws",
       "last_login": "2025-09-23T12:00:00Z",
-      "days_since_last_login": 269
+      "days_since_last_login": 270
     }
   },
   {

@@ -29,6 +29,20 @@ def make_identity(person_id: str, name: str = "John Smith", email: str = "john.s
     }
 
 
+def make_identity_with_accounts(
+    person_id: str,
+    accounts: dict,
+    name: str = "John Smith",
+    email: str = "john.smith@company.com",
+) -> dict:
+    return {
+        "person_id": person_id,
+        "name": name,
+        "email": email,
+        "accounts": accounts,
+    }
+
+
 def make_finding(person_id: str, risk_type: str) -> dict:
     return {
         "finding_id": "F001",
@@ -66,6 +80,43 @@ def test_new_risk_type_scores_are_included():
         ]
     )
     assert score == 85
+
+
+def test_risk_context_dampens_only_justified_finding_contribution():
+    base_identity = make_identity_with_accounts(
+        "PID001",
+        {
+            "aws": {"status": "active", "role": "Administrator", "risk_context": None},
+            "azure": {"status": "active", "role": "Employee", "risk_context": None},
+        },
+    )
+    justified_identity = make_identity_with_accounts(
+        "PID002",
+        {
+            "aws": {
+                "status": "active",
+                "role": "Administrator",
+                "risk_context": "documented_exception:EXC-123",
+            },
+            "azure": {"status": "active", "role": "Employee", "risk_context": None},
+        },
+    )
+    finding = {
+        "finding_id": "F001",
+        "person_id": "PID001",
+        "name": "John Smith",
+        "email": "john.smith@company.com",
+        "risk_type": "MULTI_PLATFORM_ADMIN",
+        "severity": "HIGH",
+        "description": "admin in multiple systems",
+        "evidence": {"aws": "Administrator", "azure": "Admin"},
+    }
+    base_score = build_risk_profiles([base_identity], [finding])[0].score
+    justified_score = build_risk_profiles([justified_identity], [{**finding, "person_id": "PID002", "email": "john.smith@company.com"}])[0].score
+
+    assert justified_score < base_score
+    assert base_score == 30
+    assert justified_score == 15
 
 
 def test_score_caps_at_100():

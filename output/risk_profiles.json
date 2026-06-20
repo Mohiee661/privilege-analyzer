@@ -12,30 +12,6 @@
     ]
   },
   {
-    "person_id": "PID134",
-    "name": "Mia Thomas",
-    "email": "mia.thomas@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID144",
-    "name": "Noah Jackson",
-    "email": "noah.jackson@company.com",
-    "score": 80,
-    "risk_level": "HIGH",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID187",
     "name": "Sarah Miller",
     "email": "sarah.miller@company.com",
@@ -228,64 +204,9 @@
     ]
   },
   {
-    "person_id": "PID020",
-    "name": "Ava Perez",
-    "email": "ava.perez@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID022",
-    "name": "Ava Taylor",
-    "email": "ava.taylor@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID023",
     "name": "Ava Thompson",
     "email": "ava.thompson@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID030",
-    "name": "Chloe Kumar",
-    "email": "chloe.kumar@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID038",
-    "name": "Daniel Davis",
-    "email": "daniel.davis@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID044",
-    "name": "Daniel Thomas",
-    "email": "daniel.thomas@company.com",
     "score": 45,
     "risk_level": "MEDIUM",
     "findings": [
@@ -305,39 +226,6 @@
     ]
   },
   {
-    "person_id": "PID061",
-    "name": "Ethan Anderson",
-    "email": "ethan.anderson@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID063",
-    "name": "Ethan Clark",
-    "email": "ethan.clark@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID072",
-    "name": "Ethan Wilson",
-    "email": "ethan.wilson@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID088",
     "name": "Jane Robinson",
     "email": "jane.robinson@company.com",
@@ -349,42 +237,9 @@
     ]
   },
   {
-    "person_id": "PID095",
-    "name": "John Carter",
-    "email": "john.carter@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID108",
     "name": "Liam Williams",
     "email": "liam.williams@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID113",
-    "name": "Lucas Miller",
-    "email": "lucas.miller@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID114",
-    "name": "Lucas Moore",
-    "email": "lucas.moore@company.com",
     "score": 45,
     "risk_level": "MEDIUM",
     "findings": [
@@ -407,39 +262,6 @@
     "person_id": "PID126",
     "name": "Maria White",
     "email": "maria.white@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID136",
-    "name": "Mia White",
-    "email": "mia.white@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID142",
-    "name": "Noah Anderson",
-    "email": "noah.anderson@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID145",
-    "name": "Noah Johnson",
-    "email": "noah.johnson@company.com",
     "score": 45,
     "risk_level": "MEDIUM",
     "findings": [
@@ -492,39 +314,6 @@
     ]
   },
   {
-    "person_id": "PID160",
-    "name": "Olivia Kumar",
-    "email": "olivia.kumar@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID167",
-    "name": "Priya Kumar",
-    "email": "priya.kumar@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID168",
-    "name": "Priya Lee",
-    "email": "priya.lee@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID171",
     "name": "Priya Thompson",
     "email": "priya.thompson@company.com",
@@ -533,17 +322,6 @@
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
       "UNAPPROVED_PRIVILEGE_SPIKE"
-    ]
-  },
-  {
-    "person_id": "PID174",
-    "name": "Robert Harris",
-    "email": "robert.harris@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
     ]
   },
   {
@@ -572,28 +350,6 @@
     "person_id": "PID196",
     "name": "Sophia Robinson",
     "email": "sophia.robinson@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID220",
-    "name": "William White",
-    "email": "william.white@company.com",
-    "score": 45,
-    "risk_level": "MEDIUM",
-    "findings": [
-      "EXCESSIVE_PLATFORM_EXPOSURE",
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID224",
-    "name": "Yusuf Perez",
-    "email": "yusuf.perez@company.com",
     "score": 45,
     "risk_level": "MEDIUM",
     "findings": [
@@ -631,6 +387,30 @@
     "risk_level": "MEDIUM",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID134",
+    "name": "Mia Thomas",
+    "email": "mia.thomas@company.com",
+    "score": 41,
+    "risk_level": "MEDIUM",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID144",
+    "name": "Noah Jackson",
+    "email": "noah.jackson@company.com",
+    "score": 41,
+    "risk_level": "MEDIUM",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
       "MULTI_PLATFORM_ADMIN"
     ]
   },
@@ -1000,16 +780,6 @@
     ]
   },
   {
-    "person_id": "PID010",
-    "name": "Amelia Thompson",
-    "email": "amelia.thompson@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID017",
     "name": "Ava Davis",
     "email": "ava.davis@company.com",
@@ -1080,16 +850,6 @@
     ]
   },
   {
-    "person_id": "PID066",
-    "name": "Ethan Moore",
-    "email": "ethan.moore@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID075",
     "name": "Isabella Moore",
     "email": "isabella.moore@company.com",
@@ -1110,26 +870,6 @@
     ]
   },
   {
-    "person_id": "PID084",
-    "name": "Jane Harris",
-    "email": "jane.harris@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID100",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID101",
     "name": "John Thomas",
     "email": "john.thomas@company.com",
@@ -1143,16 +883,6 @@
     "person_id": "PID104",
     "name": "Liam Brown",
     "email": "liam.brown@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID109",
-    "name": "Lucas Davis",
-    "email": "lucas.davis@company.com",
     "score": 30,
     "risk_level": "LOW",
     "findings": [
@@ -1190,26 +920,6 @@
     ]
   },
   {
-    "person_id": "PID148",
-    "name": "Noah Lewis",
-    "email": "noah.lewis@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID152",
-    "name": "Noah Taylor",
-    "email": "noah.taylor@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID154",
     "name": "Noah Williams",
     "email": "noah.williams@company.com",
@@ -1240,16 +950,6 @@
     ]
   },
   {
-    "person_id": "PID180",
-    "name": "Robert Smith",
-    "email": "robert.smith@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
     "person_id": "PID186",
     "name": "Sarah Martin",
     "email": "sarah.martin@company.com",
@@ -1267,26 +967,6 @@
     "risk_level": "LOW",
     "findings": [
       "UNAPPROVED_PRIVILEGE_SPIKE"
-    ]
-  },
-  {
-    "person_id": "PID191",
-    "name": "Sarah Williams",
-    "email": "sarah.williams@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
-    ]
-  },
-  {
-    "person_id": "PID215",
-    "name": "William Jackson",
-    "email": "william.jackson@company.com",
-    "score": 30,
-    "risk_level": "LOW",
-    "findings": [
-      "MULTI_PLATFORM_ADMIN"
     ]
   },
   {
@@ -1370,6 +1050,226 @@
     ]
   },
   {
+    "person_id": "PID020",
+    "name": "Ava Perez",
+    "email": "ava.perez@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID022",
+    "name": "Ava Taylor",
+    "email": "ava.taylor@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID030",
+    "name": "Chloe Kumar",
+    "email": "chloe.kumar@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID038",
+    "name": "Daniel Davis",
+    "email": "daniel.davis@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID044",
+    "name": "Daniel Thomas",
+    "email": "daniel.thomas@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID061",
+    "name": "Ethan Anderson",
+    "email": "ethan.anderson@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID063",
+    "name": "Ethan Clark",
+    "email": "ethan.clark@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID072",
+    "name": "Ethan Wilson",
+    "email": "ethan.wilson@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID095",
+    "name": "John Carter",
+    "email": "john.carter@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID113",
+    "name": "Lucas Miller",
+    "email": "lucas.miller@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID114",
+    "name": "Lucas Moore",
+    "email": "lucas.moore@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID136",
+    "name": "Mia White",
+    "email": "mia.white@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID142",
+    "name": "Noah Anderson",
+    "email": "noah.anderson@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID145",
+    "name": "Noah Johnson",
+    "email": "noah.johnson@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID160",
+    "name": "Olivia Kumar",
+    "email": "olivia.kumar@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID167",
+    "name": "Priya Kumar",
+    "email": "priya.kumar@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID168",
+    "name": "Priya Lee",
+    "email": "priya.lee@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID174",
+    "name": "Robert Harris",
+    "email": "robert.harris@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID220",
+    "name": "William White",
+    "email": "william.white@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID224",
+    "name": "Yusuf Perez",
+    "email": "yusuf.perez@company.com",
+    "score": 23,
+    "risk_level": "LOW",
+    "findings": [
+      "EXCESSIVE_PLATFORM_EXPOSURE",
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
     "person_id": "PID052",
     "name": "David Taylor",
     "email": "david.taylor@company.com",
@@ -1450,6 +1350,16 @@
     ]
   },
   {
+    "person_id": "PID010",
+    "name": "Amelia Thompson",
+    "email": "amelia.thompson@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
     "person_id": "PID018",
     "name": "Ava Johnson",
     "email": "ava.johnson@company.com",
@@ -1467,6 +1377,16 @@
     "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE"
+    ]
+  },
+  {
+    "person_id": "PID066",
+    "name": "Ethan Moore",
+    "email": "ethan.moore@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
     ]
   },
   {
@@ -1497,6 +1417,16 @@
     "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE"
+    ]
+  },
+  {
+    "person_id": "PID084",
+    "name": "Jane Harris",
+    "email": "jane.harris@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
     ]
   },
   {
@@ -1540,6 +1470,26 @@
     ]
   },
   {
+    "person_id": "PID100",
+    "name": "John Smith",
+    "email": "john.smith@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID109",
+    "name": "Lucas Davis",
+    "email": "lucas.davis@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
     "person_id": "PID118",
     "name": "Maria Carter",
     "email": "maria.carter@company.com",
@@ -1570,6 +1520,36 @@
     ]
   },
   {
+    "person_id": "PID148",
+    "name": "Noah Lewis",
+    "email": "noah.lewis@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID152",
+    "name": "Noah Taylor",
+    "email": "noah.taylor@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
+    "person_id": "PID180",
+    "name": "Robert Smith",
+    "email": "robert.smith@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
     "person_id": "PID185",
     "name": "Sarah Johnson",
     "email": "sarah.johnson@company.com",
@@ -1590,6 +1570,16 @@
     ]
   },
   {
+    "person_id": "PID191",
+    "name": "Sarah Williams",
+    "email": "sarah.williams@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
+    ]
+  },
+  {
     "person_id": "PID192",
     "name": "Sarah Wilson",
     "email": "sarah.wilson@company.com",
@@ -1597,6 +1587,16 @@
     "risk_level": "LOW",
     "findings": [
       "EXCESSIVE_PLATFORM_EXPOSURE"
+    ]
+  },
+  {
+    "person_id": "PID215",
+    "name": "William Jackson",
+    "email": "william.jackson@company.com",
+    "score": 15,
+    "risk_level": "LOW",
+    "findings": [
+      "MULTI_PLATFORM_ADMIN"
     ]
   },
   {

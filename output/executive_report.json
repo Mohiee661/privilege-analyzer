@@ -2,8 +2,8 @@
   "summary": {
     "total_identities": 230,
     "critical_risks": 0,
-    "high_risks": 8,
-    "average_risk_score": 24.7,
+    "high_risks": 6,
+    "average_risk_score": 21.8,
     "most_common_finding": "EXCESSIVE_PLATFORM_EXPOSURE",
     "offboarding_gaps": 19
   },
@@ -12,30 +12,6 @@
       "person_id": "PID024",
       "name": "Ava Williams",
       "email": "ava.williams@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
-      "findings": [
-        "EXCESSIVE_PLATFORM_EXPOSURE",
-        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-        "MULTI_PLATFORM_ADMIN"
-      ]
-    },
-    {
-      "person_id": "PID134",
-      "name": "Mia Thomas",
-      "email": "mia.thomas@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
-      "findings": [
-        "EXCESSIVE_PLATFORM_EXPOSURE",
-        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-        "MULTI_PLATFORM_ADMIN"
-      ]
-    },
-    {
-      "person_id": "PID144",
-      "name": "Noah Jackson",
-      "email": "noah.jackson@company.com",
       "score": 80,
       "risk_level": "HIGH",
       "findings": [
@@ -67,13 +43,37 @@
         "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
         "STALE_ACTIVE_ACCOUNT"
       ]
+    },
+    {
+      "person_id": "PID090",
+      "name": "Jane Thompson",
+      "email": "jane.thompson@company.com",
+      "score": 70,
+      "risk_level": "HIGH",
+      "findings": [
+        "EXCESSIVE_PLATFORM_EXPOSURE",
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "STALE_ACTIVE_ACCOUNT"
+      ]
+    },
+    {
+      "person_id": "PID165",
+      "name": "Priya Clark",
+      "email": "priya.clark@company.com",
+      "score": 70,
+      "risk_level": "HIGH",
+      "findings": [
+        "EXCESSIVE_PLATFORM_EXPOSURE",
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "STALE_ACTIVE_ACCOUNT"
+      ]
     }
   ],
   "risk_distribution": {
     "critical": 0,
-    "high": 8,
-    "medium": 67,
-    "low": 79,
+    "high": 6,
+    "medium": 49,
+    "low": 99,
     "none": 76
   },
   "recommended_priorities": [

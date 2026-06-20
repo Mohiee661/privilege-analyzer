@@ -33,6 +33,8 @@ FINDING_SCORES = {
     "STALE_OR_MISUSED_TOKEN": 20,
 }
 
+PLATFORM_KEYS = {"ad", "azure", "aws", "okta", "salesforce"}
+
 
 def load_unified_identities(path: Path | str = UNIFIED_IDENTITIES_FILE) -> List[dict]:
     source = Path(path)
@@ -70,8 +72,63 @@ def calculate_identity_score(findings: Sequence[Mapping[str, object]]) -> int:
     total = 0
     for finding in findings:
         risk_type = str(finding.get("risk_type", ""))
-        total += FINDING_SCORES.get(risk_type, 0)
+        base_points = FINDING_SCORES.get(risk_type, 0)
+        evidence = finding.get("evidence", {})
+        justified_platforms = _finding_platforms(evidence)
+        risk_context_platforms = _risk_context_platforms(finding)
+
+        # Documented business justification reduces, but does not eliminate,
+        # the risk signal. Keep the finding in scoring, but dampen only the
+        # specific finding contribution when the same platform is justified so
+        # periodic re-verification is still required.
+        if justified_platforms and risk_context_platforms.intersection(justified_platforms):
+            base_points = round(base_points * 0.5)
+        elif not justified_platforms and risk_context_platforms:
+            # Identity-level findings sometimes do not expose platform detail in
+            # the evidence. If the identity has a documented exception on any
+            # account, reduce only that finding's contribution rather than
+            # blanketing the whole score.
+            base_points = round(base_points * 0.5)
+
+        total += int(base_points)
     return min(100, total)
+
+
+def _finding_platforms(evidence: object) -> set[str]:
+    if not isinstance(evidence, Mapping):
+        return set()
+
+    platforms: set[str] = set()
+
+    platform = evidence.get("platform")
+    if isinstance(platform, str) and platform.strip():
+        platforms.add(platform.lower().strip())
+
+    evidence_platforms = evidence.get("platforms")
+    if isinstance(evidence_platforms, list):
+        for item in evidence_platforms:
+            if isinstance(item, str) and item.strip():
+                platforms.add(item.lower().strip())
+
+    for key in evidence:
+        if key.lower().strip() in PLATFORM_KEYS:
+            platforms.add(key.lower().strip())
+
+    return platforms
+
+
+def _risk_context_platforms(finding: Mapping[str, object]) -> set[str]:
+    accounts = finding.get("_accounts")
+    if not isinstance(accounts, Mapping):
+        return set()
+
+    justified_platforms: set[str] = set()
+    for platform, account in accounts.items():
+        if not isinstance(account, Mapping):
+            continue
+        if account.get("risk_context") is not None:
+            justified_platforms.add(str(platform).lower().strip())
+    return justified_platforms
 
 
 def calculate_risk_level(score: int) -> str:
@@ -99,7 +156,12 @@ def build_risk_profiles(
     for identity in unified_identities:
         person_id = str(identity.get("person_id", ""))
         person_findings = findings_by_person.get(person_id, [])
-        score = calculate_identity_score(person_findings)
+        annotated_findings = []
+        for finding in person_findings:
+            annotated = dict(finding)
+            annotated["_accounts"] = identity.get("accounts", {})
+            annotated_findings.append(annotated)
+        score = calculate_identity_score(annotated_findings)
         profile = RiskProfile(
             person_id=person_id,
             name=str(identity.get("name", "")),
