@@ -1,0 +1,2 @@
+person_id,risk_score,risk_level,summary,security_impact,recommended_actions
+PID001,95,CRITICAL,Example,Example,A; B

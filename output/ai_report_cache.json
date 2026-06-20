@@ -1,0 +1,13 @@
+{
+  "54553a1affd599c9399f58a9c74e597c3a771f415ce8f171afe0a85cce66f2b2": {
+    "person_id": "PID001",
+    "risk_score": 92,
+    "risk_level": "CRITICAL",
+    "summary": "John Smith is risky.",
+    "security_impact": "This can lead to unauthorized access.",
+    "recommended_actions": [
+      "Disable accounts",
+      "Review privileges"
+    ]
+  }
+}

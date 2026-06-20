@@ -1,0 +1,2 @@
+finding_id,person_id,name,email,risk_type,severity,description,evidence
+F001,PID001,John Smith,john.smith@company.com,OFFBOARDING_GAP,HIGH,Example,{}

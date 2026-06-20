@@ -1,0 +1,212 @@
+[
+  {
+    "scenario_id": "SCN001",
+    "title": "Ghost Employee",
+    "person_id": "DEMO001",
+    "name": "Evan Carter",
+    "email": "evan.carter@company.com",
+    "risk_score": 97,
+    "risk_level": "CRITICAL",
+    "finding_type": "OFFBOARDING_GAP",
+    "summary": "AD is disabled while AWS and Okta remain active.",
+    "accounts": {
+      "ad": {"status": "disabled", "role": "Employee"},
+      "aws": {"status": "active", "role": "Developer"},
+      "okta": {"status": "active", "role": "Employee"}
+    },
+    "timeline": [
+      {"date": "2026-03-01", "event": "AD account disabled"},
+      {"date": "2026-04-12", "event": "AWS login detected"},
+      {"date": "2026-04-13", "event": "Okta login detected"}
+    ]
+  },
+  {
+    "scenario_id": "SCN002",
+    "title": "Multi-System Administrator",
+    "person_id": "DEMO002",
+    "name": "Priya Shah",
+    "email": "priya.shah@company.com",
+    "risk_score": 94,
+    "risk_level": "CRITICAL",
+    "finding_type": "MULTI_PLATFORM_ADMIN",
+    "summary": "Admin privileges exist across AWS, Azure, and Salesforce.",
+    "accounts": {
+      "aws": {"status": "active", "role": "Administrator"},
+      "azure": {"status": "active", "role": "Global Administrator"},
+      "salesforce": {"status": "active", "role": "Admin"}
+    },
+    "timeline": [
+      {"date": "2026-02-10", "event": "AWS admin granted"},
+      {"date": "2026-02-14", "event": "Azure admin granted"},
+      {"date": "2026-03-02", "event": "Salesforce admin granted"}
+    ]
+  },
+  {
+    "scenario_id": "SCN003",
+    "title": "Dormant Administrator",
+    "person_id": "DEMO003",
+    "name": "Marcus Lee",
+    "email": "marcus.lee@company.com",
+    "risk_score": 90,
+    "risk_level": "CRITICAL",
+    "finding_type": "STALE_ACTIVE_ACCOUNT",
+    "summary": "An active administrator account has not been used for 240 days.",
+    "accounts": {
+      "aws": {"status": "active", "role": "Administrator", "last_login": "2025-10-01T09:15:00"}
+    },
+    "timeline": [
+      {"date": "2025-10-01", "event": "Last AWS login"},
+      {"date": "2026-05-28", "event": "Stale account review flagged"}
+    ]
+  },
+  {
+    "scenario_id": "SCN004",
+    "title": "Suspended User Mismatch",
+    "person_id": "DEMO004",
+    "name": "Lena Patel",
+    "email": "lena.patel@company.com",
+    "risk_score": 88,
+    "risk_level": "HIGH",
+    "finding_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "summary": "Azure is suspended while AWS remains active.",
+    "accounts": {
+      "azure": {"status": "suspended", "role": "Employee"},
+      "aws": {"status": "active", "role": "Developer"}
+    },
+    "timeline": [
+      {"date": "2026-03-15", "event": "Azure account suspended"},
+      {"date": "2026-04-01", "event": "AWS login detected"}
+    ]
+  },
+  {
+    "scenario_id": "SCN005",
+    "title": "Excessive Platform Exposure",
+    "person_id": "DEMO005",
+    "name": "Noah Kim",
+    "email": "noah.kim@company.com",
+    "risk_score": 82,
+    "risk_level": "HIGH",
+    "finding_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "summary": "The same identity exists across five enterprise platforms.",
+    "accounts": {
+      "ad": {"status": "active", "role": "Employee"},
+      "azure": {"status": "active", "role": "Employee"},
+      "aws": {"status": "active", "role": "Support Engineer"},
+      "okta": {"status": "active", "role": "Employee"},
+      "salesforce": {"status": "active", "role": "Employee"}
+    },
+    "timeline": [
+      {"date": "2026-01-11", "event": "AD provisioned"},
+      {"date": "2026-01-12", "event": "Azure provisioned"},
+      {"date": "2026-01-13", "event": "AWS provisioned"},
+      {"date": "2026-01-14", "event": "Okta provisioned"},
+      {"date": "2026-01-15", "event": "Salesforce provisioned"}
+    ]
+  },
+  {
+    "scenario_id": "SCN006",
+    "title": "Privilege Creep Contractor",
+    "person_id": "DEMO006",
+    "name": "Ava Gomez",
+    "email": "ava.gomez@company.com",
+    "risk_score": 95,
+    "risk_level": "CRITICAL",
+    "finding_type": "OFFBOARDING_GAP",
+    "summary": "A contractor account remained active after offboarding and retains admin access.",
+    "accounts": {
+      "aws": {"status": "active", "role": "Administrator"},
+      "okta": {"status": "active", "role": "Contractor"},
+      "ad": {"status": "disabled", "role": "Contractor"}
+    },
+    "timeline": [
+      {"date": "2026-02-20", "event": "Offboarding initiated"},
+      {"date": "2026-03-01", "event": "AD disabled"},
+      {"date": "2026-04-20", "event": "AWS admin login detected"}
+    ]
+  },
+  {
+    "scenario_id": "SCN007",
+    "title": "Shadow IT Operator",
+    "person_id": "DEMO007",
+    "name": "Sophia Turner",
+    "email": "sophia.turner@company.com",
+    "risk_score": 86,
+    "risk_level": "HIGH",
+    "finding_type": "OFFBOARDING_GAP",
+    "summary": "Inactive directory account but active SaaS and cloud accounts remain.",
+    "accounts": {
+      "ad": {"status": "disabled", "role": "Employee"},
+      "aws": {"status": "active", "role": "Support Engineer"},
+      "salesforce": {"status": "active", "role": "Manager"}
+    },
+    "timeline": [
+      {"date": "2026-03-10", "event": "AD disabled"},
+      {"date": "2026-04-04", "event": "AWS support login detected"},
+      {"date": "2026-04-05", "event": "Salesforce access used"}
+    ]
+  },
+  {
+    "scenario_id": "SCN008",
+    "title": "Dormant SaaS Admin",
+    "person_id": "DEMO008",
+    "name": "Mia Johnson",
+    "email": "mia.johnson@company.com",
+    "risk_score": 79,
+    "risk_level": "HIGH",
+    "finding_type": "STALE_ACTIVE_ACCOUNT",
+    "summary": "A Salesforce admin account has been unused for eight months.",
+    "accounts": {
+      "salesforce": {"status": "active", "role": "Admin", "last_login": "2025-10-20T11:30:00"}
+    },
+    "timeline": [
+      {"date": "2025-10-20", "event": "Last Salesforce login"},
+      {"date": "2026-06-01", "event": "Stale account review flagged"}
+    ]
+  },
+  {
+    "scenario_id": "SCN009",
+    "title": "Reinstated Access Risk",
+    "person_id": "DEMO009",
+    "name": "Owen Brooks",
+    "email": "owen.brooks@company.com",
+    "risk_score": 89,
+    "risk_level": "HIGH",
+    "finding_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "summary": "A suspended Okta account is still active in AWS and Azure.",
+    "accounts": {
+      "okta": {"status": "suspended", "role": "Employee"},
+      "aws": {"status": "active", "role": "Developer"},
+      "azure": {"status": "active", "role": "Employee"}
+    },
+    "timeline": [
+      {"date": "2026-03-18", "event": "Okta suspended"},
+      {"date": "2026-04-02", "event": "AWS login detected"},
+      {"date": "2026-04-03", "event": "Azure login detected"}
+    ]
+  },
+  {
+    "scenario_id": "SCN010",
+    "title": "All-Platforms Power User",
+    "person_id": "DEMO010",
+    "name": "Zoe Martinez",
+    "email": "zoe.martinez@company.com",
+    "risk_score": 92,
+    "risk_level": "CRITICAL",
+    "finding_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "summary": "The identity spans all five platforms and has administrative roles in two.",
+    "accounts": {
+      "ad": {"status": "active", "role": "Employee"},
+      "azure": {"status": "active", "role": "Global Administrator"},
+      "aws": {"status": "active", "role": "Administrator"},
+      "okta": {"status": "active", "role": "Employee"},
+      "salesforce": {"status": "active", "role": "Employee"}
+    },
+    "timeline": [
+      {"date": "2026-01-10", "event": "AD provisioned"},
+      {"date": "2026-01-11", "event": "Azure admin provisioned"},
+      {"date": "2026-01-12", "event": "AWS admin provisioned"},
+      {"date": "2026-01-13", "event": "Okta provisioned"},
+      {"date": "2026-01-14", "event": "Salesforce provisioned"}
+    ]
+  }
+]

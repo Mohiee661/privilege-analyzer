@@ -1,2 +1,6 @@
-# IAM Least-Privilege Analyzer has zero runtime dependencies.
-# Uses only Python 3.8+ stdlib (json, re, pathlib, dataclasses, argparse).
+groq
+python-dotenv
+fastapi
+uvicorn
+pydantic
+reportlab

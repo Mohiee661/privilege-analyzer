@@ -1,0 +1,302 @@
+[
+  {
+    "person_id": "PID074",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID075",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID082",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID083",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID084",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID089",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID091",
+    "risk_score": 80,
+    "risk_level": "HIGH",
+    "summary": "The identity has active access after offboarding in at least one system. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID057",
+    "risk_score": 70,
+    "risk_level": "HIGH",
+    "summary": "The identity retains administrative access across multiple platforms. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID090",
+    "risk_score": 70,
+    "risk_level": "HIGH",
+    "summary": "The identity retains administrative access across multiple platforms. Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID061",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID076",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID080",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID081",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID092",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID093",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID095",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "The identity has active access after offboarding in at least one system. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Disable remaining active accounts and complete offboarding.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID086",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "The identity retains administrative access across multiple platforms. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID065",
+    "risk_score": 40,
+    "risk_level": "MEDIUM",
+    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID073",
+    "risk_score": 40,
+    "risk_level": "MEDIUM",
+    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID077",
+    "risk_score": 40,
+    "risk_level": "MEDIUM",
+    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID087",
+    "risk_score": 40,
+    "risk_level": "MEDIUM",
+    "summary": "Account status is inconsistent across systems. The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID050",
+    "risk_score": 15,
+    "risk_level": "LOW",
+    "summary": "The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID056",
+    "risk_score": 15,
+    "risk_level": "LOW",
+    "summary": "The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID071",
+    "risk_score": 15,
+    "risk_level": "LOW",
+    "summary": "The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  },
+  {
+    "person_id": "PID078",
+    "risk_score": 15,
+    "risk_level": "LOW",
+    "summary": "The identity spans many systems, increasing exposure.",
+    "security_impact": "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+    "recommended_actions": [
+      "Review the linked findings and confirm current business need.",
+      "Revoke or reduce access where it is no longer required.",
+      "Validate recent activity and ownership for the identity."
+    ]
+  }
+]
