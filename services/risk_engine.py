@@ -117,7 +117,7 @@ def _is_admin_role(value: str) -> bool:
 
 def _is_low_privilege_role(value: str) -> bool:
     normalized = _normalize_role(value)
-    return bool(normalized) and not _is_admin_role(normalized)
+    return normalized in LOW_PRIVILEGE_ROLES
 
 
 def _new_finding(
@@ -288,23 +288,36 @@ def detect_nested_group_privilege(unified_identities: Sequence[Mapping[str, Any]
     for unified in unified_identities:
         email = str(unified.get("email", ""))
         accounts = unified.get("accounts", {}) or {}
-        stated_roles = [
-            str(data.get("role", ""))
-            for data in accounts.values()
-            if isinstance(data, Mapping) and _is_low_privilege_role(str(data.get("role", "")))
-        ]
-        if not stated_roles:
-            continue
+        triggering_platforms: set[str] = set()
+        platform_evidence: Dict[str, Dict[str, Any]] = {}
 
-        effective_roles = effective_privilege(email)
-        admin_roles = sorted(role for role in effective_roles if _is_admin_role(role))
-        if not admin_roles:
+        for platform, data in accounts.items():
+            if not isinstance(data, Mapping):
+                continue
+
+            stated_role = str(data.get("role", ""))
+            if not _is_low_privilege_role(stated_role):
+                continue
+
+            effective_roles = effective_privilege(email, platform)
+            admin_roles = sorted(role for role in effective_roles if _is_admin_role(role))
+            if not admin_roles:
+                continue
+
+            triggering_platforms.add(platform)
+            platform_evidence[platform] = {
+                "platform": platform,
+                "stated_role": stated_role,
+                "effective_privilege": effective_roles,
+                "admin_equivalent_roles": admin_roles,
+            }
+
+        if not triggering_platforms:
             continue
 
         evidence = {
-            "stated_roles": sorted(set(stated_roles)),
-            "effective_privilege": effective_roles,
-            "admin_equivalent_roles": admin_roles,
+            "platforms": sorted(triggering_platforms),
+            "details": platform_evidence,
         }
         findings.append(
             _new_finding(

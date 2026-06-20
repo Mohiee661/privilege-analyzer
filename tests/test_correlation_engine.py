@@ -30,6 +30,10 @@ def make_record(email: str, platform: str, status: str = "active", role: str = "
         "platform": platform,
         "role": role,
         "last_login": "2026-06-01T10:00:00",
+        "account_type": "human",
+        "owner_email": email,
+        "mfa_enabled": True,
+        "risk_context": None,
     }
 
 
@@ -108,3 +112,46 @@ def test_statistics_and_report_generation(tmp_path, capsys):
     output_path = tmp_path / "output" / "unified_identities.json"
     save_unified_identities(unified, output_path)
     assert output_path.exists()
+
+
+def test_build_unified_identity_preserves_additional_account_fields():
+    azure_record = make_record("john.smith@company.com", "Azure AD")
+    azure_record["account_type"] = "human"
+    azure_record["owner_email"] = "john.smith@company.com"
+    azure_record["mfa_enabled"] = True
+    azure_record["risk_context"] = "standard"
+
+    aws_record = make_record("john.smith@company.com", "AWS IAM")
+    aws_record["account_type"] = "service_account"
+    aws_record["owner_email"] = "owner@company.com"
+    aws_record["mfa_enabled"] = False
+    aws_record["risk_context"] = "sensitive"
+
+    unified = build_unified_identity("PID001", [azure_record, aws_record])
+
+    azure_account = unified.accounts["azure"]
+    aws_account = unified.accounts["aws"]
+
+    assert azure_account["account_type"] == "human"
+    assert azure_account["owner_email"] == "john.smith@company.com"
+    assert azure_account["mfa_enabled"] is True
+    assert azure_account["risk_context"] == "standard"
+    assert aws_account["account_type"] == "service_account"
+    assert aws_account["owner_email"] == "owner@company.com"
+    assert aws_account["mfa_enabled"] is False
+    assert aws_account["risk_context"] == "sensitive"
+
+
+def test_unrelated_platform_admin_does_not_leak_into_other_accounts():
+    platform_records = {
+        "azure": [make_record("alice@company.com", "Azure AD", role="Employee")],
+        "aws": [make_record("alice@company.com", "AWS IAM", role="Administrator")],
+    }
+
+    unified = correlate_identities(platform_records)
+
+    assert len(unified) == 1
+    account = unified[0].accounts["azure"]
+    assert account["role"] == "Employee"
+    assert account["status"] == "active"
+    assert account["account_type"] == "human"

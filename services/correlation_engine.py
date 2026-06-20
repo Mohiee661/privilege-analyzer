@@ -6,7 +6,7 @@ import json
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, Iterable, List, Mapping, MutableMapping, Sequence
+from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Sequence
 
 if __package__ in (None, ""):
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -69,13 +69,13 @@ def _record_email(record: Mapping[str, str]) -> str:
     return normalize_email(email)
 
 
-def build_unified_identity(person_id: str, grouped_records: Sequence[Mapping[str, str]]) -> UnifiedIdentity:
+def build_unified_identity(person_id: str, grouped_records: Sequence[Mapping[str, Any]]) -> UnifiedIdentity:
     if not grouped_records:
         raise ValueError("grouped_records must not be empty")
 
     ordered_records = list(grouped_records)
     primary = ordered_records[0]
-    accounts: Dict[str, Dict[str, str]] = {}
+    accounts: Dict[str, Dict[str, Any]] = {}
 
     for record in ordered_records:
         platform_key = normalize_platform(record.get("platform", ""))
@@ -83,6 +83,10 @@ def build_unified_identity(person_id: str, grouped_records: Sequence[Mapping[str
             "status": record.get("status", ""),
             "role": record.get("role", ""),
             "last_login": record.get("last_login", ""),
+            "account_type": record.get("account_type", ""),
+            "owner_email": record.get("owner_email", ""),
+            "mfa_enabled": record.get("mfa_enabled", False),
+            "risk_context": record.get("risk_context", None),
         }
 
     return UnifiedIdentity(

@@ -2,18 +2,34 @@
 
 from __future__ import annotations
 
-from typing import Dict, Iterable, List, Mapping, MutableSet, Sequence
+from typing import Dict, List, Mapping, MutableSet, Sequence, Tuple
 
 from services.data_loader import GroupMembership, load_group_memberships
+
+PLATFORM_ALIASES = {
+    "active directory": "ad",
+    "ad": "ad",
+    "azure ad": "azure",
+    "azure": "azure",
+    "aws iam": "aws",
+    "aws": "aws",
+    "okta": "okta",
+    "salesforce": "salesforce",
+}
 
 
 def _normalize_email(email: str) -> str:
     return email.lower().strip()
 
 
+def _normalize_platform(platform: str) -> str:
+    normalized = platform.lower().strip()
+    return PLATFORM_ALIASES.get(normalized, normalized)
+
+
 def _build_indexes(
     memberships: Sequence[GroupMembership],
-) -> tuple[Dict[str, GroupMembership], Dict[str, List[str]]]:
+) -> Tuple[Dict[str, GroupMembership], Dict[str, List[str]]]:
     groups_by_id: Dict[str, GroupMembership] = {}
     memberships_by_email: Dict[str, List[str]] = {}
 
@@ -57,8 +73,16 @@ def _walk_group_lineage(
         _walk_group_lineage(group.parent_group_id, groups_by_id, roles, seen_roles, visited_groups)
 
 
-def effective_privilege(email: str) -> List[str]:
+def effective_privilege(email: str, platform: str | None = None) -> List[str]:
     memberships = load_group_memberships()
+    if platform is not None:
+        normalized_platform = _normalize_platform(platform)
+        memberships = [
+            membership
+            for membership in memberships
+            if _normalize_platform(membership.platform) == normalized_platform
+        ]
+
     groups_by_id, memberships_by_email = _build_indexes(memberships)
     direct_group_ids = memberships_by_email.get(_normalize_email(email), [])
 

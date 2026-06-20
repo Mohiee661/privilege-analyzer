@@ -128,25 +128,49 @@ def test_platform_exposure_detection():
     assert findings[0].risk_type == "EXCESSIVE_PLATFORM_EXPOSURE"
 
 
-def test_nested_group_privilege_detection(monkeypatch):
+def test_nested_group_privilege_requires_same_platform_scope(monkeypatch):
     identities = [
         make_unified_identity(
             "PID001",
             "alice@company.com",
             {
                 "azure": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+                "aws": {"status": "active", "role": "Administrator", "last_login": "2026-06-01T10:00:00"},
             },
-        )
+        ),
+        make_unified_identity(
+            "PID002",
+            "bob@company.com",
+            {
+                "azure": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+                "aws": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+            },
+        ),
     ]
-    monkeypatch.setattr(
-        "services.risk_engine.effective_privilege",
-        lambda email: ["Employee", "Global Administrator"],
-    )
+
+    def fake_effective_privilege(email, platform=None):
+        if email == "alice@company.com" and platform == "azure":
+            return ["Employee"]
+        if email == "alice@company.com" and platform == "aws":
+            return ["Administrator"]
+        if email == "bob@company.com" and platform == "azure":
+            return ["Employee", "Global Administrator"]
+        if email == "bob@company.com" and platform == "aws":
+            return ["Employee", "Administrator"]
+        return []
+
+    monkeypatch.setattr("services.risk_engine.effective_privilege", fake_effective_privilege)
 
     findings = detect_nested_group_privilege(identities)
 
     assert len(findings) == 1
-    assert findings[0].risk_type == "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING"
+    finding = findings[0]
+    assert finding.risk_type == "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING"
+    assert finding.person_id == "PID002"
+    assert finding.evidence["platforms"] == ["aws", "azure"]
+    assert set(finding.evidence["details"]) == {"aws", "azure"}
+    assert finding.evidence["details"]["azure"]["platform"] == "azure"
+    assert finding.evidence["details"]["aws"]["platform"] == "aws"
 
 
 def test_privilege_spike_detection(monkeypatch):
