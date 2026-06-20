@@ -1,247 +1,195 @@
-# IAM Least-Privilege Analyzer
+# Identity Risk Intelligence Platform
 
-> **Detect over-privileged AWS IAM policies in seconds — CIS-mapped, privilege escalation aware, zero dependencies.**
-> A free, self-hosted alternative to AWS Access Analyzer, Cloudsplaining, and ermetic for teams that want IAM least-privilege enforcement without the enterprise price tag.
+> File-based identity risk analytics with a FastAPI backend, a React/TanStack frontend, and an optional Groq-powered AI Security Copilot.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](./.github/workflows/iam.yml)
-[![CIS AWS](https://img.shields.io/badge/CIS%20AWS-1.15%2F1.16%2F1.22-A14241)](https://www.cisecurity.org/benchmark/amazon_web_services)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-frontend-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 
 ---
 
-## What it does (in one screenshot of terminal output)
+## Overview
 
+This repository analyzes unified identity data across enterprise platforms, detects risky access patterns, scores identities, and exposes the results through:
+
+- JSON/file-based processing pipelines
+- a FastAPI API
+- a browser-based frontend
+- an optional Groq-backed AI report generator
+
+There is no database layer. The system uses local JSON files in `output/` as its durable workspace.
+
+---
+
+## Data Flow
+
+The backend pipeline writes and reads these files:
+
+- `output/unified_identities.json`
+- `output/risk_findings.json`
+- `output/risk_profiles.json`
+- `output/ai_reports.json`
+- `output/ai_report_cache.json`
+
+Pipeline stages:
+
+1. `services/correlation_engine.py` merges platform records into unified identities.
+2. `services/risk_engine.py` detects risk findings.
+3. `services/scoring_engine.py` ranks identities and generates risk profiles.
+4. `services/ai_explainer.py` generates AI reports with Groq or a deterministic fallback.
+5. `api/main.py` exposes the results over HTTP.
+
+---
+
+## AI Copilot
+
+The AI layer uses Groq when available and falls back safely when it is not.
+
+Environment variable:
+
+```env
+GROQ_API_KEY=
 ```
-============================================================
-  IAM Least-Privilege Analyzer v1.0
-============================================================
-[*] Total findings: 11
-[*] Breakdown     : {'CRITICAL': 4, 'HIGH': 5, 'MEDIUM': 2, 'LOW': 0}
 
-[CRITICAL] Wildcard Action with Wildcard Resource (Admin equivalent)
-   samples/overly_permissive_admin.json stmt[0]:BadAdminAllowAll (risk=99.4, CIS AWS 1.22)
-   > Action="*" Resource="*"
+Preferred model:
 
-[CRITICAL] Cross-account trust with wildcard Principal
-   samples/bad_trust_policy.json stmt[0]:AllowAnyone (risk=97.2, CIS AWS 1.16)
-   > Principal={'AWS': '*'}
-
-[CRITICAL] Dangerous IAM privilege escalation action
-   samples/overly_permissive_admin.json stmt[3]:BadPassRoleUnrestricted (risk=95.8, AWS WA SEC 03)
-   > Action="iam:PassRole" Resource="*"
+```text
+llama-3.3-70b-versatile
 ```
 
-And opens this interactive dark-mode HTML report with per-finding drill-down:
-- Severity chip &middot; Rule ID &middot; Risk score &middot; Action &middot; Resource &middot; CIS mapping &middot; Remediation &middot; Suggested fix
+Fallback model:
+
+```text
+llama-3.1-8b-instant
+```
+
+Behavior:
+
+- generates concise executive-friendly security summaries
+- generates security impact statements
+- generates remediation recommendations
+- caches reports locally
+- reuses cached reports when identity score and findings have not changed
+- falls back to deterministic local output if Groq is unavailable
 
 ---
 
-## Screenshots (ran locally, zero setup)
+## Frontend
 
-**Terminal output** - exactly what you see on the command line:
+The frontend reads from the FastAPI backend using `NEXT_PUBLIC_API_URL` or `VITE_API_BASE_URL`.
 
-![Terminal output](docs/screenshots/terminal.png)
+Example:
 
-**Interactive HTML dashboard** - opens in any browser, dark-mode, filterable:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
 
-![HTML report](docs/screenshots/report.png)
+The UI includes:
 
-Both screenshots are captured from a real local run against the bundled `samples/` directory. Reproduce them with the quickstart commands below.
+- Dashboard
+- Risk Center
+- Identity Explorer
+- Identity Detail
+- Findings
+- AI Copilot
+- Reports
 
----
-
-## Why you want this
-
-| | **IAM Least-Privilege Analyzer** | AWS Access Analyzer | Cloudsplaining | Ermetic |
-|---|---|---|---|---|
-| **Price** | Free (MIT) | Free (tied to account) | Free (OSS) | $$$$ |
-| **Runtime deps** | **None** — pure stdlib | AWS console | Python + graphviz | SaaS |
-| **Install time** | `git clone && python analyzer.py` | IAM role setup | `pip install cloudsplaining` | Onboarding call |
-| **Offline / air-gapped** | Yes | No | Yes | No |
-| **Privilege-escalation rules** | 12 built-in | Limited | 40+ | Yes |
-| **Trust policy review** | Yes | Yes | Partial | Yes |
-| **Interactive HTML report** | Bundled | Console only | Separate step | SaaS |
-| **ML-style risk scoring** | Yes (0-100) | No | No | Proprietary |
-| **Extend with Python** | 10 lines | No | Python | No |
+All pages load from backend data and use local loading, empty, and error states.
 
 ---
 
-## 60-second quickstart (Windows, macOS, Linux)
+## API Endpoints
+
+Verified endpoints include:
+
+- `GET /health`
+- `GET /api/v1/dashboard`
+- `GET /api/v1/analytics`
+- `GET /api/v1/identities`
+- `GET /api/v1/identities/{person_id}`
+- `GET /api/v1/risks`
+- `GET /api/v1/risks/{person_id}`
+- `GET /api/v1/findings`
+- `GET /api/v1/search`
+- `GET /api/v1/ai-reports`
+- `GET /api/v1/ai-reports/{person_id}`
+
+---
+
+## Quickstart
+
+### 1. Backend
 
 ```bash
-# 1. Clone
-git clone https://github.com/CyberEnthusiastic/iam-least-privilege-analyzer.git
-cd iam-least-privilege-analyzer
-
-# 2. Run it (zero install - pure Python 3.8+ stdlib)
-python analyzer.py samples/
-
-# 3. Open the HTML report
-start reports/iam_report.html      # Windows
-open  reports/iam_report.html      # macOS
-xdg-open reports/iam_report.html   # Linux
+python -m uvicorn api.main:app --reload
 ```
 
-### Alternative: one-command installer
+### 2. Generate local data
 
 ```bash
-# Linux / macOS / WSL / Git Bash
-./install.sh
-
-# Windows PowerShell
-.\install.ps1
+python services/correlation_engine.py
+python services/risk_engine.py
+python services/scoring_engine.py
+python services/ai_explainer.py
 ```
 
-### Alternative: Docker
+### 3. Run tests
 
 ```bash
-docker build -t iam-analyzer .
-docker run --rm -v "$PWD/policies:/app/policies" iam-analyzer analyzer.py policies/
+python -m pytest
 ```
 
----
-
-## What it detects (12 rule classes)
-
-| ID | Rule | Severity | CIS / AWS Mapping |
-|----|------|----------|-------------------|
-| IAM-001 | Wildcard Action with Wildcard Resource (admin-equivalent) | CRITICAL | CIS AWS 1.22 |
-| IAM-002 | Wildcard Action `"Action": "*"` | HIGH | CIS AWS 1.22 |
-| IAM-003 | Wildcard Resource `"Resource": "*"` | HIGH | AWS WA SEC 03 |
-| IAM-004 | Service-wide wildcard (e.g. `s3:*`, `iam:*`) | HIGH | AWS WA SEC 03 |
-| IAM-005 | Privilege escalation action (iam:PassRole, iam:Put*Policy, iam:CreateAccessKey) | CRITICAL | AWS WA SEC 03 |
-| IAM-006 | `NotAction` used with `Effect: Allow` (deny-list antipattern) | MEDIUM | AWS WA SEC 03 |
-| IAM-007 | Missing Condition block on sensitive action | MEDIUM | AWS WA SEC 03 |
-| IAM-008 | Data-exfiltration action without VPC/SourceIp condition | HIGH | AWS WA SEC 04 |
-| IAM-009 | `kms:Decrypt` without resource/grant scoping | HIGH | AWS WA SEC 08 |
-| IAM-010 | Cross-account trust with wildcard Principal | CRITICAL | CIS AWS 1.16 |
-| IAM-011 | Inline policy on a user (should use groups) | LOW | CIS AWS 1.15 |
-| IAM-012 | Trust policy allows any AWS service (`Service: "*"`) | HIGH | AWS WA SEC 02 |
-
-See `IAM_RULES` and `PRIVESC_ACTIONS` in `analyzer.py` for the full definitions.
-
----
-
-## How the risk scorer works
-
-`IAMRiskScorer` blends signals to produce a 0-100 score per finding:
-
-- **Pattern confidence** (base 60) - each rule ships with 0.70-0.99 hand-calibrated confidence
-- **Missing Condition** (+12) - no MFA / SourceIp / VPC condition on a sensitive action
-- **Sensitive service** (+10) - iam, kms, sts, secretsmanager, organizations
-- **Exfiltration action** (+8) - s3:GetObject, secretsmanager:GetSecretValue, etc.
-- **Wildcard resource** (+8) - `Resource: "*"` with any non-wildcard action
-- **Severity bonus** - +12 CRITICAL, +6 HIGH, +2 MEDIUM
-
-A plain `kms:Decrypt` on a single key scores ~65, but `kms:Decrypt` with `Resource: "*"` and no condition jumps to ~95. Context > pattern alone.
-
----
-
-## Scan your own policies
+### 4. Frontend
 
 ```bash
-# Scan a single policy JSON
-python analyzer.py path/to/role-policy.json
-
-# Scan a directory of policy files
-python analyzer.py path/to/terraform/policies/
-
-# Custom output paths
-python analyzer.py policies/ -o out.json --html out.html
-```
-
-The analyzer understands three input shapes:
-1. **Raw policy document** - `{"Version":"2012-10-17","Statement":[...]}`
-2. **Wrapper with `PolicyDocument`** - output of `aws iam get-policy-version`
-3. **Role document with `AssumeRolePolicyDocument`** - trust policies
-
----
-
-## CI/CD integration (fail the build on CRITICAL findings)
-
-Add this to `.github/workflows/iam.yml`:
-
-```yaml
-- name: Run IAM Analyzer
-  run: python analyzer.py terraform/iam/
-
-- name: Fail on CRITICAL
-  run: |
-    python -c "
-    import json, sys
-    r = json.load(open('reports/iam_report.json'))
-    if r['summary']['by_severity']['CRITICAL'] > 0:
-        print('CRITICAL IAM findings detected')
-        sys.exit(1)
-    "
+cd frontend
+npm install
+npm run dev
 ```
 
 ---
 
-## Extending the rule engine
+## Validation
 
-Add a new rule to `IAM_RULES`:
+Current validation coverage includes:
 
-```python
-{
-    "id": "IAM-013",
-    "name": "EC2 full access without tag condition",
-    "severity": "HIGH",
-    "confidence": 0.85,
-    "cis": "AWS WA SEC 03",
-    "remediation": "Scope ec2:* to resources with aws:ResourceTag/env=dev condition.",
-},
-```
+- data generation
+- identity correlation
+- risk detection
+- risk scoring
+- AI report generation
+- FastAPI endpoint tests
 
-Then add matching logic in `analyze_statement()`. No YAML, no plugins.
+The project currently passes the Python test suite.
 
 ---
 
-## Project layout
+## Project Layout
 
-```
-iam-least-privilege-analyzer/
-|-- analyzer.py           # main analyzer + 12 rules + risk scorer
-|-- report_generator.py   # dark-mode HTML report
-|-- samples/              # intentionally bad policies for demos
-|   |-- overly_permissive_admin.json
-|   |-- bad_trust_policy.json
-|   `-- good_least_privilege.json
-|-- reports/              # output (gitignored)
-|-- Dockerfile            # containerized runs
-|-- install.sh            # one-command installer (Linux/Mac/WSL)
-|-- install.ps1           # one-command installer (Windows)
-|-- requirements.txt      # empty - pure stdlib
-|-- README.md             # this file
-|-- LICENSE               # MIT
-|-- NOTICE                # attribution
-|-- SECURITY.md           # vulnerability disclosure policy
-`-- CONTRIBUTING.md       # how to add rules / send PRs
+```text
+api/            FastAPI app, routers, schemas
+frontend/       React/TanStack frontend
+models/         Dataclasses used by the backend pipeline
+output/         Local JSON outputs and AI report cache
+prompts/        Groq prompt templates
+reports/        Executive report artifacts
+services/       Correlation, risk, scoring, and AI services
+tests/          Unit and API tests
 ```
 
 ---
 
-## Roadmap
+## Development Notes
 
-- [ ] Parse AWS Terraform state (`terraform show -json`) directly
-- [ ] CloudTrail-driven "unused permissions" detector
-- [ ] SCP (Service Control Policy) analysis for AWS Organizations
-- [ ] SARIF output for GitHub Code Scanning
-- [ ] Integration with IAM Access Analyzer findings
+- Keep the file-based architecture intact.
+- Do not add a database for AI or reporting.
+- Use `output/` as the source of truth for generated artifacts.
+- Prefer deterministic fallbacks when external services are unavailable.
+
+---
 
 ## License
 
 MIT. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
 
-## Security
-
-Responsible disclosure policy: see [SECURITY.md](./SECURITY.md).
-
-## Contributing
-
-PRs welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for the quick path from fork to merged PR.
-
----
-
-Built by **[Mohith Vasamsetti (CyberEnthusiastic)](https://github.com/CyberEnthusiastic)** as part of the [AI Security Projects](https://github.com/CyberEnthusiastic?tab=repositories) suite - a set of zero-dependency, commercial-grade security tools for engineers and teams who want serious security without serious SaaS bills.
