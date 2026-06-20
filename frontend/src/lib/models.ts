@@ -30,6 +30,23 @@ export interface Finding {
   createdAt: string;
 }
 
+export interface Incident {
+  incidentId: string;
+  personId: string | null;
+  name: string | null;
+  email: string | null;
+  findingCount: number | null;
+  riskTypes: FindingType[];
+  combinedSeverity: RiskLevel;
+  findings: Finding[];
+  department: string | null;
+  type: "person" | "department" | null;
+  riskType: FindingType | null;
+  personCount: number | null;
+  description: string | null;
+  personIncidents: string[];
+}
+
 export interface Identity {
   id: string;
   name: string;
@@ -92,6 +109,7 @@ export interface WorkspaceData {
   topCritical: Identity[];
   identities: Identity[];
   findings: Finding[];
+  incidents: Incident[];
   aiReports: AIReport[];
   identityById: Record<string, Identity>;
   findingsByIdentityId: Record<string, Finding[]>;

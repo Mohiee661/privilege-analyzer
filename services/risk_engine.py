@@ -16,7 +16,7 @@ if __package__ in (None, ""):
 
 from models.finding import Finding
 from services.correlation_engine import OUTPUT_FILE as UNIFIED_IDENTITIES_FILE
-from services.data_loader import load_api_tokens, load_privilege_events
+from services.data_loader import load_api_tokens, load_offboarding_records, load_privilege_events
 from services.privilege_graph import effective_privilege
 
 
@@ -120,6 +120,82 @@ def _is_low_privilege_role(value: str) -> bool:
     return normalized in LOW_PRIVILEGE_ROLES
 
 
+def _generate_remediation_steps(risk_type: str, evidence: Dict[str, Any]) -> List[str]:
+    """Generate platform-specific remediation steps based on evidence."""
+    steps = []
+
+    if risk_type == "OFFBOARDING_GAP":
+        disabled = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in DISABLED_STATUSES]
+        active = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in ACTIVE_STATUSES]
+        if disabled and active:
+            platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+            disabled_names = [platform_labels.get(p.lower(), p.upper()) for p in disabled]
+            active_names = [platform_labels.get(p.lower(), p.upper()) for p in active]
+            steps.append(f"Disable this identity's access on {', '.join(active_names)} immediately — it remained active after the account was disabled in {', '.join(disabled_names)}.")
+
+    elif risk_type == "MULTI_PLATFORM_ADMIN":
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        admin_platforms = []
+        for platform, role in evidence.items():
+            if isinstance(role, str) and _is_admin_role(role):
+                admin_platforms.append(platform_labels.get(platform.lower(), platform.upper()))
+        if admin_platforms:
+            steps.append(f"Review and reduce administrative privileges across {', '.join(admin_platforms)}. Consider implementing just-in-time elevation instead of standing admin access.")
+
+    elif risk_type == "STALE_ACTIVE_ACCOUNT":
+        platform = evidence.get("platform", "")
+        days = evidence.get("days_since_last_login", 0)
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_name = platform_labels.get(platform.lower(), platform.upper())
+        steps.append(f"Disable or review the unused active account on {platform_name} — it has been inactive for {days} days. Confirm ongoing business need before re-enabling.")
+
+    elif risk_type == "SUSPENDED_ACCOUNT_MISMATCH":
+        suspended = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in SUSPENDED_STATUSES]
+        active = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in ACTIVE_STATUSES]
+        if suspended and active:
+            platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+            suspended_names = [platform_labels.get(p.lower(), p.upper()) for p in suspended]
+            active_names = [platform_labels.get(p.lower(), p.upper()) for p in active]
+            steps.append(f"Reconcile suspension state across identity providers. The account is suspended in {', '.join(suspended_names)} but remains active in {', '.join(active_names)}.")
+
+    elif risk_type == "EXCESSIVE_PLATFORM_EXPOSURE":
+        platforms = evidence.get("platforms", [])
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_names = [platform_labels.get(p.lower(), p.upper()) for p in platforms]
+        steps.append(f"Reduce platform access to only those required for the current role. Currently active on {', '.join(platform_names)} — review and remove unnecessary access.")
+
+    elif risk_type == "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING":
+        details = evidence.get("details", {})
+        for platform, detail in details.items():
+            if isinstance(detail, dict):
+                stated_role = detail.get("stated_role", "")
+                admin_roles = detail.get("admin_equivalent_roles", [])
+                platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+                platform_name = platform_labels.get(platform.lower(), platform.upper())
+                if admin_roles:
+                    steps.append(f"Remove from nested group memberships on {platform_name} that grant admin-equivalent access ({', '.join(admin_roles)}). The stated role is '{stated_role}' but effective privilege includes admin rights via group inheritance.")
+
+    elif risk_type == "UNAPPROVED_PRIVILEGE_SPIKE":
+        event_ids = evidence.get("event_ids", [])
+        steps.append(f"Require manager approval retroactively for these privilege changes: {', '.join(event_ids[:3])}{'...' if len(event_ids) > 3 else ''}. Consider reverting to the prior role pending security review.")
+        steps.append("Implement mandatory approval workflows for all future privilege elevation requests.")
+
+    elif risk_type == "STALE_OR_MISUSED_TOKEN":
+        token_id = evidence.get("token_id", "")
+        platform = evidence.get("scope", "")
+        last_rotated = evidence.get("last_rotated", "")
+        reasons = evidence.get("reasons", [])
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_name = platform_labels.get(platform.lower(), platform.upper())
+        if "stale_rotation" in reasons:
+            steps.append(f"Rotate or revoke API token {token_id} on {platform_name} — it has not been rotated since {last_rotated}.")
+        if "misused_write_scope" in reasons:
+            steps.append(f"Revoke API token {token_id} on {platform_name} — it has write activity despite being scoped as read-only.")
+        steps.append("Audit recent API activity for this token to identify any unauthorized actions.")
+
+    return steps
+
+
 def _new_finding(
     counter: int,
     unified: Mapping[str, Any],
@@ -128,6 +204,7 @@ def _new_finding(
     description: str,
     evidence: Dict[str, Any],
 ) -> Finding:
+    remediation_steps = _generate_remediation_steps(risk_type, evidence)
     return Finding(
         finding_id=f"F{counter:03d}",
         person_id=str(unified.get("person_id", "")),
@@ -137,6 +214,7 @@ def _new_finding(
         severity=severity,
         description=description,
         evidence=evidence,
+        remediation_steps=remediation_steps,
     )
 
 
@@ -481,6 +559,155 @@ def save_findings(findings: Sequence[Finding], output_path: Path | str = RISK_FI
     payload = [finding.to_dict() for finding in findings]
     destination.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return destination
+
+
+def _derive_department(accounts: Mapping[str, Any]) -> str:
+    """Derive department from account roles."""
+    roles = [data.get("role", "").lower() for data in accounts.values() if isinstance(data, Mapping)]
+    if any("security" in role for role in roles):
+        return "Security"
+    if any(role in ("developer", "engineer", "devops") for role in roles):
+        return "Engineering"
+    if any(role in ("support", "it", "administrator", "admin") for role in roles):
+        return "IT"
+    if any(role in ("finance", "controller", "accountant") for role in roles):
+        return "Finance"
+    if any("hr" in role or "people" in role for role in roles):
+        return "HR"
+    if any(role in ("sales", "account executive", "customer success") for role in roles):
+        return "Sales"
+    if any("contractor" in role for role in roles):
+        return "Operations"
+    return "Operations"
+
+
+def consolidate_findings(
+    findings: List[Finding],
+    unified_identities: Sequence[Mapping[str, Any]] | None = None,
+) -> List[Dict[str, Any]]:
+    """Consolidate findings into incidents by person and department."""
+    # Build person lookup for department info
+    person_lookup: Dict[str, Mapping[str, Any]] = {}
+    if unified_identities:
+        person_lookup = {
+            str(identity.get("person_id", "")): identity for identity in unified_identities
+        }
+
+    # Primary consolidation: group by person_id
+    person_incidents: Dict[str, Dict[str, Any]] = {}
+    for finding in findings:
+        person_id = finding.person_id
+        if person_id not in person_incidents:
+            person_incidents[person_id] = {
+                "incident_id": f"I{len(person_incidents) + 1:03d}",
+                "person_id": person_id,
+                "name": finding.name,
+                "email": finding.email,
+                "finding_count": 0,
+                "risk_types": set(),
+                "combined_severity": "LOW",
+                "findings": [],
+                "department": None,
+            }
+        incident = person_incidents[person_id]
+        incident["finding_count"] += 1
+        incident["risk_types"].add(finding.risk_type)
+        incident["findings"].append(finding.to_dict())
+
+        # Update severity (HIGH > MEDIUM > LOW)
+        severity_order = {"HIGH": 3, "MEDIUM": 2, "LOW": 1}
+        if severity_order.get(finding.severity, 0) > severity_order.get(
+            incident["combined_severity"], 0
+        ):
+            incident["combined_severity"] = finding.severity
+
+    # Add department info
+    for incident in person_incidents.values():
+        person = person_lookup.get(incident["person_id"])
+        if person:
+            accounts = person.get("accounts", {})
+            incident["department"] = _derive_department(accounts)
+
+    # Convert sets to lists for JSON serialization
+    incidents = []
+    for incident in person_incidents.values():
+        incident["risk_types"] = sorted(list(incident["risk_types"]))
+        incidents.append(incident)
+
+    # Secondary clustering: department-level incidents
+    # Group by (department, risk_type) where 2+ people within 7 days
+    dept_risk_groups: Dict[tuple, List[Dict[str, Any]]] = {}
+    for incident in incidents:
+        dept = incident.get("department", "Unknown")
+        for risk_type in incident["risk_types"]:
+            key = (dept, risk_type)
+            if key not in dept_risk_groups:
+                dept_risk_groups[key] = []
+            dept_risk_groups[key].append(incident)
+
+    # Load timestamp data for clustering
+    privilege_events = load_privilege_events()
+    offboarding_records = load_offboarding_records()
+
+    # Build timestamp lookup
+    event_timestamps: Dict[str, datetime] = {}
+    for event in privilege_events:
+        ts = _parse_timestamp(event.timestamp)
+        if ts:
+            event_timestamps[event.email.lower().strip()] = ts
+
+    offboard_timestamps: Dict[str, datetime] = {}
+    for record in offboarding_records:
+        ts = _parse_date(record.termination_date)
+        if ts:
+            offboard_timestamps[record.email.lower().strip()] = datetime.combine(ts, datetime.min.time()).replace(tzinfo=timezone.utc)
+
+    # Create department-level incidents where justified
+    dept_incidents: List[Dict[str, Any]] = []
+    for (dept, risk_type), person_incidents_list in dept_risk_groups.items():
+        if len(person_incidents_list) < 2:
+            continue
+
+        # Check if timestamps are within 7 days
+        timestamps = []
+        for incident in person_incidents_list:
+            email = incident["email"].lower().strip()
+            ts = event_timestamps.get(email) or offboard_timestamps.get(email)
+            if ts:
+                timestamps.append(ts)
+
+        if len(timestamps) < 2:
+            continue
+
+        timestamps.sort()
+        max_diff_days = (timestamps[-1] - timestamps[0]).days
+        if max_diff_days <= 7:
+            # Create department-level incident
+            dept_incident = {
+                "incident_id": f"D{len(dept_incidents) + 1:03d}",
+                "type": "department",
+                "department": dept,
+                "risk_type": risk_type,
+                "person_count": len(person_incidents_list),
+                "combined_severity": max(
+                    (inc.get("combined_severity", "LOW") for inc in person_incidents_list),
+                    key=lambda s: severity_order.get(s, 0),
+                ),
+                "description": f"{len(person_incidents_list)} people in {dept} flagged for {risk_type} within a 7-day window",
+                "person_incidents": [inc["incident_id"] for inc in person_incidents_list],
+            }
+            dept_incidents.append(dept_incident)
+
+    # Combine person-level and department-level incidents
+    # Remove person incidents that were merged into dept incidents
+    merged_person_ids = set()
+    for dept_inc in dept_incidents:
+        merged_person_ids.update(dept_inc["person_incidents"])
+
+    final_incidents = [inc for inc in incidents if inc["incident_id"] not in merged_person_ids]
+    final_incidents.extend(dept_incidents)
+
+    return final_incidents
 
 
 def generate_risk_report(findings: Sequence[Finding], unified_identities: Sequence[Mapping[str, Any]]) -> str:

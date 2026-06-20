@@ -16,3 +16,4 @@ class FindingResponse(BaseModel):
     severity: str
     description: str
     evidence: Dict[str, Any]
+    remediation_steps: List[str] = []
