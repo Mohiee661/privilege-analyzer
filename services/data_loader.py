@@ -22,6 +22,10 @@ class UserRecord:
     platform: str
     role: str
     last_login: str
+    account_type: str
+    owner_email: str
+    mfa_enabled: bool
+    risk_context: str | None
 
 
 @dataclass(frozen=True)
@@ -41,6 +45,41 @@ class OffboardingRecord:
     reason: str
 
 
+@dataclass(frozen=True)
+class GroupMembership:
+    group_id: str
+    platform: str
+    group_name: str
+    grants_role: str
+    parent_group_id: str | None
+    direct_members: List[str]
+
+
+@dataclass(frozen=True)
+class PrivilegeEvent:
+    event_id: str
+    email: str
+    platform: str
+    event_type: str
+    old_value: str
+    new_value: str
+    timestamp: str
+    approved_by: str | None
+
+
+@dataclass(frozen=True)
+class ApiToken:
+    token_id: str
+    owner_email: str
+    platform: str
+    scope: str
+    created_date: str
+    last_rotated: str
+    last_used: str
+    observed_write_call: bool
+    status: str
+
+
 T = TypeVar("T")
 
 
@@ -53,6 +92,10 @@ USER_FIELDS: Sequence[str] = (
     "platform",
     "role",
     "last_login",
+    "account_type",
+    "owner_email",
+    "mfa_enabled",
+    "risk_context",
 )
 
 LOGIN_EVENT_FIELDS: Sequence[str] = (
@@ -68,6 +111,38 @@ OFFBOARDING_FIELDS: Sequence[str] = (
     "email",
     "termination_date",
     "reason",
+)
+
+GROUP_MEMBERSHIP_FIELDS: Sequence[str] = (
+    "group_id",
+    "platform",
+    "group_name",
+    "grants_role",
+    "parent_group_id",
+    "direct_members",
+)
+
+PRIVILEGE_EVENT_FIELDS: Sequence[str] = (
+    "event_id",
+    "email",
+    "platform",
+    "event_type",
+    "old_value",
+    "new_value",
+    "timestamp",
+    "approved_by",
+)
+
+API_TOKEN_FIELDS: Sequence[str] = (
+    "token_id",
+    "owner_email",
+    "platform",
+    "scope",
+    "created_date",
+    "last_rotated",
+    "last_used",
+    "observed_write_call",
+    "status",
 )
 
 
@@ -161,6 +236,18 @@ def load_offboarding_records() -> List[OffboardingRecord]:
     return _load_dataset("offboarding_records.json", OFFBOARDING_FIELDS, OffboardingRecord)
 
 
+def load_group_memberships() -> List[GroupMembership]:
+    return _load_dataset("group_memberships.json", GROUP_MEMBERSHIP_FIELDS, GroupMembership)
+
+
+def load_privilege_events() -> List[PrivilegeEvent]:
+    return _load_dataset("privilege_events.json", PRIVILEGE_EVENT_FIELDS, PrivilegeEvent)
+
+
+def load_api_tokens() -> List[ApiToken]:
+    return _load_dataset("api_tokens.json", API_TOKEN_FIELDS, ApiToken)
+
+
 def load_all_datasets() -> Dict[str, List[object]]:
     return {
         "ad_users": load_ad_users(),
@@ -170,4 +257,7 @@ def load_all_datasets() -> Dict[str, List[object]]:
         "salesforce_users": load_salesforce_users(),
         "login_events": load_login_events(),
         "offboarding_records": load_offboarding_records(),
+        "group_memberships": load_group_memberships(),
+        "privilege_events": load_privilege_events(),
+        "api_tokens": load_api_tokens(),
     }
