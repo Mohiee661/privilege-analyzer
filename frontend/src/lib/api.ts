@@ -7,6 +7,7 @@ import type {
   Finding,
   FindingType,
   Identity,
+  Incident,
   MetricPoint,
   Platform,
   RiskProfile,
@@ -51,6 +52,23 @@ interface ApiFinding {
   severity: string;
   description: string;
   evidence: Record<string, unknown>;
+}
+
+interface ApiIncident {
+  incident_id: string;
+  person_id: string | null;
+  name: string | null;
+  email: string | null;
+  finding_count: number | null;
+  risk_types: string[];
+  combined_severity: string;
+  findings: Record<string, unknown>[];
+  department: string | null;
+  type: string | null;
+  risk_type: string | null;
+  person_count: number | null;
+  description: string | null;
+  person_incidents: string[];
 }
 
 interface ApiAIReport {
@@ -349,6 +367,29 @@ function convertFinding(apiFinding: ApiFinding, identity: Identity | undefined):
   };
 }
 
+function convertIncident(apiIncident: ApiIncident, identityById: Record<string, Identity>): Incident {
+  const findings = (apiIncident.findings || []).map((f: any) =>
+    convertFinding(f, identityById[f.person_id]),
+  );
+
+  return {
+    incidentId: apiIncident.incident_id,
+    personId: apiIncident.person_id,
+    name: apiIncident.name,
+    email: apiIncident.email,
+    findingCount: apiIncident.finding_count,
+    riskTypes: (apiIncident.risk_types || []).map(toFindingType),
+    combinedSeverity: toRiskLevel(apiIncident.combined_severity),
+    findings,
+    department: apiIncident.department,
+    type: apiIncident.type as "person" | "department" | null,
+    riskType: apiIncident.risk_type ? toFindingType(apiIncident.risk_type) : null,
+    personCount: apiIncident.person_count,
+    description: apiIncident.description,
+    personIncidents: apiIncident.person_incidents || [],
+  };
+}
+
 function convertRiskProfile(apiProfile: ApiRiskProfile): RiskProfile {
   return {
     personId: apiProfile.person_id,
@@ -508,18 +549,19 @@ function buildTimeline(identity: Identity, findings: Finding[]): TimelineEvent[]
 }
 
 async function loadRawWorkspace() {
-  const [identities, riskProfiles, findings, aiReports, dashboard, analytics, accuracy] =
+  const [identities, riskProfiles, findings, incidents, aiReports, dashboard, analytics, accuracy] =
     await Promise.all([
       fetchAllIdentities(),
       requestJson<ApiRiskProfile[]>("/risks"),
       requestJson<ApiFinding[]>("/findings"),
+      requestJson<ApiIncident[]>("/incidents"),
       requestJson<ApiAIReport[]>("/ai-reports"),
       requestJson<ApiDashboard>("/dashboard"),
       requestJson<ApiAnalytics>("/analytics"),
       requestJson<ApiAccuracy>("/accuracy"),
     ]);
 
-  return { identities, riskProfiles, findings, aiReports, dashboard, analytics, accuracy };
+  return { identities, riskProfiles, findings, incidents, aiReports, dashboard, analytics, accuracy };
 }
 
 export async function loadWorkspaceData(): Promise<WorkspaceData> {
@@ -529,6 +571,7 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
         identities: apiIdentities,
         riskProfiles: apiRiskProfiles,
         findings: apiFindings,
+        incidents: apiIncidents,
         aiReports: apiAiReports,
         dashboard,
         analytics,
@@ -591,6 +634,8 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
           findingCount: findingsByIdentityId[identity.id]?.length ?? identity.findingCount,
         }));
 
+        const incidents = apiIncidents.map((incident) => convertIncident(incident, identityById));
+
         const workspace: WorkspaceData = {
           dashboard: {
             totalIdentities: dashboard.total_identities,
@@ -622,6 +667,7 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
           topCritical: topCriticalWithCounts,
           identities,
           findings,
+          incidents,
           aiReports,
           identityById,
           findingsByIdentityId,

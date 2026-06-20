@@ -9,6 +9,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from services.risk_engine import (  # noqa: E402
+    consolidate_findings,
     detect_nested_group_privilege,
     detect_privilege_spikes,
     detect_token_abuse,
@@ -255,3 +256,29 @@ def test_save_findings_and_report(tmp_path, capsys):
     captured = capsys.readouterr().out
     assert "RISK REPORT" in captured
     assert "TOTAL FINDINGS" in report
+
+
+def test_consolidation_reduces_alert_count():
+    """Test that consolidation reduces alert count by at least 35% using production data."""
+    # Load actual production data to test consolidation
+    from services.risk_engine import load_unified_identities, LAST_FINDINGS
+    
+    # Load unified identities
+    unified_identities = load_unified_identities()
+    
+    # Run detectors to get findings
+    findings = run_all_detectors(unified_identities)
+    raw_count = len(findings)
+    
+    # Consolidate findings
+    incidents = consolidate_findings(findings, unified_identities)
+    incident_count = len(incidents)
+    
+    reduction_percentage = ((raw_count - incident_count) / raw_count) * 100
+    
+    print(f"\nRaw findings: {raw_count}")
+    print(f"Consolidated incidents: {incident_count}")
+    print(f"Reduction: {reduction_percentage:.2f}%")
+    
+    # Assert at least 35% reduction
+    assert reduction_percentage >= 35, f"Consolidation only achieved {reduction_percentage:.2f}% reduction, below 35% target"

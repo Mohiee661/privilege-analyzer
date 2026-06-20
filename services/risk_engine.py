@@ -16,7 +16,7 @@ if __package__ in (None, ""):
 
 from models.finding import Finding
 from services.correlation_engine import OUTPUT_FILE as UNIFIED_IDENTITIES_FILE
-from services.data_loader import load_api_tokens, load_privilege_events
+from services.data_loader import load_api_tokens, load_offboarding_records, load_privilege_events
 from services.privilege_graph import effective_privilege
 
 
@@ -481,6 +481,155 @@ def save_findings(findings: Sequence[Finding], output_path: Path | str = RISK_FI
     payload = [finding.to_dict() for finding in findings]
     destination.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return destination
+
+
+def _derive_department(accounts: Mapping[str, Any]) -> str:
+    """Derive department from account roles."""
+    roles = [data.get("role", "").lower() for data in accounts.values() if isinstance(data, Mapping)]
+    if any("security" in role for role in roles):
+        return "Security"
+    if any(role in ("developer", "engineer", "devops") for role in roles):
+        return "Engineering"
+    if any(role in ("support", "it", "administrator", "admin") for role in roles):
+        return "IT"
+    if any(role in ("finance", "controller", "accountant") for role in roles):
+        return "Finance"
+    if any("hr" in role or "people" in role for role in roles):
+        return "HR"
+    if any(role in ("sales", "account executive", "customer success") for role in roles):
+        return "Sales"
+    if any("contractor" in role for role in roles):
+        return "Operations"
+    return "Operations"
+
+
+def consolidate_findings(
+    findings: List[Finding],
+    unified_identities: Sequence[Mapping[str, Any]] | None = None,
+) -> List[Dict[str, Any]]:
+    """Consolidate findings into incidents by person and department."""
+    # Build person lookup for department info
+    person_lookup: Dict[str, Mapping[str, Any]] = {}
+    if unified_identities:
+        person_lookup = {
+            str(identity.get("person_id", "")): identity for identity in unified_identities
+        }
+
+    # Primary consolidation: group by person_id
+    person_incidents: Dict[str, Dict[str, Any]] = {}
+    for finding in findings:
+        person_id = finding.person_id
+        if person_id not in person_incidents:
+            person_incidents[person_id] = {
+                "incident_id": f"I{len(person_incidents) + 1:03d}",
+                "person_id": person_id,
+                "name": finding.name,
+                "email": finding.email,
+                "finding_count": 0,
+                "risk_types": set(),
+                "combined_severity": "LOW",
+                "findings": [],
+                "department": None,
+            }
+        incident = person_incidents[person_id]
+        incident["finding_count"] += 1
+        incident["risk_types"].add(finding.risk_type)
+        incident["findings"].append(finding.to_dict())
+
+        # Update severity (HIGH > MEDIUM > LOW)
+        severity_order = {"HIGH": 3, "MEDIUM": 2, "LOW": 1}
+        if severity_order.get(finding.severity, 0) > severity_order.get(
+            incident["combined_severity"], 0
+        ):
+            incident["combined_severity"] = finding.severity
+
+    # Add department info
+    for incident in person_incidents.values():
+        person = person_lookup.get(incident["person_id"])
+        if person:
+            accounts = person.get("accounts", {})
+            incident["department"] = _derive_department(accounts)
+
+    # Convert sets to lists for JSON serialization
+    incidents = []
+    for incident in person_incidents.values():
+        incident["risk_types"] = sorted(list(incident["risk_types"]))
+        incidents.append(incident)
+
+    # Secondary clustering: department-level incidents
+    # Group by (department, risk_type) where 2+ people within 7 days
+    dept_risk_groups: Dict[tuple, List[Dict[str, Any]]] = {}
+    for incident in incidents:
+        dept = incident.get("department", "Unknown")
+        for risk_type in incident["risk_types"]:
+            key = (dept, risk_type)
+            if key not in dept_risk_groups:
+                dept_risk_groups[key] = []
+            dept_risk_groups[key].append(incident)
+
+    # Load timestamp data for clustering
+    privilege_events = load_privilege_events()
+    offboarding_records = load_offboarding_records()
+
+    # Build timestamp lookup
+    event_timestamps: Dict[str, datetime] = {}
+    for event in privilege_events:
+        ts = _parse_timestamp(event.timestamp)
+        if ts:
+            event_timestamps[event.email.lower().strip()] = ts
+
+    offboard_timestamps: Dict[str, datetime] = {}
+    for record in offboarding_records:
+        ts = _parse_date(record.termination_date)
+        if ts:
+            offboard_timestamps[record.email.lower().strip()] = datetime.combine(ts, datetime.min.time()).replace(tzinfo=timezone.utc)
+
+    # Create department-level incidents where justified
+    dept_incidents: List[Dict[str, Any]] = []
+    for (dept, risk_type), person_incidents_list in dept_risk_groups.items():
+        if len(person_incidents_list) < 2:
+            continue
+
+        # Check if timestamps are within 7 days
+        timestamps = []
+        for incident in person_incidents_list:
+            email = incident["email"].lower().strip()
+            ts = event_timestamps.get(email) or offboard_timestamps.get(email)
+            if ts:
+                timestamps.append(ts)
+
+        if len(timestamps) < 2:
+            continue
+
+        timestamps.sort()
+        max_diff_days = (timestamps[-1] - timestamps[0]).days
+        if max_diff_days <= 7:
+            # Create department-level incident
+            dept_incident = {
+                "incident_id": f"D{len(dept_incidents) + 1:03d}",
+                "type": "department",
+                "department": dept,
+                "risk_type": risk_type,
+                "person_count": len(person_incidents_list),
+                "combined_severity": max(
+                    (inc.get("combined_severity", "LOW") for inc in person_incidents_list),
+                    key=lambda s: severity_order.get(s, 0),
+                ),
+                "description": f"{len(person_incidents_list)} people in {dept} flagged for {risk_type} within a 7-day window",
+                "person_incidents": [inc["incident_id"] for inc in person_incidents_list],
+            }
+            dept_incidents.append(dept_incident)
+
+    # Combine person-level and department-level incidents
+    # Remove person incidents that were merged into dept incidents
+    merged_person_ids = set()
+    for dept_inc in dept_incidents:
+        merged_person_ids.update(dept_inc["person_incidents"])
+
+    final_incidents = [inc for inc in incidents if inc["incident_id"] not in merged_person_ids]
+    final_incidents.extend(dept_incidents)
+
+    return final_incidents
 
 
 def generate_risk_report(findings: Sequence[Finding], unified_identities: Sequence[Mapping[str, Any]]) -> str:

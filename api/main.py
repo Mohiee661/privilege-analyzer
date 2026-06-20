@@ -12,6 +12,7 @@ from api.routers.analytics import router as analytics_router
 from api.routers.dashboard import router as dashboard_router
 from api.routers.findings import router as findings_router
 from api.routers.identities import router as identities_router
+from api.routers.incidents import router as incidents_router
 from api.routers.risks import router as risks_router
 from api.routers.search import router as search_router
 
@@ -35,6 +36,7 @@ app.include_router(dashboard_router, prefix=API_PREFIX)
 app.include_router(accuracy_router, prefix=API_PREFIX)
 app.include_router(identities_router, prefix=API_PREFIX)
 app.include_router(findings_router, prefix=API_PREFIX)
+app.include_router(incidents_router, prefix=API_PREFIX)
 app.include_router(risks_router, prefix=API_PREFIX)
 app.include_router(ai_reports_router, prefix=API_PREFIX)
 app.include_router(search_router, prefix=API_PREFIX)
