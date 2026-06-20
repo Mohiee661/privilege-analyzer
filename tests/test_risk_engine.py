@@ -9,6 +9,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from services.risk_engine import (  # noqa: E402
+    _generate_remediation_steps,
     consolidate_findings,
     detect_nested_group_privilege,
     detect_privilege_spikes,
@@ -282,3 +283,63 @@ def test_consolidation_reduces_alert_count():
     
     # Assert at least 35% reduction
     assert reduction_percentage >= 35, f"Consolidation only achieved {reduction_percentage:.2f}% reduction, below 35% target"
+
+
+def test_remediation_steps_include_specific_platforms():
+    """Test that remediation steps reference specific platforms from evidence."""
+    # Test OFFBOARDING_GAP
+    evidence = {"ad": "disabled", "aws": "active", "azure": "active"}
+    steps = _generate_remediation_steps("OFFBOARDING_GAP", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "Active Directory" in step_text or "AWS" in step_text or "Azure" in step_text
+
+    # Test MULTI_PLATFORM_ADMIN
+    evidence = {"aws": "Administrator", "azure": "Global Administrator"}
+    steps = _generate_remediation_steps("MULTI_PLATFORM_ADMIN", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "AWS" in step_text or "Azure" in step_text
+
+    # Test STALE_ACTIVE_ACCOUNT
+    evidence = {"platform": "okta", "days_since_last_login": 90}
+    steps = _generate_remediation_steps("STALE_ACTIVE_ACCOUNT", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "Okta" in step_text
+    assert "90" in step_text
+
+    # Test EXCESSIVE_PLATFORM_EXPOSURE
+    evidence = {"platforms": ["ad", "aws", "azure", "okta"]}
+    steps = _generate_remediation_steps("EXCESSIVE_PLATFORM_EXPOSURE", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "Active Directory" in step_text or "AWS" in step_text or "Azure" in step_text or "Okta" in step_text
+
+    # Test HIDDEN_PRIVILEGE_VIA_GROUP_NESTING
+    evidence = {
+        "details": {
+            "aws": {
+                "stated_role": "Developer",
+                "admin_equivalent_roles": ["Administrator"],
+            }
+        }
+    }
+    steps = _generate_remediation_steps("HIDDEN_PRIVILEGE_VIA_GROUP_NESTING", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "AWS" in step_text
+    assert "Administrator" in step_text
+
+    # Test STALE_OR_MISUSED_TOKEN
+    evidence = {
+        "token_id": "TOK001",
+        "scope": "aws",
+        "last_rotated": "2024-01-01",
+        "reasons": ["stale_rotation"],
+    }
+    steps = _generate_remediation_steps("STALE_OR_MISUSED_TOKEN", evidence)
+    assert len(steps) > 0
+    step_text = " ".join(steps)
+    assert "TOK001" in step_text
+    assert "AWS" in step_text

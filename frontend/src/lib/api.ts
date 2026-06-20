@@ -52,6 +52,7 @@ interface ApiFinding {
   severity: string;
   description: string;
   evidence: Record<string, unknown>;
+  remediation_steps: string[];
 }
 
 interface ApiIncident {
@@ -354,13 +355,19 @@ function convertFinding(apiFinding: ApiFinding, identity: Identity | undefined):
   const platforms =
     evidencePlatforms.length > 0 ? evidencePlatforms : access.map((item) => item.platform);
 
+  // Use generated remediation steps if available, otherwise fallback to static recommendations
+  const recommendation =
+    apiFinding.remediation_steps && apiFinding.remediation_steps.length > 0
+      ? apiFinding.remediation_steps.join(" ")
+      : recommendationForFindingType(type);
+
   return {
     id: apiFinding.finding_id,
     type,
     severity: toRiskLevel(apiFinding.severity),
     description: apiFinding.description,
     evidence: stringifyEvidence(apiFinding.evidence),
-    recommendation: recommendationForFindingType(type),
+    recommendation,
     identityId: apiFinding.person_id,
     platforms,
     createdAt: identity?.lastLogin ?? new Date().toISOString(),

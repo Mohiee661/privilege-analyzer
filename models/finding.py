@@ -16,6 +16,7 @@ class Finding:
     severity: str
     description: str
     evidence: Dict[str, Any] = field(default_factory=dict)
+    remediation_steps: List[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -27,4 +28,5 @@ class Finding:
             "severity": self.severity,
             "description": self.description,
             "evidence": self.evidence,
+            "remediation_steps": self.remediation_steps,
         }

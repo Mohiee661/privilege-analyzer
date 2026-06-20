@@ -120,6 +120,82 @@ def _is_low_privilege_role(value: str) -> bool:
     return normalized in LOW_PRIVILEGE_ROLES
 
 
+def _generate_remediation_steps(risk_type: str, evidence: Dict[str, Any]) -> List[str]:
+    """Generate platform-specific remediation steps based on evidence."""
+    steps = []
+
+    if risk_type == "OFFBOARDING_GAP":
+        disabled = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in DISABLED_STATUSES]
+        active = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in ACTIVE_STATUSES]
+        if disabled and active:
+            platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+            disabled_names = [platform_labels.get(p.lower(), p.upper()) for p in disabled]
+            active_names = [platform_labels.get(p.lower(), p.upper()) for p in active]
+            steps.append(f"Disable this identity's access on {', '.join(active_names)} immediately — it remained active after the account was disabled in {', '.join(disabled_names)}.")
+
+    elif risk_type == "MULTI_PLATFORM_ADMIN":
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        admin_platforms = []
+        for platform, role in evidence.items():
+            if isinstance(role, str) and _is_admin_role(role):
+                admin_platforms.append(platform_labels.get(platform.lower(), platform.upper()))
+        if admin_platforms:
+            steps.append(f"Review and reduce administrative privileges across {', '.join(admin_platforms)}. Consider implementing just-in-time elevation instead of standing admin access.")
+
+    elif risk_type == "STALE_ACTIVE_ACCOUNT":
+        platform = evidence.get("platform", "")
+        days = evidence.get("days_since_last_login", 0)
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_name = platform_labels.get(platform.lower(), platform.upper())
+        steps.append(f"Disable or review the unused active account on {platform_name} — it has been inactive for {days} days. Confirm ongoing business need before re-enabling.")
+
+    elif risk_type == "SUSPENDED_ACCOUNT_MISMATCH":
+        suspended = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in SUSPENDED_STATUSES]
+        active = [k for k, v in evidence.items() if isinstance(v, str) and v.lower() in ACTIVE_STATUSES]
+        if suspended and active:
+            platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+            suspended_names = [platform_labels.get(p.lower(), p.upper()) for p in suspended]
+            active_names = [platform_labels.get(p.lower(), p.upper()) for p in active]
+            steps.append(f"Reconcile suspension state across identity providers. The account is suspended in {', '.join(suspended_names)} but remains active in {', '.join(active_names)}.")
+
+    elif risk_type == "EXCESSIVE_PLATFORM_EXPOSURE":
+        platforms = evidence.get("platforms", [])
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_names = [platform_labels.get(p.lower(), p.upper()) for p in platforms]
+        steps.append(f"Reduce platform access to only those required for the current role. Currently active on {', '.join(platform_names)} — review and remove unnecessary access.")
+
+    elif risk_type == "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING":
+        details = evidence.get("details", {})
+        for platform, detail in details.items():
+            if isinstance(detail, dict):
+                stated_role = detail.get("stated_role", "")
+                admin_roles = detail.get("admin_equivalent_roles", [])
+                platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+                platform_name = platform_labels.get(platform.lower(), platform.upper())
+                if admin_roles:
+                    steps.append(f"Remove from nested group memberships on {platform_name} that grant admin-equivalent access ({', '.join(admin_roles)}). The stated role is '{stated_role}' but effective privilege includes admin rights via group inheritance.")
+
+    elif risk_type == "UNAPPROVED_PRIVILEGE_SPIKE":
+        event_ids = evidence.get("event_ids", [])
+        steps.append(f"Require manager approval retroactively for these privilege changes: {', '.join(event_ids[:3])}{'...' if len(event_ids) > 3 else ''}. Consider reverting to the prior role pending security review.")
+        steps.append("Implement mandatory approval workflows for all future privilege elevation requests.")
+
+    elif risk_type == "STALE_OR_MISUSED_TOKEN":
+        token_id = evidence.get("token_id", "")
+        platform = evidence.get("scope", "")
+        last_rotated = evidence.get("last_rotated", "")
+        reasons = evidence.get("reasons", [])
+        platform_labels = {"ad": "Active Directory", "azure": "Azure AD", "aws": "AWS IAM", "okta": "Okta", "salesforce": "Salesforce"}
+        platform_name = platform_labels.get(platform.lower(), platform.upper())
+        if "stale_rotation" in reasons:
+            steps.append(f"Rotate or revoke API token {token_id} on {platform_name} — it has not been rotated since {last_rotated}.")
+        if "misused_write_scope" in reasons:
+            steps.append(f"Revoke API token {token_id} on {platform_name} — it has write activity despite being scoped as read-only.")
+        steps.append("Audit recent API activity for this token to identify any unauthorized actions.")
+
+    return steps
+
+
 def _new_finding(
     counter: int,
     unified: Mapping[str, Any],
@@ -128,6 +204,7 @@ def _new_finding(
     description: str,
     evidence: Dict[str, Any],
 ) -> Finding:
+    remediation_steps = _generate_remediation_steps(risk_type, evidence)
     return Finding(
         finding_id=f"F{counter:03d}",
         person_id=str(unified.get("person_id", "")),
@@ -137,6 +214,7 @@ def _new_finding(
         severity=severity,
         description=description,
         evidence=evidence,
+        remediation_steps=remediation_steps,
     )
 
 
