@@ -521,24 +521,24 @@
   ],
   "top_departments_at_risk": [
     {
-      "department": "HR",
-      "risky_identities": 7
-    },
-    {
-      "department": "Operations",
-      "risky_identities": 5
-    },
-    {
-      "department": "Security",
-      "risky_identities": 5
-    },
-    {
-      "department": "IT",
-      "risky_identities": 4
+      "department": "Unknown",
+      "risky_identities": 15
     },
     {
       "department": "Finance",
+      "risky_identities": 4
+    },
+    {
+      "department": "Sales",
       "risky_identities": 3
+    },
+    {
+      "department": "Operations",
+      "risky_identities": 2
+    },
+    {
+      "department": "HR",
+      "risky_identities": 2
     }
   ],
   "demo_scenarios": [

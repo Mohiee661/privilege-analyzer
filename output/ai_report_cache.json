@@ -9,15 +9,5 @@
       "Disable accounts",
       "Review privileges"
     ]
-  },
-  "ac602fae18acd69056183f785d4767e8a993939a01ea472ca48d320547ea7d09": {
-    "person_id": "PID001",
-    "risk_score": 0,
-    "risk_level": "NONE",
-    "summary": "The identity of David Anderson has been assessed and found to have no known risk factors.",
-    "security_impact": "Since there are no identified risks, ignoring this issue is not expected to have any negative security consequences.",
-    "recommended_actions": [
-      "No specific remediation actions are recommended at this time, but ongoing monitoring is advised to ensure the risk level remains low."
-    ]
   }
 }

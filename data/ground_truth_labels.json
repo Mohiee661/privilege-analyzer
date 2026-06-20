@@ -1,0 +1,1382 @@
+[
+  {
+    "email": "amelia.johnson@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.williams@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.walker@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.johnson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "william.brown@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-data-sync-13@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.white@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "william.smith@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.smith@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.miller@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "jane.white@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "john.anderson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.jackson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "lucas.moore@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "emily.jackson@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.perez@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "william.lee@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.jackson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.clark@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.johnson@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.white@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.jackson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.brown@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.lee@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.perez@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.davis@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.miller@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.smith@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.williams@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.davis@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "noah.kumar@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.white@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.carter@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-etl-prod-08@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.moore@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.taylor@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.white@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.moore@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ava.davis@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.miller@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "arjun.thomas@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "noah.lewis@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.shah@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.martin@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.johnson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "james.wilson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-ci-deploy-02@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.shah@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.perez@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "maria.anderson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.williams@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.jackson@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.lee@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.anderson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.jones@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.davis@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ethan.perez@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.moore@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.davis@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "william.lewis@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.smith@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.perez@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.moore@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.taylor@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ava.brown@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.brown@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.smith@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.kumar@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.clark@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.hall@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.smith@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.moore@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "liam.williams@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.lee@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "maria.brown@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.hall@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-data-sync-05@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.taylor@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.brown@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.clark@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.hall@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.thompson@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.wilson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "mia.moore@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "liam.brown@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.carter@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "liam.jackson@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.white@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.hall@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.brown@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.moore@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-billing-cron-06@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "isabella.shah@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.lewis@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.shah@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.thompson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.moore@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.taylor@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sophia.brown@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "svc-monitoring-03@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.anderson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-log-shipper-15@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.miller@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.taylor@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "michael.shah@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.thomas@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "sarah.martin@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.robinson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.williams@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.hall@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.robinson@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.perez@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.thompson@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.taylor@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.wilson@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.anderson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "olivia.thompson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.kumar@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "isabella.lee@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "maria.smith@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.perez@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "michael.thomas@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.thomas@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "james.robinson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.harris@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ethan.taylor@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.thomas@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "isabella.miller@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.kumar@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.thompson@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.perez@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "arjun.perez@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.robinson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.davis@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.williams@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "jane.jones@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.carter@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.carter@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "arjun.white@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.thomas@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.clark@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.carter@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "mia.martin@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.johnson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.anderson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "arjun.shah@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-report-gen-12@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.thompson@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.miller@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sophia.kumar@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-etl-prod-00@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.miller@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "michael.smith@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.johnson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.smith@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.brown@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-log-shipper-07@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.walker@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.jackson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.carter@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.wilson@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.wilson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "olivia.carter@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "michael.miller@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ethan.clark@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "svc-report-gen-04@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.kumar@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sophia.harris@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "william.kumar@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.carter@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.white@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "arjun.martin@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.kumar@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.thompson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.miller@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.walker@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.jones@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-backup-job-01@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.robinson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.harris@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.thompson@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.martin@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "isabella.carter@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "liam.taylor@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ethan.kumar@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "liam.anderson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.thomas@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "daniel.carter@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.smith@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "ava.williams@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.thomas@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "emily.taylor@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "chloe.brown@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "isabella.moore@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.thomas@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "robert.harris@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "ethan.anderson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "amelia.robinson@company.com",
+    "category": "privilege_escalation",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "james.anderson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.jones@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "yusuf.wilson@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.anderson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "noah.smith@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "daniel.smith@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.moore@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.robinson@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.thompson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "amelia.hall@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "james.perez@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.miller@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "amelia.carter@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "maria.lewis@company.com",
+    "category": "offboarding_gap",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sophia.robinson@company.com",
+    "category": "multi_platform_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.smith@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "olivia.johnson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "david.hall@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "william.white@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "sophia.shah@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-monitoring-11@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "robert.taylor@company.com",
+    "category": "token_abuse",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-backup-job-09@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "sarah.wilson@company.com",
+    "category": "nested_group_hidden_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-ci-deploy-10@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "mia.thomas@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
+  },
+  {
+    "email": "mia.white@company.com",
+    "category": "orphaned_service_account",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "priya.thompson@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "john.robinson@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "svc-billing-cron-14@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "lucas.thomas@company.com",
+    "category": "dormant_admin",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
+    "email": "jane.clark@company.com",
+    "category": "normal",
+    "is_anomalous": false,
+    "is_false_positive_trap": false
+  }
+]
