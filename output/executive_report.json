@@ -1,91 +1,86 @@
 {
   "summary": {
-    "total_identities": 180,
-    "critical_risks": 5,
+    "total_identities": 230,
+    "critical_risks": 0,
     "high_risks": 10,
-    "average_risk_score": 10.8,
+    "average_risk_score": 23.7,
     "most_common_finding": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "offboarding_gaps": 20
+    "offboarding_gaps": 19
   },
   "top_risks": [
     {
-      "person_id": "PID074",
-      "name": "John Brown",
-      "email": "john.brown@company.com",
-      "score": 100,
-      "risk_level": "CRITICAL",
+      "person_id": "PID006",
+      "name": "Amelia Miller",
+      "email": "amelia.miller@company.com",
+      "score": 80,
+      "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
-        "MULTI_PLATFORM_ADMIN",
-        "OFFBOARDING_GAP",
-        "SUSPENDED_ACCOUNT_MISMATCH"
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN"
       ]
     },
     {
-      "person_id": "PID080",
-      "name": "John Johnson",
-      "email": "john.johnson@company.com",
-      "score": 100,
-      "risk_level": "CRITICAL",
+      "person_id": "PID030",
+      "name": "Chloe Kumar",
+      "email": "chloe.kumar@company.com",
+      "score": 80,
+      "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
-        "MULTI_PLATFORM_ADMIN",
-        "OFFBOARDING_GAP",
-        "SUSPENDED_ACCOUNT_MISMATCH"
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN"
       ]
     },
     {
-      "person_id": "PID081",
-      "name": "John Jones",
-      "email": "john.jones@company.com",
-      "score": 100,
-      "risk_level": "CRITICAL",
+      "person_id": "PID035",
+      "name": "Daniel Carter",
+      "email": "daniel.carter@company.com",
+      "score": 80,
+      "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
-        "MULTI_PLATFORM_ADMIN",
-        "OFFBOARDING_GAP",
-        "SUSPENDED_ACCOUNT_MISMATCH"
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN"
       ]
     },
     {
-      "person_id": "PID089",
-      "name": "John Smith",
-      "email": "john.smith@company.com",
-      "score": 100,
-      "risk_level": "CRITICAL",
+      "person_id": "PID060",
+      "name": "Ethan Clark",
+      "email": "ethan.clark@company.com",
+      "score": 80,
+      "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
-        "MULTI_PLATFORM_ADMIN",
-        "OFFBOARDING_GAP",
-        "SUSPENDED_ACCOUNT_MISMATCH"
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN"
       ]
     },
     {
-      "person_id": "PID095",
-      "name": "John Williams",
-      "email": "john.williams@company.com",
-      "score": 100,
-      "risk_level": "CRITICAL",
+      "person_id": "PID142",
+      "name": "Noah Brown",
+      "email": "noah.brown@company.com",
+      "score": 80,
+      "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
-        "MULTI_PLATFORM_ADMIN",
-        "OFFBOARDING_GAP",
-        "SUSPENDED_ACCOUNT_MISMATCH"
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN"
       ]
     }
   ],
   "risk_distribution": {
-    "critical": 5,
+    "critical": 0,
     "high": 10,
-    "medium": 6,
-    "low": 9,
-    "none": 150
+    "medium": 58,
+    "low": 83,
+    "none": 79
   },
   "recommended_priorities": [
     "Reduce excessive platform exposure",
-    "Review offboarding processes",
     "Audit administrative accounts",
     "Remove stale privileged identities",
+    "Review offboarding processes",
     "Verify suspended account synchronization"
   ],
   "showcase_incidents": [
@@ -483,11 +478,11 @@
     }
   ],
   "platform_risk_breakdown": {
-    "ad": 30,
-    "aws": 30,
-    "azure": 30,
-    "okta": 30,
-    "salesforce": 30
+    "ad": 87,
+    "aws": 99,
+    "azure": 86,
+    "okta": 98,
+    "salesforce": 85
   },
   "risk_trends": [
     {
@@ -521,24 +516,24 @@
   ],
   "top_departments_at_risk": [
     {
-      "department": "Unknown",
-      "risky_identities": 15
+      "department": "Sales",
+      "risky_identities": 25
+    },
+    {
+      "department": "IT",
+      "risky_identities": 23
     },
     {
       "department": "Finance",
-      "risky_identities": 4
-    },
-    {
-      "department": "Sales",
-      "risky_identities": 3
-    },
-    {
-      "department": "Operations",
-      "risky_identities": 2
+      "risky_identities": 22
     },
     {
       "department": "HR",
-      "risky_identities": 2
+      "risky_identities": 20
+    },
+    {
+      "department": "Engineering",
+      "risky_identities": 20
     }
   ],
   "demo_scenarios": [

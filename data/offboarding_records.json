@@ -2,115 +2,115 @@
   {
     "record_id": "OFF001",
     "email": "amelia.johnson@company.com",
-    "termination_date": "2026-01-01",
+    "termination_date": "2025-12-02",
     "reason": "Role Reassignment"
   },
   {
     "record_id": "OFF002",
-    "email": "robert.perez@company.com",
-    "termination_date": "2026-05-15",
-    "reason": "Role Reassignment"
-  },
-  {
-    "record_id": "OFF003",
-    "email": "olivia.smith@company.com",
-    "termination_date": "2026-03-04",
-    "reason": "Voluntary Resignation"
-  },
-  {
-    "record_id": "OFF004",
-    "email": "ava.davis@company.com",
-    "termination_date": "2026-01-01",
+    "email": "william.smith@company.com",
+    "termination_date": "2026-04-15",
     "reason": "Retirement"
   },
   {
-    "record_id": "OFF005",
-    "email": "jane.lee@company.com",
-    "termination_date": "2026-02-01",
-    "reason": "Inactivity Review"
-  },
-  {
-    "record_id": "OFF006",
-    "email": "chloe.taylor@company.com",
-    "termination_date": "2026-03-18",
-    "reason": "Voluntary Resignation"
-  },
-  {
-    "record_id": "OFF007",
-    "email": "liam.brown@company.com",
-    "termination_date": "2026-04-06",
+    "record_id": "OFF003",
+    "email": "robert.perez@company.com",
+    "termination_date": "2026-02-22",
     "reason": "Termination"
   },
   {
-    "record_id": "OFF008",
-    "email": "olivia.hall@company.com",
-    "termination_date": "2026-04-21",
+    "record_id": "OFF004",
+    "email": "jane.lee@company.com",
+    "termination_date": "2026-04-25",
+    "reason": "Termination"
+  },
+  {
+    "record_id": "OFF005",
+    "email": "daniel.clark@company.com",
+    "termination_date": "2026-04-10",
     "reason": "Contract Ended"
+  },
+  {
+    "record_id": "OFF006",
+    "email": "daniel.taylor@company.com",
+    "termination_date": "2025-12-19",
+    "reason": "Contract Ended"
+  },
+  {
+    "record_id": "OFF007",
+    "email": "chloe.taylor@company.com",
+    "termination_date": "2026-03-11",
+    "reason": "Inactivity Review"
+  },
+  {
+    "record_id": "OFF008",
+    "email": "david.moore@company.com",
+    "termination_date": "2026-02-04",
+    "reason": "Inactivity Review"
   },
   {
     "record_id": "OFF009",
     "email": "maria.taylor@company.com",
-    "termination_date": "2026-01-21",
-    "reason": "Inactivity Review"
+    "termination_date": "2026-04-28",
+    "reason": "Termination"
   },
   {
     "record_id": "OFF010",
-    "email": "ava.thompson@company.com",
-    "termination_date": "2026-01-18",
-    "reason": "Retirement"
+    "email": "emily.clark@company.com",
+    "termination_date": "2026-01-08",
+    "reason": "Role Reassignment"
   },
   {
     "record_id": "OFF011",
-    "email": "michael.smith@company.com",
-    "termination_date": "2025-12-31",
+    "email": "olivia.thompson@company.com",
+    "termination_date": "2025-12-06",
     "reason": "Voluntary Resignation"
   },
   {
     "record_id": "OFF012",
-    "email": "olivia.carter@company.com",
-    "termination_date": "2026-05-03",
-    "reason": "Contract Ended"
+    "email": "noah.perez@company.com",
+    "termination_date": "2026-05-15",
+    "reason": "Retirement"
   },
   {
     "record_id": "OFF013",
-    "email": "jane.carter@company.com",
-    "termination_date": "2026-01-21",
-    "reason": "Inactivity Review"
+    "email": "michael.smith@company.com",
+    "termination_date": "2026-01-14",
+    "reason": "Contract Ended"
   },
   {
     "record_id": "OFF014",
-    "email": "john.martin@company.com",
-    "termination_date": "2026-04-16",
+    "email": "yusuf.brown@company.com",
+    "termination_date": "2026-01-17",
     "reason": "Termination"
   },
   {
     "record_id": "OFF015",
-    "email": "ava.williams@company.com",
-    "termination_date": "2026-01-28",
+    "email": "olivia.carter@company.com",
+    "termination_date": "2026-04-14",
     "reason": "Retirement"
   },
   {
     "record_id": "OFF016",
-    "email": "robert.jones@company.com",
-    "termination_date": "2025-12-11",
+    "email": "arjun.martin@company.com",
+    "termination_date": "2025-12-26",
     "reason": "Role Reassignment"
   },
   {
     "record_id": "OFF017",
-    "email": "maria.moore@company.com",
-    "termination_date": "2026-03-16",
-    "reason": "Inactivity Review"
+    "email": "maria.jones@company.com",
+    "termination_date": "2026-03-18",
+    "reason": "Voluntary Resignation"
   },
   {
     "record_id": "OFF018",
-    "email": "jane.robinson@company.com",
-    "termination_date": "2026-03-16",
-    "reason": "Role Reassignment"
+    "email": "john.martin@company.com",
+    "termination_date": "2026-04-06",
+    "reason": "Termination"
   },
   {
     "record_id": "OFF019",
     "email": "maria.lewis@company.com",
-    "termination_date": "2026-04-01",
-    "reason": "Termination"
+    "termination_date": "2026-04-21",
+    "reason": "Contract Ended"
   }
 ]

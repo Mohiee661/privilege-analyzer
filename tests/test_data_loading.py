@@ -24,6 +24,13 @@ from services.data_loader import (  # noqa: E402
 
 
 DATA_DIR = ROOT / "data"
+VALID_PLATFORMS = {
+    "Active Directory",
+    "Azure AD",
+    "AWS IAM",
+    "Okta",
+    "Salesforce",
+}
 
 
 def read_json(path: Path):
@@ -63,22 +70,17 @@ def test_user_datasets_load_successfully():
         "okta": load_okta_users(),
         "salesforce": load_salesforce_users(),
     }
-    expected_lengths = {
-        "ad": 131,
-        "azure": 140,
-        "aws": 153,
-        "okta": 133,
-        "salesforce": 145,
-    }
     for name, records in datasets.items():
-        assert len(records) == expected_lengths[name], name
+        assert 100 <= len(records) <= 250, name
         for record in records:
             assert record.user_id
             assert record.name
             assert record.email
+            assert record.email.strip()
             assert record.department
             assert record.status in {"active", "disabled", "suspended"}
             assert record.platform
+            assert record.platform in VALID_PLATFORMS
             assert record.role
             assert record.last_login
             assert record.account_type in {"human", "service_account"}
@@ -94,28 +96,32 @@ def test_event_and_offboarding_datasets_load_successfully():
     privilege_events = load_privilege_events()
     api_tokens = load_api_tokens()
 
-    assert len(events) == 900
-    assert len(offboarding) == 19
-    assert len(memberships) == 20
-    assert len(privilege_events) == 45
-    assert len(api_tokens) == 32
+    assert 500 <= len(events) <= 1500
+    assert 10 <= len(offboarding) <= 100
+    assert 10 <= len(memberships) <= 100
+    assert 10 <= len(privilege_events) <= 200
+    assert 10 <= len(api_tokens) <= 100
 
     for event in events:
         assert event.event_id
         assert event.email
+        assert event.email.strip()
         assert event.platform
+        assert event.platform in VALID_PLATFORMS
         assert event.timestamp
         assert event.event_type == "login"
 
     for record in offboarding:
         assert record.record_id
         assert record.email
+        assert record.email.strip()
         assert record.termination_date
         assert record.reason
 
     for membership in memberships:
         assert membership.group_id
         assert membership.platform
+        assert membership.platform in VALID_PLATFORMS
         assert membership.group_name
         assert membership.grants_role
         assert membership.parent_group_id is None or membership.parent_group_id
@@ -124,7 +130,9 @@ def test_event_and_offboarding_datasets_load_successfully():
     for event in privilege_events:
         assert event.event_id
         assert event.email
+        assert event.email.strip()
         assert event.platform
+        assert event.platform in VALID_PLATFORMS
         assert event.event_type
         assert event.old_value
         assert event.new_value
@@ -134,7 +142,9 @@ def test_event_and_offboarding_datasets_load_successfully():
     for token in api_tokens:
         assert token.token_id
         assert token.owner_email
+        assert token.owner_email.strip()
         assert token.platform
+        assert token.platform in VALID_PLATFORMS
         assert token.scope
         assert token.created_date
         assert token.last_rotated

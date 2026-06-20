@@ -1,1174 +1,1574 @@
 [
   {
     "finding_id": "F001",
-    "person_id": "PID073",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
+    "person_id": "PID004",
+    "name": "Amelia Johnson",
+    "email": "amelia.johnson@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in okta but active in ad, azure",
     "evidence": {
-      "ad": "disabled",
+      "ad": "active",
       "azure": "active",
-      "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "disabled"
     }
   },
   {
     "finding_id": "F002",
-    "person_id": "PID074",
-    "name": "John Brown",
-    "email": "john.brown@company.com",
+    "person_id": "PID011",
+    "name": "Arjun Martin",
+    "email": "arjun.martin@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, salesforce",
+    "description": "User disabled in aws but active in ad",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
+      "ad": "active",
+      "aws": "disabled"
     }
   },
   {
     "finding_id": "F003",
-    "person_id": "PID075",
-    "name": "John Clark",
-    "email": "john.clark@company.com",
+    "person_id": "PID035",
+    "name": "Chloe Taylor",
+    "email": "chloe.taylor@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in okta but active in ad, aws, azure",
     "evidence": {
-      "ad": "disabled",
+      "ad": "active",
       "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "disabled"
     }
   },
   {
     "finding_id": "F004",
-    "person_id": "PID076",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
+    "person_id": "PID037",
+    "name": "Daniel Clark",
+    "email": "daniel.clark@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in azure but active in ad",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "ad": "active",
+      "azure": "disabled"
     }
   },
   {
     "finding_id": "F005",
-    "person_id": "PID078",
-    "name": "John Harris",
-    "email": "john.harris@company.com",
+    "person_id": "PID043",
+    "name": "Daniel Taylor",
+    "email": "daniel.taylor@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in ad but active in aws, azure, okta",
     "evidence": {
       "ad": "disabled",
       "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "active"
     }
   },
   {
     "finding_id": "F006",
-    "person_id": "PID079",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
+    "person_id": "PID050",
+    "name": "David Moore",
+    "email": "david.moore@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in okta but active in aws",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "disabled"
     }
   },
   {
     "finding_id": "F007",
-    "person_id": "PID080",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
+    "person_id": "PID054",
+    "name": "Emily Clark",
+    "email": "emily.clark@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, salesforce",
+    "description": "User disabled in aws but active in okta, salesforce",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
+      "aws": "disabled",
+      "okta": "active",
       "salesforce": "active"
     }
   },
   {
     "finding_id": "F008",
-    "person_id": "PID081",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
+    "person_id": "PID087",
+    "name": "Jane Lee",
+    "email": "jane.lee@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, salesforce",
+    "description": "User disabled in azure but active in aws",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
+      "azure": "disabled",
+      "aws": "active"
     }
   },
   {
     "finding_id": "F009",
-    "person_id": "PID082",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "risk_type": "OFFBOARDING_GAP",
-    "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
-    "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
-    }
-  },
-  {
-    "finding_id": "F010",
-    "person_id": "PID084",
+    "person_id": "PID098",
     "name": "John Martin",
     "email": "john.martin@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in ad but active in azure",
+    "evidence": {
+      "ad": "disabled",
+      "azure": "active"
+    }
+  },
+  {
+    "finding_id": "F010",
+    "person_id": "PID120",
+    "name": "Maria Jones",
+    "email": "maria.jones@company.com",
+    "risk_type": "OFFBOARDING_GAP",
+    "severity": "HIGH",
+    "description": "User disabled in ad but active in aws, azure",
     "evidence": {
       "ad": "disabled",
       "azure": "active",
-      "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "aws": "active"
     }
   },
   {
     "finding_id": "F011",
-    "person_id": "PID085",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
+    "person_id": "PID121",
+    "name": "Maria Lewis",
+    "email": "maria.lewis@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in aws but active in azure, okta, salesforce",
     "evidence": {
-      "ad": "disabled",
       "azure": "active",
-      "aws": "active",
+      "aws": "disabled",
       "okta": "active",
       "salesforce": "active"
     }
   },
   {
     "finding_id": "F012",
-    "person_id": "PID086",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
+    "person_id": "PID124",
+    "name": "Maria Taylor",
+    "email": "maria.taylor@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in salesforce but active in ad, aws, azure",
     "evidence": {
-      "ad": "disabled",
+      "ad": "active",
       "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "salesforce": "disabled"
     }
   },
   {
     "finding_id": "F013",
-    "person_id": "PID087",
-    "name": "John Perez",
-    "email": "john.perez@company.com",
+    "person_id": "PID140",
+    "name": "Michael Smith",
+    "email": "michael.smith@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in ad but active in aws, azure, okta",
     "evidence": {
       "ad": "disabled",
       "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "active"
     }
   },
   {
     "finding_id": "F014",
-    "person_id": "PID089",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
+    "person_id": "PID149",
+    "name": "Noah Perez",
+    "email": "noah.perez@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, salesforce",
+    "description": "User disabled in salesforce but active in aws, okta",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
       "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
+      "okta": "active",
+      "salesforce": "disabled"
     }
   },
   {
     "finding_id": "F015",
-    "person_id": "PID090",
-    "name": "John Taylor",
-    "email": "john.taylor@company.com",
+    "person_id": "PID156",
+    "name": "Olivia Carter",
+    "email": "olivia.carter@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in okta but active in ad, aws, azure",
     "evidence": {
-      "ad": "disabled",
+      "ad": "active",
       "azure": "active",
       "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "okta": "disabled"
     }
   },
   {
     "finding_id": "F016",
-    "person_id": "PID091",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
+    "person_id": "PID163",
+    "name": "Olivia Thompson",
+    "email": "olivia.thompson@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in okta but active in ad",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "active",
-      "salesforce": "active"
+      "ad": "active",
+      "okta": "disabled"
     }
   },
   {
     "finding_id": "F017",
-    "person_id": "PID092",
-    "name": "John Thompson",
-    "email": "john.thompson@company.com",
+    "person_id": "PID179",
+    "name": "Robert Perez",
+    "email": "robert.perez@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in aws but active in azure, salesforce",
     "evidence": {
-      "ad": "disabled",
       "azure": "active",
-      "aws": "active",
-      "okta": "active",
+      "aws": "disabled",
       "salesforce": "active"
     }
   },
   {
     "finding_id": "F018",
-    "person_id": "PID094",
-    "name": "John White",
-    "email": "john.white@company.com",
+    "person_id": "PID219",
+    "name": "William Smith",
+    "email": "william.smith@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "User disabled in salesforce but active in aws, okta",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
       "aws": "active",
       "okta": "active",
-      "salesforce": "active"
+      "salesforce": "disabled"
     }
   },
   {
     "finding_id": "F019",
-    "person_id": "PID095",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
+    "person_id": "PID222",
+    "name": "Yusuf Brown",
+    "email": "yusuf.brown@company.com",
     "risk_type": "OFFBOARDING_GAP",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, salesforce",
+    "description": "User disabled in aws but active in okta, salesforce",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
+      "aws": "disabled",
+      "okta": "active",
       "salesforce": "active"
     }
   },
   {
     "finding_id": "F020",
-    "person_id": "PID096",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
-    "risk_type": "OFFBOARDING_GAP",
+    "person_id": "PID010",
+    "name": "Amelia Thompson",
+    "email": "amelia.thompson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
     "severity": "HIGH",
-    "description": "User disabled in ad but active in aws, azure, okta, salesforce",
+    "description": "Admin privileges detected across 2 platforms",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F021",
+    "person_id": "PID017",
+    "name": "Ava Davis",
+    "email": "ava.davis@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F022",
+    "person_id": "PID020",
+    "name": "Ava Perez",
+    "email": "ava.perez@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F023",
+    "person_id": "PID022",
+    "name": "Ava Taylor",
+    "email": "ava.taylor@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F024",
+    "person_id": "PID023",
+    "name": "Ava Thompson",
+    "email": "ava.thompson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F025",
+    "person_id": "PID024",
+    "name": "Ava Williams",
+    "email": "ava.williams@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F026",
+    "person_id": "PID030",
+    "name": "Chloe Kumar",
+    "email": "chloe.kumar@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F027",
+    "person_id": "PID032",
+    "name": "Chloe Moore",
+    "email": "chloe.moore@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator"
+    }
+  },
+  {
+    "finding_id": "F028",
+    "person_id": "PID036",
+    "name": "Daniel Carter",
+    "email": "daniel.carter@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F029",
+    "person_id": "PID038",
+    "name": "Daniel Davis",
+    "email": "daniel.davis@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F030",
+    "person_id": "PID042",
+    "name": "Daniel Smith",
+    "email": "daniel.smith@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator"
+    }
+  },
+  {
+    "finding_id": "F031",
+    "person_id": "PID044",
+    "name": "Daniel Thomas",
+    "email": "daniel.thomas@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F032",
+    "person_id": "PID060",
+    "name": "Emily Williams",
+    "email": "emily.williams@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F033",
+    "person_id": "PID061",
+    "name": "Ethan Anderson",
+    "email": "ethan.anderson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F034",
+    "person_id": "PID063",
+    "name": "Ethan Clark",
+    "email": "ethan.clark@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F035",
+    "person_id": "PID066",
+    "name": "Ethan Moore",
+    "email": "ethan.moore@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F036",
+    "person_id": "PID072",
+    "name": "Ethan Wilson",
+    "email": "ethan.wilson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F037",
+    "person_id": "PID081",
+    "name": "Jane Carter",
+    "email": "jane.carter@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F038",
+    "person_id": "PID084",
+    "name": "Jane Harris",
+    "email": "jane.harris@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator"
+    }
+  },
+  {
+    "finding_id": "F039",
+    "person_id": "PID088",
+    "name": "Jane Robinson",
+    "email": "jane.robinson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F040",
+    "person_id": "PID095",
+    "name": "John Carter",
+    "email": "john.carter@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F041",
+    "person_id": "PID100",
+    "name": "John Smith",
+    "email": "john.smith@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator"
+    }
+  },
+  {
+    "finding_id": "F042",
+    "person_id": "PID101",
+    "name": "John Thomas",
+    "email": "john.thomas@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F043",
+    "person_id": "PID104",
+    "name": "Liam Brown",
+    "email": "liam.brown@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F044",
+    "person_id": "PID108",
+    "name": "Liam Williams",
+    "email": "liam.williams@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F045",
+    "person_id": "PID109",
+    "name": "Lucas Davis",
+    "email": "lucas.davis@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F046",
+    "person_id": "PID113",
+    "name": "Lucas Miller",
+    "email": "lucas.miller@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F047",
+    "person_id": "PID114",
+    "name": "Lucas Moore",
+    "email": "lucas.moore@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F048",
+    "person_id": "PID116",
+    "name": "Maria Anderson",
+    "email": "maria.anderson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "aws": "Administrator"
+    }
+  },
+  {
+    "finding_id": "F049",
+    "person_id": "PID122",
+    "name": "Maria Moore",
+    "email": "maria.moore@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F050",
+    "person_id": "PID123",
+    "name": "Maria Smith",
+    "email": "maria.smith@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F051",
+    "person_id": "PID126",
+    "name": "Maria White",
+    "email": "maria.white@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F052",
+    "person_id": "PID134",
+    "name": "Mia Thomas",
+    "email": "mia.thomas@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F053",
+    "person_id": "PID136",
+    "name": "Mia White",
+    "email": "mia.white@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator"
+    }
+  },
+  {
+    "finding_id": "F054",
+    "person_id": "PID142",
+    "name": "Noah Anderson",
+    "email": "noah.anderson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F055",
+    "person_id": "PID144",
+    "name": "Noah Jackson",
+    "email": "noah.jackson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F056",
+    "person_id": "PID145",
+    "name": "Noah Johnson",
+    "email": "noah.johnson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F057",
+    "person_id": "PID148",
+    "name": "Noah Lewis",
+    "email": "noah.lewis@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F058",
+    "person_id": "PID152",
+    "name": "Noah Taylor",
+    "email": "noah.taylor@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F059",
+    "person_id": "PID153",
+    "name": "Noah Walker",
+    "email": "noah.walker@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F060",
+    "person_id": "PID155",
+    "name": "Olivia Anderson",
+    "email": "olivia.anderson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F061",
+    "person_id": "PID158",
+    "name": "Olivia Hall",
+    "email": "olivia.hall@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F062",
+    "person_id": "PID160",
+    "name": "Olivia Kumar",
+    "email": "olivia.kumar@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F063",
+    "person_id": "PID162",
+    "name": "Olivia Smith",
+    "email": "olivia.smith@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F064",
+    "person_id": "PID166",
+    "name": "Priya Johnson",
+    "email": "priya.johnson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F065",
+    "person_id": "PID167",
+    "name": "Priya Kumar",
+    "email": "priya.kumar@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F066",
+    "person_id": "PID168",
+    "name": "Priya Lee",
+    "email": "priya.lee@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F067",
+    "person_id": "PID174",
+    "name": "Robert Harris",
+    "email": "robert.harris@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F068",
+    "person_id": "PID175",
+    "name": "Robert Johnson",
+    "email": "robert.johnson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "azure": "Global Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F069",
+    "person_id": "PID176",
+    "name": "Robert Jones",
+    "email": "robert.jones@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F070",
+    "person_id": "PID180",
+    "name": "Robert Smith",
+    "email": "robert.smith@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F071",
+    "person_id": "PID187",
+    "name": "Sarah Miller",
+    "email": "sarah.miller@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F072",
+    "person_id": "PID191",
+    "name": "Sarah Williams",
+    "email": "sarah.williams@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F073",
+    "person_id": "PID196",
+    "name": "Sophia Robinson",
+    "email": "sophia.robinson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F074",
+    "person_id": "PID215",
+    "name": "William Jackson",
+    "email": "william.jackson@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 2 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F075",
+    "person_id": "PID220",
+    "name": "William White",
+    "email": "william.white@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "azure": "Global Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F076",
+    "person_id": "PID224",
+    "name": "Yusuf Perez",
+    "email": "yusuf.perez@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 4 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin",
+      "salesforce": "Admin"
+    }
+  },
+  {
+    "finding_id": "F077",
+    "person_id": "PID227",
+    "name": "Yusuf Walker",
+    "email": "yusuf.walker@company.com",
+    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "severity": "HIGH",
+    "description": "Admin privileges detected across 3 platforms",
+    "evidence": {
+      "ad": "Administrator",
+      "aws": "Administrator",
+      "okta": "Super Admin"
+    }
+  },
+  {
+    "finding_id": "F078",
+    "person_id": "PID062",
+    "name": "Ethan Carter",
+    "email": "ethan.carter@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 222 days on azure",
+    "evidence": {
+      "platform": "azure",
+      "last_login": "2025-11-09T20:00:00Z",
+      "days_since_last_login": 222
+    }
+  },
+  {
+    "finding_id": "F079",
+    "person_id": "PID070",
+    "name": "Ethan Thomas",
+    "email": "ethan.thomas@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 226 days on ad",
+    "evidence": {
+      "platform": "ad",
+      "last_login": "2025-11-06T01:00:00Z",
+      "days_since_last_login": 226
+    }
+  },
+  {
+    "finding_id": "F080",
+    "person_id": "PID085",
+    "name": "Jane Jackson",
+    "email": "jane.jackson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 251 days on salesforce",
+    "evidence": {
+      "platform": "salesforce",
+      "last_login": "2025-10-12T01:00:00Z",
+      "days_since_last_login": 251
+    }
+  },
+  {
+    "finding_id": "F081",
+    "person_id": "PID090",
+    "name": "Jane Thompson",
+    "email": "jane.thompson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 227 days on salesforce",
+    "evidence": {
+      "platform": "salesforce",
+      "last_login": "2025-11-04T16:00:00Z",
+      "days_since_last_login": 227
+    }
+  },
+  {
+    "finding_id": "F082",
+    "person_id": "PID093",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 223 days on okta",
+    "evidence": {
+      "platform": "okta",
+      "last_login": "2025-11-08T21:00:00Z",
+      "days_since_last_login": 223
+    }
+  },
+  {
+    "finding_id": "F083",
+    "person_id": "PID110",
+    "name": "Lucas Hall",
+    "email": "lucas.hall@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 273 days on salesforce",
+    "evidence": {
+      "platform": "salesforce",
+      "last_login": "2025-09-20T06:00:00Z",
+      "days_since_last_login": 273
+    }
+  },
+  {
+    "finding_id": "F084",
+    "person_id": "PID115",
+    "name": "Lucas Thomas",
+    "email": "lucas.thomas@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 256 days on aws",
+    "evidence": {
+      "platform": "aws",
+      "last_login": "2025-10-07T03:00:00Z",
+      "days_since_last_login": 256
+    }
+  },
+  {
+    "finding_id": "F085",
+    "person_id": "PID129",
+    "name": "Mia Hall",
+    "email": "mia.hall@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 218 days on okta",
+    "evidence": {
+      "platform": "okta",
+      "last_login": "2025-11-14T02:00:00Z",
+      "days_since_last_login": 218
+    }
+  },
+  {
+    "finding_id": "F086",
+    "person_id": "PID143",
+    "name": "Noah Brown",
+    "email": "noah.brown@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 206 days on salesforce",
+    "evidence": {
+      "platform": "salesforce",
+      "last_login": "2025-11-25T19:00:00Z",
+      "days_since_last_login": 206
+    }
+  },
+  {
+    "finding_id": "F087",
+    "person_id": "PID147",
+    "name": "Noah Lee",
+    "email": "noah.lee@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 267 days on ad",
+    "evidence": {
+      "platform": "ad",
+      "last_login": "2025-09-25T13:00:00Z",
+      "days_since_last_login": 267
+    }
+  },
+  {
+    "finding_id": "F088",
+    "person_id": "PID159",
+    "name": "Olivia Johnson",
+    "email": "olivia.johnson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 265 days on aws",
+    "evidence": {
+      "platform": "aws",
+      "last_login": "2025-09-27T19:00:00Z",
+      "days_since_last_login": 265
+    }
+  },
+  {
+    "finding_id": "F089",
+    "person_id": "PID165",
+    "name": "Priya Clark",
+    "email": "priya.clark@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 267 days on okta",
+    "evidence": {
+      "platform": "okta",
+      "last_login": "2025-09-25T17:00:00Z",
+      "days_since_last_login": 267
+    }
+  },
+  {
+    "finding_id": "F090",
+    "person_id": "PID170",
+    "name": "Priya Robinson",
+    "email": "priya.robinson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 277 days on ad",
+    "evidence": {
+      "platform": "ad",
+      "last_login": "2025-09-15T10:00:00Z",
+      "days_since_last_login": 277
+    }
+  },
+  {
+    "finding_id": "F091",
+    "person_id": "PID173",
+    "name": "Robert Hall",
+    "email": "robert.hall@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 220 days on ad",
+    "evidence": {
+      "platform": "ad",
+      "last_login": "2025-11-12T07:00:00Z",
+      "days_since_last_login": 220
+    }
+  },
+  {
+    "finding_id": "F092",
+    "person_id": "PID183",
+    "name": "Sarah Anderson",
+    "email": "sarah.anderson@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 269 days on aws",
+    "evidence": {
+      "platform": "aws",
+      "last_login": "2025-09-23T12:00:00Z",
+      "days_since_last_login": 269
+    }
+  },
+  {
+    "finding_id": "F093",
+    "person_id": "PID184",
+    "name": "Sarah Brown",
+    "email": "sarah.brown@company.com",
+    "risk_type": "STALE_ACTIVE_ACCOUNT",
+    "severity": "MEDIUM",
+    "description": "Active account unused for 265 days on okta",
+    "evidence": {
+      "platform": "okta",
+      "last_login": "2025-09-27T23:00:00Z",
+      "days_since_last_login": 265
+    }
+  },
+  {
+    "finding_id": "F094",
+    "person_id": "PID006",
+    "name": "Amelia Miller",
+    "email": "amelia.miller@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in ad but active elsewhere",
+    "evidence": {
+      "ad": "suspended",
       "aws": "active",
       "okta": "active",
       "salesforce": "active"
     }
   },
   {
-    "finding_id": "F021",
-    "person_id": "PID057",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
+    "finding_id": "F095",
+    "person_id": "PID009",
+    "name": "Amelia Thomas",
+    "email": "amelia.thomas@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
     "severity": "HIGH",
-    "description": "Admin privileges detected across 5 platforms",
+    "description": "User suspended in azure but active elsewhere",
     "evidence": {
-      "ad": "Administrator",
-      "azure": "Administrator",
-      "aws": "Administrator",
-      "okta": "Administrator",
-      "salesforce": "Administrator"
+      "azure": "suspended",
+      "okta": "active",
+      "salesforce": "active"
     }
   },
   {
-    "finding_id": "F022",
+    "finding_id": "F096",
+    "person_id": "PID014",
+    "name": "Arjun Thomas",
+    "email": "arjun.thomas@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "azure": "active",
+      "aws": "active",
+      "okta": "suspended",
+      "salesforce": "active"
+    }
+  },
+  {
+    "finding_id": "F097",
+    "person_id": "PID048",
+    "name": "David Hall",
+    "email": "david.hall@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in azure but active elsewhere",
+    "evidence": {
+      "azure": "suspended",
+      "okta": "active"
+    }
+  },
+  {
+    "finding_id": "F098",
+    "person_id": "PID064",
+    "name": "Ethan Kumar",
+    "email": "ethan.kumar@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in azure but active elsewhere",
+    "evidence": {
+      "ad": "active",
+      "azure": "suspended",
+      "okta": "active",
+      "salesforce": "active"
+    }
+  },
+  {
+    "finding_id": "F099",
     "person_id": "PID073",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F023",
-    "person_id": "PID074",
-    "name": "John Brown",
-    "email": "john.brown@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F024",
-    "person_id": "PID076",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F025",
-    "person_id": "PID079",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F026",
-    "person_id": "PID080",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F027",
-    "person_id": "PID081",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F028",
-    "person_id": "PID082",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F029",
-    "person_id": "PID084",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F030",
-    "person_id": "PID085",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F031",
-    "person_id": "PID086",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 5 platforms",
-    "evidence": {
-      "ad": "Administrator",
-      "azure": "Global Administrator",
-      "aws": "Administrator",
-      "okta": "Administrator",
-      "salesforce": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F032",
-    "person_id": "PID089",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F033",
-    "person_id": "PID090",
-    "name": "John Taylor",
-    "email": "john.taylor@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 5 platforms",
-    "evidence": {
-      "ad": "Administrator",
-      "azure": "Global Administrator",
-      "aws": "Administrator",
-      "okta": "Administrator",
-      "salesforce": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F034",
-    "person_id": "PID091",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F035",
-    "person_id": "PID095",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F036",
-    "person_id": "PID096",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
-    "risk_type": "MULTI_PLATFORM_ADMIN",
-    "severity": "HIGH",
-    "description": "Admin privileges detected across 2 platforms",
-    "evidence": {
-      "azure": "Global Administrator",
-      "aws": "Administrator"
-    }
-  },
-  {
-    "finding_id": "F037",
-    "person_id": "PID056",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 226 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-06T02:50:06Z",
-      "days_since_last_login": 226
-    }
-  },
-  {
-    "finding_id": "F038",
-    "person_id": "PID065",
-    "name": "Jane Smith",
-    "email": "jane.smith@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 201 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-30T13:59:14Z",
-      "days_since_last_login": 201
-    }
-  },
-  {
-    "finding_id": "F039",
-    "person_id": "PID071",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 207 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-24T10:05:24Z",
-      "days_since_last_login": 207
-    }
-  },
-  {
-    "finding_id": "F040",
-    "person_id": "PID077",
-    "name": "John Hall",
-    "email": "john.hall@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 219 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-12T09:18:44Z",
-      "days_since_last_login": 219
-    }
-  },
-  {
-    "finding_id": "F041",
-    "person_id": "PID083",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 220 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-12T03:11:35Z",
-      "days_since_last_login": 220
-    }
-  },
-  {
-    "finding_id": "F042",
-    "person_id": "PID088",
-    "name": "John Robinson",
-    "email": "john.robinson@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 224 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-07T14:26:28Z",
-      "days_since_last_login": 224
-    }
-  },
-  {
-    "finding_id": "F043",
-    "person_id": "PID093",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
-    "risk_type": "STALE_ACTIVE_ACCOUNT",
-    "severity": "MEDIUM",
-    "description": "Active account unused for 205 days on salesforce",
-    "evidence": {
-      "platform": "salesforce",
-      "last_login": "2025-11-26T18:05:43Z",
-      "days_since_last_login": 205
-    }
-  },
-  {
-    "finding_id": "F044",
-    "person_id": "PID074",
-    "name": "John Brown",
-    "email": "john.brown@company.com",
+    "name": "Isabella Lee",
+    "email": "isabella.lee@company.com",
     "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
     "severity": "HIGH",
     "description": "User suspended in okta but active elsewhere",
     "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
       "okta": "suspended",
       "salesforce": "active"
     }
   },
   {
-    "finding_id": "F045",
-    "person_id": "PID080",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
-    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
-    "severity": "HIGH",
-    "description": "User suspended in okta but active elsewhere",
-    "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
-    }
-  },
-  {
-    "finding_id": "F046",
-    "person_id": "PID081",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
-    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
-    "severity": "HIGH",
-    "description": "User suspended in okta but active elsewhere",
-    "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
-    }
-  },
-  {
-    "finding_id": "F047",
-    "person_id": "PID089",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
-    "severity": "HIGH",
-    "description": "User suspended in okta but active elsewhere",
-    "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
-    }
-  },
-  {
-    "finding_id": "F048",
-    "person_id": "PID095",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
-    "severity": "HIGH",
-    "description": "User suspended in okta but active elsewhere",
-    "evidence": {
-      "ad": "disabled",
-      "azure": "active",
-      "aws": "active",
-      "okta": "suspended",
-      "salesforce": "active"
-    }
-  },
-  {
-    "finding_id": "F049",
-    "person_id": "PID050",
-    "name": "Jane Brown",
-    "email": "jane.brown@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F050",
-    "person_id": "PID056",
-    "name": "Jane Johnson",
-    "email": "jane.johnson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F051",
-    "person_id": "PID057",
-    "name": "Jane Jones",
-    "email": "jane.jones@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F052",
-    "person_id": "PID061",
-    "name": "Jane Miller",
-    "email": "jane.miller@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F053",
-    "person_id": "PID065",
-    "name": "Jane Smith",
-    "email": "jane.smith@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F054",
-    "person_id": "PID071",
-    "name": "Jane Williams",
-    "email": "jane.williams@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F055",
-    "person_id": "PID073",
-    "name": "John Anderson",
-    "email": "john.anderson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F056",
-    "person_id": "PID074",
-    "name": "John Brown",
-    "email": "john.brown@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F057",
-    "person_id": "PID075",
-    "name": "John Clark",
-    "email": "john.clark@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F058",
-    "person_id": "PID076",
-    "name": "John Davis",
-    "email": "john.davis@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F059",
-    "person_id": "PID077",
-    "name": "John Hall",
-    "email": "john.hall@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F060",
-    "person_id": "PID078",
-    "name": "John Harris",
-    "email": "john.harris@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F061",
-    "person_id": "PID079",
-    "name": "John Jackson",
-    "email": "john.jackson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F062",
-    "person_id": "PID080",
-    "name": "John Johnson",
-    "email": "john.johnson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F063",
-    "person_id": "PID081",
-    "name": "John Jones",
-    "email": "john.jones@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F064",
-    "person_id": "PID082",
-    "name": "John Lee",
-    "email": "john.lee@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F065",
-    "person_id": "PID083",
-    "name": "John Lewis",
-    "email": "john.lewis@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F066",
-    "person_id": "PID084",
-    "name": "John Martin",
-    "email": "john.martin@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F067",
-    "person_id": "PID085",
-    "name": "John Miller",
-    "email": "john.miller@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F068",
-    "person_id": "PID086",
-    "name": "John Moore",
-    "email": "john.moore@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F069",
-    "person_id": "PID087",
-    "name": "John Perez",
-    "email": "john.perez@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F070",
-    "person_id": "PID088",
-    "name": "John Robinson",
-    "email": "john.robinson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F071",
-    "person_id": "PID089",
-    "name": "John Smith",
-    "email": "john.smith@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F072",
-    "person_id": "PID090",
-    "name": "John Taylor",
-    "email": "john.taylor@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F073",
-    "person_id": "PID091",
-    "name": "John Thomas",
-    "email": "john.thomas@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
-    "evidence": {
-      "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
-    }
-  },
-  {
-    "finding_id": "F074",
+    "finding_id": "F100",
     "person_id": "PID092",
-    "name": "John Thompson",
-    "email": "john.thompson@company.com",
+    "name": "Jane White",
+    "email": "jane.white@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "azure": "active",
+      "okta": "suspended"
+    }
+  },
+  {
+    "finding_id": "F101",
+    "person_id": "PID106",
+    "name": "Liam Taylor",
+    "email": "liam.taylor@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in azure but active elsewhere",
+    "evidence": {
+      "ad": "active",
+      "azure": "suspended"
+    }
+  },
+  {
+    "finding_id": "F102",
+    "person_id": "PID125",
+    "name": "Maria Thomas",
+    "email": "maria.thomas@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "azure": "active",
+      "aws": "active",
+      "okta": "suspended",
+      "salesforce": "active"
+    }
+  },
+  {
+    "finding_id": "F103",
+    "person_id": "PID133",
+    "name": "Mia Moore",
+    "email": "mia.moore@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "ad": "active",
+      "aws": "active",
+      "okta": "suspended"
+    }
+  },
+  {
+    "finding_id": "F104",
+    "person_id": "PID157",
+    "name": "Olivia Davis",
+    "email": "olivia.davis@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "ad": "active",
+      "okta": "suspended"
+    }
+  },
+  {
+    "finding_id": "F105",
+    "person_id": "PID182",
+    "name": "Robert Thompson",
+    "email": "robert.thompson@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in okta but active elsewhere",
+    "evidence": {
+      "azure": "active",
+      "aws": "active",
+      "okta": "suspended",
+      "salesforce": "active"
+    }
+  },
+  {
+    "finding_id": "F106",
+    "person_id": "PID193",
+    "name": "Sophia Brown",
+    "email": "sophia.brown@company.com",
+    "risk_type": "SUSPENDED_ACCOUNT_MISMATCH",
+    "severity": "HIGH",
+    "description": "User suspended in azure but active elsewhere",
+    "evidence": {
+      "ad": "active",
+      "azure": "suspended",
+      "aws": "active"
+    }
+  },
+  {
+    "finding_id": "F107",
+    "person_id": "PID005",
+    "name": "Amelia Jones",
+    "email": "amelia.jones@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F108",
+    "person_id": "PID006",
+    "name": "Amelia Miller",
+    "email": "amelia.miller@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F109",
+    "person_id": "PID014",
+    "name": "Arjun Thomas",
+    "email": "arjun.thomas@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F110",
+    "person_id": "PID018",
+    "name": "Ava Johnson",
+    "email": "ava.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F111",
+    "person_id": "PID020",
+    "name": "Ava Perez",
+    "email": "ava.perez@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F112",
+    "person_id": "PID022",
+    "name": "Ava Taylor",
+    "email": "ava.taylor@company.com",
     "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
     "severity": "MEDIUM",
     "description": "Identity present in 5 platforms",
@@ -1183,10 +1583,460 @@
     }
   },
   {
-    "finding_id": "F075",
+    "finding_id": "F113",
+    "person_id": "PID023",
+    "name": "Ava Thompson",
+    "email": "ava.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F114",
+    "person_id": "PID024",
+    "name": "Ava Williams",
+    "email": "ava.williams@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F115",
+    "person_id": "PID026",
+    "name": "Chloe Carter",
+    "email": "chloe.carter@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F116",
+    "person_id": "PID030",
+    "name": "Chloe Kumar",
+    "email": "chloe.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F117",
+    "person_id": "PID035",
+    "name": "Chloe Taylor",
+    "email": "chloe.taylor@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F118",
+    "person_id": "PID038",
+    "name": "Daniel Davis",
+    "email": "daniel.davis@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F119",
+    "person_id": "PID043",
+    "name": "Daniel Taylor",
+    "email": "daniel.taylor@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F120",
+    "person_id": "PID044",
+    "name": "Daniel Thomas",
+    "email": "daniel.thomas@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F121",
+    "person_id": "PID058",
+    "name": "Emily Taylor",
+    "email": "emily.taylor@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F122",
+    "person_id": "PID059",
+    "name": "Emily Thompson",
+    "email": "emily.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F123",
+    "person_id": "PID061",
+    "name": "Ethan Anderson",
+    "email": "ethan.anderson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F124",
+    "person_id": "PID062",
+    "name": "Ethan Carter",
+    "email": "ethan.carter@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F125",
+    "person_id": "PID063",
+    "name": "Ethan Clark",
+    "email": "ethan.clark@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F126",
+    "person_id": "PID064",
+    "name": "Ethan Kumar",
+    "email": "ethan.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F127",
+    "person_id": "PID068",
+    "name": "Ethan Smith",
+    "email": "ethan.smith@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F128",
+    "person_id": "PID071",
+    "name": "Ethan Thompson",
+    "email": "ethan.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F129",
+    "person_id": "PID072",
+    "name": "Ethan Wilson",
+    "email": "ethan.wilson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F130",
+    "person_id": "PID076",
+    "name": "Isabella Shah",
+    "email": "isabella.shah@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F131",
+    "person_id": "PID080",
+    "name": "James Wilson",
+    "email": "james.wilson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F132",
+    "person_id": "PID083",
+    "name": "Jane Hall",
+    "email": "jane.hall@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F133",
+    "person_id": "PID085",
+    "name": "Jane Jackson",
+    "email": "jane.jackson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F134",
+    "person_id": "PID086",
+    "name": "Jane Johnson",
+    "email": "jane.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F135",
+    "person_id": "PID088",
+    "name": "Jane Robinson",
+    "email": "jane.robinson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F136",
+    "person_id": "PID089",
+    "name": "Jane Thomas",
+    "email": "jane.thomas@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F137",
+    "person_id": "PID090",
+    "name": "Jane Thompson",
+    "email": "jane.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F138",
+    "person_id": "PID091",
+    "name": "Jane Walker",
+    "email": "jane.walker@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F139",
     "person_id": "PID093",
-    "name": "John Walker",
-    "email": "john.walker@company.com",
+    "name": "John Anderson",
+    "email": "john.anderson@company.com",
     "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
     "severity": "MEDIUM",
     "description": "Identity present in 5 platforms",
@@ -1201,57 +2051,1864 @@
     }
   },
   {
-    "finding_id": "F076",
+    "finding_id": "F140",
     "person_id": "PID094",
+    "name": "John Brown",
+    "email": "john.brown@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F141",
+    "person_id": "PID095",
+    "name": "John Carter",
+    "email": "john.carter@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F142",
+    "person_id": "PID108",
+    "name": "Liam Williams",
+    "email": "liam.williams@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F143",
+    "person_id": "PID110",
+    "name": "Lucas Hall",
+    "email": "lucas.hall@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F144",
+    "person_id": "PID113",
+    "name": "Lucas Miller",
+    "email": "lucas.miller@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F145",
+    "person_id": "PID114",
+    "name": "Lucas Moore",
+    "email": "lucas.moore@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F146",
+    "person_id": "PID118",
+    "name": "Maria Carter",
+    "email": "maria.carter@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F147",
+    "person_id": "PID121",
+    "name": "Maria Lewis",
+    "email": "maria.lewis@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F148",
+    "person_id": "PID123",
+    "name": "Maria Smith",
+    "email": "maria.smith@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F149",
+    "person_id": "PID124",
+    "name": "Maria Taylor",
+    "email": "maria.taylor@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F150",
+    "person_id": "PID125",
+    "name": "Maria Thomas",
+    "email": "maria.thomas@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F151",
+    "person_id": "PID126",
+    "name": "Maria White",
+    "email": "maria.white@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F152",
+    "person_id": "PID127",
+    "name": "Maria Wilson",
+    "email": "maria.wilson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F153",
+    "person_id": "PID131",
+    "name": "Mia Jones",
+    "email": "mia.jones@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F154",
+    "person_id": "PID134",
+    "name": "Mia Thomas",
+    "email": "mia.thomas@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F155",
+    "person_id": "PID136",
+    "name": "Mia White",
+    "email": "mia.white@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F156",
+    "person_id": "PID137",
+    "name": "Mia Williams",
+    "email": "mia.williams@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F157",
+    "person_id": "PID140",
+    "name": "Michael Smith",
+    "email": "michael.smith@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F158",
+    "person_id": "PID142",
+    "name": "Noah Anderson",
+    "email": "noah.anderson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F159",
+    "person_id": "PID143",
+    "name": "Noah Brown",
+    "email": "noah.brown@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F160",
+    "person_id": "PID144",
+    "name": "Noah Jackson",
+    "email": "noah.jackson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F161",
+    "person_id": "PID145",
+    "name": "Noah Johnson",
+    "email": "noah.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F162",
+    "person_id": "PID146",
+    "name": "Noah Kumar",
+    "email": "noah.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F163",
+    "person_id": "PID147",
+    "name": "Noah Lee",
+    "email": "noah.lee@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F164",
+    "person_id": "PID150",
+    "name": "Noah Shah",
+    "email": "noah.shah@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F165",
+    "person_id": "PID153",
+    "name": "Noah Walker",
+    "email": "noah.walker@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F166",
+    "person_id": "PID155",
+    "name": "Olivia Anderson",
+    "email": "olivia.anderson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F167",
+    "person_id": "PID156",
+    "name": "Olivia Carter",
+    "email": "olivia.carter@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F168",
+    "person_id": "PID158",
+    "name": "Olivia Hall",
+    "email": "olivia.hall@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F169",
+    "person_id": "PID159",
+    "name": "Olivia Johnson",
+    "email": "olivia.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F170",
+    "person_id": "PID160",
+    "name": "Olivia Kumar",
+    "email": "olivia.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F171",
+    "person_id": "PID165",
+    "name": "Priya Clark",
+    "email": "priya.clark@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F172",
+    "person_id": "PID167",
+    "name": "Priya Kumar",
+    "email": "priya.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F173",
+    "person_id": "PID168",
+    "name": "Priya Lee",
+    "email": "priya.lee@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F174",
+    "person_id": "PID170",
+    "name": "Priya Robinson",
+    "email": "priya.robinson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F175",
+    "person_id": "PID171",
+    "name": "Priya Thompson",
+    "email": "priya.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F176",
+    "person_id": "PID173",
+    "name": "Robert Hall",
+    "email": "robert.hall@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F177",
+    "person_id": "PID174",
+    "name": "Robert Harris",
+    "email": "robert.harris@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F178",
+    "person_id": "PID175",
+    "name": "Robert Johnson",
+    "email": "robert.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F179",
+    "person_id": "PID176",
+    "name": "Robert Jones",
+    "email": "robert.jones@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F180",
+    "person_id": "PID182",
+    "name": "Robert Thompson",
+    "email": "robert.thompson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F181",
+    "person_id": "PID183",
+    "name": "Sarah Anderson",
+    "email": "sarah.anderson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F182",
+    "person_id": "PID184",
+    "name": "Sarah Brown",
+    "email": "sarah.brown@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F183",
+    "person_id": "PID185",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F184",
+    "person_id": "PID187",
+    "name": "Sarah Miller",
+    "email": "sarah.miller@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F185",
+    "person_id": "PID188",
+    "name": "Sarah Perez",
+    "email": "sarah.perez@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F186",
+    "person_id": "PID192",
+    "name": "Sarah Wilson",
+    "email": "sarah.wilson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F187",
+    "person_id": "PID196",
+    "name": "Sophia Robinson",
+    "email": "sophia.robinson@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F188",
+    "person_id": "PID217",
+    "name": "William Lee",
+    "email": "william.lee@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F189",
+    "person_id": "PID220",
+    "name": "William White",
+    "email": "william.white@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F190",
+    "person_id": "PID223",
+    "name": "Yusuf Kumar",
+    "email": "yusuf.kumar@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F191",
+    "person_id": "PID224",
+    "name": "Yusuf Perez",
+    "email": "yusuf.perez@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 5 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F192",
+    "person_id": "PID225",
+    "name": "Yusuf Smith",
+    "email": "yusuf.smith@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "okta",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F193",
+    "person_id": "PID226",
+    "name": "Yusuf Taylor",
+    "email": "yusuf.taylor@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "salesforce"
+      ]
+    }
+  },
+  {
+    "finding_id": "F194",
+    "person_id": "PID227",
+    "name": "Yusuf Walker",
+    "email": "yusuf.walker@company.com",
+    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
+    "severity": "MEDIUM",
+    "description": "Identity present in 4 platforms",
+    "evidence": {
+      "platforms": [
+        "ad",
+        "aws",
+        "azure",
+        "okta"
+      ]
+    }
+  },
+  {
+    "finding_id": "F195",
+    "person_id": "PID024",
+    "name": "Ava Williams",
+    "email": "ava.williams@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Support Engineer",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F196",
+    "person_id": "PID055",
+    "name": "Emily Jackson",
+    "email": "emily.jackson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Read Only",
+          "effective_privilege": [
+            "Support Engineer",
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F197",
+    "person_id": "PID059",
+    "name": "Emily Thompson",
+    "email": "emily.thompson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "salesforce"
+      ],
+      "details": {
+        "salesforce": {
+          "platform": "salesforce",
+          "stated_role": "Standard User",
+          "effective_privilege": [
+            "Support Engineer",
+            "Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F198",
+    "person_id": "PID062",
+    "name": "Ethan Carter",
+    "email": "ethan.carter@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Support Engineer",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F199",
+    "person_id": "PID068",
+    "name": "Ethan Smith",
+    "email": "ethan.smith@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Read Only",
+          "effective_privilege": [
+            "Support Engineer",
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F200",
+    "person_id": "PID070",
+    "name": "Ethan Thomas",
+    "email": "ethan.thomas@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "okta"
+      ],
+      "details": {
+        "okta": {
+          "platform": "okta",
+          "stated_role": "Support Engineer",
+          "effective_privilege": [
+            "Super Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Super Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F201",
+    "person_id": "PID071",
+    "name": "Ethan Thompson",
+    "email": "ethan.thompson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "salesforce"
+      ],
+      "details": {
+        "salesforce": {
+          "platform": "salesforce",
+          "stated_role": "Standard User",
+          "effective_privilege": [
+            "Support Engineer",
+            "Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F202",
+    "person_id": "PID090",
+    "name": "Jane Thompson",
+    "email": "jane.thompson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "azure"
+      ],
+      "details": {
+        "azure": {
+          "platform": "azure",
+          "stated_role": "Support Engineer",
+          "effective_privilege": [
+            "Global Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Global Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F203",
+    "person_id": "PID102",
     "name": "John White",
     "email": "john.white@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
     "evidence": {
       "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
+        "ad"
+      ],
+      "details": {
+        "ad": {
+          "platform": "ad",
+          "stated_role": "Employee",
+          "effective_privilege": [
+            "Support Engineer",
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
     }
   },
   {
-    "finding_id": "F077",
-    "person_id": "PID095",
-    "name": "John Williams",
-    "email": "john.williams@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
+    "finding_id": "F204",
+    "person_id": "PID105",
+    "name": "Liam Jackson",
+    "email": "liam.jackson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
     "evidence": {
       "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
-        "salesforce"
-      ]
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Read Only",
+          "effective_privilege": [
+            "Support Engineer",
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
     }
   },
   {
-    "finding_id": "F078",
-    "person_id": "PID096",
-    "name": "John Wilson",
-    "email": "john.wilson@company.com",
-    "risk_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "severity": "MEDIUM",
-    "description": "Identity present in 5 platforms",
+    "finding_id": "F205",
+    "person_id": "PID129",
+    "name": "Mia Hall",
+    "email": "mia.hall@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
     "evidence": {
       "platforms": [
-        "ad",
-        "aws",
-        "azure",
-        "okta",
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Contractor",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F206",
+    "person_id": "PID134",
+    "name": "Mia Thomas",
+    "email": "mia.thomas@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "ad"
+      ],
+      "details": {
+        "ad": {
+          "platform": "ad",
+          "stated_role": "Support Engineer",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F207",
+    "person_id": "PID144",
+    "name": "Noah Jackson",
+    "email": "noah.jackson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "okta"
+      ],
+      "details": {
+        "okta": {
+          "platform": "okta",
+          "stated_role": "Developer",
+          "effective_privilege": [
+            "Super Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Super Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F208",
+    "person_id": "PID150",
+    "name": "Noah Shah",
+    "email": "noah.shah@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
         "salesforce"
-      ]
+      ],
+      "details": {
+        "salesforce": {
+          "platform": "salesforce",
+          "stated_role": "Standard User",
+          "effective_privilege": [
+            "Support Engineer",
+            "Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F209",
+    "person_id": "PID165",
+    "name": "Priya Clark",
+    "email": "priya.clark@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "ad"
+      ],
+      "details": {
+        "ad": {
+          "platform": "ad",
+          "stated_role": "Contractor",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F210",
+    "person_id": "PID181",
+    "name": "Robert Taylor",
+    "email": "robert.taylor@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "ad"
+      ],
+      "details": {
+        "ad": {
+          "platform": "ad",
+          "stated_role": "Employee",
+          "effective_privilege": [
+            "Support Engineer",
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F211",
+    "person_id": "PID183",
+    "name": "Sarah Anderson",
+    "email": "sarah.anderson@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "salesforce"
+      ],
+      "details": {
+        "salesforce": {
+          "platform": "salesforce",
+          "stated_role": "Contractor",
+          "effective_privilege": [
+            "Admin"
+          ],
+          "admin_equivalent_roles": [
+            "Admin"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F212",
+    "person_id": "PID187",
+    "name": "Sarah Miller",
+    "email": "sarah.miller@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "aws"
+      ],
+      "details": {
+        "aws": {
+          "platform": "aws",
+          "stated_role": "Developer",
+          "effective_privilege": [
+            "Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F213",
+    "person_id": "PID212",
+    "name": "Jane Miller",
+    "email": "svc-report-gen-04@company.com",
+    "risk_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+    "severity": "HIGH",
+    "description": "Low-privilege account gains admin-equivalent access through nested groups",
+    "evidence": {
+      "platforms": [
+        "azure"
+      ],
+      "details": {
+        "azure": {
+          "platform": "azure",
+          "stated_role": "Employee",
+          "effective_privilege": [
+            "Support Engineer",
+            "Global Administrator"
+          ],
+          "admin_equivalent_roles": [
+            "Global Administrator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "finding_id": "F214",
+    "person_id": "PID146",
+    "name": "Noah Kumar",
+    "email": "noah.kumar@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "noah.kumar@company.com",
+      "event_ids": [
+        "PEV001",
+        "PEV002",
+        "PEV003"
+      ],
+      "window_start": "2026-06-18T18:00:00+00:00",
+      "window_end": "2026-06-21T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F215",
+    "person_id": "PID007",
+    "name": "Amelia Moore",
+    "email": "amelia.moore@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "amelia.moore@company.com",
+      "event_ids": [
+        "PEV004",
+        "PEV005",
+        "PEV006"
+      ],
+      "window_start": "2026-06-14T18:00:00+00:00",
+      "window_end": "2026-06-17T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F216",
+    "person_id": "PID051",
+    "name": "David Perez",
+    "email": "david.perez@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "david.perez@company.com",
+      "event_ids": [
+        "PEV007",
+        "PEV008",
+        "PEV009"
+      ],
+      "window_start": "2026-06-17T18:00:00+00:00",
+      "window_end": "2026-06-20T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F217",
+    "person_id": "PID225",
+    "name": "Yusuf Smith",
+    "email": "yusuf.smith@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "yusuf.smith@company.com",
+      "event_ids": [
+        "PEV010",
+        "PEV011",
+        "PEV012"
+      ],
+      "window_start": "2026-06-15T18:00:00+00:00",
+      "window_end": "2026-06-18T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F218",
+    "person_id": "PID226",
+    "name": "Yusuf Taylor",
+    "email": "yusuf.taylor@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "yusuf.taylor@company.com",
+      "event_ids": [
+        "PEV013",
+        "PEV014",
+        "PEV015"
+      ],
+      "window_start": "2026-06-18T18:00:00+00:00",
+      "window_end": "2026-06-21T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F219",
+    "person_id": "PID186",
+    "name": "Sarah Martin",
+    "email": "sarah.martin@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "sarah.martin@company.com",
+      "event_ids": [
+        "PEV016",
+        "PEV017",
+        "PEV018"
+      ],
+      "window_start": "2026-06-14T18:00:00+00:00",
+      "window_end": "2026-06-17T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F220",
+    "person_id": "PID189",
+    "name": "Sarah Robinson",
+    "email": "sarah.robinson@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "sarah.robinson@company.com",
+      "event_ids": [
+        "PEV019",
+        "PEV020",
+        "PEV021"
+      ],
+      "window_start": "2026-06-14T18:00:00+00:00",
+      "window_end": "2026-06-17T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F221",
+    "person_id": "PID154",
+    "name": "Noah Williams",
+    "email": "noah.williams@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "noah.williams@company.com",
+      "event_ids": [
+        "PEV022",
+        "PEV023",
+        "PEV024"
+      ],
+      "window_start": "2026-06-13T18:00:00+00:00",
+      "window_end": "2026-06-16T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F222",
+    "person_id": "PID128",
+    "name": "Mia Carter",
+    "email": "mia.carter@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "mia.carter@company.com",
+      "event_ids": [
+        "PEV025",
+        "PEV026",
+        "PEV027"
+      ],
+      "window_start": "2026-06-17T18:00:00+00:00",
+      "window_end": "2026-06-20T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F223",
+    "person_id": "PID058",
+    "name": "Emily Taylor",
+    "email": "emily.taylor@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "emily.taylor@company.com",
+      "event_ids": [
+        "PEV028",
+        "PEV029",
+        "PEV030"
+      ],
+      "window_start": "2026-06-18T18:00:00+00:00",
+      "window_end": "2026-06-21T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F224",
+    "person_id": "PID025",
+    "name": "Chloe Brown",
+    "email": "chloe.brown@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "chloe.brown@company.com",
+      "event_ids": [
+        "PEV031",
+        "PEV032",
+        "PEV033"
+      ],
+      "window_start": "2026-06-13T18:00:00+00:00",
+      "window_end": "2026-06-16T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F225",
+    "person_id": "PID075",
+    "name": "Isabella Moore",
+    "email": "isabella.moore@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "isabella.moore@company.com",
+      "event_ids": [
+        "PEV034",
+        "PEV035",
+        "PEV036"
+      ],
+      "window_start": "2026-06-16T18:00:00+00:00",
+      "window_end": "2026-06-19T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F226",
+    "person_id": "PID008",
+    "name": "Amelia Robinson",
+    "email": "amelia.robinson@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "amelia.robinson@company.com",
+      "event_ids": [
+        "PEV037",
+        "PEV038",
+        "PEV039"
+      ],
+      "window_start": "2026-06-15T18:00:00+00:00",
+      "window_end": "2026-06-18T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F227",
+    "person_id": "PID171",
+    "name": "Priya Thompson",
+    "email": "priya.thompson@company.com",
+    "risk_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+    "severity": "HIGH",
+    "description": "Three or more unapproved privilege changes occurred within seven days",
+    "evidence": {
+      "email": "priya.thompson@company.com",
+      "event_ids": [
+        "PEV040",
+        "PEV041",
+        "PEV042"
+      ],
+      "window_start": "2026-06-17T18:00:00+00:00",
+      "window_end": "2026-06-20T06:00:00+00:00"
+    }
+  },
+  {
+    "finding_id": "F228",
+    "person_id": "PID052",
+    "name": "David Taylor",
+    "email": "david.taylor@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK002",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2024-07-17",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F229",
+    "person_id": "PID204",
+    "name": "John Miller",
+    "email": "svc-data-sync-05@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK003",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2024-10-03",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F230",
+    "person_id": "PID067",
+    "name": "Ethan Perez",
+    "email": "ethan.perez@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK004",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2024-07-05",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F231",
+    "person_id": "PID139",
+    "name": "Michael Shah",
+    "email": "michael.shah@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK009",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2025-05-01",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F232",
+    "person_id": "PID127",
+    "name": "Maria Wilson",
+    "email": "maria.wilson@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK011",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2025-02-24",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F233",
+    "person_id": "PID201",
+    "name": "Noah Thomas",
+    "email": "svc-billing-cron-14@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK012",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2025-01-03",
+      "observed_write_call": true
+    }
+  },
+  {
+    "finding_id": "F234",
+    "person_id": "PID164",
+    "name": "Olivia Wilson",
+    "email": "olivia.wilson@company.com",
+    "risk_type": "STALE_OR_MISUSED_TOKEN",
+    "severity": "HIGH",
+    "description": "API token is stale or used beyond its declared scope",
+    "evidence": {
+      "token_id": "TOK017",
+      "scope": "read-only",
+      "status": "active",
+      "reasons": [
+        "stale_rotation",
+        "misused_write_scope"
+      ],
+      "last_rotated": "2025-03-26",
+      "observed_write_call": true
     }
   }
 ]
