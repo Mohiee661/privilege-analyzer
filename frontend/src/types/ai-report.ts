@@ -5,4 +5,5 @@ export interface AIReport {
   summary: string;
   security_impact: string;
   recommended_actions: string[];
+  confidenceLabel: "likely_true_positive" | "likely_false_positive_pending_review";
 }

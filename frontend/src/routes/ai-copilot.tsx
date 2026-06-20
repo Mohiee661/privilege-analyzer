@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Brain, Clock, Search, Send, Sparkles } from "lucide-react";
 import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
-import { PlatformChip, RiskBadge } from "@/components/risk-badge";
+import { AIConfidenceBadge, PlatformChip, RiskBadge } from "@/components/risk-badge";
 import { loadCopilotPageData } from "@/services/reports";
 
 export const Route = createFileRoute("/ai-copilot")({
@@ -162,9 +162,12 @@ function Copilot() {
                   </p>
                 </div>
               </div>
-              <span className="inline-flex items-center gap-1.5 text-[11px] text-muted-foreground">
-                <Brain className="size-3" /> Confidence 94%
-              </span>
+              <div className="flex items-center gap-2">
+                {aiReport && <AIConfidenceBadge label={aiReport.confidenceLabel} />}
+                <span className="inline-flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                  <Brain className="size-3" /> Confidence 94%
+                </span>
+              </div>
             </header>
             <div className="space-y-4 p-5">
               <div>

@@ -55,3 +55,36 @@ export function PlatformChip({ platform }: { platform: string }) {
     </span>
   );
 }
+
+const confidenceStyles = {
+  likely_false_positive_pending_review:
+    "bg-[color-mix(in_oklab,var(--risk-low)_15%,transparent)] text-[var(--risk-low)] ring-[color-mix(in_oklab,var(--risk-low)_35%,transparent)]",
+  likely_true_positive:
+    "bg-[color-mix(in_oklab,var(--risk-critical)_15%,transparent)] text-[var(--risk-critical)] ring-[color-mix(in_oklab,var(--risk-critical)_35%,transparent)]",
+} as const;
+
+const confidenceLabels = {
+  likely_false_positive_pending_review: "Likely False Positive",
+  likely_true_positive: "Confirmed Risk",
+} as const;
+
+export function AIConfidenceBadge({
+  label,
+  className,
+}: {
+  label: keyof typeof confidenceStyles;
+  className?: string;
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center gap-1.5 rounded-md px-2 py-0.5 text-xs font-medium ring-1 ring-inset tabular-nums",
+        confidenceStyles[label],
+        className,
+      )}
+    >
+      <span className="size-1.5 rounded-full bg-current" />
+      {confidenceLabels[label]}
+    </span>
+  );
+}

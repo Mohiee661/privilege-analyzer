@@ -9,11 +9,15 @@ Requirements:
 - Keep the response concise and executive-friendly.
 - Avoid excessive technical jargon.
 - Do not invent facts that are not present in the input.
+- If any account in the identity_json has a non-null risk_context field, treat this as a documented justification. State plainly in your summary whether this finding is likely a false positive given that context, and adjust your recommended_actions accordingly — for example 'verify the exception is still valid' instead of 'revoke access immediately'. If no risk_context is present, treat the finding as a genuine risk requiring action.
 
 Return JSON with exactly these keys:
 - summary
 - security_impact
 - recommended_actions
+- confidence_label, restricted to exactly one of:
+  - likely_true_positive
+  - likely_false_positive_pending_review
 
 Input identity:
 {identity_json}

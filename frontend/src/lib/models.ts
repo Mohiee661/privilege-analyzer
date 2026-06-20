@@ -75,8 +75,16 @@ export interface DashboardMetrics {
   adminAccounts: number;
 }
 
+export interface AccuracyMetrics {
+  precision: number;
+  recall: number;
+  f1: number;
+  trapSuppressionRate: number;
+}
+
 export interface WorkspaceData {
   dashboard: DashboardMetrics;
+  accuracy: AccuracyMetrics;
   riskDistribution: MetricPoint[];
   platformDistribution: MetricPoint[];
   topRiskCategories: MetricPoint[];
@@ -111,6 +119,7 @@ export interface AIReport {
   summary: string;
   securityImpact: string;
   recommendedActions: string[];
+  confidenceLabel: "likely_true_positive" | "likely_false_positive_pending_review";
 }
 
 export interface TrendPoint {

@@ -64,6 +64,17 @@ def test_analytics_endpoint_returns_data():
     assert "top_risk_types" in payload
 
 
+def test_accuracy_endpoint_returns_metrics():
+    response = client.get("/api/v1/accuracy")
+    assert response.status_code == 200
+    payload = response.json()
+    assert set(payload) == {"precision", "recall", "f1", "trap_suppression_rate"}
+    assert 0 <= payload["precision"] <= 1
+    assert 0 <= payload["recall"] <= 1
+    assert 0 <= payload["f1"] <= 1
+    assert 0 <= payload["trap_suppression_rate"] <= 1
+
+
 def test_findings_filtering_and_search():
     findings = client.get("/api/v1/findings?risk_type=OFFBOARDING_GAP")
     assert findings.status_code == 200

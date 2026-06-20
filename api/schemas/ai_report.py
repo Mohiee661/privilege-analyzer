@@ -14,3 +14,4 @@ class AIReportResponse(BaseModel):
     summary: str
     security_impact: str
     recommended_actions: List[str]
+    confidence_label: str

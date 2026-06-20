@@ -83,9 +83,34 @@ function Dashboard() {
   const data = Route.useLoaderData();
   const topCritical = data.topCritical;
   const [range, setRange] = useState<"7d" | "30d" | "90d">("7d");
+  const formatAccuracy = (value: number) => `${Math.round(value * 100)}%`;
 
   return (
     <div className="mx-auto max-w-[1600px] space-y-6 p-6">
+      <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        {[
+          { label: "Precision", value: formatAccuracy(data.accuracy.precision) },
+          { label: "Recall", value: formatAccuracy(data.accuracy.recall) },
+          { label: "F1", value: formatAccuracy(data.accuracy.f1) },
+          {
+            label: "False-Positive Suppression",
+            value: formatAccuracy(data.accuracy.trapSuppressionRate),
+          },
+        ].map((item) => (
+          <div
+            key={item.label}
+            className="rounded-lg border border-border bg-card px-4 py-3 shadow-sm"
+          >
+            <div className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+              {item.label}
+            </div>
+            <div className="mt-2 text-2xl font-semibold tabular-nums tracking-tight text-foreground">
+              {item.value}
+            </div>
+          </div>
+        ))}
+      </section>
+
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">

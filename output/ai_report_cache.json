@@ -1,5 +1,5 @@
 {
-  "dd307c504138efacd279afcaf886624541d31bafd071f886411b0604fad1b970": {
+  "b2612b9fe76b69d6527581a20c83901128c2cc2bc2033dee41be366aa1a70dbb": {
     "person_id": "PID001",
     "risk_score": 95,
     "risk_level": "CRITICAL",
@@ -8,6 +8,7 @@
     "recommended_actions": [
       "Disable accounts",
       "Review privileges"
-    ]
+    ],
+    "confidence_label": "likely_true_positive"
   }
 }

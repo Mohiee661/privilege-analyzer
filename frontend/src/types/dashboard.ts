@@ -6,6 +6,13 @@ export interface Dashboard {
   admin_accounts: number;
 }
 
+export interface Accuracy {
+  precision: number;
+  recall: number;
+  f1: number;
+  trap_suppression_rate: number;
+}
+
 export interface Analytics {
   risk_distribution: Record<string, number>;
   platform_distribution: Record<string, number>;

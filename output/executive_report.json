@@ -2,16 +2,16 @@
   "summary": {
     "total_identities": 230,
     "critical_risks": 0,
-    "high_risks": 10,
-    "average_risk_score": 23.7,
+    "high_risks": 8,
+    "average_risk_score": 24.7,
     "most_common_finding": "EXCESSIVE_PLATFORM_EXPOSURE",
     "offboarding_gaps": 19
   },
   "top_risks": [
     {
-      "person_id": "PID006",
-      "name": "Amelia Miller",
-      "email": "amelia.miller@company.com",
+      "person_id": "PID024",
+      "name": "Ava Williams",
+      "email": "ava.williams@company.com",
       "score": 80,
       "risk_level": "HIGH",
       "findings": [
@@ -21,9 +21,9 @@
       ]
     },
     {
-      "person_id": "PID030",
-      "name": "Chloe Kumar",
-      "email": "chloe.kumar@company.com",
+      "person_id": "PID134",
+      "name": "Mia Thomas",
+      "email": "mia.thomas@company.com",
       "score": 80,
       "risk_level": "HIGH",
       "findings": [
@@ -33,9 +33,9 @@
       ]
     },
     {
-      "person_id": "PID035",
-      "name": "Daniel Carter",
-      "email": "daniel.carter@company.com",
+      "person_id": "PID144",
+      "name": "Noah Jackson",
+      "email": "noah.jackson@company.com",
       "score": 80,
       "risk_level": "HIGH",
       "findings": [
@@ -45,9 +45,9 @@
       ]
     },
     {
-      "person_id": "PID060",
-      "name": "Ethan Clark",
-      "email": "ethan.clark@company.com",
+      "person_id": "PID187",
+      "name": "Sarah Miller",
+      "email": "sarah.miller@company.com",
       "score": 80,
       "risk_level": "HIGH",
       "findings": [
@@ -57,30 +57,30 @@
       ]
     },
     {
-      "person_id": "PID142",
-      "name": "Noah Brown",
-      "email": "noah.brown@company.com",
-      "score": 80,
+      "person_id": "PID062",
+      "name": "Ethan Carter",
+      "email": "ethan.carter@company.com",
+      "score": 70,
       "risk_level": "HIGH",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
         "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-        "MULTI_PLATFORM_ADMIN"
+        "STALE_ACTIVE_ACCOUNT"
       ]
     }
   ],
   "risk_distribution": {
     "critical": 0,
-    "high": 10,
-    "medium": 58,
-    "low": 83,
-    "none": 79
+    "high": 8,
+    "medium": 67,
+    "low": 79,
+    "none": 76
   },
   "recommended_priorities": [
     "Reduce excessive platform exposure",
     "Audit administrative accounts",
-    "Remove stale privileged identities",
     "Review offboarding processes",
+    "Remove stale privileged identities",
     "Verify suspended account synchronization"
   ],
   "showcase_incidents": [
@@ -257,6 +257,41 @@
       ]
     },
     {
+      "scenario_id": "SCN011",
+      "title": "Hidden Admin via Nested Group",
+      "person_id": "DEMO011",
+      "name": "Daniel Ruiz",
+      "email": "svc-etl-prod-daniel@company.com",
+      "risk_score": 91,
+      "risk_level": "CRITICAL",
+      "finding_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+      "summary": "Stated role is read-only, but membership in a nested group secretly inherits Global Administrator.",
+      "accounts": {
+        "azure": {
+          "status": "active",
+          "role": "Employee"
+        }
+      },
+      "timeline": [
+        {
+          "date": "2025-11-02",
+          "event": "Added to azure-helpdesk-l1 group"
+        },
+        {
+          "date": "2026-01-14",
+          "event": "helpdesk-l1 nested under platform-ops"
+        },
+        {
+          "date": "2026-03-30",
+          "event": "platform-ops nested under global-admins"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Effective privilege audit flags mismatch"
+        }
+      ]
+    },
+    {
       "scenario_id": "SCN003",
       "title": "Dormant Administrator",
       "person_id": "DEMO003",
@@ -355,6 +390,37 @@
       ]
     },
     {
+      "scenario_id": "SCN012",
+      "title": "Unapproved Privilege Spike",
+      "person_id": "DEMO012",
+      "name": "Maria Gonzalez",
+      "email": "maria.gonzalez@company.com",
+      "risk_score": 88,
+      "risk_level": "HIGH",
+      "finding_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+      "summary": "Escalated from Employee to Administrator across 3 role changes in 3 days, with no approval on record for any of them.",
+      "accounts": {
+        "aws": {
+          "status": "active",
+          "role": "Administrator"
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-06-14",
+          "event": "Role changed: Employee to Developer (no approval)"
+        },
+        {
+          "date": "2026-06-16",
+          "event": "Role changed: Developer to Security Analyst (no approval)"
+        },
+        {
+          "date": "2026-06-17",
+          "event": "Role changed: Security Analyst to Administrator (no approval)"
+        }
+      ]
+    },
+    {
       "scenario_id": "SCN007",
       "title": "Shadow IT Operator",
       "person_id": "DEMO007",
@@ -392,106 +458,31 @@
           "event": "Salesforce access used"
         }
       ]
-    },
-    {
-      "scenario_id": "SCN005",
-      "title": "Excessive Platform Exposure",
-      "person_id": "DEMO005",
-      "name": "Noah Kim",
-      "email": "noah.kim@company.com",
-      "risk_score": 82,
-      "risk_level": "HIGH",
-      "finding_type": "EXCESSIVE_PLATFORM_EXPOSURE",
-      "summary": "The same identity exists across five enterprise platforms.",
-      "accounts": {
-        "ad": {
-          "status": "active",
-          "role": "Employee"
-        },
-        "azure": {
-          "status": "active",
-          "role": "Employee"
-        },
-        "aws": {
-          "status": "active",
-          "role": "Support Engineer"
-        },
-        "okta": {
-          "status": "active",
-          "role": "Employee"
-        },
-        "salesforce": {
-          "status": "active",
-          "role": "Employee"
-        }
-      },
-      "timeline": [
-        {
-          "date": "2026-01-11",
-          "event": "AD provisioned"
-        },
-        {
-          "date": "2026-01-12",
-          "event": "Azure provisioned"
-        },
-        {
-          "date": "2026-01-13",
-          "event": "AWS provisioned"
-        },
-        {
-          "date": "2026-01-14",
-          "event": "Okta provisioned"
-        },
-        {
-          "date": "2026-01-15",
-          "event": "Salesforce provisioned"
-        }
-      ]
-    },
-    {
-      "scenario_id": "SCN008",
-      "title": "Dormant SaaS Admin",
-      "person_id": "DEMO008",
-      "name": "Mia Johnson",
-      "email": "mia.johnson@company.com",
-      "risk_score": 79,
-      "risk_level": "HIGH",
-      "finding_type": "STALE_ACTIVE_ACCOUNT",
-      "summary": "A Salesforce admin account has been unused for eight months.",
-      "accounts": {
-        "salesforce": {
-          "status": "active",
-          "role": "Admin",
-          "last_login": "2025-10-20T11:30:00"
-        }
-      },
-      "timeline": [
-        {
-          "date": "2025-10-20",
-          "event": "Last Salesforce login"
-        },
-        {
-          "date": "2026-06-01",
-          "event": "Stale account review flagged"
-        }
-      ]
     }
   ],
   "platform_risk_breakdown": {
-    "ad": 87,
-    "aws": 99,
-    "azure": 86,
-    "okta": 98,
-    "salesforce": 85
+    "ad": 109,
+    "aws": 114,
+    "azure": 103,
+    "okta": 115,
+    "salesforce": 106
   },
   "risk_trends": [
+    {
+      "month": "2024-11",
+      "events": 1
+    },
     {
       "month": "2025-10",
       "events": 2
     },
     {
+      "month": "2025-11",
+      "events": 1
+    },
+    {
       "month": "2026-01",
-      "events": 10
+      "events": 11
     },
     {
       "month": "2026-02",
@@ -499,7 +490,7 @@
     },
     {
       "month": "2026-03",
-      "events": 6
+      "events": 7
     },
     {
       "month": "2026-04",
@@ -511,29 +502,29 @@
     },
     {
       "month": "2026-06",
-      "events": 1
+      "events": 7
     }
   ],
   "top_departments_at_risk": [
     {
-      "department": "Sales",
+      "department": "Finance",
       "risky_identities": 25
+    },
+    {
+      "department": "Security",
+      "risky_identities": 24
+    },
+    {
+      "department": "Sales",
+      "risky_identities": 23
+    },
+    {
+      "department": "HR",
+      "risky_identities": 23
     },
     {
       "department": "IT",
       "risky_identities": 23
-    },
-    {
-      "department": "Finance",
-      "risky_identities": 22
-    },
-    {
-      "department": "HR",
-      "risky_identities": 20
-    },
-    {
-      "department": "Engineering",
-      "risky_identities": 20
     }
   ],
   "demo_scenarios": [
@@ -928,6 +919,103 @@
           "event": "Salesforce provisioned"
         }
       ]
+    },
+    {
+      "scenario_id": "SCN011",
+      "title": "Hidden Admin via Nested Group",
+      "person_id": "DEMO011",
+      "name": "Daniel Ruiz",
+      "email": "svc-etl-prod-daniel@company.com",
+      "risk_score": 91,
+      "risk_level": "CRITICAL",
+      "finding_type": "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+      "summary": "Stated role is read-only, but membership in a nested group secretly inherits Global Administrator.",
+      "accounts": {
+        "azure": {
+          "status": "active",
+          "role": "Employee"
+        }
+      },
+      "timeline": [
+        {
+          "date": "2025-11-02",
+          "event": "Added to azure-helpdesk-l1 group"
+        },
+        {
+          "date": "2026-01-14",
+          "event": "helpdesk-l1 nested under platform-ops"
+        },
+        {
+          "date": "2026-03-30",
+          "event": "platform-ops nested under global-admins"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Effective privilege audit flags mismatch"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN012",
+      "title": "Unapproved Privilege Spike",
+      "person_id": "DEMO012",
+      "name": "Maria Gonzalez",
+      "email": "maria.gonzalez@company.com",
+      "risk_score": 88,
+      "risk_level": "HIGH",
+      "finding_type": "UNAPPROVED_PRIVILEGE_SPIKE",
+      "summary": "Escalated from Employee to Administrator across 3 role changes in 3 days, with no approval on record for any of them.",
+      "accounts": {
+        "aws": {
+          "status": "active",
+          "role": "Administrator"
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-06-14",
+          "event": "Role changed: Employee to Developer (no approval)"
+        },
+        {
+          "date": "2026-06-16",
+          "event": "Role changed: Developer to Security Analyst (no approval)"
+        },
+        {
+          "date": "2026-06-17",
+          "event": "Role changed: Security Analyst to Administrator (no approval)"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN013",
+      "title": "Stale Token Misuse",
+      "person_id": "DEMO013",
+      "name": "svc-billing-cron-07",
+      "email": "svc-billing-cron-07@company.com",
+      "risk_score": 79,
+      "risk_level": "HIGH",
+      "finding_type": "STALE_OR_MISUSED_TOKEN",
+      "summary": "API token unrotated for 19 months, scoped read-only, but observed making write calls.",
+      "accounts": {
+        "aws": {
+          "status": "active",
+          "role": "Service Account"
+        }
+      },
+      "timeline": [
+        {
+          "date": "2024-11-02",
+          "event": "Token created, scope: read-only"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Token still never rotated (19 months)"
+        },
+        {
+          "date": "2026-06-15",
+          "event": "Unexpected write API call observed from this token"
+        }
+      ]
     }
   ],
   "security_timelines": {
@@ -945,6 +1033,7 @@
     ],
     "DEMO002": [],
     "DEMO010": [],
+    "DEMO011": [],
     "DEMO003": [
       {
         "date": "2025-10-01",
@@ -963,17 +1052,11 @@
         "event": "AZURE account suspended"
       }
     ],
+    "DEMO012": [],
     "DEMO007": [
       {
         "date": "2026-03-01",
         "event": "AD account disabled"
-      }
-    ],
-    "DEMO005": [],
-    "DEMO008": [
-      {
-        "date": "2025-10-20",
-        "event": "SALESFORCE login recorded"
       }
     ]
   },

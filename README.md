@@ -22,6 +22,13 @@ There is no database layer. The system uses local JSON files in `output/` as its
 
 ---
 
+## Documentation
+
+- [Architecture](./docs/ARCHITECTURE.md)
+- [Data Dictionary](./docs/DATA_DICTIONARY.md)
+
+---
+
 ## Project Structure
 
 ```text

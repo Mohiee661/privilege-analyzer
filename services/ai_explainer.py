@@ -30,6 +30,9 @@ DEFAULT_TOP_N = 25
 DEFAULT_MODEL = "llama-3.3-70b-versatile"
 FALLBACK_MODEL = "llama-3.1-8b-instant"
 CACHE_FILE = OUTPUT_DIR / "ai_report_cache.json"
+CONFIDENCE_TRUE = "likely_true_positive"
+CONFIDENCE_FALSE = "likely_false_positive_pending_review"
+CONFIDENCE_LABELS = {CONFIDENCE_TRUE, CONFIDENCE_FALSE}
 
 
 def load_json_list(path: Path | str, label: str) -> List[dict]:
@@ -82,8 +85,28 @@ def _normalize_finding(finding: Mapping[str, Any]) -> dict:
     }
 
 
+def _identity_risk_context(identity: Mapping[str, Any]) -> dict[str, Any]:
+    accounts = identity.get("accounts", {}) or {}
+    if not isinstance(accounts, Mapping):
+        return {}
+
+    contexts: dict[str, Any] = {}
+    for platform, account in accounts.items():
+        if not isinstance(account, Mapping):
+            continue
+        risk_context = account.get("risk_context")
+        if risk_context is not None:
+            contexts[str(platform)] = risk_context
+    return contexts
+
+
+def _confidence_label_for_identity(identity: Mapping[str, Any]) -> str:
+    return CONFIDENCE_FALSE if _identity_risk_context(identity) else CONFIDENCE_TRUE
+
+
 def _fallback_report(identity: Mapping[str, Any], findings: Sequence[Mapping[str, Any]]) -> AIReport:
     risk_types = [str(f.get("risk_type", "")) for f in findings if f.get("risk_type")]
+    confidence_label = _confidence_label_for_identity(identity)
     summary_parts: List[str] = []
     if "OFFBOARDING_GAP" in risk_types:
         summary_parts.append("The identity has active access after offboarding in at least one system.")
@@ -96,13 +119,23 @@ def _fallback_report(identity: Mapping[str, Any], findings: Sequence[Mapping[str
     if "EXCESSIVE_PLATFORM_EXPOSURE" in risk_types:
         summary_parts.append("The identity spans many systems, increasing exposure.")
     if not summary_parts:
-        summary_parts.append("No notable risk patterns were found.")
+        summary_parts.append(
+            "A documented exception is present; verify the exception remains valid."
+            if confidence_label == CONFIDENCE_FALSE
+            else "No notable risk patterns were found."
+        )
 
     recommended_actions = [
         "Review the linked findings and confirm current business need.",
         "Revoke or reduce access where it is no longer required.",
         "Validate recent activity and ownership for the identity.",
     ]
+    if confidence_label == CONFIDENCE_FALSE:
+        recommended_actions = [
+            "Verify the exception is still valid with the business owner.",
+            "Confirm the documented risk_context still applies to current access.",
+            "Review whether any compensating controls have changed.",
+        ]
     if "OFFBOARDING_GAP" in risk_types:
         recommended_actions[0] = "Disable remaining active accounts and complete offboarding."
 
@@ -115,6 +148,7 @@ def _fallback_report(identity: Mapping[str, Any], findings: Sequence[Mapping[str
             "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse."
         ),
         recommended_actions=recommended_actions[:3],
+        confidence_label=confidence_label,
     )
 
 
@@ -139,7 +173,13 @@ def _parse_ai_response(identity: Mapping[str, Any], raw_text: str) -> AIReport:
     summary = str(payload.get("summary", "")).strip()
     security_impact = str(payload.get("security_impact", "")).strip()
     recommended_actions = _normalize_actions(payload.get("recommended_actions", []))
-    if not summary or not security_impact or not recommended_actions:
+    confidence_label = str(payload.get("confidence_label", "")).strip()
+    if (
+        not summary
+        or not security_impact
+        or not recommended_actions
+        or confidence_label not in CONFIDENCE_LABELS
+    ):
         raise ValueError("AI response missing required fields")
 
     return AIReport(
@@ -149,6 +189,7 @@ def _parse_ai_response(identity: Mapping[str, Any], raw_text: str) -> AIReport:
         summary=summary,
         security_impact=security_impact,
         recommended_actions=recommended_actions,
+        confidence_label=confidence_label,
     )
 
 
@@ -177,6 +218,7 @@ def _cache_key(identity: Mapping[str, Any], findings: Sequence[Mapping[str, Any]
             "person_id": identity.get("person_id", ""),
             "score": identity.get("score", 0),
             "risk_level": identity.get("risk_level", ""),
+            "risk_context": _identity_risk_context(identity),
             "findings": normalized_findings,
         },
         sort_keys=True,
@@ -202,6 +244,7 @@ def generate_ai_report(
             summary=str(cached.get("summary", "")),
             security_impact=str(cached.get("security_impact", "")),
             recommended_actions=list(cached.get("recommended_actions", [])),
+            confidence_label=str(cached.get("confidence_label", _confidence_label_for_identity(identity))),
         )
 
     if client is None:
@@ -280,6 +323,7 @@ def load_ai_reports(output_path: Path | str = AI_REPORTS_FILE) -> List[AIReport]
                 summary=str(record.get("summary", "")),
                 security_impact=str(record.get("security_impact", "")),
                 recommended_actions=list(record.get("recommended_actions", [])),
+                confidence_label=str(record.get("confidence_label", CONFIDENCE_TRUE)),
             )
         )
     return reports

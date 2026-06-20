@@ -2,6 +2,7 @@ import type {
   AIAnalysis,
   AIReport,
   DashboardMetrics,
+  AccuracyMetrics,
   DepartmentRisk,
   Finding,
   FindingType,
@@ -59,6 +60,7 @@ interface ApiAIReport {
   summary: string;
   security_impact: string;
   recommended_actions: string[];
+  confidence_label: "likely_true_positive" | "likely_false_positive_pending_review";
 }
 
 interface ApiDashboard {
@@ -73,6 +75,13 @@ interface ApiAnalytics {
   risk_distribution: Record<string, number>;
   platform_distribution: Record<string, number>;
   top_risk_types: Record<string, number>;
+}
+
+interface ApiAccuracy {
+  precision: number;
+  recall: number;
+  f1: number;
+  trap_suppression_rate: number;
 }
 
 interface ApiIdentityListResponse {
@@ -360,10 +369,10 @@ function convertAIReport(
     return {
       summary: apiReport.summary,
       impact: apiReport.security_impact,
-      explanation: `Risk score ${apiReport.risk_score} reflects ${findings.length} linked findings across ${identity.platforms.length} platforms.`,
-      actions: apiReport.recommended_actions,
-      notes: "AI insight sourced from backend copilot export.",
-    };
+        explanation: `Risk score ${apiReport.risk_score} reflects ${findings.length} linked findings across ${identity.platforms.length} platforms.`,
+        actions: apiReport.recommended_actions,
+        notes: "AI insight sourced from backend copilot export.",
+      };
   }
 
   return {
@@ -499,16 +508,18 @@ function buildTimeline(identity: Identity, findings: Finding[]): TimelineEvent[]
 }
 
 async function loadRawWorkspace() {
-  const [identities, riskProfiles, findings, aiReports, dashboard, analytics] = await Promise.all([
-    fetchAllIdentities(),
-    requestJson<ApiRiskProfile[]>("/risks"),
-    requestJson<ApiFinding[]>("/findings"),
-    requestJson<ApiAIReport[]>("/ai-reports"),
-    requestJson<ApiDashboard>("/dashboard"),
-    requestJson<ApiAnalytics>("/analytics"),
-  ]);
+  const [identities, riskProfiles, findings, aiReports, dashboard, analytics, accuracy] =
+    await Promise.all([
+      fetchAllIdentities(),
+      requestJson<ApiRiskProfile[]>("/risks"),
+      requestJson<ApiFinding[]>("/findings"),
+      requestJson<ApiAIReport[]>("/ai-reports"),
+      requestJson<ApiDashboard>("/dashboard"),
+      requestJson<ApiAnalytics>("/analytics"),
+      requestJson<ApiAccuracy>("/accuracy"),
+    ]);
 
-  return { identities, riskProfiles, findings, aiReports, dashboard, analytics };
+  return { identities, riskProfiles, findings, aiReports, dashboard, analytics, accuracy };
 }
 
 export async function loadWorkspaceData(): Promise<WorkspaceData> {
@@ -521,6 +532,7 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
         aiReports: apiAiReports,
         dashboard,
         analytics,
+        accuracy,
       }) => {
         const riskProfiles = apiRiskProfiles.map(convertRiskProfile);
         const identities = apiIdentities.map((identity) => {
@@ -568,6 +580,7 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
           summary: report.summary,
           securityImpact: report.security_impact,
           recommendedActions: report.recommended_actions,
+          confidenceLabel: report.confidence_label,
         }));
         const aiReportById = Object.fromEntries(
           aiReports.map((report) => [report.personId, report]),
@@ -586,6 +599,12 @@ export async function loadWorkspaceData(): Promise<WorkspaceData> {
             offboardingGaps: dashboard.offboarding_gaps,
             adminAccounts: dashboard.admin_accounts,
           },
+          accuracy: {
+            precision: accuracy.precision,
+            recall: accuracy.recall,
+            f1: accuracy.f1,
+            trapSuppressionRate: accuracy.trap_suppression_rate,
+          } satisfies AccuracyMetrics,
           riskDistribution: toMetricPoints(analytics.risk_distribution).map((point) => ({
             name: toRiskLevel(point.name),
             value: point.value,

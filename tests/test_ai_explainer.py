@@ -58,6 +58,19 @@ def make_identity():
     }
 
 
+def make_identity_with_risk_context():
+    return {
+        **make_identity(),
+        "accounts": {
+            "aws": {
+                "status": "active",
+                "role": "Administrator",
+                "risk_context": "Approved break-glass access during incident response",
+            }
+        },
+    }
+
+
 def make_findings():
     return [
         {
@@ -93,12 +106,14 @@ def test_valid_ai_response_parsing(monkeypatch):
             "summary": "John Smith is risky.",
             "security_impact": "This can lead to unauthorized access.",
             "recommended_actions": ["Disable accounts", "Review privileges"],
+            "confidence_label": "likely_true_positive",
         }
     )
     report = generate_ai_report(make_identity(), make_findings(), client=FakeClient(content))
     assert report.summary == "John Smith is risky."
     assert report.security_impact.startswith("This can")
     assert report.recommended_actions == ["Disable accounts", "Review privileges"]
+    assert report.confidence_label == "likely_true_positive"
 
 
 def test_missing_api_key_falls_back_gracefully(monkeypatch):
@@ -109,6 +124,24 @@ def test_missing_api_key_falls_back_gracefully(monkeypatch):
     assert report.recommended_actions
 
 
+def test_fallback_marks_false_positive_pending_review_when_risk_context_exists(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    report = generate_ai_report(make_identity_with_risk_context(), make_findings(), client=None)
+    assert report.person_id == "PID001"
+    assert report.summary
+    assert report.recommended_actions
+    assert report.confidence_label == "likely_false_positive_pending_review"
+
+
+def test_fallback_marks_true_positive_when_no_risk_context(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    report = generate_ai_report(make_identity(), make_findings(), client=None)
+    assert report.person_id == "PID001"
+    assert report.summary
+    assert report.recommended_actions
+    assert report.confidence_label == "likely_true_positive"
+
+
 def test_cache_reuses_matching_report(tmp_path, monkeypatch):
     cache = {}
     client = CountingFakeClient(
@@ -117,6 +150,7 @@ def test_cache_reuses_matching_report(tmp_path, monkeypatch):
                 "summary": "John Smith is risky.",
                 "security_impact": "This can lead to unauthorized access.",
                 "recommended_actions": ["Disable accounts", "Review privileges"],
+                "confidence_label": "likely_true_positive",
             }
         )
     )
@@ -170,6 +204,7 @@ def test_generate_report_for_person_updates_ai_reports_file(tmp_path, monkeypatc
         "summary": "John Smith is risky.",
         "security_impact": "This can lead to unauthorized access.",
         "recommended_actions": ["Disable accounts", "Review privileges"],
+        "confidence_label": "likely_true_positive",
     })))
     assert report is not None
     assert report.person_id == "PID001"
@@ -183,6 +218,7 @@ def test_report_export(tmp_path):
         "summary": "John Smith is risky.",
         "security_impact": "This can lead to unauthorized access.",
         "recommended_actions": ["Disable accounts", "Review privileges"],
+        "confidence_label": "likely_true_positive",
     })))
     output_path = tmp_path / "output" / "ai_reports.json"
     written = save_ai_reports([report], output_path)
@@ -198,6 +234,7 @@ def test_upsert_replaces_existing_report(tmp_path):
         "summary": "John Smith is risky.",
         "security_impact": "This can lead to unauthorized access.",
         "recommended_actions": ["Disable accounts", "Review privileges"],
+        "confidence_label": "likely_true_positive",
     })))
     updated = generate_ai_report(
         {**make_identity(), "score": 95},
@@ -206,6 +243,7 @@ def test_upsert_replaces_existing_report(tmp_path):
             "summary": "John Smith remains risky.",
             "security_impact": "This can lead to unauthorized access.",
             "recommended_actions": ["Disable accounts", "Review privileges"],
+            "confidence_label": "likely_true_positive",
         })),
     )
 

@@ -14,6 +14,7 @@ class AIReport:
     summary: str
     security_impact: str
     recommended_actions: List[str] = field(default_factory=list)
+    confidence_label: str = "likely_true_positive"
 
     def to_dict(self) -> dict:
         return {
@@ -23,4 +24,5 @@ class AIReport:
             "summary": self.summary,
             "security_impact": self.security_impact,
             "recommended_actions": list(self.recommended_actions),
+            "confidence_label": self.confidence_label,
         }

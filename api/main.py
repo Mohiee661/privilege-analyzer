@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api.config import CORS_ORIGINS, API_PREFIX
 from api.routers.ai_reports import router as ai_reports_router
+from api.routers.accuracy import router as accuracy_router
 from api.routers.analytics import router as analytics_router
 from api.routers.dashboard import router as dashboard_router
 from api.routers.findings import router as findings_router
@@ -31,6 +32,7 @@ app.add_middleware(
 )
 
 app.include_router(dashboard_router, prefix=API_PREFIX)
+app.include_router(accuracy_router, prefix=API_PREFIX)
 app.include_router(identities_router, prefix=API_PREFIX)
 app.include_router(findings_router, prefix=API_PREFIX)
 app.include_router(risks_router, prefix=API_PREFIX)
