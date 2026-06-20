@@ -8,13 +8,18 @@ import {
   Search,
   SlidersHorizontal,
 } from "lucide-react";
+import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
-import { loadRiskCenterPageData } from "@/lib/api";
+import { loadRiskCenterPageData } from "@/services/risks";
 import type { Identity, RiskLevel } from "@/lib/models";
 
 export const Route = createFileRoute("/risk-center")({
   head: () => ({ meta: [{ title: "Risk Center · IRIP" }] }),
   loader: loadRiskCenterPageData,
+  pendingComponent: () => <PageLoadingState title="Loading risks" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load risk records." />
+  ),
   component: RiskCenter,
 });
 
@@ -164,6 +169,16 @@ function RiskCenter() {
               </tr>
             </thead>
             <tbody>
+              {filtered.length === 0 && (
+                <tr>
+                  <td colSpan={11} className="px-4 py-8">
+                    <EmptyState
+                      title="No risks available"
+                      message="Try adjusting the search or filters."
+                    />
+                  </td>
+                </tr>
+              )}
               {filtered.slice(0, 50).map((identity) => (
                 <tr
                   key={identity.id}

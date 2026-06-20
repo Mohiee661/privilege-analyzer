@@ -13,12 +13,17 @@ import {
   YAxis,
 } from "recharts";
 import { Download, FileText } from "lucide-react";
+import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { RiskBadge, RiskScore } from "@/components/risk-badge";
-import { loadReportsPageData } from "@/lib/api";
+import { loadReportsPageData } from "@/services/reports";
 
 export const Route = createFileRoute("/reports")({
   head: () => ({ meta: [{ title: "Reports · IRIP" }] }),
   loader: loadReportsPageData,
+  pendingComponent: () => <PageLoadingState title="Loading reports" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load reports data." />
+  ),
   component: Reports,
 });
 

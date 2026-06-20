@@ -1,12 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge } from "@/components/risk-badge";
-import { loadFindingsPageData } from "@/lib/api";
+import { loadFindingsPageData } from "@/services/findings";
 import type { FindingType } from "@/lib/models";
 
 export const Route = createFileRoute("/findings")({
   head: () => ({ meta: [{ title: "Findings · IRIP" }] }),
   loader: loadFindingsPageData,
+  pendingComponent: () => <PageLoadingState title="Loading findings" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load findings." />
+  ),
   component: Findings,
 });
 
@@ -52,6 +57,14 @@ function Findings() {
       </div>
 
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
+        {list.length === 0 && (
+          <div className="lg:col-span-2">
+            <EmptyState
+              title="No findings available"
+              message="Try selecting a different category or check backend data."
+            />
+          </div>
+        )}
         {list.map((finding) => {
           const identity = data.identityById[finding.identityId];
           return (

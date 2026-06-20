@@ -15,6 +15,7 @@ import type {
   TrendPoint,
   WorkspaceData,
 } from "@/lib/models";
+import { requestJson } from "@/services/client";
 
 type ApiPlatformKey = "ad" | "azure" | "aws" | "okta" | "salesforce";
 
@@ -81,8 +82,6 @@ interface ApiIdentityListResponse {
   total: number;
 }
 
-const API_BASE_URL =
-  (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/$/, "") ?? "/api/v1";
 const DEFAULT_PAGE_SIZE = 100;
 
 const PLATFORM_LABELS: Record<ApiPlatformKey, Platform> = {
@@ -124,16 +123,6 @@ const FallbackRecommendation: Record<FindingType, string> = {
 const workspaceCache = {
   promise: null as Promise<WorkspaceData> | null,
 };
-
-async function requestJson<T>(path: string): Promise<T> {
-  const response = await fetch(`${API_BASE_URL}${path}`, {
-    headers: { Accept: "application/json" },
-  });
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-  return (await response.json()) as T;
-}
 
 async function fetchAllIdentities(): Promise<ApiIdentity[]> {
   const items: ApiIdentity[] = [];
@@ -181,7 +170,7 @@ function stringifyEvidence(evidence: Record<string, unknown>): string {
   if (entries.length === 0) return "No evidence provided.";
   return entries
     .map(([key, value]) => `${key}: ${typeof value === "string" ? value : JSON.stringify(value)}`)
-    .join(" · ");
+    .join(" | ");
 }
 
 function latestLogin(accounts: Record<string, ApiIdentityAccount>): string {

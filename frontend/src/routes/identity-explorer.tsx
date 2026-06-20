@@ -1,12 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Search } from "lucide-react";
+import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge } from "@/components/risk-badge";
-import { loadIdentityExplorerPageData } from "@/lib/api";
+import { loadIdentityExplorerPageData } from "@/services/identities";
 
 export const Route = createFileRoute("/identity-explorer")({
   head: () => ({ meta: [{ title: "Identity Explorer · IRIP" }] }),
   loader: loadIdentityExplorerPageData,
+  pendingComponent: () => <PageLoadingState title="Loading identities" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load identities." />
+  ),
   component: Explorer,
 });
 
@@ -39,6 +44,14 @@ function Explorer() {
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {list.length === 0 && (
+          <div className="sm:col-span-2 lg:col-span-3 xl:col-span-4">
+            <EmptyState
+              title="No identities available"
+              message="Try a different search term or check the backend data."
+            />
+          </div>
+        )}
         {list.slice(0, 32).map((identity) => (
           <Link
             key={identity.id}

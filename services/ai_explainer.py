@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
 import re
 import sys
 from pathlib import Path
@@ -15,10 +14,9 @@ if __package__ in (None, ""):
     if str(PROJECT_ROOT) not in sys.path:
         sys.path.insert(0, str(PROJECT_ROOT))
 
-from dotenv import load_dotenv
-
 from models.ai_report import AIReport
 from services.correlation_engine import OUTPUT_FILE as UNIFIED_IDENTITIES_FILE
+from services.groq_client import call_chat_completion, load_groq_client
 from services.scoring_engine import RISK_PROFILES_FILE
 from services.risk_engine import RISK_FINDINGS_FILE
 
@@ -32,7 +30,6 @@ DEFAULT_TOP_N = 25
 DEFAULT_MODEL = "llama-3.3-70b-versatile"
 FALLBACK_MODEL = "llama-3.1-8b-instant"
 CACHE_FILE = OUTPUT_DIR / "ai_report_cache.json"
-_NO_CLIENT = object()
 
 
 def load_json_list(path: Path | str, label: str) -> List[dict]:
@@ -54,20 +51,6 @@ def load_json_list(path: Path | str, label: str) -> List[dict]:
     return [item for item in payload if isinstance(item, dict)]
 
 
-def load_groq_client():
-    load_dotenv()
-    api_key = os.getenv("GROQ_API_KEY")
-    if not api_key:
-        print("[ai_explainer] GROQ_API_KEY is not set; using fallback generation only.", file=sys.stderr)
-        return None
-    try:
-        from groq import Groq
-    except Exception as exc:  # pragma: no cover - import guarded by environment
-        print(f"[ai_explainer] Groq SDK unavailable: {exc}", file=sys.stderr)
-        return None
-    return Groq(api_key=api_key)
-
-
 def build_prompt(identity: Mapping[str, Any], findings: Sequence[Mapping[str, Any]]) -> str:
     template = PROMPT_FILE.read_text(encoding="utf-8")
     identity_json = json.dumps(identity, indent=2, sort_keys=True)
@@ -86,6 +69,17 @@ def _normalize_actions(actions: Any) -> List[str]:
     if isinstance(actions, str) and actions.strip():
         return [actions.strip()]
     return []
+
+
+def _normalize_finding(finding: Mapping[str, Any]) -> dict:
+    return {
+        "finding_id": str(finding.get("finding_id", "")),
+        "person_id": str(finding.get("person_id", "")),
+        "risk_type": str(finding.get("risk_type", "")),
+        "severity": str(finding.get("severity", "")),
+        "description": str(finding.get("description", "")),
+        "evidence": finding.get("evidence", {}),
+    }
 
 
 def _fallback_report(identity: Mapping[str, Any], findings: Sequence[Mapping[str, Any]]) -> AIReport:
@@ -117,7 +111,9 @@ def _fallback_report(identity: Mapping[str, Any], findings: Sequence[Mapping[str
         risk_score=int(identity.get("score", 0) or 0),
         risk_level=str(identity.get("risk_level", "NONE")),
         summary=" ".join(summary_parts),
-        security_impact="Ignoring this identity could leave unnecessary access in place and increase the chance of misuse.",
+        security_impact=(
+            "Ignoring this identity could leave unnecessary access in place and increase the chance of misuse."
+        ),
         recommended_actions=recommended_actions[:3],
     )
 
@@ -172,30 +168,20 @@ def _save_cache(cache: Mapping[str, dict], path: Path = CACHE_FILE) -> None:
 
 
 def _cache_key(identity: Mapping[str, Any], findings: Sequence[Mapping[str, Any]]) -> str:
+    normalized_findings = sorted(
+        (_normalize_finding(finding) for finding in findings),
+        key=lambda item: json.dumps(item, sort_keys=True),
+    )
     canonical = json.dumps(
         {
             "person_id": identity.get("person_id", ""),
             "score": identity.get("score", 0),
-            "findings": [f.get("risk_type", "") for f in findings],
+            "risk_level": identity.get("risk_level", ""),
+            "findings": normalized_findings,
         },
         sort_keys=True,
     )
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
-
-
-def _call_groq(client, prompt: str, model: str) -> str:
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You write concise security explanations in JSON."},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=0.2,
-    )
-    content = response.choices[0].message.content
-    if not content:
-        raise ValueError("Empty model response")
-    return content
 
 
 def generate_ai_report(
@@ -205,7 +191,7 @@ def generate_ai_report(
     model: str = DEFAULT_MODEL,
     cache: Mapping[str, dict] | None = None,
 ) -> AIReport:
-    report_cache = dict(cache or {})
+    report_cache = cache if isinstance(cache, dict) else dict(cache or {})
     cache_key = _cache_key(identity, findings)
     cached = report_cache.get(cache_key)
     if cached:
@@ -218,9 +204,6 @@ def generate_ai_report(
             recommended_actions=list(cached.get("recommended_actions", [])),
         )
 
-    if client is _NO_CLIENT:
-        return _fallback_report(identity, findings)
-
     if client is None:
         client = load_groq_client()
 
@@ -229,7 +212,7 @@ def generate_ai_report(
         return _fallback_report(identity, findings)
 
     try:
-        raw_text = _call_groq(client, prompt, model)
+        raw_text = call_chat_completion(client, prompt, (model, FALLBACK_MODEL))
         report = _parse_ai_response(identity, raw_text)
     except Exception as exc:
         print(f"[ai_explainer] Groq generation failed for {identity.get('person_id', '')}: {exc}", file=sys.stderr)
@@ -259,7 +242,7 @@ def generate_reports_for_all_profiles(
     selected_profiles = [profile for profile in ranked_profiles if int(profile.get("score", 0) or 0) > 0][:limit]
 
     cache = _load_cache()
-    resolved_client = client if client is not None else (load_groq_client() or _NO_CLIENT)
+    resolved_client = client if client is not None else load_groq_client()
     reports: List[AIReport] = []
     for profile in selected_profiles:
         person_findings = _findings_for_person(findings, str(profile.get("person_id", "")))
@@ -281,6 +264,51 @@ def save_ai_reports(reports: Sequence[AIReport], output_path: Path | str = AI_RE
     payload = [report.to_dict() for report in reports]
     destination.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return destination
+
+
+def load_ai_reports(output_path: Path | str = AI_REPORTS_FILE) -> List[AIReport]:
+    records = load_json_list(output_path, "AI reports")
+    reports: List[AIReport] = []
+    for record in records:
+        if "person_id" not in record:
+            continue
+        reports.append(
+            AIReport(
+                person_id=str(record.get("person_id", "")),
+                risk_score=int(record.get("risk_score", 0) or 0),
+                risk_level=str(record.get("risk_level", "NONE")),
+                summary=str(record.get("summary", "")),
+                security_impact=str(record.get("security_impact", "")),
+                recommended_actions=list(record.get("recommended_actions", [])),
+            )
+        )
+    return reports
+
+
+def upsert_ai_report(report: AIReport, output_path: Path | str = AI_REPORTS_FILE) -> Path:
+    existing = load_ai_reports(output_path)
+    retained = [item for item in existing if item.person_id != report.person_id]
+    retained.append(report)
+    return save_ai_reports(retained, output_path)
+
+
+def generate_ai_report_for_person(
+    person_id: str,
+    client=None,
+    model: str = DEFAULT_MODEL,
+) -> AIReport | None:
+    risk_profiles = load_json_list(RISK_PROFILES_FILE, "risk profiles")
+    findings = load_json_list(RISK_FINDINGS_FILE, "risk findings")
+    profile = next((item for item in risk_profiles if str(item.get("person_id", "")) == person_id), None)
+    if profile is None:
+        return None
+    person_findings = _findings_for_person(findings, person_id)
+    cache = _load_cache()
+    report = generate_ai_report(profile, person_findings, client=client, model=model, cache=cache)
+    cache[_cache_key(profile, person_findings)] = report.to_dict()
+    _save_cache(cache)
+    upsert_ai_report(report, AI_REPORTS_FILE)
+    return report
 
 
 def _print_report_preview(report: AIReport) -> None:

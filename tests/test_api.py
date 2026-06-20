@@ -72,3 +72,22 @@ def test_findings_filtering_and_search():
     search = client.get("/api/v1/search?q=john")
     assert search.status_code == 200
     assert len(search.json()) > 0
+
+
+def test_ai_reports_endpoint_returns_reports():
+    response = client.get("/api/v1/ai-reports")
+    assert response.status_code == 200
+    payload = response.json()
+    assert isinstance(payload, list)
+    assert payload
+    assert {"person_id", "risk_score", "risk_level", "summary", "security_impact", "recommended_actions"}.issubset(
+        payload[0].keys(),
+    )
+
+
+def test_ai_report_detail_endpoint_generates_missing_report():
+    response = client.get("/api/v1/ai-reports/PID001")
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["person_id"] == "PID001"
+    assert payload["summary"]

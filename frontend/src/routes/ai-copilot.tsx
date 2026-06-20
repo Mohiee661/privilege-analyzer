@@ -1,12 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Brain, Clock, Search, Send, Sparkles } from "lucide-react";
+import { EmptyState, PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge } from "@/components/risk-badge";
-import { loadCopilotPageData } from "@/lib/api";
+import { loadCopilotPageData } from "@/services/reports";
 
 export const Route = createFileRoute("/ai-copilot")({
   head: () => ({ meta: [{ title: "AI Copilot · IRIP" }] }),
   loader: loadCopilotPageData,
+  pendingComponent: () => <PageLoadingState title="Loading copilot" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load AI reports." />
+  ),
   component: Copilot,
 });
 
@@ -14,6 +19,16 @@ function Copilot() {
   const data = Route.useLoaderData();
   const critical = [...data.topCritical].sort((a, b) => b.riskScore - a.riskScore).slice(0, 8);
   const [selectedId, setSelectedId] = useState(critical[0]?.id ?? data.identities[0]?.id ?? "");
+  if (critical.length === 0 || data.identities.length === 0) {
+    return (
+      <div className="mx-auto max-w-[1600px] p-6">
+        <EmptyState
+          title="No identities available"
+          message="The backend returned no identities to investigate."
+        />
+      </div>
+    );
+  }
   const identity = data.identityById[selectedId] ?? critical[0] ?? data.identities[0];
   const findings = data.findingsByIdentityId[selectedId] ?? [];
   const aiReport = data.aiReportById[selectedId];

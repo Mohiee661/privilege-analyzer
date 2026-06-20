@@ -1,7 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Brain, ChevronRight, Clock, Shield, Sparkles } from "lucide-react";
+import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
-import { loadIdentityDetailPageData } from "@/lib/api";
+import { loadIdentityDetailPageData } from "@/services/identities";
 
 export const Route = createFileRoute("/identity/$id")({
   head: ({ params }) => ({ meta: [{ title: `${params.id} · Identity · IRIP` }] }),
@@ -10,6 +11,10 @@ export const Route = createFileRoute("/identity/$id")({
     if (!result) throw notFound();
     return result;
   },
+  pendingComponent: () => <PageLoadingState title="Loading identity" />,
+  errorComponent: () => (
+    <PageErrorState title="Backend unavailable" message="Unable to load identity details." />
+  ),
   notFoundComponent: () => (
     <div className="p-10 text-center text-muted-foreground">Identity not found.</div>
   ),

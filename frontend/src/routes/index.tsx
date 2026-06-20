@@ -22,8 +22,9 @@ import {
   YAxis,
 } from "recharts";
 import { MetricCard } from "@/components/metric-card";
+import { PageErrorState, PageLoadingState } from "@/components/page-state";
 import { PlatformChip, RiskBadge, RiskScore } from "@/components/risk-badge";
-import { loadDashboardPageData } from "@/lib/api";
+import { loadDashboardPageData } from "@/services/dashboard";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +34,13 @@ export const Route = createFileRoute("/")({
     ],
   }),
   loader: loadDashboardPageData,
+  pendingComponent: () => <PageLoadingState title="Loading dashboard" />,
+  errorComponent: () => (
+    <PageErrorState
+      title="Backend unavailable"
+      message="Unable to load dashboard data from the API."
+    />
+  ),
   component: Dashboard,
 });
 
