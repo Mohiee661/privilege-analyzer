@@ -57,6 +57,17 @@ def test_combined_score_is_70():
     assert score == 70
 
 
+def test_new_risk_type_scores_are_included():
+    score = calculate_identity_score(
+        [
+            make_finding("PID001", "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING"),
+            make_finding("PID001", "UNAPPROVED_PRIVILEGE_SPIKE"),
+            make_finding("PID001", "STALE_OR_MISUSED_TOKEN"),
+        ]
+    )
+    assert score == 85
+
+
 def test_score_caps_at_100():
     score = calculate_identity_score(
         [
