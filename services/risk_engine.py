@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import sys
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Sequence
 
@@ -16,6 +16,8 @@ if __package__ in (None, ""):
 
 from models.finding import Finding
 from services.correlation_engine import OUTPUT_FILE as UNIFIED_IDENTITIES_FILE
+from services.data_loader import load_api_tokens, load_privilege_events
+from services.privilege_graph import effective_privilege
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -28,6 +30,14 @@ ADMIN_ROLES = {
     "admin",
     "super admin",
     "security administrator",
+}
+LOW_PRIVILEGE_ROLES = {
+    "employee",
+    "standard user",
+    "support engineer",
+    "read only",
+    "contractor",
+    "developer",
 }
 
 ACTIVE_STATUSES = {"active"}
@@ -74,6 +84,40 @@ def _parse_last_login(value: str) -> datetime | None:
         return parsed.astimezone(timezone.utc)
     except ValueError:
         return None
+
+
+def _parse_date(value: str) -> date | None:
+    if not value:
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def _parse_timestamp(value: str) -> datetime | None:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value)
+        if parsed.tzinfo is None:
+            return parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
+def _normalize_role(value: str) -> str:
+    return value.lower().strip()
+
+
+def _is_admin_role(value: str) -> bool:
+    return _normalize_role(value) in ADMIN_ROLES
+
+
+def _is_low_privilege_role(value: str) -> bool:
+    normalized = _normalize_role(value)
+    return bool(normalized) and not _is_admin_role(normalized)
 
 
 def _new_finding(
@@ -237,6 +281,163 @@ def detect_platform_exposure(unified_identities: Sequence[Mapping[str, Any]]) ->
     return findings
 
 
+def detect_nested_group_privilege(unified_identities: Sequence[Mapping[str, Any]]) -> List[Finding]:
+    findings: List[Finding] = []
+    counter = 1
+
+    for unified in unified_identities:
+        email = str(unified.get("email", ""))
+        accounts = unified.get("accounts", {}) or {}
+        stated_roles = [
+            str(data.get("role", ""))
+            for data in accounts.values()
+            if isinstance(data, Mapping) and _is_low_privilege_role(str(data.get("role", "")))
+        ]
+        if not stated_roles:
+            continue
+
+        effective_roles = effective_privilege(email)
+        admin_roles = sorted(role for role in effective_roles if _is_admin_role(role))
+        if not admin_roles:
+            continue
+
+        evidence = {
+            "stated_roles": sorted(set(stated_roles)),
+            "effective_privilege": effective_roles,
+            "admin_equivalent_roles": admin_roles,
+        }
+        findings.append(
+            _new_finding(
+                counter,
+                unified,
+                "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+                "HIGH",
+                "Low-privilege account gains admin-equivalent access through nested groups",
+                evidence,
+            )
+        )
+        counter += 1
+
+    return findings
+
+
+def detect_privilege_spikes(unified_identities: Sequence[Mapping[str, Any]]) -> List[Finding]:
+    findings: List[Finding] = []
+    counter = 1
+    events = load_privilege_events()
+    events_by_email: Dict[str, List[Any]] = {}
+
+    for event in events:
+        if not event.approved_by:
+            events_by_email.setdefault(event.email.lower().strip(), []).append(event)
+
+    identity_lookup = {
+        str(identity.get("email", "")).lower().strip(): identity
+        for identity in unified_identities
+    }
+
+    for email, records in events_by_email.items():
+        timestamps = sorted(
+            (
+                _parse_timestamp(record.timestamp),
+                record,
+            )
+            for record in records
+            if _parse_timestamp(record.timestamp) is not None
+        )
+        if len(timestamps) < 3:
+            continue
+
+        window_start = 0
+        for window_end, (current_timestamp, _) in enumerate(timestamps):
+            while (
+                window_start < window_end
+                and (current_timestamp - timestamps[window_start][0]).days > 7
+            ):
+                window_start += 1
+            if window_end - window_start + 1 >= 3:
+                identity = identity_lookup.get(email)
+                if identity is None:
+                    break
+                evidence_records = [record.event_id for _, record in timestamps[window_start : window_end + 1]]
+                findings.append(
+                    _new_finding(
+                        counter,
+                        identity,
+                        "UNAPPROVED_PRIVILEGE_SPIKE",
+                        "HIGH",
+                        "Three or more unapproved privilege changes occurred within seven days",
+                        {
+                            "email": email,
+                            "event_ids": evidence_records,
+                            "window_start": timestamps[window_start][0].isoformat(),
+                            "window_end": current_timestamp.isoformat(),
+                        },
+                    )
+                )
+                counter += 1
+                break
+
+    return findings
+
+
+def detect_token_abuse(unified_identities: Sequence[Mapping[str, Any]]) -> List[Finding]:
+    findings: List[Finding] = []
+    counter = 1
+    now = date.today()
+    tokens = load_api_tokens()
+    identity_lookup = {
+        str(identity.get("email", "")).lower().strip(): identity
+        for identity in unified_identities
+    }
+
+    for token in tokens:
+        stale = False
+        misuse = False
+
+        last_rotated = _parse_date(token.last_rotated)
+        if last_rotated is not None and (now - last_rotated).days > 365:
+            stale = True
+
+        if _normalize_role(token.scope) == "read-only" and bool(token.observed_write_call):
+            misuse = True
+
+        if not (stale or misuse):
+            continue
+
+        identity = identity_lookup.get(token.owner_email.lower().strip())
+        if identity is None:
+            continue
+
+        severity = "HIGH" if misuse else "MEDIUM"
+        reasons = []
+        if stale:
+            reasons.append("stale_rotation")
+        if misuse:
+            reasons.append("misused_write_scope")
+
+        findings.append(
+            _new_finding(
+                counter,
+                identity,
+                "STALE_OR_MISUSED_TOKEN",
+                severity,
+                "API token is stale or used beyond its declared scope",
+                {
+                    "token_id": token.token_id,
+                    "scope": token.scope,
+                    "status": token.status,
+                    "reasons": reasons,
+                    "last_rotated": token.last_rotated,
+                    "observed_write_call": token.observed_write_call,
+                },
+            )
+        )
+        counter += 1
+
+    return findings
+
+
 def run_all_detectors(unified_identities: Sequence[Mapping[str, Any]]) -> List[Finding]:
     findings: List[Finding] = []
     detectors = [
@@ -245,6 +446,9 @@ def run_all_detectors(unified_identities: Sequence[Mapping[str, Any]]) -> List[F
         detect_stale_accounts,
         detect_suspended_mismatches,
         detect_platform_exposure,
+        detect_nested_group_privilege,
+        detect_privilege_spikes,
+        detect_token_abuse,
     ]
 
     for detector in detectors:
@@ -282,6 +486,12 @@ def generate_risk_report(findings: Sequence[Finding], unified_identities: Sequen
         f"SUSPENDED_ACCOUNT_MISMATCH: {counts.get('SUSPENDED_ACCOUNT_MISMATCH', 0)}",
         "",
         f"EXCESSIVE_PLATFORM_EXPOSURE: {counts.get('EXCESSIVE_PLATFORM_EXPOSURE', 0)}",
+        "",
+        f"HIDDEN_PRIVILEGE_VIA_GROUP_NESTING: {counts.get('HIDDEN_PRIVILEGE_VIA_GROUP_NESTING', 0)}",
+        "",
+        f"UNAPPROVED_PRIVILEGE_SPIKE: {counts.get('UNAPPROVED_PRIVILEGE_SPIKE', 0)}",
+        "",
+        f"STALE_OR_MISUSED_TOKEN: {counts.get('STALE_OR_MISUSED_TOKEN', 0)}",
         "",
         f"TOTAL FINDINGS: {len(findings)}",
         "",

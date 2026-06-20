@@ -9,6 +9,9 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from services.risk_engine import (  # noqa: E402
+    detect_nested_group_privilege,
+    detect_privilege_spikes,
+    detect_token_abuse,
     detect_multi_platform_admins,
     detect_offboarding_gaps,
     detect_platform_exposure,
@@ -18,6 +21,7 @@ from services.risk_engine import (  # noqa: E402
     run_all_detectors,
     save_findings,
 )
+from services.data_loader import ApiToken, PrivilegeEvent  # noqa: E402
 
 
 def make_unified_identity(person_id: str, email: str, accounts: dict, name: str = "John Smith") -> dict:
@@ -122,6 +126,82 @@ def test_platform_exposure_detection():
 
     assert len(findings) == 1
     assert findings[0].risk_type == "EXCESSIVE_PLATFORM_EXPOSURE"
+
+
+def test_nested_group_privilege_detection(monkeypatch):
+    identities = [
+        make_unified_identity(
+            "PID001",
+            "alice@company.com",
+            {
+                "azure": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+            },
+        )
+    ]
+    monkeypatch.setattr(
+        "services.risk_engine.effective_privilege",
+        lambda email: ["Employee", "Global Administrator"],
+    )
+
+    findings = detect_nested_group_privilege(identities)
+
+    assert len(findings) == 1
+    assert findings[0].risk_type == "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING"
+
+
+def test_privilege_spike_detection(monkeypatch):
+    identities = [
+        make_unified_identity(
+            "PID001",
+            "alice@company.com",
+            {
+                "azure": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+            },
+        )
+    ]
+    events = [
+        PrivilegeEvent("PEV001", "alice@company.com", "Azure AD", "role_granted", "Employee", "Developer", "2026-06-01T00:00:00", None),
+        PrivilegeEvent("PEV002", "alice@company.com", "Azure AD", "role_granted", "Developer", "Security Analyst", "2026-06-03T00:00:00", None),
+        PrivilegeEvent("PEV003", "alice@company.com", "Azure AD", "role_granted", "Security Analyst", "Global Administrator", "2026-06-05T00:00:00", None),
+    ]
+    monkeypatch.setattr("services.risk_engine.load_privilege_events", lambda: events)
+
+    findings = detect_privilege_spikes(identities)
+
+    assert len(findings) == 1
+    assert findings[0].risk_type == "UNAPPROVED_PRIVILEGE_SPIKE"
+
+
+def test_token_abuse_detection(monkeypatch):
+    identities = [
+        make_unified_identity(
+            "PID001",
+            "alice@company.com",
+            {
+                "azure": {"status": "active", "role": "Employee", "last_login": "2026-06-01T10:00:00"},
+            },
+        )
+    ]
+    tokens = [
+        ApiToken(
+            "TOK001",
+            "alice@company.com",
+            "Azure AD",
+            "read-only",
+            "2024-01-01",
+            "2024-01-01",
+            "2026-06-01T00:00:00",
+            True,
+            "active",
+        )
+    ]
+    monkeypatch.setattr("services.risk_engine.load_api_tokens", lambda: tokens)
+
+    findings = detect_token_abuse(identities)
+
+    assert len(findings) == 1
+    assert findings[0].risk_type == "STALE_OR_MISUSED_TOKEN"
+    assert findings[0].severity == "HIGH"
 
 
 def test_save_findings_and_report(tmp_path, capsys):
