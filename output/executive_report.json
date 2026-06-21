@@ -1,86 +1,96 @@
 {
   "summary": {
     "total_identities": 230,
-    "critical_risks": 0,
+    "critical_risks": 5,
     "high_risks": 6,
-    "average_risk_score": 21.8,
+    "average_risk_score": 24.8,
     "most_common_finding": "EXCESSIVE_PLATFORM_EXPOSURE",
-    "offboarding_gaps": 19
+    "offboarding_gaps": 26
   },
   "top_risks": [
     {
-      "person_id": "PID024",
-      "name": "Ava Williams",
-      "email": "ava.williams@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
+      "person_id": "PID005",
+      "name": "Amelia Miller",
+      "email": "amelia.miller@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
         "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-        "MULTI_PLATFORM_ADMIN"
-      ]
-    },
-    {
-      "person_id": "PID187",
-      "name": "Sarah Miller",
-      "email": "sarah.miller@company.com",
-      "score": 80,
-      "risk_level": "HIGH",
-      "findings": [
-        "EXCESSIVE_PLATFORM_EXPOSURE",
-        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
-        "MULTI_PLATFORM_ADMIN"
-      ]
-    },
-    {
-      "person_id": "PID062",
-      "name": "Ethan Carter",
-      "email": "ethan.carter@company.com",
-      "score": 70,
-      "risk_level": "HIGH",
-      "findings": [
-        "EXCESSIVE_PLATFORM_EXPOSURE",
-        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN",
+        "OFFBOARDING_GAP",
         "STALE_ACTIVE_ACCOUNT"
       ]
     },
     {
-      "person_id": "PID090",
-      "name": "Jane Thompson",
-      "email": "jane.thompson@company.com",
-      "score": 70,
-      "risk_level": "HIGH",
+      "person_id": "PID013",
+      "name": "Arjun Thomas",
+      "email": "arjun.thomas@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
         "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN",
+        "OFFBOARDING_GAP",
         "STALE_ACTIVE_ACCOUNT"
       ]
     },
     {
-      "person_id": "PID165",
-      "name": "Priya Clark",
-      "email": "priya.clark@company.com",
-      "score": 70,
-      "risk_level": "HIGH",
+      "person_id": "PID047",
+      "name": "David Hall",
+      "email": "david.hall@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
       "findings": [
         "EXCESSIVE_PLATFORM_EXPOSURE",
         "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN",
+        "OFFBOARDING_GAP",
+        "STALE_ACTIVE_ACCOUNT"
+      ]
+    },
+    {
+      "person_id": "PID073",
+      "name": "Isabella Lee",
+      "email": "isabella.lee@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
+      "findings": [
+        "EXCESSIVE_PLATFORM_EXPOSURE",
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN",
+        "OFFBOARDING_GAP",
+        "STALE_ACTIVE_ACCOUNT"
+      ]
+    },
+    {
+      "person_id": "PID089",
+      "name": "Jane White",
+      "email": "jane.white@company.com",
+      "score": 100,
+      "risk_level": "CRITICAL",
+      "findings": [
+        "EXCESSIVE_PLATFORM_EXPOSURE",
+        "HIDDEN_PRIVILEGE_VIA_GROUP_NESTING",
+        "MULTI_PLATFORM_ADMIN",
+        "OFFBOARDING_GAP",
         "STALE_ACTIVE_ACCOUNT"
       ]
     }
   ],
   "risk_distribution": {
-    "critical": 0,
+    "critical": 5,
     "high": 6,
-    "medium": 49,
-    "low": 99,
-    "none": 76
+    "medium": 48,
+    "low": 109,
+    "none": 62
   },
   "recommended_priorities": [
     "Reduce excessive platform exposure",
     "Audit administrative accounts",
-    "Review offboarding processes",
     "Remove stale privileged identities",
+    "Review offboarding processes",
     "Verify suspended account synchronization"
   ],
   "showcase_incidents": [
@@ -461,11 +471,11 @@
     }
   ],
   "platform_risk_breakdown": {
-    "ad": 109,
-    "aws": 114,
-    "azure": 103,
-    "okta": 115,
-    "salesforce": 106
+    "ad": 112,
+    "aws": 125,
+    "azure": 120,
+    "okta": 117,
+    "salesforce": 120
   },
   "risk_trends": [
     {
@@ -507,23 +517,23 @@
   ],
   "top_departments_at_risk": [
     {
-      "department": "Finance",
-      "risky_identities": 25
-    },
-    {
-      "department": "Security",
-      "risky_identities": 24
-    },
-    {
       "department": "Sales",
-      "risky_identities": 23
+      "risky_identities": 31
     },
     {
-      "department": "HR",
-      "risky_identities": 23
+      "department": "Finance",
+      "risky_identities": 26
     },
     {
       "department": "IT",
+      "risky_identities": 26
+    },
+    {
+      "department": "Security",
+      "risky_identities": 25
+    },
+    {
+      "department": "HR",
       "risky_identities": 23
     }
   ],

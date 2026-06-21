@@ -1,304 +1,325 @@
 [
   {
-    "person_id": "PID074",
-    "risk_score": 100,
-    "risk_level": "CRITICAL",
-    "summary": "John Brown's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
-      "Conduct a thorough review of John Brown's access and privileges",
-      "Implement a consistent offboarding process to ensure timely removal of access"
-    ]
-  },
-  {
-    "person_id": "PID080",
-    "risk_score": 100,
-    "risk_level": "CRITICAL",
-    "summary": "John Johnson's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistencies in account status across platforms.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on unnecessary platforms",
-      "Synchronize account status across all platforms",
-      "Remove or limit access to unused platforms",
-      "Conduct a thorough review of John Johnson's access and permissions"
-    ]
-  },
-  {
-    "person_id": "PID081",
-    "risk_score": 100,
-    "risk_level": "CRITICAL",
-    "summary": "John Jones' identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistencies in account status across platforms.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
-      "Conduct a thorough review of John Jones' access and permissions",
-      "Implement a consistent offboarding process to ensure timely removal of access"
-    ]
-  },
-  {
-    "person_id": "PID089",
-    "risk_score": 100,
-    "risk_level": "CRITICAL",
-    "summary": "John Smith's identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
-      "Conduct a thorough review of John Smith's access and privileges",
-      "Implement a consistent offboarding process to ensure timely removal of access"
-    ]
-  },
-  {
-    "person_id": "PID095",
-    "risk_score": 100,
-    "risk_level": "CRITICAL",
-    "summary": "John Williams' identity poses a critical risk due to excessive platform exposure, multi-platform admin privileges, and inconsistent account status across platforms.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Synchronize account status across all platforms (AD, AWS, Azure, Okta, Salesforce)",
-      "Conduct a thorough review of John Williams' access and permissions",
-      "Implement a consistent offboarding process to ensure timely removal of access"
-    ]
-  },
-  {
-    "person_id": "PID073",
-    "risk_score": 85,
+    "person_id": "PID024",
+    "risk_score": 80,
     "risk_level": "HIGH",
-    "summary": "John Anderson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Ava Williams' identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and multi-platform admin access.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement in case of a security incident, compromising the security of multiple platforms and systems.",
     "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Disable John Anderson's accounts on AWS, Azure, Okta, and Salesforce to match the disabled status in AD",
-      "Review and limit platform exposure by removing unnecessary access and accounts"
-    ]
+      "Review and reduce administrative privileges across all platforms",
+      "Remove unnecessary platform access",
+      "Remove Ava Williams from nested group memberships granting admin-equivalent access on AWS IAM"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID076",
-    "risk_score": 85,
+    "person_id": "PID187",
+    "risk_score": 80,
     "risk_level": "HIGH",
-    "summary": "John Davis's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Sarah Miller's identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and multi-platform admin access.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement across multiple platforms, compromising the security of the entire organization.",
     "recommended_actions": [
-      "Revoke admin privileges from unnecessary platforms",
-      "Disable John Davis's account in all platforms where it's not required",
-      "Conduct a thorough review of access controls and permissions",
-      "Implement a robust offboarding process to ensure timely deprovisioning of accounts"
-    ]
+      "Review and reduce administrative privileges across Active Directory, Azure AD, Okta",
+      "Remove unnecessary platform access, currently active on Active Directory, AWS IAM, Azure AD, Okta",
+      "Remove from nested group memberships on AWS IAM that grant admin-equivalent access"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID079",
-    "risk_score": 85,
+    "person_id": "PID062",
+    "risk_score": 70,
     "risk_level": "HIGH",
-    "summary": "John Jackson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Ethan Carter's identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and a stale active account. This could lead to unauthorized access and data breaches if not addressed.",
+    "security_impact": "If ignored, these issues could result in compromised sensitive data, lateral movement by attackers, and significant financial losses.",
     "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Disable John Jackson's accounts on all platforms where he is no longer active",
-      "Review and update access controls and offboarding processes to prevent similar gaps"
-    ]
-  },
-  {
-    "person_id": "PID082",
-    "risk_score": 85,
-    "risk_level": "HIGH",
-    "summary": "John Lee's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges from unnecessary platforms",
-      "Disable John Lee's accounts on all platforms where he is no longer active",
-      "Review and update access controls and offboarding processes to prevent similar gaps"
-    ]
-  },
-  {
-    "person_id": "PID084",
-    "risk_score": 85,
-    "risk_level": "HIGH",
-    "summary": "John Martin's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access to sensitive data and systems, potentially resulting in data breaches or malicious activities across multiple platforms.",
-    "recommended_actions": [
-      "Revoke admin privileges from unnecessary platforms",
-      "Disable John Martin's accounts on all platforms where he is no longer active",
-      "Review and update access controls to ensure least privilege access"
-    ]
-  },
-  {
-    "person_id": "PID085",
-    "risk_score": 85,
-    "risk_level": "HIGH",
-    "summary": "John Miller's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and reputation.",
-    "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Disable John Miller's accounts on AWS, Azure, Okta, and Salesforce to match the disabled status in AD",
-      "Review and update access controls for all 5 platforms to ensure least privilege access"
-    ]
-  },
-  {
-    "person_id": "PID086",
-    "risk_score": 85,
-    "risk_level": "HIGH",
-    "summary": "John Moore's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
-    "recommended_actions": [
-      "Revoke admin privileges on unnecessary platforms",
-      "Offboard John Moore from all platforms where he is no longer active",
-      "Review and limit platform exposure to only necessary systems"
-    ]
+      "Review and remove unnecessary platform access",
+      "Remove Ethan Carter from nested group memberships on AWS IAM that grant admin-equivalent access",
+      "Disable or review the unused active account on Azure AD"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
     "person_id": "PID090",
-    "risk_score": 85,
+    "risk_score": 70,
     "risk_level": "HIGH",
-    "summary": "John Taylor's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Jane Thompson's identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and a stale active account. Given the lack of risk_context, these findings are treated as genuine risks.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement within the organization, compromising sensitive information and assets.",
     "recommended_actions": [
-      "Revoke admin privileges on unnecessary platforms",
-      "Offboard John Taylor's identity from all platforms where he is no longer active",
-      "Review and limit platform exposure to only necessary systems"
-    ]
+      "Review and remove unnecessary platform access",
+      "Remove Jane Thompson from nested group memberships on Azure AD that grant admin-equivalent access",
+      "Disable or review the unused active account on Salesforce"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID091",
-    "risk_score": 85,
+    "person_id": "PID165",
+    "risk_score": 70,
     "risk_level": "HIGH",
-    "summary": "John Thomas' identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Priya Clark's identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and a stale active account. Given the presence of risk findings with remediation steps, this is likely a genuine risk.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement within the organization, compromising sensitive information and assets.",
     "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Disable John Thomas' accounts on all platforms where he is no longer active",
-      "Review and update access controls and offboarding processes to prevent similar gaps"
-    ]
+      "Review and remove unnecessary platform access, focusing on Active Directory, Azure AD, Okta, and Salesforce",
+      "Remove Priya Clark from nested group memberships on Active Directory that grant admin-equivalent access",
+      "Disable or review the unused active account on Okta, confirming ongoing business need before re-enabling"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID096",
-    "risk_score": 85,
+    "person_id": "PID183",
+    "risk_score": 70,
     "risk_level": "HIGH",
-    "summary": "John Wilson's identity poses a high risk due to excessive platform exposure, multi-platform admin privileges, and an offboarding gap.",
-    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or malicious activities across multiple platforms, compromising the company's security and assets.",
+    "summary": "Sarah Anderson's identity poses a high risk due to excessive platform exposure, hidden privilege via group nesting, and a stale active account. The presence of these findings without a documented justification (risk_context) suggests a genuine risk.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement within the organization, potentially causing significant financial and reputational damage.",
     "recommended_actions": [
-      "Revoke admin privileges on AWS and Azure",
-      "Disable John Wilson's accounts on all platforms where he is no longer active",
-      "Review and update access controls and offboarding processes to prevent similar gaps"
-    ]
+      "Disable or review the unused active account on AWS IAM",
+      "Reduce platform access to only those required for the current role",
+      "Remove from nested group memberships on Salesforce that grant admin-equivalent access"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID075",
+    "person_id": "PID035",
     "risk_score": 55,
     "risk_level": "MEDIUM",
-    "summary": "John Clark's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
+    "summary": "Chloe Taylor's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with her account disabled in Okta but still active in Active Directory, AWS, and Azure.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive resources, potentially resulting in data breaches or other security incidents.",
+    "recommended_actions": [
+      "Disable Chloe Taylor's access on Active Directory, Azure AD, and AWS IAM immediately",
+      "Review and remove unnecessary platform access to reduce exposure"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID043",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Daniel Taylor's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with active access in AWS, Azure, and Okta despite being disabled in Active Directory.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive resources, potentially resulting in data breaches or other security incidents.",
+    "recommended_actions": [
+      "Disable Daniel Taylor's access on Azure AD, AWS IAM, and Okta immediately",
+      "Review and remove unnecessary access to reduce platform exposure"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID070",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Ethan Thomas's identity poses a medium risk due to a stale active account and hidden privilege via group nesting, with the latter granting admin-equivalent access without a clear business justification.",
+    "security_impact": "If ignored, this could lead to unauthorized access or malicious activity, particularly given the high severity of the hidden privilege finding.",
+    "recommended_actions": [
+      "Disable or review the unused active account on Active Directory to confirm ongoing business need",
+      "Remove Ethan Thomas from nested group memberships on Okta that grant admin-equivalent access, verifying the stated role aligns with actual privileges"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID121",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Maria Lewis' identity poses a medium risk due to excessive platform exposure and an offboarding gap, with her account disabled in AWS but still active in Azure, Okta, and Salesforce.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive resources, potentially resulting in data breaches or other security incidents.",
+    "recommended_actions": [
+      "Disable Maria Lewis' access on Azure AD, Okta, and Salesforce immediately to address the offboarding gap",
+      "Review and remove unnecessary platform access to reduce exposure"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID124",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Maria Taylor's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with her account disabled in Salesforce but still active in Active Directory, Azure, and AWS.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive resources, potentially resulting in data breaches or other security incidents.",
+    "recommended_actions": [
+      "Verify the justification for Maria Taylor's account being active in Active Directory, Azure, and AWS despite being disabled in Salesforce",
+      "Review and remove unnecessary platform access to reduce exposure"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID129",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Mia Hall's identity poses a medium risk due to a stale active account and hidden privilege via group nesting, with no documented justification provided.",
+    "security_impact": "If ignored, this could lead to unauthorized access to sensitive resources, potentially resulting in data breaches or other security incidents.",
+    "recommended_actions": [
+      "Disable or review the unused active account on Okta",
+      "Remove Mia Hall from nested group memberships on AWS IAM that grant admin-equivalent access"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID140",
+    "risk_score": 55,
+    "risk_level": "MEDIUM",
+    "summary": "Michael Smith's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with their account disabled in Active Directory but remaining active in AWS, Azure, and Okta.",
     "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
     "recommended_actions": [
-      "Disable John Clark's accounts in AWS, Azure, Okta, and Salesforce to align with their AD status, and review access permissions to ensure they are appropriate for their current role."
-    ]
+      "Verify the user's current role and required access, then disable their access on Azure AD, AWS IAM, and Okta if no longer necessary.",
+      "Review and remove unnecessary platform access to reduce the identity's exposure."
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID078",
+    "person_id": "PID156",
     "risk_score": 55,
     "risk_level": "MEDIUM",
-    "summary": "John Harris' identity poses a medium risk due to excessive platform exposure and an offboarding gap, with accounts still active in AWS, Azure, Okta, and Salesforce despite being disabled in AD.",
-    "security_impact": "If ignored, this could lead to unauthorized access to sensitive data and systems, potentially resulting in data breaches or malicious activity.",
+    "summary": "Olivia Carter's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with her account disabled in Okta but still active in Active Directory, AWS, and Azure.",
+    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
     "recommended_actions": [
-      "Immediately review and reconcile John Harris' account status across all platforms, ensuring that all access is revoked and accounts are properly offboarded to prevent potential security incidents."
-    ]
+      "Verify the justification for Olivia Carter's account being active in Active Directory, AWS, and Azure despite being disabled in Okta",
+      "Review and remove unnecessary platform access to reduce exposure"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID087",
-    "risk_score": 55,
+    "person_id": "PID059",
+    "risk_score": 50,
     "risk_level": "MEDIUM",
-    "summary": "John Perez's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with his account disabled in AD but still active in AWS, Azure, Okta, and Salesforce.",
-    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, compromising the security and integrity of the organization's systems and data.",
+    "summary": "Emily Thompson's identity poses a medium risk due to excessive platform exposure and hidden privilege via group nesting, which could lead to unauthorized access and data breaches.",
+    "security_impact": "If left unaddressed, these issues could result in sensitive data exposure, lateral movement, and potential financial loss.",
     "recommended_actions": [
-      "Immediately review and reconcile John Perez's account status across all platforms, ensuring his account is consistently disabled or removed from all systems, and implement a thorough offboarding process to prevent similar gaps in the future."
-    ]
+      "Review and remove unnecessary platform access for Emily Thompson, focusing on Active Directory, AWS IAM, Azure AD, and Salesforce.",
+      "Remove Emily Thompson from nested group memberships on Salesforce that grant admin-equivalent access."
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID092",
-    "risk_score": 55,
+    "person_id": "PID068",
+    "risk_score": 50,
     "risk_level": "MEDIUM",
-    "summary": "John Thompson's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
-    "security_impact": "If ignored, this issue could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
+    "summary": "Ethan Smith's identity poses a medium risk due to excessive platform exposure and hidden privilege via group nesting, which could lead to unauthorized access and data breaches.",
+    "security_impact": "If ignored, this issue could result in sensitive data exposure, unauthorized system changes, or lateral movement by attackers, compromising the company's security posture.",
     "recommended_actions": [
-      "Disable John Thompson's accounts in AWS, Azure, Okta, and Salesforce to align with their AD status, and review access permissions to ensure they are appropriate for their current role."
-    ]
-  },
-  {
-    "person_id": "PID094",
-    "risk_score": 55,
-    "risk_level": "MEDIUM",
-    "summary": "John White's identity poses a medium risk due to excessive platform exposure and an offboarding gap, with the user being disabled in AD but still active in other platforms.",
-    "security_impact": "If ignored, this issue could lead to unauthorized access to company resources, potentially resulting in data breaches or other security incidents.",
-    "recommended_actions": [
-      "Immediately review and reconcile John White's access across all platforms, ensuring that their access is consistent and aligned with their current employment status, and remove any unnecessary access to prevent potential security risks."
-    ]
-  },
-  {
-    "person_id": "PID057",
-    "risk_score": 45,
-    "risk_level": "MEDIUM",
-    "summary": "Jane Jones' identity poses a medium risk due to excessive platform exposure and multi-platform admin privileges.",
-    "security_impact": "If ignored, this could lead to a potential breach or unauthorized access to sensitive data across multiple platforms, compromising the company's security and data integrity.",
-    "recommended_actions": [
-      "Review and limit Jane Jones' admin privileges to necessary platforms",
-      "Implement least privilege access and monitor usage",
-      "Consider consolidating or removing unused platform accounts"
-    ]
-  },
-  {
-    "person_id": "PID056",
-    "risk_score": 35,
-    "risk_level": "LOW",
-    "summary": "Jane Johnson's identity is at risk due to excessive platform exposure and a stale active account on Salesforce, which has not been used in 226 days.",
-    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, especially since the identity is present on multiple platforms.",
-    "recommended_actions": [
-      "Review and remove Jane Johnson's access to unused platforms, and consider deactivating the stale Salesforce account to minimize exposure."
-    ]
-  },
-  {
-    "person_id": "PID065",
-    "risk_score": 35,
-    "risk_level": "LOW",
-    "summary": "Jane Smith's identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, which has been unused for 201 days.",
-    "security_impact": "If ignored, this could lead to unauthorized access to company resources, particularly on Salesforce, and potentially across multiple platforms where Jane's identity is present.",
-    "recommended_actions": [
-      "Review and remove Jane Smith's access to unused platforms",
-      "Require Jane Smith to log in to Salesforce to verify account activity",
-      "Consider implementing automated account deactivation for inactive users"
-    ]
+      "Review and remove unnecessary platform access for Ethan Smith, ensuring only required platforms are accessible for their current role.",
+      "Remove Ethan Smith from nested group memberships on AWS IAM that grant admin-equivalent access, aligning with their stated 'Read Only' role."
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
     "person_id": "PID071",
-    "risk_score": 35,
-    "risk_level": "LOW",
-    "summary": "Jane Williams' identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, unused for 207 days.",
-    "security_impact": "If ignored, this could lead to unauthorized access to company resources, particularly on Salesforce, and potentially across 5 platforms where her identity is present.",
+    "risk_score": 50,
+    "risk_level": "MEDIUM",
+    "summary": "Ethan Thompson's identity poses a medium risk due to excessive platform exposure and hidden privilege via group nesting, which could lead to unauthorized access and data breaches if left unaddressed.",
+    "security_impact": "If ignored, this issue could result in sensitive data exposure, unauthorized system changes, or lateral movement by attackers, compromising the security of the organization's systems and data.",
     "recommended_actions": [
-      "Review and remove Jane Williams' access to unused platforms",
-      "Terminate or deactivate the stale Salesforce account",
-      "Conduct regular identity and access reviews to prevent similar issues"
-    ]
+      "Review and remove unnecessary platform access for Ethan Thompson, ensuring access is limited to only required platforms for their current role.",
+      "Remove Ethan Thompson from nested group memberships on Salesforce that grant admin-equivalent access, aligning their effective privilege with their stated role."
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
-    "person_id": "PID077",
-    "risk_score": 35,
-    "risk_level": "LOW",
-    "summary": "John Hall's identity poses a low risk due to excessive platform exposure and a stale active account on Salesforce, which has been unused for 219 days.",
-    "security_impact": "If ignored, this could lead to unauthorized access to company resources, potentially resulting in data breaches or malicious activity, especially since the identity is present on multiple platforms.",
+    "person_id": "PID150",
+    "risk_score": 50,
+    "risk_level": "MEDIUM",
+    "summary": "Noah Shah's identity poses a medium risk due to excessive platform exposure and hidden privilege via group nesting, which could lead to unauthorized access and data breaches.",
+    "security_impact": "If ignored, this issue could result in sensitive data exposure, unauthorized changes, or lateral movement by attackers, compromising the security of company assets.",
     "recommended_actions": [
-      "Review and remove unnecessary platform access, and consider deactivating or removing the stale Salesforce account to minimize exposure."
-    ]
+      "Review and remove unnecessary platform access for Noah Shah, focusing on AWS IAM, Azure AD, Okta, and Salesforce.",
+      "Verify and adjust group memberships on Salesforce to ensure Noah Shah does not have admin-equivalent access beyond their stated role."
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID023",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Ava Thompson's identity poses a risk due to excessive platform exposure and multi-platform admin privileges, which could lead to unauthorized access or data breaches if not addressed.",
+    "security_impact": "If ignored, this issue could result in a significant security breach, compromising sensitive company data across multiple platforms.",
+    "recommended_actions": [
+      "Review and reduce administrative privileges across Active Directory, Azure AD, Okta, considering just-in-time elevation instead of standing admin access.",
+      "Reduce platform access to only those required for the current role, reviewing and removing unnecessary access from Active Directory, AWS IAM, Azure AD, and Okta."
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID058",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Emily Taylor's identity poses a medium risk due to excessive platform exposure and an unapproved privilege spike, with access to four platforms and three recent unapproved privilege changes.",
+    "security_impact": "If ignored, this could lead to unauthorized data access or lateral movement in the event of a breach, compromising sensitive company information.",
+    "recommended_actions": [
+      "Review and remove unnecessary platform access for Emily Taylor",
+      "Require manager approval for recent privilege changes and consider reverting to the prior role",
+      "Implement mandatory approval workflows for future privilege elevation requests"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID088",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Jane Robinson's identity has been flagged for excessive platform exposure and multi-platform admin privileges, posing a medium risk to the organization.",
+    "security_impact": "If left unaddressed, this could lead to unauthorized access and potential data breaches across multiple platforms, compromising sensitive information and disrupting business operations.",
+    "recommended_actions": [
+      "Review and reduce administrative privileges across Active Directory, AWS IAM, and Salesforce",
+      "Consider implementing just-in-time elevation instead of standing admin access",
+      "Reduce platform access to only those required for the current role and remove unnecessary access from Active Directory, AWS IAM, Azure AD, and Salesforce"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID108",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Liam Williams' identity poses a medium risk due to excessive platform exposure and multi-platform admin privileges, which could lead to unauthorized access or data breaches if not addressed.",
+    "security_impact": "If ignored, this issue could result in a security breach, data loss, or unauthorized access to sensitive company resources across multiple platforms.",
+    "recommended_actions": [
+      "Review and reduce administrative privileges across Active Directory, AWS IAM, Okta, and Salesforce",
+      "Implement just-in-time elevation instead of standing admin access",
+      "Reduce platform access to only those required for the current role and remove unnecessary access"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID123",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Maria Smith's identity has excessive platform exposure and multi-platform admin privileges, posing a medium risk to the organization.",
+    "security_impact": "If ignored, this could lead to unauthorized access, data breaches, or lateral movement in case of a compromised account.",
+    "recommended_actions": [
+      "Review and reduce administrative privileges across platforms",
+      "Implement just-in-time elevation instead of standing admin access",
+      "Reduce platform access to only those required for the current role"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID126",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Maria White's identity poses a risk due to excessive platform exposure and multi-platform admin privileges, which could lead to unauthorized access or data breaches if not addressed.",
+    "security_impact": "If ignored, this issue could result in a significant security breach, compromising sensitive company data across multiple platforms.",
+    "recommended_actions": [
+      "Review and reduce administrative privileges across Active Directory, AWS IAM, Okta",
+      "Consider implementing just-in-time elevation instead of standing admin access",
+      "Reduce platform access to only those required for the current role and remove unnecessary access from Active Directory, AWS IAM, Okta, Salesforce"
+    ],
+    "confidence_label": "likely_true_positive"
+  },
+  {
+    "person_id": "PID146",
+    "risk_score": 45,
+    "risk_level": "MEDIUM",
+    "summary": "Noah Kumar's identity poses a medium risk due to excessive platform exposure and an unapproved privilege spike, with access to four platforms and three recent unapproved privilege changes.",
+    "security_impact": "If ignored, this could lead to unauthorized data access or lateral movement in the event of a breach, compromising sensitive company information.",
+    "recommended_actions": [
+      "Review and remove unnecessary platform access for Noah Kumar",
+      "Require manager approval retroactively for recent privilege changes and consider reverting to the prior role pending security review",
+      "Implement mandatory approval workflows for all future privilege elevation requests"
+    ],
+    "confidence_label": "likely_true_positive"
   },
   {
     "person_id": "PID001",
     "risk_score": 0,
     "risk_level": "NONE",
-    "summary": "The identity of David Anderson has been assessed and found to have no known risk factors.",
-    "security_impact": "Since there are no identified risks, ignoring this issue is not expected to have any negative security consequences.",
+    "summary": "The identity of Amelia Carter appears to be low risk with no notable findings.",
+    "security_impact": "No significant security impact is expected since there are no identified risks.",
     "recommended_actions": [
-      "No specific remediation actions are recommended at this time, but ongoing monitoring is advised to ensure the risk level remains low."
-    ]
+      "No immediate action is required, but regular reviews should be conducted to ensure the risk level remains low."
+    ],
+    "confidence_label": "likely_true_positive"
   }
 ]

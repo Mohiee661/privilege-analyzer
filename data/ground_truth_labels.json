@@ -1,7 +1,7 @@
 [
   {
     "email": "amelia.johnson@company.com",
-    "category": "offboarding_gap",
+    "category": "multi_platform_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -18,7 +18,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-backup-job-09@company.com",
+    "email": "yusuf.johnson@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -37,7 +37,7 @@
   },
   {
     "email": "priya.white@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -55,33 +55,33 @@
   },
   {
     "email": "lucas.miller@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
-  },
-  {
-    "email": "jane.white@company.com",
     "category": "suspended_mismatch",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
+    "email": "jane.white@company.com",
+    "category": "compound_critical",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
     "email": "john.anderson@company.com",
-    "category": "dormant_admin",
+    "category": "privilege_escalation",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "noah.jackson@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
+    "category": "suspended_mismatch",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
   },
   {
     "email": "lucas.moore@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
+    "category": "suspended_mismatch",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
   },
   {
     "email": "emily.jackson@company.com",
@@ -139,7 +139,7 @@
   },
   {
     "email": "noah.lee@company.com",
-    "category": "dormant_admin",
+    "category": "privilege_escalation",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -187,7 +187,7 @@
   },
   {
     "email": "yusuf.white@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -211,14 +211,14 @@
   },
   {
     "email": "david.taylor@company.com",
-    "category": "token_abuse",
+    "category": "nested_group_hidden_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "daniel.white@company.com",
-    "category": "normal",
-    "is_anomalous": false,
+    "category": "offboarding_gap",
+    "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
@@ -234,14 +234,14 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-data-sync-05@company.com",
+    "email": "john.miller@company.com",
     "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "arjun.thomas@company.com",
-    "category": "suspended_mismatch",
+    "category": "compound_critical",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -265,7 +265,7 @@
   },
   {
     "email": "robert.johnson@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -276,7 +276,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "arjun.robinson@company.com",
+    "email": "svc-report-gen-04@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -289,9 +289,9 @@
   },
   {
     "email": "ava.perez@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
+    "category": "suspended_mismatch",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
   },
   {
     "email": "maria.anderson@company.com",
@@ -300,14 +300,14 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "yusuf.williams@company.com",
+    "email": "svc-ci-deploy-10@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
     "email": "john.jackson@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -319,7 +319,7 @@
   },
   {
     "email": "olivia.anderson@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -337,7 +337,7 @@
   },
   {
     "email": "ethan.perez@company.com",
-    "category": "token_abuse",
+    "category": "nested_group_hidden_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -348,26 +348,26 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-etl-prod-00@company.com",
+    "email": "sarah.davis@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
-    "email": "william.lewis@company.com",
+    "email": "svc-etl-prod-08@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
-    "email": "ethan.smith@company.com",
+    "email": "svc-billing-cron-06@company.com",
     "category": "nested_group_hidden_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "david.perez@company.com",
-    "category": "privilege_escalation",
+    "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -415,12 +415,12 @@
   },
   {
     "email": "mia.hall@company.com",
-    "category": "dormant_admin",
+    "category": "privilege_escalation",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
-    "email": "ava.smith@company.com",
+    "email": "svc-monitoring-11@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -468,7 +468,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-billing-cron-06@company.com",
+    "email": "emily.brown@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -486,10 +486,10 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-monitoring-03@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "email": "john.thompson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "ethan.wilson@company.com",
@@ -523,7 +523,7 @@
   },
   {
     "email": "maria.white@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -571,12 +571,12 @@
   },
   {
     "email": "mia.thompson@company.com",
-    "category": "normal",
-    "is_anomalous": false,
+    "category": "offboarding_gap",
+    "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-ci-deploy-10@company.com",
+    "email": "priya.moore@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -613,19 +613,19 @@
   },
   {
     "email": "robert.miller@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "yusuf.taylor@company.com",
-    "category": "privilege_escalation",
+    "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "michael.shah@company.com",
-    "category": "token_abuse",
+    "category": "nested_group_hidden_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -654,16 +654,16 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "jane.hall@company.com",
+    "email": "svc-backup-job-01@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-ci-deploy-02@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "email": "noah.robinson@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "priya.perez@company.com",
@@ -703,19 +703,19 @@
   },
   {
     "email": "chloe.kumar@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
-  },
-  {
-    "email": "isabella.lee@company.com",
     "category": "suspended_mismatch",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
+    "email": "isabella.lee@company.com",
+    "category": "compound_critical",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
+  },
+  {
     "email": "maria.smith@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -732,13 +732,13 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-billing-cron-14@company.com",
+    "email": "svc-log-shipper-15@company.com",
     "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
-    "email": "james.robinson@company.com",
+    "email": "svc-ci-deploy-02@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -751,8 +751,8 @@
   },
   {
     "email": "ethan.taylor@company.com",
-    "category": "normal",
-    "is_anomalous": false,
+    "category": "offboarding_gap",
+    "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
@@ -810,10 +810,10 @@
     "is_false_positive_trap": true
   },
   {
-    "email": "svc-data-sync-13@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "email": "jane.jones@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "chloe.carter@company.com",
@@ -847,9 +847,9 @@
   },
   {
     "email": "john.carter@company.com",
-    "category": "legitimate_trap",
-    "is_anomalous": false,
-    "is_false_positive_trap": true
+    "category": "suspended_mismatch",
+    "is_anomalous": true,
+    "is_false_positive_trap": false
   },
   {
     "email": "mia.martin@company.com",
@@ -870,10 +870,10 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-backup-job-01@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "email": "arjun.shah@company.com",
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "ava.johnson@company.com",
@@ -883,12 +883,12 @@
   },
   {
     "email": "ethan.thompson@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-report-gen-04@company.com",
+    "email": "svc-billing-cron-14@company.com",
     "category": "nested_group_hidden_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
@@ -907,19 +907,19 @@
   },
   {
     "email": "amelia.miller@company.com",
-    "category": "suspended_mismatch",
+    "category": "compound_critical",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "michael.smith@company.com",
-    "category": "offboarding_gap",
+    "category": "multi_platform_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "priya.johnson@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -948,25 +948,25 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "mia.jackson@company.com",
+    "email": "svc-monitoring-03@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
     "email": "david.carter@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
-    "email": "olivia.wilson@company.com",
+    "email": "svc-backup-job-09@company.com",
     "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-log-shipper-15@company.com",
+    "email": "ava.wilson@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -997,14 +997,14 @@
   },
   {
     "email": "yusuf.kumar@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "sophia.harris@company.com",
-    "category": "normal",
-    "is_anomalous": false,
+    "category": "offboarding_gap",
+    "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
@@ -1056,7 +1056,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "john.jones@company.com",
+    "email": "svc-report-gen-12@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -1081,7 +1081,7 @@
   },
   {
     "email": "emily.thompson@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1092,7 +1092,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-monitoring-11@company.com",
+    "email": "isabella.carter@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -1158,8 +1158,8 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "isabella.moore@company.com",
-    "category": "privilege_escalation",
+    "email": "svc-data-sync-13@company.com",
+    "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1183,7 +1183,7 @@
   },
   {
     "email": "amelia.robinson@company.com",
-    "category": "privilege_escalation",
+    "category": "token_abuse",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1201,13 +1201,13 @@
   },
   {
     "email": "yusuf.wilson@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "sarah.anderson@company.com",
-    "category": "dormant_admin",
+    "category": "privilege_escalation",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1219,7 +1219,7 @@
   },
   {
     "email": "daniel.smith@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1242,22 +1242,22 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "amelia.hall@company.com",
+    "email": "svc-data-sync-05@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
     "email": "james.perez@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "david.miller@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
     "email": "amelia.carter@company.com",
@@ -1273,7 +1273,7 @@
   },
   {
     "email": "sophia.robinson@company.com",
-    "category": "multi_platform_admin",
+    "category": "dormant_admin",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1291,7 +1291,7 @@
   },
   {
     "email": "david.hall@company.com",
-    "category": "suspended_mismatch",
+    "category": "compound_critical",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1309,13 +1309,13 @@
   },
   {
     "email": "liam.thompson@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
   {
     "email": "robert.taylor@company.com",
-    "category": "nested_group_hidden_admin",
+    "category": "orphaned_service_account",
     "is_anomalous": true,
     "is_false_positive_trap": false
   },
@@ -1327,12 +1327,12 @@
   },
   {
     "email": "sarah.wilson@company.com",
-    "category": "orphaned_service_account",
-    "is_anomalous": true,
-    "is_false_positive_trap": false
+    "category": "legitimate_trap",
+    "is_anomalous": false,
+    "is_false_positive_trap": true
   },
   {
-    "email": "svc-log-shipper-07@company.com",
+    "email": "michael.jackson@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -1356,13 +1356,13 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-etl-prod-08@company.com",
+    "email": "john.robinson@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
   },
   {
-    "email": "svc-report-gen-12@company.com",
+    "email": "svc-log-shipper-07@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false
@@ -1374,7 +1374,7 @@
     "is_false_positive_trap": false
   },
   {
-    "email": "jane.clark@company.com",
+    "email": "svc-etl-prod-00@company.com",
     "category": "normal",
     "is_anomalous": false,
     "is_false_positive_trap": false

@@ -1,37 +1,7 @@
 [
   {
     "event_id": "PEV001",
-    "email": "noah.kumar@company.com",
-    "platform": "Azure AD",
-    "event_type": "role_granted",
-    "old_value": "Employee",
-    "new_value": "Developer",
-    "timestamp": "2026-06-18T18:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV002",
-    "email": "noah.kumar@company.com",
-    "platform": "Azure AD",
-    "event_type": "role_granted",
-    "old_value": "Developer",
-    "new_value": "Security Analyst",
-    "timestamp": "2026-06-20T00:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV003",
-    "email": "noah.kumar@company.com",
-    "platform": "Azure AD",
-    "event_type": "role_granted",
-    "old_value": "Security Analyst",
-    "new_value": "Global Administrator",
-    "timestamp": "2026-06-21T06:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV004",
-    "email": "amelia.moore@company.com",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Read Only",
@@ -40,8 +10,8 @@
     "approved_by": null
   },
   {
-    "event_id": "PEV005",
-    "email": "amelia.moore@company.com",
+    "event_id": "PEV002",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Developer",
@@ -50,8 +20,8 @@
     "approved_by": null
   },
   {
-    "event_id": "PEV006",
-    "email": "amelia.moore@company.com",
+    "event_id": "PEV003",
+    "email": "john.anderson@company.com",
     "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
@@ -60,19 +30,79 @@
     "approved_by": null
   },
   {
+    "event_id": "PEV004",
+    "email": "noah.lee@company.com",
+    "platform": "Active Directory",
+    "event_type": "role_granted",
+    "old_value": "Employee",
+    "new_value": "Developer",
+    "timestamp": "2026-06-13T18:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV005",
+    "email": "noah.lee@company.com",
+    "platform": "Active Directory",
+    "event_type": "role_granted",
+    "old_value": "Developer",
+    "new_value": "Security Analyst",
+    "timestamp": "2026-06-15T00:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV006",
+    "email": "noah.lee@company.com",
+    "platform": "Active Directory",
+    "event_type": "role_granted",
+    "old_value": "Security Analyst",
+    "new_value": "Administrator",
+    "timestamp": "2026-06-16T06:00:00",
+    "approved_by": null
+  },
+  {
     "event_id": "PEV007",
-    "email": "david.perez@company.com",
+    "email": "noah.kumar@company.com",
     "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Read Only",
+    "new_value": "Developer",
+    "timestamp": "2026-06-13T18:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV008",
+    "email": "noah.kumar@company.com",
+    "platform": "AWS IAM",
+    "event_type": "role_granted",
+    "old_value": "Developer",
+    "new_value": "Security Analyst",
+    "timestamp": "2026-06-15T00:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV009",
+    "email": "noah.kumar@company.com",
+    "platform": "AWS IAM",
+    "event_type": "role_granted",
+    "old_value": "Security Analyst",
+    "new_value": "Administrator",
+    "timestamp": "2026-06-16T06:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV010",
+    "email": "amelia.moore@company.com",
+    "platform": "Salesforce",
+    "event_type": "role_granted",
+    "old_value": "Standard User",
     "new_value": "Developer",
     "timestamp": "2026-06-17T18:00:00",
     "approved_by": null
   },
   {
-    "event_id": "PEV008",
-    "email": "david.perez@company.com",
-    "platform": "AWS IAM",
+    "event_id": "PEV011",
+    "email": "amelia.moore@company.com",
+    "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
@@ -80,48 +110,18 @@
     "approved_by": null
   },
   {
-    "event_id": "PEV009",
-    "email": "david.perez@company.com",
-    "platform": "AWS IAM",
-    "event_type": "role_granted",
-    "old_value": "Security Analyst",
-    "new_value": "Administrator",
-    "timestamp": "2026-06-20T06:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV010",
-    "email": "yusuf.smith@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Standard User",
-    "new_value": "Developer",
-    "timestamp": "2026-06-15T18:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV011",
-    "email": "yusuf.smith@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Developer",
-    "new_value": "Security Analyst",
-    "timestamp": "2026-06-17T00:00:00",
-    "approved_by": null
-  },
-  {
     "event_id": "PEV012",
-    "email": "yusuf.smith@company.com",
+    "email": "amelia.moore@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
     "new_value": "Admin",
-    "timestamp": "2026-06-18T06:00:00",
+    "timestamp": "2026-06-20T06:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV013",
-    "email": "yusuf.taylor@company.com",
+    "email": "yusuf.smith@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Standard User",
@@ -131,7 +131,7 @@
   },
   {
     "event_id": "PEV014",
-    "email": "yusuf.taylor@company.com",
+    "email": "yusuf.smith@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Developer",
@@ -141,7 +141,7 @@
   },
   {
     "event_id": "PEV015",
-    "email": "yusuf.taylor@company.com",
+    "email": "yusuf.smith@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
@@ -151,78 +151,78 @@
   },
   {
     "event_id": "PEV016",
-    "email": "sarah.martin@company.com",
-    "platform": "Okta",
+    "email": "mia.hall@company.com",
+    "platform": "Salesforce",
     "event_type": "role_granted",
-    "old_value": "Employee",
+    "old_value": "Standard User",
     "new_value": "Developer",
-    "timestamp": "2026-06-14T18:00:00",
+    "timestamp": "2026-06-15T18:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV017",
-    "email": "sarah.martin@company.com",
-    "platform": "Okta",
+    "email": "mia.hall@company.com",
+    "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
-    "timestamp": "2026-06-16T00:00:00",
+    "timestamp": "2026-06-17T00:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV018",
-    "email": "sarah.martin@company.com",
-    "platform": "Okta",
-    "event_type": "role_granted",
-    "old_value": "Security Analyst",
-    "new_value": "Super Admin",
-    "timestamp": "2026-06-17T06:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV019",
-    "email": "sarah.robinson@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Standard User",
-    "new_value": "Developer",
-    "timestamp": "2026-06-14T18:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV020",
-    "email": "sarah.robinson@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Developer",
-    "new_value": "Security Analyst",
-    "timestamp": "2026-06-16T00:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV021",
-    "email": "sarah.robinson@company.com",
+    "email": "mia.hall@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
     "new_value": "Admin",
-    "timestamp": "2026-06-17T06:00:00",
+    "timestamp": "2026-06-18T06:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV019",
+    "email": "sarah.martin@company.com",
+    "platform": "Azure AD",
+    "event_type": "role_granted",
+    "old_value": "Employee",
+    "new_value": "Developer",
+    "timestamp": "2026-06-16T18:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV020",
+    "email": "sarah.martin@company.com",
+    "platform": "Azure AD",
+    "event_type": "role_granted",
+    "old_value": "Developer",
+    "new_value": "Security Analyst",
+    "timestamp": "2026-06-18T00:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV021",
+    "email": "sarah.martin@company.com",
+    "platform": "Azure AD",
+    "event_type": "role_granted",
+    "old_value": "Security Analyst",
+    "new_value": "Global Administrator",
+    "timestamp": "2026-06-19T06:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV022",
-    "email": "noah.williams@company.com",
-    "platform": "Salesforce",
+    "email": "sarah.robinson@company.com",
+    "platform": "Azure AD",
     "event_type": "role_granted",
-    "old_value": "Standard User",
+    "old_value": "Employee",
     "new_value": "Developer",
     "timestamp": "2026-06-13T18:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV023",
-    "email": "noah.williams@company.com",
-    "platform": "Salesforce",
+    "email": "sarah.robinson@company.com",
+    "platform": "Azure AD",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
@@ -231,48 +231,18 @@
   },
   {
     "event_id": "PEV024",
-    "email": "noah.williams@company.com",
-    "platform": "Salesforce",
+    "email": "sarah.robinson@company.com",
+    "platform": "Azure AD",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
-    "new_value": "Admin",
+    "new_value": "Global Administrator",
     "timestamp": "2026-06-16T06:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV025",
-    "email": "mia.carter@company.com",
-    "platform": "Okta",
-    "event_type": "role_granted",
-    "old_value": "Employee",
-    "new_value": "Developer",
-    "timestamp": "2026-06-17T18:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV026",
-    "email": "mia.carter@company.com",
-    "platform": "Okta",
-    "event_type": "role_granted",
-    "old_value": "Developer",
-    "new_value": "Security Analyst",
-    "timestamp": "2026-06-19T00:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV027",
-    "email": "mia.carter@company.com",
-    "platform": "Okta",
-    "event_type": "role_granted",
-    "old_value": "Security Analyst",
-    "new_value": "Super Admin",
-    "timestamp": "2026-06-20T06:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV028",
-    "email": "emily.taylor@company.com",
-    "platform": "Active Directory",
+    "email": "noah.williams@company.com",
+    "platform": "Azure AD",
     "event_type": "role_granted",
     "old_value": "Employee",
     "new_value": "Developer",
@@ -280,9 +250,39 @@
     "approved_by": null
   },
   {
+    "event_id": "PEV026",
+    "email": "noah.williams@company.com",
+    "platform": "Azure AD",
+    "event_type": "role_granted",
+    "old_value": "Developer",
+    "new_value": "Security Analyst",
+    "timestamp": "2026-06-20T00:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV027",
+    "email": "noah.williams@company.com",
+    "platform": "Azure AD",
+    "event_type": "role_granted",
+    "old_value": "Security Analyst",
+    "new_value": "Global Administrator",
+    "timestamp": "2026-06-21T06:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV028",
+    "email": "mia.carter@company.com",
+    "platform": "AWS IAM",
+    "event_type": "role_granted",
+    "old_value": "Read Only",
+    "new_value": "Developer",
+    "timestamp": "2026-06-18T18:00:00",
+    "approved_by": null
+  },
+  {
     "event_id": "PEV029",
-    "email": "emily.taylor@company.com",
-    "platform": "Active Directory",
+    "email": "mia.carter@company.com",
+    "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
@@ -291,8 +291,8 @@
   },
   {
     "event_id": "PEV030",
-    "email": "emily.taylor@company.com",
-    "platform": "Active Directory",
+    "email": "mia.carter@company.com",
+    "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
     "new_value": "Administrator",
@@ -301,48 +301,18 @@
   },
   {
     "event_id": "PEV031",
-    "email": "chloe.brown@company.com",
+    "email": "emily.taylor@company.com",
     "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Standard User",
-    "new_value": "Developer",
-    "timestamp": "2026-06-13T18:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV032",
-    "email": "chloe.brown@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Developer",
-    "new_value": "Security Analyst",
-    "timestamp": "2026-06-15T00:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV033",
-    "email": "chloe.brown@company.com",
-    "platform": "Salesforce",
-    "event_type": "role_granted",
-    "old_value": "Security Analyst",
-    "new_value": "Admin",
-    "timestamp": "2026-06-16T06:00:00",
-    "approved_by": null
-  },
-  {
-    "event_id": "PEV034",
-    "email": "isabella.moore@company.com",
-    "platform": "AWS IAM",
-    "event_type": "role_granted",
-    "old_value": "Read Only",
     "new_value": "Developer",
     "timestamp": "2026-06-16T18:00:00",
     "approved_by": null
   },
   {
-    "event_id": "PEV035",
-    "email": "isabella.moore@company.com",
-    "platform": "AWS IAM",
+    "event_id": "PEV032",
+    "email": "emily.taylor@company.com",
+    "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
@@ -350,29 +320,59 @@
     "approved_by": null
   },
   {
-    "event_id": "PEV036",
-    "email": "isabella.moore@company.com",
-    "platform": "AWS IAM",
+    "event_id": "PEV033",
+    "email": "emily.taylor@company.com",
+    "platform": "Salesforce",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
-    "new_value": "Administrator",
+    "new_value": "Admin",
     "timestamp": "2026-06-19T06:00:00",
     "approved_by": null
   },
   {
-    "event_id": "PEV037",
-    "email": "amelia.robinson@company.com",
+    "event_id": "PEV034",
+    "email": "chloe.brown@company.com",
     "platform": "Active Directory",
     "event_type": "role_granted",
     "old_value": "Employee",
+    "new_value": "Developer",
+    "timestamp": "2026-06-18T18:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV035",
+    "email": "chloe.brown@company.com",
+    "platform": "Active Directory",
+    "event_type": "role_granted",
+    "old_value": "Developer",
+    "new_value": "Security Analyst",
+    "timestamp": "2026-06-20T00:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV036",
+    "email": "chloe.brown@company.com",
+    "platform": "Active Directory",
+    "event_type": "role_granted",
+    "old_value": "Security Analyst",
+    "new_value": "Administrator",
+    "timestamp": "2026-06-21T06:00:00",
+    "approved_by": null
+  },
+  {
+    "event_id": "PEV037",
+    "email": "sarah.anderson@company.com",
+    "platform": "AWS IAM",
+    "event_type": "role_granted",
+    "old_value": "Read Only",
     "new_value": "Developer",
     "timestamp": "2026-06-15T18:00:00",
     "approved_by": null
   },
   {
     "event_id": "PEV038",
-    "email": "amelia.robinson@company.com",
-    "platform": "Active Directory",
+    "email": "sarah.anderson@company.com",
+    "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
@@ -381,8 +381,8 @@
   },
   {
     "event_id": "PEV039",
-    "email": "amelia.robinson@company.com",
-    "platform": "Active Directory",
+    "email": "sarah.anderson@company.com",
+    "platform": "AWS IAM",
     "event_type": "role_granted",
     "old_value": "Security Analyst",
     "new_value": "Administrator",
@@ -396,7 +396,7 @@
     "event_type": "role_granted",
     "old_value": "Employee",
     "new_value": "Developer",
-    "timestamp": "2026-06-17T18:00:00",
+    "timestamp": "2026-06-15T18:00:00",
     "approved_by": null
   },
   {
@@ -406,7 +406,7 @@
     "event_type": "role_granted",
     "old_value": "Developer",
     "new_value": "Security Analyst",
-    "timestamp": "2026-06-19T00:00:00",
+    "timestamp": "2026-06-17T00:00:00",
     "approved_by": null
   },
   {
@@ -416,7 +416,7 @@
     "event_type": "role_granted",
     "old_value": "Security Analyst",
     "new_value": "Administrator",
-    "timestamp": "2026-06-20T06:00:00",
+    "timestamp": "2026-06-18T06:00:00",
     "approved_by": null
   }
 ]
